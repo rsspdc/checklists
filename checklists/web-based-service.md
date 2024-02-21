@@ -12,18 +12,18 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## Source control
 
-- [ ]   
+- [ ] Uses git  
 <details>
 <ul>
-<li>
-For large projects it might be useful to adopt some conventions for your git commit messages such as [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to improve the searchability and scannability of your commit history to other contributors to your code base.
-<li>
+    <li>
+    For large projects it might be useful to adopt some conventions for your git commit messages such as [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to improve the searchability and scannability of your commit history to other contributors to your code base.
+    <li>
 </ul>
 </details>
 
 ## Licencing
 
-- [ ]   
+- [ ] Project is suitably licensed, there is a LICENCE file in the repository
 <details>
 <ul>
 <li>
@@ -34,6 +34,8 @@ If you want to apply a copyleft license to a piece of software that is to be acc
 
 ## Documentation
 
+- [ ] Project has README file
+- [ ] README provides a description of the project structure so that the user knows which directories to find things in
 <ul>
 <li>It is generally useful to split documentation in a project such as this by target audiences: users, developers, sysadmins.</li>
 <ul>
@@ -67,25 +69,41 @@ Adopting a stable, consistent and human readable naming schema for the URLs on y
 ## Peer review / Code Review
 
 - [ ]  
+<details>
 <ul>
-<li>If you are building a database of some kind then you might want the processes by which you process, collect or curate the data which go into this database to be subject to an academic style review, and papers about the creation of souch resources are not uncomon.</li>
-<li>Seeking an external technical review may be trickier for your core code but review of how easy your system is to deploy is perhaps more accessible from the community of amateur self-hosters who may be quite willing to try deploying your tool in many and varied homelabs if it offers them something or you ask nicely and in the right places.</li>
+    <li>
+    If you are building a database of some kind then you might want the processes by which you process, collect or curate the data which go into this database to be subject to an academic style review, and papers about the creation of such resources are not uncommon.
+    </li>
+    <li>
+    Seeking an external technical review may be trickier for your core code but review of how easy your system is to deploy is perhaps more accessible from the community of amateur self-hosters.
+    Who may be quite willing to try deploying your tool in many and varied homelabs if it offers them something and/or you ask nicely and in the right places.
+    </li>
 </ul>
+</details>
 
 ## Distribution
 
 - [ ]  
+<details>
 <ul>
-    <li> Your general audience is users of your web service so 'distribution' splits in to two slightly different problems.</li>
+    <li> Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.</li>
     <ul>
-    	<li>Operating your website, things like making sure that your SSL certificates stay up to date and you have enough comput resources for the service to run well for users.</li>
-	    <li>Your target audience for the technical distribution of your software is different, it's generally sysadmins, or at least amateur self-hosters.</li>
+    	<li>
+        Operating your website, things like making sure that your SSL certificates stay up to date and you have enough comput resources for the service to run well for users.
+        All the usual work of hosting a webservice.
+        </li>
+	    <li>
+        Distributing your server software to sysadmins, devops people, and potentially general IT staff, developers, and amateur self-hosters.
+        </li>
     </ul>
+    <li>APIs?</li>
 </ul>
+</details>
 
 ## Environment Management / Portability
 
-- [ ]  
+- [ ] Simple to install development, testing, and/or demo environment
+<details>
 <ul>
     <li>
     Depending on the infrastructure that you chose to deploy on you might use a different management tool, but it is best if you do use such a tool as a part of your development and deployment as, if done right, this provides an easy 'run a couple of commands' development environment setup for anyone picking up the project.
@@ -93,4 +111,5 @@ Adopting a stable, consistent and human readable naming schema for the URLs on y
     Examples of such tools include: [ansible](https://www.ansible.com/), [terraform](https://www.terraform.io/), [docker](https://www.docker.com/)/[docker compose](https://docs.docker.com/compose/), [nix](https://nixos.org/), [helm charts](https://helm.sh/) or a combination of some of these that fits your needs and experience.
     </li>
 </ul>
+</details>
 
