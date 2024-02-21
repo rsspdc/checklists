@@ -9,9 +9,24 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 
 - [ ] Uses git
 <details>
-- Whilst you can simply use git and a gitforge / git hosting service as a way of distributing your project doing so misses out on a lot of benefits of using git as a part of your workflow from the beginning of your project. A well maintained git history is much like a well kept lab notebook for a data analysis project, well author commit messages detail why you changed what you changed. You can by 'checking out' a commit open a window onto any point in the history of your project of which you took a snapshot by making a commit. You can collaborate on your project with other git users asynchronously, it can be a great tool for distributed collaborative authorship not just of software but also of prose. A good example of this is [The Turing Way: a how to guide for reproducible data science](https://github.com/the-turing-way/the-turing-way/). A nice read making this case is [Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://doi.org/11.1111/2041-210X.14108), though I would carefully weigh the long term issues often created by building on proprietary infrastructure like github as opposed to using an open gitforge instead.
-- Interaction with data and other big non-text / binary files.
-	- There are a variety of different tools which can be used to manage versioning large binary objects in a git like fashion and which integrate with a git based workflow. If you use one and which you choose may depend on your specific needs. Examples: [git LFS](https://git-lfs.com/), [Data Version Control (DVC)](https://dvc.org/), [lakeFS](https://lakefs.io/)
+<ul>
+    <li>
+    Whilst you can simply use git and a gitforge / git hosting service as a way of distributing your project doing so misses out on a lot of benefits of using git as a part of your workflow from the beginning of your project.
+    A well maintained git history is much like a well kept lab notebook for a data analysis project, well author commit messages detail why you changed what you changed.
+    You can by 'checking out' a commit open a window onto any point in the history of your project of which you took a snapshot by making a commit.
+    You can collaborate on your project with other git users asynchronously, it can be a great tool for distributed collaborative authorship not just of software but also of prose.
+    A good example of this is [The Turing Way: a how to guide for reproducible data science](https://github.com/the-turing-way/the-turing-way/). 
+    A nice read making this case is [Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://doi.org/11.1111/2041-210X.14108), though I would carefully weigh the long term issues often created by building on proprietary infrastructure like github as opposed to using an open gitforge instead.
+    </li>
+    <li>
+    Interaction with data and other big non-text / binary files.
+    </li>
+<ul>
+    <li>
+    There are a variety of different tools which can be used to manage versioning large binary objects in a git like fashion and which integrate with a git based workflow. If you use one and which you choose may depend on your specific needs. Examples: [git LFS](https://git-lfs.com/), [Data Version Control (DVC)](https://dvc.org/), [lakeFS](https://lakefs.io/)
+    </li>
+    </ul>
+</ul>
 </details>
 
 ## Licencing
