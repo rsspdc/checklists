@@ -82,7 +82,7 @@ The content of a repo of this form is generally a mixture of code, images (often
 ## Making Citable
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
-	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
+	- [ ] A [CITATION.cff](https://citation-file-format.github.io/) and/or .zenodo.json file exists in the repo to provide citational metadata about your project
 <details>
 <ul>
     <li>
@@ -94,7 +94,7 @@ The content of a repo of this form is generally a mixture of code, images (often
     The format is readable in YAML and permits the provision of the metadata needed for citation.
     </li>
     <li>
-    Zenodo permits you to mint a digital object identifier (DOI) for your code and makes a snapshot of it, importing citational metadata from a .cff file or a .zenodo.json file.
+    [Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code and makes a snapshot of it, importing citational metadata from a [CITATION.cff](https://citation-file-format.github.io/) file or a .zenodo.json file.
     This makes it persistently identifiable and easy to integrate with citation management tools which can import the citation metadata given a DOI.
     </li>
 </ul>
