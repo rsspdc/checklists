@@ -125,8 +125,9 @@ The content of a repo of this form is generally a mixture of code, images (often
     This makes sense as reviewer time is fairly scarce so focusing it on code that others are more likely to reuse is reasonable.
     </li>
     <li>
-    [CODECHECK](https://codecheck.org.uk/) will independently verify that they can run your code, but its correctness is not in their scope.
     If your code underpins a publication then in theory it may get reviewed as a part of the regular peer review process although in practice this does not appear to be all that common.
+    If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then you may wish to take responibility for the review of this work into your own hands.
+    [CODECHECK](https://codecheck.org.uk/) will independently verify that they can run your code, but its correctness is not in their scope.
     </li>
 <ul>
 </details>
