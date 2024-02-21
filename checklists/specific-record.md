@@ -25,7 +25,14 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
     <li>
         <ul>
             <li>
-            There are a variety of different tools which can be used to manage versioning large binary objects in a git like fashion and which integrate with a git based workflow. If you use one and which you choose may depend on your specific needs. Examples: [git LFS](https://git-lfs.com/), [Data Version Control (DVC)](https://dvc.org/), [lakeFS](https://lakefs.io/)
+            There are a variety of different tools which can be used to manage versioning large binary objects in a git like fashion and which integrate with a git based workflow.
+            If you use one, and which you choose, may depend on your specific needs.
+            Examples: [git LFS](https://git-lfs.com/), [Data Version Control (DVC)](https://dvc.org/), [lakeFS](https://lakefs.io/)
+            This is generally most relevant for intermediate data objects which are of potential interest to downstream users of the processed data objects.
+            for example machine learning model weights from different training runs, annotated single cell sequence count matrices in things like seurat objects.
+            If you have deposited your raw data into a public repository it does not to be duplicated in such a system indefinietly but it might be useful wilst working on the project to have it 'cached' in one.
+            If possible start by importing the data & metadata into your own project from it's public repository as a test of FAIRness of the data.
+            This also means that anyone using your dataset as a clear example of how to import it into a working environment.
             </li>
         </ul>
     </li>
