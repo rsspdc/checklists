@@ -134,7 +134,7 @@ The content of a repo of this form is generally a mixture of code, images (often
 
 ## Distribution
 
-- [ ] Consider putting your project into a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html), [renku](https://renkulab.io/)
+- [ ] Consider putting your project into a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
  
 <details>
 <ul>
@@ -173,7 +173,12 @@ The content of a repo of this form is generally a mixture of code, images (often
 
 ## Environment Management / Portability
 
-- [ ]  
+- [ ] Computational environment description provided
+    - [ ]  	🥉bronze: List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
+    - [ ]  	🥈silver: Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
+    - [ ]  	🥇gold: Structured full environment description, automated ability to recreate the complete environment including system dependencies
+    - [ ]  	🏆platinum: Your description allows the automated bootstrap of the entire depencency tree of your environment from source
+
 <details>
 <ul>
     <li>
