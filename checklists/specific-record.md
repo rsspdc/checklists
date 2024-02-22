@@ -179,10 +179,10 @@ The content of a repo of this form is generally a mixture of code, images (often
 ## Environment Management / Portability
 
 - [ ] Computational environment description provided
-    - [ ]  	🥉bronze: List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
-    - [ ]  	🥈silver: Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
-    - [ ]  	🥇gold: Structured full environment description, automated ability to recreate the complete environment including system dependencies
-    - [ ]  	🏆platinum: Your description allows the automated bootstrap of the entire depencency tree of your environment from source
+    - [ ]  	🥉Bronze (Easy): List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
+    - [ ]  	🥈Silver (Intermediate): Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
+    - [ ]  	🥇Gold (Hard): Structured full environment description, automated ability to recreate the complete environment including system dependencies
+    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): Your description allows the automated bootstrap of the entire* depencency tree of your environment from source (currently very hard to achieve, basically only possible in Guix, likely to involve re-packaging software for Guix)
 
 <details>
 <ul>
