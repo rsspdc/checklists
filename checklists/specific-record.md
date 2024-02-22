@@ -139,8 +139,12 @@ The content of a repo of this form is generally a mixture of code, images (often
 
 ## Distribution
 
-- [ ] Consider putting your project into a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
- 
+- [ ]
+    - [ ]  	🥉Bronze (Easy): Code in a public repository, minimal README
+    - [ ]  	🥈Silver (Intermediate): Detailed instructions on how to re-run your 
+    - [ ]  	🥇Gold (Intermediate): Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
+    - [ ]  	🏆Platinum (Hard): Gold plus 
+
 <details>
 <ul>
     <li>
