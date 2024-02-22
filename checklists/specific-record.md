@@ -1,13 +1,18 @@
 # Record of a specific analysis
 
 Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is making on the work narrowly reproducible i.e. the analysis on the same data can produce the same result when it is re-run.
-This is a starting point for make results robust (different analysis, same data) and replicable (same analysis, different data) and ultimately generalisable (different analysis, different data).
+The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
+This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
 The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 ## Source control
 
-- [ ] Uses git
+- [ ] Uses git (or other source control tool)
+    - [ ]  	🥉Bronze (Easy): Shallow project history, just placed in git for distribution
+    - [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large message changes
+    - [ ]  	🥇Gold (Hard): Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): everything in gold plus some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/), clean history with fast-forwaards over messy merges, signed commits from all contributors, contributions go through a consistent workflow like issues then PR/MR from a branch or using emailed patchsets.
+
 <details>
 <ul>
     <li>
