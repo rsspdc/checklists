@@ -134,8 +134,12 @@ In some cases for small and simple projects a README file is sufficient document
 
 ## Peer review / Code Review
 
-- [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) for an indepent check that it runs
- 
+- [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) for an independent check that it runs
+    - [ ]  	🥉
+    - [ ]  	🥈
+    - [ ]  	🥇
+    - [ ]  	🏆 
+
 <details>
 <ul>
     <li>
