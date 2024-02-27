@@ -8,10 +8,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 ## Source control
 
 - [ ] Uses git (or other source control tool)
-    - [ ]  	🥉Bronze (Easy): Shallow project history, just placed in git for distribution
+    - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
     - [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large message changes
-    - [ ]  	🥇Gold (Hard): Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
-    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): everything in gold plus some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/), clean history with fast-forwaards over messy merges, signed commits from all contributors, contributions go through a consistent workflow like issues then PR/MR from a branch or using emailed patchsets.
+    - [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
 <ul>
