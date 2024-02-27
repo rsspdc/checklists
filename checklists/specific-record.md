@@ -116,6 +116,12 @@ In some cases for small and simple projects a README file is sufficient document
 
 - [ ] Includes a minimal test data set necessary to demonstrate the basic functionality of the tool.
 - [ ] Includes test datasets which cover a range of outcomes
+
+- [ ] Project has undergone suitable testing, and provides the reader with test data with which to re-run any automated tests.
+    - [ ]  	🥉
+    - [ ]  	🥈
+    - [ ]  	🥇
+    - [ ]  	🏆
 <details>
 <ul>
     <li>
