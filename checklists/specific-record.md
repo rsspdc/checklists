@@ -95,6 +95,11 @@ In some cases for small and simple projects a README file is sufficient document
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A [CITATION.cff](https://citation-file-format.github.io/) and/or .zenodo.json file exists in the repo to provide citational metadata about your project
+- [ ]
+    - [ ]  	🥉
+    - [ ]  	🥈
+    - [ ]  	🥇
+    - [ ]  	🏆
 <details>
 <ul>
     <li>
