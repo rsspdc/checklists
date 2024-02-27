@@ -61,9 +61,16 @@ The content of a repo of this form is generally a mixture of code, images (often
 
 ## Documentation
 
-- [ ] Project has README file
-- [ ] README provides a description of the project structure so that the user knows which directories to find things in
-- [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
+- [ ] Project has suitable documentation 
+    - [ ] 	🥉Project has README file 
+        - [ ] README provides a description of the project structure so that the user knows which directories to find things in
+        - [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
+    - [ ]  	🥈
+    - [ ]  	🥇
+    - [ ]  	🏆
+
+In some cases for small and simple projects a README file is sufficient documentation, if this is genuinely all that you need you qualify for a platinum rating.
+
 <details>
 <ul>
     <li>
