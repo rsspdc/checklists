@@ -156,11 +156,11 @@ In some cases for small and simple projects a README file is sufficient document
 
 ## Distribution
 
-- [ ]
-    - [ ]  	🥉Bronze (Easy): Code in a public repository, minimal README
-    - [ ]  	🥈Silver (Intermediate): Detailed instructions on how to re-run your 
+- [ ] Project is distributed in a suitable fashion
+    - [ ]  	🥉Bronze (Easy): Code in a public repository
+    - [ ]  	🥈Silver (Intermediate): Detailed instructions on how to re-run your analysis 
     - [ ]  	🥇Gold (Intermediate): Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
-    - [ ]  	🏆Platinum (Hard): Gold plus 
+    - [ ]  	🏆Platinum (Hard): Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
 
 <details>
 <ul>
