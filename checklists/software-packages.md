@@ -43,9 +43,16 @@ Considerations for publishing a software package which may be used in research o
 
 ## Documentation
 
-- [ ] Project has README file
-- [ ] README provides a description of the project structure so that the user knows which directories to find things in
-- [ ] README contains instructions with sufficient detail for someone to set up a development environment for the package
+- [ ] Project has suitable documentation 
+    - [ ] 	🥉Project has README file 
+        - [ ] README provides a description of the project structure so that the user knows which directories to find things in
+        - [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
+    - [ ]  	🥈
+    - [ ]  	🥇
+    - [ ]  	🏆
+
+In some cases for small and simple projects a README file is sufficient documentation, if this is genuinely all that you need you qualify for a platinum rating.
+
 <details>
 <ul>
     <li>README / Manual</li>
@@ -85,6 +92,12 @@ Considerations for publishing a software package which may be used in research o
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li>
@@ -104,7 +117,12 @@ Considerations for publishing a software package which may be used in research o
 
 ## Testing
 
-- [ ]   
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li>
@@ -120,7 +138,12 @@ Considerations for publishing a software package which may be used in research o
 
 ## Peer review
 
-- [ ]   
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li>
@@ -136,7 +159,12 @@ Considerations for publishing a software package which may be used in research o
 
 ## Distribution
 
-- [ ]   
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li>
@@ -153,6 +181,12 @@ Considerations for publishing a software package which may be used in research o
 </details>
 
 ## Environment Management / Portability
+
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
