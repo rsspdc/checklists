@@ -4,7 +4,11 @@ Considerations for publishing a software package which may be used in research o
 
 ## Source control
 
-- [ ] Uses git
+- [ ] Uses git (or other source control tool)
+    - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
+    - [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
+    - [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
 <ul>
