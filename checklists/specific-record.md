@@ -102,10 +102,10 @@ In some cases for small and simple projects a README file is sufficient document
 	- [ ] A [CITATION.cff](https://citation-file-format.github.io/) and/or .zenodo.json file exists in the repo to provide citational metadata about your project
 
 - [ ]
-    - [ ]  	🥉
-    - [ ]  	🥈
-    - [ ]  	🥇
-    - [ ]  	🏆
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
@@ -130,10 +130,10 @@ In some cases for small and simple projects a README file is sufficient document
 - [ ] Includes test datasets which cover a range of outcomes
 
 - [ ] Project has undergone suitable testing, and provides the reader with test data with which to re-run any automated tests.
-    - [ ]  	🥉
-    - [ ]  	🥈
-    - [ ]  	🥇
-    - [ ]  	🏆
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
@@ -148,10 +148,10 @@ In some cases for small and simple projects a README file is sufficient document
 ## Peer review / Code Review
 
 - [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) for an independent check that it runs
-    - [ ]  	🥉
-    - [ ]  	🥈
-    - [ ]  	🥇
-    - [ ]  	🏆 
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
