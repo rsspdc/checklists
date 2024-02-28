@@ -52,21 +52,24 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 
 ## Making Citable
 
-- [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
-	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
-
-- [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+- [ ] Pipeline is Citable
+    - [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+    - [ ]  	🥈Silver (easy): bronze plus both of the following:
+        - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
+        - [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/). 
+    - [ ]  	🥇Gold (intermediate): silver plus any two from:
+        - [ ] Versioned DOI with automation to update snapshots on zenodo or similar tool when a new version tag is created.
+        - [ ] All contributors are identified by their [ORCID](https://orcid.org/)
+	- [ ] All research institutions are identified by their [ROR](https://ror.org/) ID
+    - [ ]  	🏆Platinum (intermediate): (what's the next step for this one? maybe: hedge against link rot by duplicating to a storage system that uses content based addressing, is immutable, and decentralised.)
 
 <details>
-<ul>
-    <li>
-    The same principles apply here as
-    </li>
-</ul>
+Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
+This extends from the practical, making it easy import into reference mangers like [zotero](https://www.zotero.org/);
+To protecting against link-rot through the use of persistent digital object identifiers;
+To the use of linked / semantic data practices identify and connect contributors, the nature of their contributions, their institutional assoications and thing to which they contributed.
+
+Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2161049), their [evolution and adoption](https://doi.org/10.1002/leap.1496).
 </details>
 
 ## Testing
