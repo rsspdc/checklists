@@ -12,7 +12,12 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## Source control
 
-- [ ] Uses git  
+- [ ] Uses git (or other source control tool)
+    - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
+    - [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
+    - [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+
 <details>
 <ul>
     <li>
@@ -23,27 +28,34 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## Licencing
 
-- [ ] Project is suitably licensed, there is a LICENCE file in the repository
+- [ ] Project is suitably licensed
+    - [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+    - [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution. 
+    - [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
+    - [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
+
 <details>
-<ul>
-<li>
-If you want to apply a copyleft license to a piece of software that is to be accessed over a network and not necessarily run on end-users own computers then you would want to adopt a license such as the AGPL to ensure that your end users still have the right to run, study, modify and redistribute the code of the server-side part of the tool.
-</li>
-</ul>
+	<ul>
+		<li>
+		If you want to apply a copyleft license to a piece of software that is to be accessed over a network and not necessarily run on end-users own computers then you would want to adopt a license such as the AGPL to ensure that your end users still have the right to run, study, modify and redistribute the code of the server-side part of the tool.
+		</li>
+	</ul>
 </details>
 
 ## Documentation
 
 - [ ] Project has README file
 - [ ] README provides a description of the project structure so that the user knows which directories to find things in
+<details>
 <ul>
-<li>It is generally useful to split documentation in a project such as this by target audiences: users, developers, sysadmins.</li>
-<ul>
-	<li>User: Using the website graphically - this might include admin options if you have administrative user of some kind</li>
-	<li>Developers: API docs, how to contribute, and how to set up a development environment</li>
-	<li>Sysadmins: how to deploy an instance of the service, how to configure it, what you might want to do differently from the development environment, for example to have a more secure config and considerations that might affect backups, and managing updates/grades.</li>
+	<li>It is generally useful to split documentation in a project such as this by target audiences: users, developers, sysadmins.</li>
+	<ul>
+		<li>User: Using the website graphically - this might include admin options if you have administrative user of some kind</li>
+		<li>Developers: API docs, how to contribute, and how to set up a development environment</li>
+		<li>Sysadmins: how to deploy an instance of the service, how to configure it, what you might want to do differently from the development environment, for example to have a more secure config and considerations that might affect backups, and managing updates/grades.</li>
+	</ul>
 </ul>
-</ul>
+</details>
 
 ## Making Citable
 
@@ -51,24 +63,36 @@ If you want to apply a copyleft license to a piece of software that is to be acc
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
 <details>
 <ul>
-<li>
-Adopting a stable, consistent and human readable naming schema for the URLs on your web service, including the ability to reproduce state of dynamically generated pages with parameters in the URL, makes referring to specific items much easier for users citing the website according to the conventions for citing websites. It also helps for archival tools like the [internet archive's wayback machine](http://web.archive.org/) and [ArchiveBox](https://archivebox.io/) which can be used by researchers and others to take a snapshot of a website at the time at which they are citing it to avoid issues of updates to the website altering the content or linkrot.
-</li>
+	<li>
+	Adopting a stable, consistent and human readable naming schema for the URLs on your web service, including the ability to reproduce state of dynamically generated pages with parameters in the URL, makes referring to specific items much easier for users citing the website according to the conventions for citing websites. It also helps for archival tools like the [internet archive's wayback machine](http://web.archive.org/) and [ArchiveBox](https://archivebox.io/) which can be used by researchers and others to take a snapshot of a website at the time at which they are citing it to avoid issues of updates to the website altering the content or linkrot.
+	</li>
 </ul>
 </details>
 
 ## Testing
 
-- [ ]   
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
+<details>
 <ul>
-<li>CI/CD (continuous integration and continuous deployment)</li>
-<li>The CI part of CI/CD is mostly covered in the software package</li>
-<li>More integration tests which check that the different components of your system work together as expected and UI based testing frameworks which simulate user interaction in a web browser might be things that you would consider adding</li>
+	<li>CI/CD (continuous integration and continuous deployment)</li>
+	<li>The CI part of CI/CD is mostly covered in the software package</li>
+	<li>More integration tests which check that the different components of your system work together as expected and UI based testing frameworks which simulate user interaction in a web browser might be things that you would consider adding</li>
 </ul>
+</details>
 
 ## Peer review / Code Review
 
-- [ ]  
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li>
@@ -83,7 +107,12 @@ Adopting a stable, consistent and human readable naming schema for the URLs on y
 
 ## Distribution
 
-- [ ]  
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li> Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.</li>
@@ -103,6 +132,11 @@ Adopting a stable, consistent and human readable naming schema for the URLs on y
 ## Environment Management / Portability
 
 - [ ] Simple to install development, testing, and/or demo environment
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
     <li>
