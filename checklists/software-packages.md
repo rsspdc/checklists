@@ -92,25 +92,52 @@ In some cases for small and simple projects a README file is sufficient document
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
-- [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+
+- [ ] Package is Citable
+    - [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+    - [ ]  	🥈Silver (easy): bronze plus both of the following:
+        - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
+        - [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/). 
+    - [ ]  	🥇Gold (intermediate): silver plus any two from:
+        - [ ] Versioned DOI with automation to update snapshots on zenodo or similar tool when a new version tag is created.
+        - [ ] All contributors are identified by their [ORCID](https://orcid.org/)
+	- [ ] All research institutions are identified by their [ROR](https://ror.org/) ID
+    - [ ]  	🏆Platinum (intermediate): (what's the next step for this one? maybe: hedge against link rot by duplicating to a storage system that uses content based addressing, is immutable, and decentralised.)
 
 <details>
+It is important that code used in research can be properly cited by researchers so that they can communicate which version they used, where to find the code, and give appropriate credit to it's authors.
+ Even if you are not an academic it is important that academics be able to credit your work so that it can be appropriately valued in the scientific funding ecosystem.
+ If it is not framed as contributing to a research output it is harder to justify funding it and paying developer salaries - even if indirectly.
+ 
+ Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
+ This extends from the practical, making it easy import into reference mangers like [zotero](https://www.zotero.org/);
+ To protecting against link-rot through the use of persistent digital object identifiers;
+ To the use of linked / semantic data practices identify and connect contributors, the nature of their contributions, their institutional assoications and thing to which they contributed.
+
+Further information:   
 <ul>
-    <li>
-    It is important that code used in research can be properly cited by researchers so that they can communicate which version they used, where to find the code, and give appropriate credit to it's authors. Even if you are not an academic it is important that academics be able to credit your work so that it can be appropriately valued in the scientific funding ecosystem. If it is not framed as contributing to a research output it is harder to justify funding it and paying developer salaries - even if indirectly.
-    </li>
     <li>
     Including a [CITATION.cff](https://citation-file-format.github.io/) (Citation File Format) file in your project repo is a simple way of making your code citable. The format is readable in YAML and permits the provision of the metadata needed for citation.
     </li>
     <li>
-    Zenodo permits you to mint a digital object identifier (DOI) for your code and makes a snapshot of it, importing citational metadata from a .cff file or a .zenodo.json file. This makes it persistently identifiable and easy to integrate with citation management tools which can import the citation metadata given a DOI.
+    [Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code this is a persistent identifer which can be used to refer to it.
+    You can tie the minting versioned DOIs to your releases of your project.
+    Using a DOI permits the existing ecosystem of academic software, e.g.[zotero](https://www.zotero.org/), to use APIs to retrieve citational metadata about your project.
+    [Zenodo](https://zenodo.org/) also hosts a snapshort of your sourcecode so that if your main code repository ever went down it's still possible to retrieve it here.
+    Citational metadata can be import from a [.cff](https://citation-file-format.github.io/) file or a [.zenodo.json](https://developers.zenodo.org/) file in your repository.
+    This makes it pretty easy to manage updates as you can just edit these files and have a platform integration or step in your CI push them to zenodo next time you do a release.
     </li>
     <li>
-    General software repositories may not make specific provision for citation of software packages in the academic fashion. However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'. This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions. [Guix](https://guix.gnu.org/) for example, is the most comprehensive. It not only provides a complete 'SBOM' but, using it, can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) any software package in its repository from source with an extremely minimal fixed set of binaries.
+    Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2161049), their [evolution and adoption](https://doi.org/10.1002/leap.1496).
+    </li>
+    <li>
+    General software repositories may not make specific provision for citation of software packages in the academic fashion.
+    However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'. 
+    This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
+    For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive.
+    It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) any software package in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
+    This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
+    It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
     </li>
 </ul>
 </details>
