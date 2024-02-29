@@ -32,14 +32,14 @@ In presenting practices suitable to a range of scales we hope to let growing pro
 
 There are differences in how some of these are executed depending on the type of output but all share these general features.
 
--    	📒 Source control
--    	 © Licencing
--    	📖 Documentation
--    	🔗 Making Citable
--   	✅ Testing
--    	👥 Peer review / Code Review
--    	📦 Distribution
--    	💽 Environment Management / Portability
+- 📒 Source control
+-  © Licencing
+- 📖 Documentation
+- 🔗 Making Citable
+- ✅ Testing
+- 👥 Peer review / Code Review
+- 📦 Distribution
+- 💽 Environment Management / Portability
 
 ## Project Scoreing & Medal System 
 
