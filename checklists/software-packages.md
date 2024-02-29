@@ -145,20 +145,24 @@ Further information:
 ## Testing
 
 - [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+    - [ ]  	🥉Bronze (easy): You are using unit tests and an automated testing framework
+    - [ ]  	🥈Silver (easy): ?test coverage
+    - [ ]  	🥇Gold (intermediate):  
+    - [ ]  	🏆Platinum (intermediate): You follow the 'Test Driven Development' (TDD) model.
 
 <details>
 <ul>
     <li>
     The use of automated testing frameworks is especially useful for software that is under ongoing development as it allows developers to catch the unintended consequences of a change made in one place on some other part of the code that they did not anticipate.
+    Examples of automated testing frameworks include {[testthat](https://testthat.r-lib.org/)} for R & [unittest](https://realpython.com/python-testing/) for python.
     </li>
     <li>
-    Unit tests allow you to spell out in detail what you expect the behaviour of your software to be under a particular circumstance and test if it conforms to these expectations. Automatically running tests like this can be added to CI/CD pipelines on git forges
+    Unit tests allow you to spell out in detail what you expect the behaviour of your software to be under a particular circumstance and test if it conforms to these expectations.
+    Automatically running tests like this can be added to CI/CD pipelines on git forges.
     </li>
-    <li>TDD</li>
+    <li>Test Driven Development (TDD) is the practice of writing your tests first and then developing then writing the code which conforms to these tests.
+    It works well if you have an extremenly well defined idea of what exactly you want your code to do and not do.
+    </li>
     <li>examples</li>
 </ul>
 </details>
