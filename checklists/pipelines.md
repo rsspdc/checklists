@@ -74,20 +74,34 @@ Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2
 
 ## Testing
 
-- [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+- [ ] Pipeline has been tested
+    - [ ]  	🥉Bronze (easy): The pipeline runs and produces the expected result on a minimal example dataset
+    - [ ]  	🥈Silver (easy): Bronze plus:
+        - [ ] A wide variety of possible input parameter combinations are tested
+        - [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another.
+        This provides a sense check that the pipeline is doing what you think its doing, an input perturbation produces predictable change in the output.
+    - [ ]  	🥇Gold (intermediate): Silver Plus:
+        - [ ] Tests of error handling, pipline fails early and gracefully when given invalid inputs as parameters.
+        - [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check.
+        - [ ] Test are run automatically in continious integration tools as changes are made to the code repository. 
+    - [ ]  	🏆Platinum (hard): automation?
 
 <details>
-<ul>
-    <li>having test datasets which cover all of the different paths</li>
-    <li>Real world data potentially along with synthetic data generated to test edge cases</li>
-    <li>testing different combinations of options</li>
-    <li>testing portability</li>
-    <li>testing</li>
-</ul>
+The type of testing that is make most sense to emphasise in analysis pipelines is integration testing, do all the parts work together as expected.
+Some aspects might lend themselves to unit testing but much of this would reside in the individual tools that a pipeline wraps.
+
+The phrase 'expected result' is a bit nebulous, its robustness in testing hinges on how specific your expectations are.
+
+A area to focus on testing might be your quality control (QC) steps.
+Checking using data that is an example of a common source data quality issues and verifying that this triggers the appropriate QC warnings, for example.
+Making sure that good quality data does not trigger quality warnings.
+In addition to poor quality data test: corrupt, truncated, or incorrectly formed data/configuration files.
+Edge cases like many extreme values.
+
+Test data should follow the general principle: **as small as possible as large as necessary**
+Real world data can potentially be down sampled, along with synthetic data generated to test edge cases.
+
+Testing portability, does it run in different environments? nf-core nextflow pipelines for instance should be able to run with docker, apptainer (singularity), or conda based environments - do all of these work and produce the same output?
 </details>
 
 ## Peer review / Code Review
