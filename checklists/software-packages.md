@@ -95,14 +95,14 @@ In some cases for small and simple projects a README file is sufficient document
 
 - [ ] Package is Citable
     - [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+        - [ ] your project has a DOI or other persistent identifier with which it can be referenced and which points to an archived copy of your source. [Zenodo](https://zenodo.org/) can take a snapshot and mint a DOI, [Software Heritage](https://www.softwareheritage.org/) provides a SWHID.
     - [ ]  	🥈Silver (easy): bronze plus both of the following:
-        - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
         - [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/). 
     - [ ]  	🥇Gold (intermediate): silver plus any two from:
         - [ ] Versioned DOI with automation to update snapshots on zenodo or similar tool when a new version tag is created.
-        - [ ] All contributors are identified by their [ORCID](https://orcid.org/)
+        - [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier.
 	- [ ] All research institutions are identified by their [ROR](https://ror.org/) ID
-    - [ ]  	🏆Platinum (intermediate): (what's the next step for this one? maybe: hedge against link rot by duplicating to a storage system that uses content based addressing, is immutable, and decentralised.)
+    - [ ]  	🏆Platinum (hard): Package your software for Nix or Guix - this might not seem like it contributes to making the software more citable see details below for why this is the case.
 
 <details>
 It is important that code used in research can be properly cited by researchers so that they can communicate which version they used, where to find the code, and give appropriate credit to it's authors.
@@ -128,16 +128,40 @@ Further information:
     This makes it pretty easy to manage updates as you can just edit these files and have a platform integration or step in your CI push them to zenodo next time you do a release.
     </li>
     <li>
-    Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2161049), their [evolution and adoption](https://doi.org/10.1002/leap.1496).
+    [Software Heritage](https://www.softwareheritage.org) is an expansive archive of open source software operated by a non-profit organisation in collaboration with UNESCO [how to reference and archive code in software heritage](https://www.softwareheritage.org/howto-archive-and-reference-your-code/).
+    SWHIDs have the advantage that they are content based identifiers meaning that you can check if the content you get back when you retrieve it is what you expected to get based on its identifier. 
+    The Software heritage API permits you to automate the archiving of your project repository via a webhook from popular git forges like github, gitlab and others.
     </li>
     <li>
-    General software repositories may not make specific provision for citation of software packages in the academic fashion.
-    However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'. 
-    This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
-    For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive.
-    It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) any software package in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
-    This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
-    It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
+    Further reading on the [ethics of CROTs (contributor roles ontology or taxonomy)](https://doi.org/10.1080/08989621.2022.2161049), and their [evolution and adoption](https://doi.org/10.1002/leap.1496).
+    This is potentially useful in selecting a CROT suitable for you project
+    </li>
+    <li>
+    Nix and GUIX
+    <ul>
+        <li>
+        General software repositories may not make specific provision for citation of software packages in the academic fashion.
+        However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'. 
+        This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
+        For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive in its approach.
+        It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) any software package in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating somewhat trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
+        This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
+        It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
+        The Nix-like approach to package management does not suffer from the dependency resolution issues commonly encountered in other approaches to package management becasue the dependency graph is explicit and complete.
+        Packages or 'derivations' are 'pure functions' in the sense that only their inputs effect their outputs and they have no side-effects, package builds are sandboxed to prevent dependencies on any external source not explicitly provided as an input and inputs are hashed to ensure that they cannot differ for the value expected when they were packaged.
+        </li>
+        <li>
+        Content based addressing, distributed caching and archival fallback: git, Nix, Guix, IPFS (Interplanetary file System) and software heritage's IDs all make use of forms of content based addressing.
+        Content based addressing is where the identifier is derived from the object being referenced.
+        Commonly a hash function is used to generate the identifier, a hash function deterministically produces a fixed length output that is very probably unique for any given input.
+        Work is underway to reconcile and/or translate between the different content based addressing systems used by these technologies so that the same objects can referenced in any of them. 
+        This may eventually permit the tooling & infrastructure of Nix & Guix to use IPFS for source and binary caching and to integrate with software heritage's archive to retrieve anything not cached in other IPFS nodes using the same mechanisms.
+        This integration, once implemented, means that it should be possible with the standard tooling in Nix & Guix to retrieve and rebuild old software the repositories of which have disapeared and which is no longer cached in any IPFS based binary build caches of these distributions, as long as it has been archived by software heritage.
+        This would occur in a fully automated fashion that falls back on the archive to retrieve the source and present to the user as simply taking slightly longer to install than something in the hot caches.
+        The one of the last missing pieces here is addressing kernel level compatability issues and adding an ability to automatically run code incompatible with the current host kernel on a VM with a suitable kernel version and potentially suitable emulated harware for that kernel version.
+        See: [NLnet Software heritage and IPFS](https://nlnet.nl/project/SoftwareHeritage-P2P/), [Tweag - software heritage and Nixpkgs](https://www.tweag.io/blog/2020-06-18-software-heritage/), [John Ericson - Nix x IPFS Gets a New Friend: SWH (SoN2022 - public lecture series)](https://www.youtube.com/watch?v=DjJyPzwEzmU)
+        </li>
+    </ul>
     </li>
 </ul>
 </details>
