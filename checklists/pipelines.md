@@ -2,7 +2,7 @@
 
 Considerations for publishing a data analysis pipeline which may be used in research or as a researcher
 
-## Source control
+## 📒Source control
 
 - [ ] Uses git (or other source control tool)
     - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
@@ -18,7 +18,7 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 </ul>
 </details>
 
-## Licencing
+## ©Licencing
 
 - [ ] Project is suitably licensed
     - [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
@@ -34,7 +34,7 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 </ul>
 </details>
 
-## Documentation
+## 📖Documentation
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -50,7 +50,7 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 </ul>
 </details>
 
-## Making Citable
+## 🔗Making Citable
 
 - [ ] Pipeline is Citable
     - [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
@@ -72,7 +72,7 @@ To the use of linked / semantic data practices identify and connect contributors
 Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2161049), their [evolution and adoption](https://doi.org/10.1002/leap.1496).
 </details>
 
-## Testing
+## ✅Testing
 
 - [ ] Pipeline has been tested
     - [ ]  	🥉Bronze (easy): The pipeline runs and produces the expected result on a minimal example dataset
@@ -104,7 +104,7 @@ Real world data can potentially be down sampled, along with synthetic data gener
 Testing portability, does it run in different environments? nf-core nextflow pipelines for instance should be able to run with docker, apptainer (singularity), or conda based environments - do all of these work and produce the same output?
 </details>
 
-## Peer review / Code Review
+## 👥Peer review / Code Review
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -129,7 +129,7 @@ Technical
 </ul>
 </details>
 
-## Distribution
+## 📦Distribution
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -159,7 +159,7 @@ Good places to distribute workflows include:
 </ul>
 </details>
 
-## Environment Management / Portability
+## 💽Environment Management / Portability
 
 - [ ]
     - [ ]  	🥉Bronze (easy):

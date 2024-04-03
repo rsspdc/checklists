@@ -5,7 +5,7 @@ The emphasis here is on making the work narrowly reproducible i.e. the analysis 
 This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
 The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
-## Source control
+## 📒Source control
 
 - [ ] Uses git (or other source control tool)
     - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
@@ -44,7 +44,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 </ul>
 </details>
 
-## Licencing
+## ©Licencing
 
 - [ ] Project is suitably licensed
     - [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
@@ -64,7 +64,7 @@ The content of a repo of this form is generally a mixture of code, images (often
 </ul>
 </details>
 
-## Documentation
+## 📖Documentation
 
 - [ ] Project has suitable documentation 
     - [ ] 	🥉Project has README file 
@@ -96,7 +96,7 @@ In some cases for small and simple projects a README file is sufficient document
 </ul>
 </details>
 
-## Making Citable
+## 🔗Making Citable
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A [CITATION.cff](https://citation-file-format.github.io/) and/or .zenodo.json file exists in the repo to provide citational metadata about your project
@@ -124,7 +124,7 @@ In some cases for small and simple projects a README file is sufficient document
 </ul>
 </details>
 
-## Testing
+## ✅Testing
 
 - [ ] Includes a minimal test data set necessary to demonstrate the basic functionality of the tool.
 - [ ] Includes test datasets which cover a range of outcomes
@@ -145,7 +145,7 @@ In some cases for small and simple projects a README file is sufficient document
 </ul>
 </details>
 
-## Peer review / Code Review
+## 👥Peer review / Code Review
 
 - [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) for an independent check that it runs
     - [ ]  	🥉Bronze (easy):
@@ -167,7 +167,7 @@ In some cases for small and simple projects a README file is sufficient document
 <ul>
 </details>
 
-## Distribution
+## 📦Distribution
 
 - [ ] Project is distributed in a suitable fashion
     - [ ]  	🥉Bronze (Easy): Code in a public repository
@@ -210,7 +210,7 @@ In some cases for small and simple projects a README file is sufficient document
 </ul>
 </details>
 
-## Environment Management / Portability
+## 💽Environment Management / Portability
 
 - [ ] Computational environment description provided
     - [ ]  	🥉Bronze (Easy): List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format

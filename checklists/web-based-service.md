@@ -10,7 +10,7 @@ Depending on the nature of the project it may not make sense for others to be de
 
 Most of the suggestions here would be the same as this section in the software packages checklist, and indeed software of this type is generally one or more packages so that checklist also applies here, this focuses on the things that are in addition to the software package checklist.
 
-## Source control
+## 📒Source control
 
 - [ ] Uses git (or other source control tool)
     - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
@@ -26,7 +26,7 @@ Most of the suggestions here would be the same as this section in the software p
 </ul>
 </details>
 
-## Licencing
+## ©Licencing
 
 - [ ] Project is suitably licensed
     - [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
@@ -42,7 +42,7 @@ Most of the suggestions here would be the same as this section in the software p
 	</ul>
 </details>
 
-## Documentation
+## 📖Documentation
 
 - [ ] Project has README file
 - [ ] README provides a description of the project structure so that the user knows which directories to find things in
@@ -57,7 +57,7 @@ Most of the suggestions here would be the same as this section in the software p
 </ul>
 </details>
 
-## Making Citable
+## 🔗Making Citable
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
@@ -69,7 +69,7 @@ Most of the suggestions here would be the same as this section in the software p
 </ul>
 </details>
 
-## Testing
+## ✅Testing
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -85,7 +85,7 @@ Most of the suggestions here would be the same as this section in the software p
 </ul>
 </details>
 
-## Peer review / Code Review
+## 👥Peer review / Code Review
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -105,7 +105,7 @@ Most of the suggestions here would be the same as this section in the software p
 </ul>
 </details>
 
-## Distribution
+## 📦Distribution
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -129,7 +129,7 @@ Most of the suggestions here would be the same as this section in the software p
 </ul>
 </details>
 
-## Environment Management / Portability
+## 💽Environment Management / Portability
 
 - [ ] Simple to install development, testing, and/or demo environment
     - [ ]  	🥉Bronze (easy):

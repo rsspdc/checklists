@@ -2,7 +2,7 @@
 
 Considerations for publishing a software package which may be used in research or as a researcher
 
-## Source control
+## 📒Source control
 
 - [ ] Uses git (or other source control tool)
     - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
@@ -19,7 +19,7 @@ Considerations for publishing a software package which may be used in research o
 </ul>
 </details>
 
-## Licencing
+## ©Licencing
 
 - [ ] Project is suitably licensed
     - [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
@@ -41,7 +41,7 @@ Considerations for publishing a software package which may be used in research o
 </ul>
 </details>
 
-## Documentation
+## 📖Documentation
 
 - [ ] Project has suitable documentation 
     - [ ] 	🥉Project has README file 
@@ -88,7 +88,7 @@ In some cases for small and simple projects a README file is sufficient document
 </ul>
 </details>
 
-## Making Citable
+## 🔗Making Citable
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
@@ -131,6 +131,7 @@ Further information:
     [Software Heritage](https://www.softwareheritage.org) is an expansive archive of open source software operated by a non-profit organisation in collaboration with UNESCO [how to reference and archive code in software heritage](https://www.softwareheritage.org/howto-archive-and-reference-your-code/).
     SWHIDs have the advantage that they are content based identifiers meaning that you can check if the content you get back when you retrieve it is what you expected to get based on its identifier. 
     The Software heritage API permits you to automate the archiving of your project repository via a webhook from popular git forges like github, gitlab and others.
+    Unlike Zenodo which only preserves a snapshot of your repository at the time of deposition and at subsequent manual time points and/or tagged releases Software Heritage archives the whole repository.
     </li>
     <li>
     Further reading on the [ethics of CROTs (contributor roles ontology or taxonomy)](https://doi.org/10.1080/08989621.2022.2161049), and their [evolution and adoption](https://doi.org/10.1002/leap.1496).
@@ -166,7 +167,7 @@ Further information:
 </ul>
 </details>
 
-## Testing
+## ✅Testing
 
 - [ ]
     - [ ]  	🥉Bronze (easy): You are using unit tests and an automated testing framework
@@ -191,7 +192,7 @@ Further information:
 </ul>
 </details>
 
-## Peer review
+## 👥Peer review
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -212,7 +213,7 @@ Further information:
 </ul>
 </details>
 
-## Distribution
+## 📦Distribution
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
@@ -235,7 +236,7 @@ Further information:
 </ul>
 </details>
 
-## Environment Management / Portability
+## 💽Environment Management / Portability
 
 - [ ]
     - [ ]  	🥉Bronze (easy):
