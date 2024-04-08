@@ -55,6 +55,25 @@ In some cases for small and simple projects a README file is sufficient document
 
 <details>
 <ul>
+    <li>Types of Documentation</li>
+    <ul>
+        <li>Project</li>
+        <ul>
+            <li>Plans, design documents and specifications</li>
+        </ul>
+        <li>User</li>
+            <li>admin</li>
+        <li>process</li>
+        <ul>
+            <li>how to proceeded with various tasks related to the project this might include: submitting issues, submitting PRs, reporting possible vulnerabilities. testing, documentation, release, code review review</li>
+        </ul>
+        <li>technical</li>
+        <ul>
+            <li></li>
+        </ul>
+        <li>tehcnical</li>
+        <li>system</li>
+    </ul>
     <li>README / Manual</li>
     <li>Some things that it is a good idea to include in a README/manual</li>
     <ul>
