@@ -250,3 +250,42 @@ In some cases for small and simple projects a README file is sufficient document
 </ul>
 </details>
 
+## 🌱 Energy Efficiency
+
+- [ ]
+    - [ ]  	🥉Bronze (easy):
+    - [ ]  	🥈Silver (easy):
+    - [ ]  	🥇Gold (intermediate):
+    - [ ]  	🏆Platinum (intermediate):
+
+<details>
+
+One off analysis code is not particularly high impact to make more efficient as it is only run a small number of times.
+However, it is work giving some consideration to the efficiency of the tools that your one off analysis might make use of or depend on.
+For the most part analysis might represent a first step implementing a new method for the first time where it's correctness and comprehensibility is more important than the efficiency with which it is implemented, optimisation comes later.
+
+Good documentation and good error handing can reduce the number of times people make mistakes using your code that means they re-run or partially re-run their analysis multiple times before they figure out how to use it right.
+
+Consider what can you do to make your code a little more efficient.
+
+<ul>
+    <li>
+    Don't generate unnecessary outputs that will sit on people's drives unused, clean results of intermediate steps
+    </li>
+    <li>
+    for pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
+    </li>
+    <li>
+    Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
+    </li>
+    <li>
+    benchmarking & Profiling to locate and improve inefficient code
+    </li>
+    <li>
+    Language Choice
+    </li>
+    <li>
+    Offload to harware accelerators
+    </li>
+</ul>
+</details>

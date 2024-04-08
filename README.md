@@ -1,4 +1,4 @@
-# Research Software Sharing, Publication, & Distribution Checklists
+a# Research Software Sharing, Publication, & Distribution Checklists
 
 **WARNING: work in progress!**
 
@@ -40,6 +40,7 @@ There are differences in how some of these are executed depending on the type of
 - 👥 Peer review / Code Review
 - 📦 Distribution
 - 💽 Environment Management / Portability
+- 🌱 Energy Efficiency
 
 ## Project Scoreing & Medal System 
 
