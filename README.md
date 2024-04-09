@@ -41,6 +41,7 @@ There are differences in how some of these are executed depending on the type of
 - 📦 Distribution
 - 💽 Environment Management / Portability
 - 🌱 Energy Efficiency
+- ⚖ Governance & Conduct
 
 ## Project Scoreing & Medal System 
 

@@ -217,3 +217,64 @@ Good documentation and good error handing can reduce the number of times people 
     </li>
 </ul>
 </details>
+## ⚖ Governance & Conduct
+
+- [ ] The project has a suitable governance model
+	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
+
+Be excellent to each other.
+
+<details>
+<ul>
+	<li>
+	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality it's just helpful to be clear about this.
+	</li>
+	<li>
+	Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
+	Adopting such a CoC gives you some guidance to follow if there is bad behaviour in your project's community and communicates that you as the project leadership take the responsibility of creating a respectful environment for collaboration seriously.
+	You will need to provide contact information for the person(s) responsible for the enforcement of the CoC in the appropriate place.
+	git forges often recognise files with the name `CODE_OF_CONDUCT.md` in the root of project and provide a link to them on project home pages, so this is a good place to document such policies.
+	If you are the BDFL of a small project then interpretation and enforcement of such a CoC falls solely on you.
+	</li>
+	<li>
+	Once a project attracts a larger community there is greater scope for disputes and therefore for the need for dispute resolution mechanisms.
+	Free/Libre and Open Source Software development and maintenance can be thought of as a commons so I would refer you to the [work of Elinor Ostrom](https://archive.org/details/ElinorOstromGoverningTheCommons) on how commons have been successfully (or unsuccessfully) governed when thinking about what processes to adopt for your project.
+	</li>
+	<ul>
+	<li>This is summarised in the [8 Principles for Managing a Commons](https://www.onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons/index.html)</li>
+	<ol>
+		<li>Define clear group boundaries.</li>
+		<li>Match rules governing use of common goods to local needs and conditions.</li>
+		<li>Ensure that those affected by the rules can participate in modifying the rules.</li>
+		<li>Make sure the rule-making rights of community members are respected by outside authorities.</li>
+		<li>Develop a system, carried out by community members, for monitoring members’ behavior.</li>
+		<li>Use graduated sanctions for rule violators.</li>
+		<li>Provide accessible, low-cost means for dispute resolution.</li>
+		<li>Build responsibility for governing the common resource in nested tiers from the lowest level up to the entire interconnected system.</li>
+	</ol>
+	</ul>
+	<li>
+	Continuity planning: What happens to your project if something happens to you?
+	The code will likely live on due the distributed nature of git but what about the issue tracker, the website etc.
+	Who else has the highest level of privilege on your project or a mechanism to attain it?
+	The principle of least privilege dictates that you keep the number of people with this level of access to a minimum but you may then create a single point of failure.
+	Password managers like [bitwarden](https://bitwarden.com/) have a feature where designated people can be given access to your vault if they request it and you do not deny it within a certain timeframe.
+	This could provide a lower level admin with a mechanism to escalate their privileges if you are unable to do this for them.
+	However, this delay might be an issue for continuity of operations if administrator action is needed within the waiting period.
+	Game it out, have a plan, write it down, let people know you have a plan.
+	</li>
+	<li>
+	Does your project take donations? Does it have a trademark? Does it need a legal entity to hold these? Who is on the paperwork and who has signing authority? Who keeps track of expenditure?
+	Tools & Organisations like [OpenCollective](https://opencollective.com/) can help with some of these issues.
+	</li>
+	<li>
+	If your project has potential cybersecurity implications what procedures do you have in place for people to disclose vulnerabilities in the project so that they can be patched before they are made public.
+	What systems do you have in place to disclose a vulnerability once it has been patched and ensure that users know that they need to update.
+	</li>
+	<li>project longevity, by-laws</li>
+</ul>
+
+</details>

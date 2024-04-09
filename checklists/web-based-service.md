@@ -186,3 +186,14 @@ Good documentation and good error handing can reduce the number of times people 
     </li>
 </ul>
 </details>
+
+## ⚖ Governance & Conduct
+
+- [ ]
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
+
+<details>
+</details>

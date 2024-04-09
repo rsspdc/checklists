@@ -289,3 +289,15 @@ Consider what can you do to make your code a little more efficient.
     </li>
 </ul>
 </details>
+
+
+## ⚖ Governance & Conduct
+
+- [ ]
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
+
+<details>
+</details>
