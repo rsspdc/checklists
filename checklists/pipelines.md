@@ -194,27 +194,34 @@ Consider what can you do to make your code a little more efficient.
 Good documentation and good error handing can reduce the number of times people make mistakes using your code that means they re-run or partially re-run their analysis multiple times before they figure out how to use it right.
 
 <ul>
-    <li>
-    Don't generate unnecessary outputs that will sit on people's drives unused, clean results of intermediate steps
-    </li>
-    <li>
-    for pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
-    </li>
-    <li>
-    measurement - make use of tools to estimate the energy &/or carbon costs of your analyses and report them to the end user
-    </li>
-    <li>
-    Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
-    </li>
-    <li>
-    benchmarking & Profiling to locate and improve inefficient code
-    </li>
-    <li>
-    Language Choice
-    </li>
-    <li>
-    Offload to harware accelerators
-    </li>
+	<li>
+	If you are using a Nextflow pipeline then there is a very easy way to estimate the energy utilisation and carbon footprint of your pipelines with [`nf-co2footprint`](https://nextflow-io.github.io/nf-co2footprint/).
+	This is a generalisation of a tool originally developed to estimate emissions for jobs submitted to HPC clusters running the SLURM scheduler: [GA4HPC](https://www.green-algorithms.org/GA4HPC/), see: [Green Algorithms: Quantifying the Carbon Footprint of Computation](https://doi.org/10.1002/advs.202100707).
+	</li>
+	<li>
+	Don't generate unnecessary outputs that will sit on people's drives unused, clean results of intermediate steps
+	</li>
+	<li>
+	for pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
+	</li>
+	<li>
+	measurement - make use of tools to estimate the energy &/or carbon costs of your analyses and report them to the end user
+	</li>
+	<li>
+	Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
+	</li>
+	<li>
+	benchmarking & Profiling to locate and improve inefficient code
+	</li>
+	<li>
+	Language Choice
+	</li>
+	<li>
+	Offload to hardware accelerators
+	</li>
+	<li>
+	Consider timing and location of computationally intensive runs, you could automate running at optimal times and in optimal places to make use of surplus renewable energy. In the UK you could query the [national grid carbon intensity API](https://www.carbonintensity.org.uk/) to pick opportune times and/or places.
+	</li>
 </ul>
 </details>
 ## ⚖ Governance & Conduct
