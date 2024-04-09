@@ -1,4 +1,4 @@
-a# Research Software Sharing, Publication, & Distribution Checklists
+# Research Software Sharing, Publication, & Distribution Checklists
 
 **WARNING: work in progress!**
 
@@ -47,12 +47,12 @@ There are differences in how some of these are executed depending on the type of
 
 To check the box for each of these items should be attainable for any project.
 To facilitate this you can check the box at different tiers, Bronze, Silver, Gold and Platinum.
-Whislt Bronze aims to be highly atainable Platinium is highly aspirational and essentially no project should expect to have Platinum across the board.
-To acheive an overall bronze rating you must acheive at least bronze in all categories.
+Whilst Bronze aims to be highly attainable Platinum is highly aspirational and essentially no project should expect to have Platinum across the board, indeed if you do your probably overdoing it.
+To achieve an overall bronze rating you must achieve at least bronze in all categories.
 Points are assigned to the rankings, 1 point for a Bronze and 4 for a Platinum in each category.
 Overall project tier is determined by the mean of the score across categories rounded to the nearest integer.
 Thus a total of 18 points and mean score of 2.25 is a silver tier overall if and only if all ratings are at least 1.
-A high score is possible that does not 'medal' because of important deficiencies some of the key characteristics of research software.
+A high score is possible that does not 'medal' because of important deficiencies some of the key characteristics of the research software.
 
 (there are plans for repo badges with scores and medals)
 
@@ -61,6 +61,6 @@ A high score is possible that does not 'medal' because of important deficiencies
 Comments, critiques, and edits are welcome at any time, feel free to open an issue.
 These lists are still in an early phase of development (pre-alpha) I'll be soliciting input from select individuals and groups once they are in a good enough state to benefit the most from feedback.
 
-I, Richard, am a bioinformatician by background not a research software engineer so some of this is outside my lane and needs input from working profressionals to refine its applicability to relevant domains of work.
+I, Richard, am a bioinformatician by background not a research software engineer so some of this is outside my lane and needs input from working professionals to refine its applicability to relevant domains of work.
 
  <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/HDBI/data-management/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p> 

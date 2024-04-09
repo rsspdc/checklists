@@ -13,26 +13,26 @@ Most of the suggestions here would be the same as this section in the software p
 ## 📒Source control
 
 - [ ] Uses git (or other source control tool)
-    - [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
-    - [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
-    - [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
-    - [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
+	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
 <ul>
-    <li>
-    For large projects it might be useful to adopt some conventions for your git commit messages such as [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to improve the searchability and scannability of your commit history to other contributors to your code base.
-    <li>
+	<li>
+	For large projects it might be useful to adopt some conventions for your git commit messages such as [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to improve the searchability and scannability of your commit history to other contributors to your code base.
+	<li>
 </ul>
 </details>
 
 ## ©Licencing
 
 - [ ] Project is suitably licensed
-    - [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-    - [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution. 
-    - [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
-    - [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
+	- [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
+	- [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
 
 <details>
 	<ul>
@@ -83,10 +83,10 @@ Most of the suggestions here would be the same as this section in the software p
 ## ✅Testing
 
 - [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
@@ -99,72 +99,72 @@ Most of the suggestions here would be the same as this section in the software p
 ## 👥Peer review / Code Review
 
 - [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
-    <li>
-    If you are building a database of some kind then you might want the processes by which you process, collect or curate the data which go into this database to be subject to an academic style review, and papers about the creation of such resources are not uncommon.
-    </li>
-    <li>
-    Seeking an external technical review may be trickier for your core code but review of how easy your system is to deploy is perhaps more accessible from the community of amateur self-hosters.
-    Who may be quite willing to try deploying your tool in many and varied homelabs if it offers them something and/or you ask nicely and in the right places.
-    </li>
+	<li>
+	If you are building a database of some kind then you might want the processes by which you process, collect or curate the data which go into this database to be subject to an academic style review, and papers about the creation of such resources are not uncommon.
+	</li>
+	<li>
+	Seeking an external technical review may be trickier for your core code but review of how easy your system is to deploy is perhaps more accessible from the community of amateur self-hosters.
+	Who may be quite willing to try deploying your tool in many and varied homelabs if it offers them something and/or you ask nicely and in the right places.
+	</li>
 </ul>
 </details>
 
 ## 📦Distribution
 
 - [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
-    <li> Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.</li>
-    <ul>
-    	<li>
-        Operating your website, things like making sure that your SSL certificates stay up to date and you have enough comput resources for the service to run well for users.
-        All the usual work of hosting a webservice.
-        </li>
-	    <li>
-        Distributing your server software to sysadmins, devops people, and potentially general IT staff, developers, and amateur self-hosters.
-        </li>
-    </ul>
-    <li>APIs?</li>
+	<li> Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.</li>
+	<ul>
+		<li>
+		Operating your website, things like making sure that your SSL certificates stay up to date and you have enough comput resources for the service to run well for users.
+		All the usual work of hosting a webservice.
+		</li>
+		<li>
+		Distributing your server software to sysadmins, devops people, and potentially general IT staff, developers, and amateur self-hosters.
+		</li>
+	</ul>
+	<li>APIs?</li>
 </ul>
 </details>
 
 ## 💽Environment Management / Portability
 
 - [ ] Simple to install development, testing, and/or demo environment
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
 
 <details>
 <ul>
-    <li>
-    Depending on the infrastructure that you chose to deploy on you might use a different management tool, but it is best if you do use such a tool as a part of your development and deployment as, if done right, this provides an easy 'run a couple of commands' development environment setup for anyone picking up the project.
-    Be that a future maintainer, someone wanting to play with a local test deployment, or someone wanting to contribute to the project.
-    Examples of such tools include: [ansible](https://www.ansible.com/), [terraform](https://www.terraform.io/), [docker](https://www.docker.com/)/[docker compose](https://docs.docker.com/compose/), [nix](https://nixos.org/), [helm charts](https://helm.sh/) or a combination of some of these that fits your needs and experience.
-    </li>
+	<li>
+	Depending on the infrastructure that you chose to deploy on you might use a different management tool, but it is best if you do use such a tool as a part of your development and deployment as, if done right, this provides an easy 'run a couple of commands' development environment setup for anyone picking up the project.
+	Be that a future maintainer, someone wanting to play with a local test deployment, or someone wanting to contribute to the project.
+	Examples of such tools include: [ansible](https://www.ansible.com/), [terraform](https://www.terraform.io/), [docker](https://www.docker.com/)/[docker compose](https://docs.docker.com/compose/), [nix](https://nixos.org/), [helm charts](https://helm.sh/) or a combination of some of these that fits your needs and experience.
+	</li>
 </ul>
 </details>
 
 ## 🌱 Energy Efficiency
 
 - [ ]
-    - [ ]  	🥉Bronze (easy):
-    - [ ]  	🥈Silver (easy):
-    - [ ]  	🥇Gold (intermediate):
-    - [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze (easy):
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
 
 <details>
 
@@ -177,24 +177,24 @@ Consider what can you do to make your code a little more efficient.
 Good documentation and good error handing can reduce the number of times people make mistakes using your code that means they re-run or partially re-run their analysis multiple times before they figure out how to use it right.
 
 <ul>
-    <li>
-    Don't generate unnecessary outputs that will sit on people's drives unused, clean results of intermediate steps
-    </li>
-    <li>
-    for pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
-    </li>
-    <li>
-    Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
-    </li>
-    <li>
-    benchmarking & Profiling to locate and improve inefficient code
-    </li>
-    <li>
-    Language Choice
-    </li>
-    <li>
-    Offload to harware accelerators
-    </li>
+	<li>
+	Don't generate unnecessary outputs that will sit on people's drives unused, clean results of intermediate steps
+	</li>
+	<li>
+	for pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
+	</li>
+	<li>
+	Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
+	</li>
+	<li>
+	benchmarking & Profiling to locate and improve inefficient code
+	</li>
+	<li>
+	Language Choice
+	</li>
+	<li>
+	Offload to harware accelerators
+	</li>
 </ul>
 </details>
 
