@@ -67,32 +67,36 @@ The content of a repo of this form is generally a mixture of code, images (often
 ## 📖Documentation
 
 - [ ] Project has suitable documentation 
-    - [ ] 	🥉Project has README file 
-        - [ ] README provides a description of the project structure so that the user knows which directories to find things in
-        - [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
-    - [ ]  	🥈
-    - [ ]  	🥇
-    - [ ]  	🏆
+	- [ ] 	🥉Project has README file
+		- [ ] README provides a description of the project structure so that the user knows which directories to find things in, possibly inclusing a visual representation of the structure.
+		- [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
+	- [ ]  	🥈 Documentation / comments explain WHY things are done in the code.
+	- [ ]  	🥇
+	- [ ]  	🏆
 
-In some cases for small and simple projects a README file is sufficient documentation, if this is genuinely all that you need you qualify for a platinum rating.
+In some cases for small and simple projects a README file is sufficient documentation.
+This may genuinely be all that you need, or inadequate to the task depending on the project.
 
 <details>
 <ul>
-    <li>
-    literate programming notebook tools like Jupyter and Rmarkdown/Quarto are a great tool for this sort of code output as they permit you to contextualise the choices made during an analysis, visualise, and interpret your results all in the same place.
-    They can also provide robust provenance of results.
-    It can be made clear that this data, was analysed by this code, in this compute environment, and produced these outputs as the output is built by executing the notebook.
-    </li>
-    <li>
-    Analyses may be sufficiently complex that you don't want all of them in a literate programming form especially if you are using literate programming tools to author a conventional manuscript.
-    You can treat the full details of your analysis as a supplementary method and use a combination of more conventional software documentation tools and literate programming to provide a full detail version of your analysis then reference these objects in your manuscript.
-    If working in R the {[targets](https://books.ropensci.org/targets/)} tool can be a nice way of managing a workflow like this as you can cache results like graphs that might be complex and expensive to generate then reference them succinctly in your manuscript document.
-    </li>
-    <li>
-    A good test of reproducibility of your analysis is to use CI/CD tools to build your outputs from source code and never commit the outputs themselves to the repo, you can then serve these build artefacts as a static website of your manuscript and any other documentation from your project.
-    You can also bundle them with the rest of the code when creating a snapshot of the project to archive on a platform like [zenodo](https://zenodo.org/).
-    Obviously it is best to avoid re-running lengthy computationally intensive analyses every time you push to a repository so caching results or only triggering rebuilds when tagging a commit a certain way for example might still make this possible if your build system has adequate computational resources.
-    </li>
+	<li>The rationale is key for code pertaining to a specific analysis so that the intent and reasoning of the author is clear to the reader</li>
+	<li>
+	literate programming notebook tools like Jupyter and Rmarkdown/Quarto are a great tool for this sort of code output as they permit you to contextualise the choices made during an analysis, visualise, and interpret your results all in the same place.
+	They can also provide robust provenance of results.
+	It can be made clear that this data, was analysed by this code, in this compute environment, and produced these outputs as the output is built by executing the notebook.
+	</li>
+	<li>
+	Analyses may be sufficiently complex that you don't want all of them in a literate programming form especially if you are using literate programming tools to author a conventional manuscript.
+	You can treat the full details of your analysis as a supplementary method and use a combination of more conventional software documentation tools and literate programming to provide a full detail version of your analysis then reference these objects in your manuscript.
+	If working in R the {[targets](https://books.ropensci.org/targets/)} tool can be a nice way of managing a workflow like this as you can cache results like graphs that might be complex and expensive to generate then reference them succinctly in your manuscript document.
+	</li>
+	<li>
+	A good test of reproducibility of your analysis is to use CI/CD tools to build your outputs from source code and never commit the outputs themselves to the repo, you can then serve these build artefacts as a static website of your manuscript and any other documentation from your project.
+	You can also bundle them with the rest of the code when creating a snapshot of the project to archive on a platform like [zenodo](https://zenodo.org/).
+	Obviously it is best to avoid re-running lengthy computationally intensive analyses every time you push to a repository.
+	You can avoid this by caching results and/or only triggering rebuilds when a commit is tagged a certain way, for example a new version number.
+	This way it may still be possible to run your more computationally intensive code on your build system, if your build system has adequate computational resources.
+	</li>
 </ul>
 </details>
 

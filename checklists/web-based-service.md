@@ -44,14 +44,25 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## 📖Documentation
 
-- [ ] Project has README file
-- [ ] README provides a description of the project structure so that the user knows which directories to find things in
+- [ ] Project is suitably Documented
+	- [ ]  	🥉Bronze (easy): Project has README file (See details for minimum suitable README)
+	- [ ]  	🥈Silver (easy):
+	- [ ]  	🥇Gold (intermediate):
+	- [ ]  	🏆Platinum (intermediate):
+
 <details>
 <ul>
-	<li>It is generally useful to split documentation in a project such as this by target audiences: users, developers, sysadmins.</li>
+	<li>README / Manual</li>
+	<ul>
+		<li>What your project is and what it does</li>
+		<li>Installation instructions, in the case of a web tool what at least is needed for a minimal local development deployment</li>
+		<li>Contribution guidelines (varying from 'please open an issue before working on a merge request' to detailed style guides, review processes and other requirements) </li>
+		<li>A description of the project structure so that the user knows which directories to find things in</li>
+	</ul>
+	<li>It is generally particularly useful to split documentation in a project such as this by target audiences: users, developers, sysadmins</li>
 	<ul>
 		<li>User: Using the website graphically - this might include admin options if you have administrative user of some kind</li>
-		<li>Developers: API docs, how to contribute, and how to set up a development environment</li>
+		<li>Developers: API docs, how to contribute, and how to set up a development environment, tooling used</li>
 		<li>Sysadmins: how to deploy an instance of the service, how to configure it, what you might want to do differently from the development environment, for example to have a more secure config and considerations that might affect backups, and managing updates/grades.</li>
 	</ul>
 </ul>

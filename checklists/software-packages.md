@@ -44,66 +44,50 @@ Considerations for publishing a software package which may be used in research o
 ## 📖Documentation
 
 - [ ] Project has suitable documentation 
-    - [ ] 	🥉Project has README file 
-        - [ ] README provides a description of the project structure so that the user knows which directories to find things in
-        - [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
-    - [ ]  	🥈
-    - [ ]  	🥇
-    - [ ]  	🏆
+	- [ ] 	🥉Bronze (easy): Project has README file
+		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
+	- [ ]  	🥈Silver (intermediate):  If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
+			So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
+	- [ ]  	🥇 Gold (time consuming): Your Documentation features examples; rich, varied and working ones.
+			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
+	- [ ]  	🏆 Platinum (intermediate): All examples are executed upon a full build of the documentation so that you know that they at least run.
 
-In some cases for small and simple projects a README file is sufficient documentation, if this is genuinely all that you need you qualify for a platinum rating.
+In some cases for small and simple projects a README file is sufficient documentation.
+This may genuinely be all that you need, or inadequate to the task depending on the project.
 
 <details>
 <ul>
-    <li>Types of Documentation</li>
-    <ul>
-        <li>Project</li>
-        <ul>
-            <li>Plans, design documents and specifications</li>
-        </ul>
-        <li>User</li>
-            <li>admin</li>
-        <li>process</li>
-        <ul>
-            <li>how to proceeded with various tasks related to the project this might include: submitting issues, submitting PRs, reporting possible vulnerabilities. testing, documentation, release, code review review</li>
-        </ul>
-        <li>technical</li>
-        <ul>
-            <li></li>
-        </ul>
-        <li>tehcnical</li>
-        <li>system</li>
-    </ul>
-    <li>README / Manual</li>
-    <li>Some things that it is a good idea to include in a README/manual</li>
-    <ul>
+	<li>README / Manual</li>
+	<ul>
 		<li>What your project is and what it does</li>
 		<li>install instructions</li>
-		<li>development environment setup</li>
-        <ul>
-			<li>overview of project organisation and structure</li>
-        </ul>
 		<li>Contribution guidance</li>
-        <ul>
+		<ul>
 			<li>for example: Issue templates, a code of conduct, process details</li>
-        </ul>
-    </ul>
-    <li>'docstrings' and similar</li>
-    <ul>
-	    <li>
-        Many programming languages have a way of documenting your code inline which can automate the generation of some parts of the documentation.
-        This often takes the form of specifically marked-up comments. Examples include python's [dockstrings](https://peps.python.org/pep-0257/), R's [Roxygen2](https://roxygen2.r-lib.org/), and perl's [POD](https://perldoc.perl.org/perlpod)
-        </li>
-    </ul>
-    <li>
-    <li>Vignettes / Examples</li>
-    <ul>
-	    <li>
-        Examples of use of the code in the context of a real problem, beyond simple example snippets which might be included in the documentation of individual functions/objects.
-        (These can also serve as a form of simple integration test.)
-        </li>
-    </ul>
-    </li>
+		</ul>
+		<li>development environment setup</li>
+		<ul>
+			<li>overview of project organisation and structure</li>
+		</ul>
+	</ul>
+	<li>'docstrings' and similar</li>
+	<ul>
+		<li>
+		Many programming languages have a way of documenting your code inline which can automate the generation of some parts of the documentation.
+		This often takes the form of specifically marked-up comments.
+		Examples include python's [dockstrings](https://peps.python.org/pep-0257/), R's [Roxygen2](https://roxygen2.r-lib.org/), and perl's [POD](https://perldoc.perl.org/perlpod)
+		</li>
+	</ul>
+	<li>Vignettes / Examples</li>
+	<ul>
+		<li>
+		Examples of use of the code in the context of a real problem, beyond simple example snippets which might be included in the documentation of individual functions/objects.
+		(These can also serve as a form of simple integration tests if you run them as a part of your documentation build.)
+		</li>
+	</ul>
+	<li>Larger projects might also include Project Documentation: Plans, Design documents and Specifications</li>
+
+	<li>Process Documentation: how to proceeded with various tasks related to the project this might include: submitting issues, submitting merge requests, reporting possible vulnerabilities, testing, documentation, release, code review review</li>
 </ul>
 </details>
 
