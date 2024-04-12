@@ -26,7 +26,8 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 
 - [ ] Project is suitably licensed
 	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
+	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided.
+			If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
 	- [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
 	- [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
 
@@ -91,9 +92,9 @@ Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2
 		- [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another.
 		This provides a sense check that the pipeline is doing what you think its doing, an input perturbation produces predictable change in the output.
 	- [ ]  	🥇Gold (intermediate): Silver Plus:
-		- [ ] Tests of error handling, pipline fails early and gracefully when given invalid inputs as parameters.
+		- [ ] Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters.
 		- [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check.
-		- [ ] Test are run automatically in continious integration tools as changes are made to the code repository.
+		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository.
 	- [ ]  	🏆Platinum (hard): automation?
 
 <details>
