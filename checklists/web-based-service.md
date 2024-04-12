@@ -208,7 +208,7 @@ Good documentation and good error handing can reduce the number of times people 
 </ul>
 </details>
 
-## ⚖ Governance & Conduct
+## ⚖ Governance, Conduct, & Continuity
 
 - [ ]
 	- [ ]  	🥉Bronze (easy):

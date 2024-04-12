@@ -307,7 +307,7 @@ Consider what can you do to make your code a little more efficient.
 </details>
 
 
-## ⚖ Governance & Conduct
+## ⚖ Governance, Conduct, & Continuity
 
 - [ ]
 	- [ ]  	🥉Bronze (easy):

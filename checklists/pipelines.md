@@ -244,7 +244,7 @@ Good documentation and good error handing can reduce the number of times people 
 </details>
 
 
-## ⚖ Governance & Conduct
+## ⚖ Governance, Conduct, & Continuity
 
 How can you be excellent to each other, make good decisions well, and continue to do so?
 

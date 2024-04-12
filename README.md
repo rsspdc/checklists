@@ -50,7 +50,7 @@ There are differences in how some of these are executed depending on the type of
 	- How can people get specific versions of your software running on their systems?
 - 🌱 **Energy Efficiency**
 	- How can you and your users minimise wasted energy?
-- ⚖ **Governance & Conduct**
+- ⚖ **Governance, Conduct, & Continuity**
 	- How can you be excellent to each other, make good decisions well, and continue to do so?
 
 ## Project Scoreing & Medal System 
