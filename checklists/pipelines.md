@@ -197,10 +197,17 @@ How can people get specific versions of your software running on their systems?
 How can you and your users minimise wasted energy?
 
 - [ ]
-	- [ ]  	🥉Bronze (intermediate): Adopt a process to review outputs and keep only those necessary
-	- [ ]  	🥈Silver (intermediate): Energy consumption and emissions Estimation/Measurement
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze (intermediate):
+		- [ ] Adopt a process to review outputs and keep only those necessary
+	- [ ]  	🥈Silver (intermediate): Bronze plus:
+		- [ ] Energy consumption and emissions Estimation/Measurement
+	- [ ]  	🥇Gold (hard):
+		- [ ] Appropriately balances the possible efficiency gains against the cost of testing, development, and benchmarking
+		- [ ] Implemented in an efficient language for the task
+		- [ ] Makes use of efficient algorithms for its task
+	- [ ]  	🏆Platinum (hard):
+		- [ ] Makes use of hardware acceleration if appropriate
+		- [ ] ?something about compile flags for optimal performance on different architectures and generations of architectures?
 
 <details>
 
