@@ -4,6 +4,8 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 
 ## 📒Source control
 
+*How can you keep track of the history of your project and collaborate on it?*
+
 - [ ] Uses git (or other source control tool)
 	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
 	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
@@ -19,6 +21,8 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 </details>
 
 ## ©Licencing
+
+*On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
 	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
@@ -36,6 +40,8 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 
 ## 📖Documentation
 
+*How do people know what your project is, how to use it and how to contribute?*
+
 - [ ]
 	- [ ]  	🥉Bronze (easy):
 	- [ ]  	🥈Silver (easy):
@@ -51,6 +57,8 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 </details>
 
 ## 🔗Making Citable
+
+*How should people make reference to your project and credit your work?*
 
 - [ ] Pipeline is Citable
 	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
@@ -73,6 +81,8 @@ Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2
 </details>
 
 ## ✅Testing
+
+*How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Pipeline has been tested
 	- [ ]  	🥉Bronze (easy): The pipeline runs and produces the expected result on a minimal example dataset
@@ -106,6 +116,8 @@ Testing portability, does it run in different environments? nf-core nextflow pip
 
 ## 👥Peer review / Code Review
 
+How can you get third party endorsement of and expert feedback on your project?
+
 - [ ]
 	- [ ]  	🥉Bronze (easy):
 	- [ ]  	🥈Silver (easy):
@@ -130,6 +142,8 @@ Technical
 </details>
 
 ## 📦Distribution
+
+How can people install or access the software emerging from your project?
 
 - [ ]
 	- [ ]  	🥉Bronze (easy):
@@ -161,6 +175,8 @@ Good places to distribute workflows include:
 
 ## 💽Environment Management / Portability
 
+How can people get specific versions of your software running on their systems?
+
 - [ ]
 	- [ ]  	🥉Bronze (easy):
 	- [ ]  	🥈Silver (easy):
@@ -176,6 +192,8 @@ Good places to distribute workflows include:
 </details>
 
 ## 🌱 Energy Efficiency
+
+How can you and your users minimise wasted energy?
 
 - [ ]
 	- [ ]  	🥉Bronze (intermediate): Adopt a process to review outputs and keep only those necessary
@@ -227,6 +245,8 @@ Good documentation and good error handing can reduce the number of times people 
 
 
 ## ⚖ Governance & Conduct
+
+How can you be excellent to each other, make good decisions well, and continue to do so?
 
 - [ ] The project has a suitable governance model
 	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated

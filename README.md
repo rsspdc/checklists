@@ -30,18 +30,28 @@ In presenting practices suitable to a range of scales we hope to let growing pro
 
 ## Generic parts of the checklists for research software outputs
 
-There are differences in how some of these are executed depending on the type of output but all share these general features.
+There are differences in how some of these are executed depending on the type of output but all share these general features, each feature has a motivating question.
 
-- 📒 Source control
--  © Licencing
-- 📖 Documentation
-- 🔗 Making Citable
-- ✅ Testing
-- 👥 Peer review / Code Review
-- 📦 Distribution
-- 💽 Environment Management / Portability
-- 🌱 Energy Efficiency
-- ⚖ Governance & Conduct
+- 📒 **Source control**
+	- How can you keep track of the history of your project and collaborate on it?
+-  © **Licencing**
+	- On what terms can others use your code, and how can you communicate this?
+- 📖 **Documentation**
+	- How do people know what your project is, how to use it and how to contribute?
+- 🔗 **Making Citable**
+	- How should people make reference to your project and credit your work?
+- ✅ **Testing**
+	- How can you test your project so you can be confident it does what you think it does?
+- 👥 **Peer review / Code Review**
+	- How can you get third party endorsement of and expert feedback on your project?
+- 📦 **Distribution**
+	- How can people install or access the software emerging from your project?
+- 💽 **Environment Management / Portability**
+	- How can people get specific versions of your software running on their systems?
+- 🌱 **Energy Efficiency**
+	- How can you and your users minimise wasted energy?
+- ⚖ **Governance & Conduct**
+	- How can you be excellent to each other, make good decisions well, and continue to do so?
 
 ## Project Scoreing & Medal System 
 

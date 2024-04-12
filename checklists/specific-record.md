@@ -7,6 +7,8 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 
 ## 📒Source control
 
+*How can you keep track of the history of your project and collaborate on it?*
+
 - [ ] Uses git (or other source control tool)
 	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
 	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
@@ -46,6 +48,8 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 
 ## ©Licencing
 
+*On what terms can others use your code, and how can you communicate this?*
+
 - [ ] Project is suitably licensed
 	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
 	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
@@ -65,6 +69,8 @@ The content of a repo of this form is generally a mixture of code, images (often
 </details>
 
 ## 📖Documentation
+
+*How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation 
 	- [ ] 	🥉Project has README file
@@ -102,6 +108,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 🔗Making Citable
 
+*How should people make reference to your project and credit your work?*
+
 - [ ] Record is Citable
 	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
 	- [ ]  	🥈Silver (easy): bronze plus both of the following:
@@ -131,6 +139,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 </details>
 
 ## ✅Testing
+
+*How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Includes a minimal test data set necessary to demonstrate the basic functionality of the tool.
 - [ ] Includes test datasets which cover a range of outcomes

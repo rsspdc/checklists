@@ -12,6 +12,8 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## 📒Source control
 
+*How can you keep track of the history of your project and collaborate on it?*
+
 - [ ] Uses git (or other source control tool)
 	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
 	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
@@ -28,6 +30,8 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## ©Licencing
 
+*On what terms can others use your code, and how can you communicate this?*
+
 - [ ] Project is suitably licensed
 	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
 	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
@@ -43,6 +47,8 @@ Most of the suggestions here would be the same as this section in the software p
 </details>
 
 ## 📖Documentation
+
+*How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project is suitably Documented
 	- [ ]  	🥉Bronze (easy): Project has README file (See details for minimum suitable README)
@@ -70,6 +76,8 @@ Most of the suggestions here would be the same as this section in the software p
 
 ## 🔗Making Citable
 
+*How should people make reference to your project and credit your work?*
+
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
 <details>
@@ -81,6 +89,8 @@ Most of the suggestions here would be the same as this section in the software p
 </details>
 
 ## ✅Testing
+
+*How can you test your project so you can be confident it does what you think it does?*
 
 - [ ]
 	- [ ]  	🥉Bronze (easy):

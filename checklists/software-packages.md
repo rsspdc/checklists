@@ -4,6 +4,8 @@ Considerations for publishing a software package which may be used in research o
 
 ## 📒Source control
 
+*How can you keep track of the history of your project and collaborate on it?*
+
 - [ ] Uses git (or other source control tool)
 	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
 	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
@@ -20,6 +22,8 @@ Considerations for publishing a software package which may be used in research o
 </details>
 
 ## ©Licencing
+
+*On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
 	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
@@ -51,6 +55,8 @@ Considerations for publishing a software package which may be used in research o
 </details>
 
 ## 📖Documentation
+
+*How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation 
 	- [ ] 	🥉Bronze (easy): Project has README file
@@ -101,6 +107,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 </details>
 
 ## 🔗Making Citable
+
+*How should people make reference to your project and credit your work?*
 
 - [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
 	- [ ] A CITATION.cff and/or .zenodo.json file exists in the repo to provide citational metadata about your project
@@ -181,6 +189,8 @@ Further information:
 </details>
 
 ## ✅Testing
+
+*How can you test your project so you can be confident it does what you think it does?*
 
 - [ ]
 	- [ ]  	🥉Bronze (easy): You are using unit tests and an automated testing framework
@@ -298,7 +308,7 @@ Further information:
 <details>
 
 Everyone likes fast and efficient code, but especially if your code is going to be re-used by a lots of people in a computationally demanding application it can burn a lot of energy.
-This translates to carbon emmisions, water use and oppertunity costs for whatever else could have been done with that energy and compute time.
+This translates to carbon emissions, water use and opportunity costs for whatever else could have been done with that energy and compute time.
 If you're making a pipeline produces a lot of intermediate files and outputs consider which of these are needed or good defaults, which could be optional and which could be discarded by default.
 Defaults are king and people will mostly keep whatever your tool outputs often essentially indefinietly so you can reduce the energy expended on unnecessary storage by keeping your outputs lean.
 Consider what can you do to make your code a little more efficient.
