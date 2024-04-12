@@ -221,16 +221,16 @@ Good documentation and good error handing can reduce the number of times people 
 	Don't generate unnecessary outputs that will sit on people's drives unused, clean results of intermediate steps
 	</li>
 	<li>
-	for pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
+	For pipelines in particular caching results and avoiding needing to re-compute things if possible - make best use of these features in pipeline managers for example by having small granular tasks to minimise repeated work on run failure.
 	</li>
 	<li>
-	measurement - make use of tools to estimate the energy &/or carbon costs of your analyses and report them to the end user
+	Measurement - make use of tools to estimate the energy &/or carbon costs of your analyses and report them to the end user
 	</li>
 	<li>
 	Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
 	</li>
 	<li>
-	benchmarking & Profiling to locate and improve inefficient code
+	Benchmarking & Profiling to locate and improve inefficient code
 	</li>
 	<li>
 	Language Choice
