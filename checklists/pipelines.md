@@ -233,7 +233,7 @@ Good documentation and good error handing can reduce the number of times people 
 	Benchmarking & Profiling to locate and improve inefficient code
 	</li>
 	<li>
-	Language Choice
+	Language Choice - some languages are (at least on average) more efficient than others, weigh this as a factor when selecting-a-language
 	</li>
 	<li>
 	Offload to hardware accelerators
