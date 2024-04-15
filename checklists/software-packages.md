@@ -432,5 +432,5 @@ How can you be excellent to each other, make good decisions well, and continue t
 	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control?</li>
 </ul>
 
-</de
+</details>
 
