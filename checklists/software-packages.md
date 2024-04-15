@@ -72,37 +72,48 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 <details>
 <ul>
-	<li>README / Manual</li>
-	<ul>
-		<li>What your project is and what it does</li>
-		<li>install instructions</li>
-		<li>Contribution guidance</li>
+	<li>
+		README / Manual
 		<ul>
-			<li>for example: Issue templates, a code of conduct, process details</li>
+			<li>What your project is and what it does</li>
+			<li>install instructions</li>
+			<li>
+				Contribution guidance
+				<ul>
+					<li>for example: Issue templates, a code of conduct, process details</li>
+				</ul>
+			</li>
+			<li>
+				development environment setup
+				<ul>
+					<li>overview of project organisation and structure</li>
+				</ul>
+			</li>
 		</ul>
-		<li>development environment setup</li>
+	</li>
+	<li>
+		'docstrings' and similar
 		<ul>
-			<li>overview of project organisation and structure</li>
+			<li>
+				Many programming languages have a way of documenting your code inline which can automate the generation of some parts of the documentation.
+				This often takes the form of specifically marked-up comments.
+				Examples include python's [dockstrings](https://peps.python.org/pep-0257/), R's [Roxygen2](https://roxygen2.r-lib.org/), and perl's [POD](https://perldoc.perl.org/perlpod)
+			</li>
 		</ul>
-	</ul>
-	<li>'docstrings' and similar</li>
-	<ul>
-		<li>
-		Many programming languages have a way of documenting your code inline which can automate the generation of some parts of the documentation.
-		This often takes the form of specifically marked-up comments.
-		Examples include python's [dockstrings](https://peps.python.org/pep-0257/), R's [Roxygen2](https://roxygen2.r-lib.org/), and perl's [POD](https://perldoc.perl.org/perlpod)
-		</li>
-	</ul>
-	<li>Vignettes / Examples</li>
-	<ul>
-		<li>
-		Examples of use of the code in the context of a real problem, beyond simple example snippets which might be included in the documentation of individual functions/objects.
-		(These can also serve as a form of simple integration tests if you run them as a part of your documentation build.)
-		</li>
-	</ul>
+	</li>
+	<li>
+		Vignettes / Examples
+		<ul>
+			<li>
+				Examples of use of the code in the context of a real problem, beyond simple example snippets which might be included in the documentation of individual functions/objects.
+				(These can also serve as a form of simple integration tests if you run them as a part of your documentation build.)
+			</li>
+		</ul>
+	</li>
 	<li>Larger projects might also include Project Documentation: Plans, Design documents and Specifications</li>
-
-	<li>Process Documentation: how to proceeded with various tasks related to the project this might include: submitting issues, submitting merge requests, reporting possible vulnerabilities, testing, documentation, release, code review review</li>
+	<li>
+		Process Documentation: how to proceeded with various tasks related to the project this might include: submitting issues, submitting merge requests, reporting possible vulnerabilities, testing, documentation, release, code review review
+	</li>
 </ul>
 </details>
 
@@ -138,52 +149,52 @@ It is important that code used in research can be properly cited by researchers 
 Further information:   
 <ul>
 	<li>
-	Including a [CITATION.cff](https://citation-file-format.github.io/) (Citation File Format) file in your project repo is a simple way of making your code citable. The format is readable in YAML and permits the provision of the metadata needed for citation.
+		Including a [CITATION.cff](https://citation-file-format.github.io/) (Citation File Format) file in your project repo is a simple way of making your code citable. The format is readable in YAML and permits the provision of the metadata needed for citation.
 	</li>
 	<li>
-	[Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code this is a persistent identifer which can be used to refer to it.
-	You can tie the minting versioned DOIs to your releases of your project.
-	Using a DOI permits the existing ecosystem of academic software, e.g.[zotero](https://www.zotero.org/), to use APIs to retrieve citational metadata about your project.
-	[Zenodo](https://zenodo.org/) also hosts a snapshort of your sourcecode so that if your main code repository ever went down it's still possible to retrieve it here.
-	Citational metadata can be import from a [.cff](https://citation-file-format.github.io/) file or a [.zenodo.json](https://developers.zenodo.org/) file in your repository.
-	This makes it pretty easy to manage updates as you can just edit these files and have a platform integration or step in your CI push them to zenodo next time you do a release.
+		[Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code this is a persistent identifer which can be used to refer to it.
+		You can tie the minting versioned DOIs to your releases of your project.
+		Using a DOI permits the existing ecosystem of academic software, e.g.[zotero](https://www.zotero.org/), to use APIs to retrieve citational metadata about your project.
+		[Zenodo](https://zenodo.org/) also hosts a snapshort of your sourcecode so that if your main code repository ever went down it's still possible to retrieve it here.
+		Citational metadata can be import from a [.cff](https://citation-file-format.github.io/) file or a [.zenodo.json](https://developers.zenodo.org/) file in your repository.
+		This makes it pretty easy to manage updates as you can just edit these files and have a platform integration or step in your CI push them to zenodo next time you do a release.
 	</li>
 	<li>
-	[Software Heritage](https://www.softwareheritage.org) is an expansive archive of open source software operated by a non-profit organisation in collaboration with UNESCO [how to reference and archive code in software heritage](https://www.softwareheritage.org/howto-archive-and-reference-your-code/).
-	SWHIDs have the advantage that they are content based identifiers meaning that you can check if the content you get back when you retrieve it is what you expected to get based on its identifier.
-	The Software heritage API permits you to automate the archiving of your project repository via a webhook from popular git forges like github, gitlab and others.
-	Unlike Zenodo which only preserves a snapshot of your repository at the time of deposition and at subsequent manual time points and/or tagged releases Software Heritage archives the whole repository.
+		[Software Heritage](https://www.softwareheritage.org) is an expansive archive of open source software operated by a non-profit organisation in collaboration with UNESCO [how to reference and archive code in software heritage](https://www.softwareheritage.org/howto-archive-and-reference-your-code/).
+		SWHIDs have the advantage that they are content based identifiers meaning that you can check if the content you get back when you retrieve it is what you expected to get based on its identifier.
+		The Software heritage API permits you to automate the archiving of your project repository via a webhook from popular git forges like github, gitlab and others.
+		Unlike Zenodo which only preserves a snapshot of your repository at the time of deposition and at subsequent manual time points and/or tagged releases Software Heritage archives the whole repository.
 	</li>
 	<li>
-	Further reading on the [ethics of CROTs (contributor roles ontology or taxonomy)](https://doi.org/10.1080/08989621.2022.2161049), and their [evolution and adoption](https://doi.org/10.1002/leap.1496).
-	This is potentially useful in selecting a CROT suitable for you project
+		Further reading on the [ethics of CROTs (contributor roles ontology or taxonomy)](https://doi.org/10.1080/08989621.2022.2161049), and their [evolution and adoption](https://doi.org/10.1002/leap.1496).
+		This is potentially useful in selecting a CROT suitable for you project
 	</li>
 	<li>
-	Nix and GUIX
-	<ul>
-		<li>
-		General software repositories may not make specific provision for citation of software packages in the academic fashion.
-		However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'.
-		This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
-		For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive in its approach.
-		It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) any software package in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating somewhat trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
-		This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
-		It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
-		The Nix-like approach to package management does not suffer from the dependency resolution issues commonly encountered in other approaches to package management becasue the dependency graph is explicit and complete.
-		Packages or 'derivations' are 'pure functions' in the sense that only their inputs effect their outputs and they have no side-effects, package builds are sandboxed to prevent dependencies on any external source not explicitly provided as an input and inputs are hashed to ensure that they cannot differ for the value expected when they were packaged.
-		</li>
-		<li>
-		Content based addressing, distributed caching and archival fallback: git, Nix, Guix, IPFS (Interplanetary file System) and software heritage's IDs all make use of forms of content based addressing.
-		Content based addressing is where the identifier is derived from the object being referenced.
-		Commonly a hash function is used to generate the identifier, a hash function deterministically produces a fixed length output that is very probably unique for any given input.
-		Work is underway to reconcile and/or translate between the different content based addressing systems used by these technologies so that the same objects can referenced in any of them.
-		This may eventually permit the tooling & infrastructure of Nix & Guix to use IPFS for source and binary caching and to integrate with software heritage's archive to retrieve anything not cached in other IPFS nodes using the same mechanisms.
-		This integration, once implemented, means that it should be possible with the standard tooling in Nix & Guix to retrieve and rebuild old software the repositories of which have disapeared and which is no longer cached in any IPFS based binary build caches of these distributions, as long as it has been archived by software heritage.
-		This would occur in a fully automated fashion that falls back on the archive to retrieve the source and present to the user as simply taking slightly longer to install than something in the hot caches.
-		The one of the last missing pieces here is addressing kernel level compatability issues and adding an ability to automatically run code incompatible with the current host kernel on a VM with a suitable kernel version and potentially suitable emulated harware for that kernel version.
-		See: [NLnet Software heritage and IPFS](https://nlnet.nl/project/SoftwareHeritage-P2P/), [Tweag - software heritage and Nixpkgs](https://www.tweag.io/blog/2020-06-18-software-heritage/), [John Ericson - Nix x IPFS Gets a New Friend: SWH (SoN2022 - public lecture series)](https://www.youtube.com/watch?v=DjJyPzwEzmU)
-		</li>
-	</ul>
+		Nix and GUIX
+		<ul>
+			<li>
+				General software repositories may not make specific provision for citation of software packages in the academic fashion.
+				However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'.
+				This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
+				For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive in its approach.
+				It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) any software package in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating somewhat trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
+				This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
+				It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
+				The Nix-like approach to package management does not suffer from the dependency resolution issues commonly encountered in other approaches to package management becasue the dependency graph is explicit and complete.
+				Packages or 'derivations' are 'pure functions' in the sense that only their inputs effect their outputs and they have no side-effects, package builds are sandboxed to prevent dependencies on any external source not explicitly provided as an input and inputs are hashed to ensure that they cannot differ for the value expected when they were packaged.
+			</li>
+			<li>
+				Content based addressing, distributed caching and archival fallback: git, Nix, Guix, IPFS (Interplanetary file System) and software heritage's IDs all make use of forms of content based addressing.
+				Content based addressing is where the identifier is derived from the object being referenced.
+				Commonly a hash function is used to generate the identifier, a hash function deterministically produces a fixed length output that is very probably unique for any given input.
+				Work is underway to reconcile and/or translate between the different content based addressing systems used by these technologies so that the same objects can referenced in any of them.
+				This may eventually permit the tooling & infrastructure of Nix & Guix to use IPFS for source and binary caching and to integrate with software heritage's archive to retrieve anything not cached in other IPFS nodes using the same mechanisms.
+				This integration, once implemented, means that it should be possible with the standard tooling in Nix & Guix to retrieve and rebuild old software the repositories of which have disapeared and which is no longer cached in any IPFS based binary build caches of these distributions, as long as it has been archived by software heritage.
+				This would occur in a fully automated fashion that falls back on the archive to retrieve the source and present to the user as simply taking slightly longer to install than something in the hot caches.
+				The one of the last missing pieces here is addressing kernel level compatability issues and adding an ability to automatically run code incompatible with the current host kernel on a VM with a suitable kernel version and potentially suitable emulated harware for that kernel version.
+				See: [NLnet Software heritage and IPFS](https://nlnet.nl/project/SoftwareHeritage-P2P/), [Tweag - software heritage and Nixpkgs](https://www.tweag.io/blog/2020-06-18-software-heritage/), [John Ericson - Nix x IPFS Gets a New Friend: SWH (SoN2022 - public lecture series)](https://www.youtube.com/watch?v=DjJyPzwEzmU)
+			</li>
+		</ul>
 	</li>
 </ul>
 </details>
@@ -363,36 +374,38 @@ How can you be excellent to each other, make good decisions well, and continue t
 	If you can't moderate them avoid creating and/or continuing ungoverned community spaces that can become a liability for you and your project's reputation.
 	</li>
 	<li>
-	Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
-	Adopting such a CoC gives you some guidance to follow if there is bad behaviour in your project's community and communicates that you as the project leadership take the responsibility of creating a respectful environment for collaboration seriously.
-	[The Turing Way](https://doi.org/10.5281/zenodo.3233853) provides quite a nice example of a [CoC developed specifically for their project](https://web.archive.org/web/20240412122958/https://book.the-turing-way.org/)
-	You will need to provide contact information for the person(s) responsible for the enforcement of the CoC in the appropriate place and be able to follow up in the event it is used.
-	git forges often recognise files with the name `CODE_OF_CONDUCT.md` in the root of project and provide a link to them on project home pages, so this is a good place to document such policies.
-	If you are the BDFL of a small project then interpretation and enforcement of such a CoC tends to fall solely on you - game out some courses of action for what you'd do if faced with some common moderation challenges.
-	</li>
-	<ul>
-		<li>
-		Once a project attracts a larger community there is greater scope for disputes and therefore for the need for dispute resolution mechanisms.
-		Free/Libre and Open Source Software development and maintenance can be thought of as a commons so I would refer you to the [work of Elinor Ostrom](https://archive.org/details/ElinorOstromGoverningTheCommons) on how commons have been successfully (or unsuccessfully) governed when thinking about what processes to adopt for your project.
-		More recently [Nathan Schneider's Governable Spaces: Democratic Design for Online Life](https://doi.org/10.1525/luminos.181) tackles some of these issues as applied to online spaces.
-		</li>
-		<li>This is summarised in the [8 Principles for Managing a Commons](https://web.archive.org/web/20240411163813/https://onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons/index.html)</li>
-		<ol>
-			<li>Define clear group boundaries.</li>
-			<li>Match rules governing use of common goods to local needs and conditions.</li>
-			<li>Ensure that those affected by the rules can participate in modifying the rules.</li>
-			<li>Make sure the rule-making rights of community members are respected by outside authorities.</li>
-			<li>Develop a system, carried out by community members, for monitoring members’ behavior.</li>
-			<li>Use graduated sanctions for rule violators.</li>
-			<li>Provide accessible, low-cost means for dispute resolution.</li>
-			<li>Build responsibility for governing the common resource in nested tiers from the lowest level up to the entire interconnected system.</li>
-		</ol>
-	</ul>
-	<li>
-	An informal [do-ocracy](https://web.archive.org/web/20230201164442/https://communityrule.info/modules/do-ocracy/) in the fiefdom of BDFL is often the default state of projects that have not given much conscious thought to how they want to be governed and are thus often subject to many of the same common failure modes of this model.
-	How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
-	By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
-	How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+		Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
+		Adopting such a CoC gives you some guidance to follow if there is bad behaviour in your project's community and communicates that you as the project leadership take the responsibility of creating a respectful environment for collaboration seriously.
+		[The Turing Way](https://doi.org/10.5281/zenodo.3233853) provides quite a nice example of a [CoC developed specifically for their project](https://web.archive.org/web/20240412122958/https://book.the-turing-way.org/)
+		You will need to provide contact information for the person(s) responsible for the enforcement of the CoC in the appropriate place and be able to follow up in the event it is used.
+		git forges often recognise files with the name `CODE_OF_CONDUCT.md` in the root of project and provide a link to them on project home pages, so this is a good place to document such policies.
+		If you are the BDFL of a small project then interpretation and enforcement of such a CoC tends to fall solely on you - game out some courses of action for what you'd do if faced with some common moderation challenges.
+		<ul>
+			<li>
+				Once a project attracts a larger community there is greater scope for disputes and therefore for the need for dispute resolution mechanisms.
+				Free/Libre and Open Source Software development and maintenance can be thought of as a commons so I would refer you to the [work of Elinor Ostrom](https://archive.org/details/ElinorOstromGoverningTheCommons) on how commons have been successfully (or unsuccessfully) governed when thinking about what processes to adopt for your project.
+				More recently [Nathan Schneider's Governable Spaces: Democratic Design for Online Life](https://doi.org/10.1525/luminos.181) tackles some of these issues as applied to online spaces.
+			</li>
+			<li>
+				This is summarised in the [8 Principles for Managing a Commons](https://web.archive.org/web/20240411163813/https://onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons/index.html)
+				<ol>
+					<li>Define clear group boundaries.</li>
+					<li>Match rules governing use of common goods to local needs and conditions.</li>
+					<li>Ensure that those affected by the rules can participate in modifying the rules.</li>
+					<li>Make sure the rule-making rights of community members are respected by outside authorities.</li>
+					<li>Develop a system, carried out by community members, for monitoring members’ behavior.</li>
+					<li>Use graduated sanctions for rule violators.</li>
+					<li>Provide accessible, low-cost means for dispute resolution.</li>
+					<li>Build responsibility for governing the common resource in nested tiers from the lowest level up to the entire interconnected system.</li>
+				</ol>
+			</li>
+			<li>
+				An informal [do-ocracy](https://web.archive.org/web/20230201164442/https://communityrule.info/modules/do-ocracy/) in the fiefdom of BDFL is often the default state of projects that have not given much conscious thought to how they want to be governed and are thus often subject to many of the same common failure modes of this model.
+				How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
+				By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
+				How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+			</li>
+		</ul>
 	</li>
 	<li>
 	Continuity planning: What happens to your project if something happens to you?
@@ -419,4 +432,5 @@ How can you be excellent to each other, make good decisions well, and continue t
 	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control?</li>
 </ul>
 
-</details>
+</de
+
