@@ -36,7 +36,8 @@ Considerations for publishing a software package which may be used in research o
 <details>
 <ul>
 	<li>
-	All software needs a license if you want to permit others to reuse it. It is important to give some thought to the type of license which best suits your project, it is a choice which can have significant long term implications.
+	**All software needs a license if you want to permit others to reuse it.
+	It is important to give some thought to the type of license which best suits your project, it is a choice which can have significant long term implications.
 	Checkout [the turing way chapter on licensing for an introduction to the subject](https://the-turing-way.netlify.app/reproducible-research/licensing.html).
 	If you have no time some pretty safe choices are: For a permissive license, the Apache 2.0.
 	This would allow the re-use of your work in closed commercial code.
