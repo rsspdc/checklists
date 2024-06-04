@@ -20,7 +20,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 	<li>
 	Whilst you can simply use git and a git forge / git hosting service as a way of distributing your project doing so misses out on a lot of benefits of using git as a part of your workflow from the beginning of your project.
 	A well maintained git history is much like a well kept lab notebook for a data analysis project.
-	Well authored commit messages detail why you changed what you changed, providing context for the development on project.
+	Well authored commit messages detail why you changed what you changed, providing context for the development of the project.
 	You can by 'checking out' a commit open a window onto any point in the history of your project, of which you took a snapshot by making a commit.
 	You can collaborate on your project with other git users asynchronously, it can be a great tool for distributed collaborative authorship not just of software but also of prose.
 	A good example of this is [The Turing Way: a how to guide for reproducible data science](https://github.com/the-turing-way/the-turing-way/).
