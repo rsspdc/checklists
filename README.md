@@ -27,7 +27,7 @@ In presenting practices suitable to a range of scales we hope to let growing pro
 -   Web-based service
 -   Generic Tools
 	-   Unitary tool / software package
-	-   Multi-part workflows
+	-   Multi-part workflows / pipelines
 
 ## Generic Parts of the Checklists
 
