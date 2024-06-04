@@ -25,8 +25,21 @@ Most of the suggestions here would be the same as this section in the software p
 <details>
 <ul>
 	<li>
-	For large projects it might be useful to adopt some conventions for your git commit messages such as [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to improve the searchability and scannability of your commit history to other contributors to your code base.
+	Unline many of the other research software output types this sort of output tends to consist of multiple seperate components which may have their sources managed seperately.
+	Many of these projects might involve multiple different components which have seperate git repositories, for example your front-end and back-end codebases might live in their own repos.
+	It can be useful to group these projects together within a group or organisation on your gitforge so that their relationship to one another is clear
+	</li>
 	<li>
+	Another thing which it is valuable for this sort of project to have is how to deploy a local testing and development environment and/or a minimal deployment of the service.
+	This might take the form of a docker / docker-compose, ansible playbook, or similar automation tool for easily deploying a test / example environment.
+	Taking the 'infrastructure as code' approach to the deployment of your tool and versioning these examples is most useful when your service is of a sort where it makes sense for others to want to host their own instances.
+	If it is just deployed by you as a central resource these practice may be useful for you internally but they are less impactful for the rest of the community.
+	</li>
+	<li>
+	If your project is backed by a curated database then documentation of / code from the data collecting and cleaning process which lead to the current content of the database is valuable for the provenance of that dataset.
+	If you are taking new additions to that database such tools are very valuable resources for any collaborators wanting to add data.
+	Even if you are not adding new data these tools can also be very useful to researcher wanting to use data from your database with data they have themselves generated or curated, so the ability to process it in the same way as your data may be essential for valid comparisons.
+	</li>
 </ul>
 </details>
 
