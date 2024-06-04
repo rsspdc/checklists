@@ -40,9 +40,8 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 	<li>
 	If you are including external code in your pipeline then you should check that their licenses are compatible and you are legally allowed to distribute your code together in this way.
 	Checkout this [resource on license compatibility](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-compatibility.html).
-	Generally in a pipeline your are distributing code 'alongside' other packages in a way that the GPL intends to permit see the: [GPL FAQ](https://web.archive.org/web/20240601022910/https://www.gnu.org/licenses/gpl-faq.html#GPLInProprietarySystem)
-	For something like a pipeline the precise defintion of what consitutes a derived work for the purposes copyright law can however be a little gray.
-	If you want to be more certain that your project can be distributed under a license other than the GPL you may want to be cautious about including GPLv3 tools but LGPL should not create this speculative legal issue, this is only relevant to someone wishing to take an extremely conservative and risk averse position on the issue.
+	Generally in a pipeline your are distributing code 'alongside' other packages in a way that strong copyleft licences like the GPL intend to permit see the: [GPL FAQ](https://web.archive.org/web/20240601022910/https://www.gnu.org/licenses/gpl-faq.html#GPLInProprietarySystem)
+	A pipeline that is not modifying such a library but merely using it 'as is', therefore is not considered a derivative work by these licences themselves, thus using them in this fashion is common practice, but the precise defintion of what consitutes a derived work for the purposes copyright law is generally decided on a case by case basis.
 	Pipelines are sometimes run as part of the backends of web-based services so the use of an AGPL license over a GPL license may be advisable if your intent is to maximise the applicability of copy-left terms across possible use cases for your pipeline.
 	</li>
 	<li>
