@@ -19,6 +19,7 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 	<li>
 	If the workflow tool you are using has a convenient tool for initiating a template for a workflow then you may want to get your project's git repository started using that tool.
 	[Nextflow](https://www.nextflow.io/) for example has the [nf-core template](https://nf-co.re/docs/contributing/guidelines/requirements/use_the_template) which makes the creation of an nf-core style pipeline project easy.
+	[Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) similarly has a [standard project structure](https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html) and [template](https://github.com/snakemake-workflows/snakemake-workflow-template).
 	</li>
 </ul>
 </details>
