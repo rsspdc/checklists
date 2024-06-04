@@ -16,7 +16,7 @@ Considerations for publishing a software package which may be used in research o
 <ul>
 	<li>
 	If the language you are writing in has a convenient tool for initiating a template for a package then you may want to get your project's git repository started using that tool.
-	R for example has the {[usethis](https://usethis.r-lib.org/)} package which makes the creation of a R minimal package very easy, including adding automated building and testing with github actions.
+	R for example has the {[usethis](https://usethis.r-lib.org/)} package which makes the creation of a minimal R package very easy, including adding automated building and testing with github actions.
 	</li>
 </ul>
 </details>
