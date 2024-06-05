@@ -2,6 +2,14 @@
 
 **WARNING: work in progress!**
 
+**Who is this for?**
+If you are publishing a research paper that has any analysis code associated with it, are developing a software tool which will be used by resarchers, or deploying a web service which will be used by researchers.
+
+**How do I use the checklists?**
+Copy the markdown file suitable to your output type (see below) to your repo and check the boxes that apply to your project, or even better have someone else use the checklist to score your project.
+
+(opionally, *in the future not implemented yet* add a badge to your repo's readme with your medal and score)
+
 ## Research Software Output types
 
 There are **three broad types research code**: Code that is effectively a **one-off record of a specific analysis**, code which runs as a **web-based service** to be interacted with by researchers, and **code which is intended to be re-used by others** as a tool for their research.
@@ -59,11 +67,13 @@ There are differences in how some of these are executed depending on the type of
 **To check the box for each of these items should be attainable for any project.**
 To facilitate this you can **check the box at different tiers, Bronze, Silver, Gold and Platinum.**
 Whilst **Bronze aims to be highly attainable Platinum is highly aspirational** and **essentially no project should expect to have Platinum across the board**, indeed if you do your probably overdoing it.
+Do not be scared if you do not even understand what the silver and above items mean, the difficulty curve is quite steep!
+Check out the expandable details sections for some resources on steps you can take to start ticking boxes.
 **To achieve an overall bronze rating you must achieve at least bronze in all categories.**
 
 Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum** in each category.
 **Overall project tier is determined by the mean of the score across categories rounded to the nearest integer.**
-Thus a total of 18 points and mean score of 2.25 is a silver tier overall if and only if all ratings are at least 1.
+Thus a total of 18 points and mean score of 1.8 is a bronze tier overall if and only if all ratings are at least 1.
 **A high score is possible that does not 'medal'** because of important deficiencies in some of the key characteristics of the research software.
 
 (there are plans for repo badges with scores and medals)
