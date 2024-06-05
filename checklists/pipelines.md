@@ -1,4 +1,4 @@
-# Pipelines & Workflows
+# Pipelines & Workflows: Research Software Sharing, Publication, & Distribution Checklist
 
 Considerations for publishing a data analysis pipeline which may be used in research or as a researcher
 

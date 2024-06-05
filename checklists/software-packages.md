@@ -1,4 +1,4 @@
-# Software Packages
+# Software Packages: Research Software Sharing, Publication, & Distribution Checklist
 
 Considerations for publishing a software package which may be used in research or as a researcher
 
