@@ -82,11 +82,13 @@ Most of the suggestions here would be the same as this section in the software p
 
 *How do people know what your project is, how to use it and how to contribute?*
 
-- [ ] Project is suitably Documented
-	- [ ]  	🥉Bronze (easy): Project has README file (See details for minimum suitable README)
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+- [ ] Project has suitable documentation
+	- [ ] 	🥉Bronze (easy): Project has README file
+		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
+	- [ ]  	🥈Silver (intermediate): Your documentation includes instructions on deploying your service in a test/development environment is
+	- [ ]  	🥇Gold (time consuming): Your Documentation features examples; rich, varied and working ones.
+			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
+	- [ ]  	🏆Platinum (intermediate): All examples are executed upon a full build of the documentation so that you know that they at least run.
 
 <details>
 <ul>
