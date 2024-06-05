@@ -72,7 +72,7 @@ Check out the expandable details sections for some resources on steps you can ta
 **To achieve an overall bronze rating you must achieve at least bronze in all categories.**
 
 Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum** in each category.
-**Overall project tier is determined by the mean of the score across categories rounded to the nearest integer.**
+**Overall project tier is determined by the mean of the score across all categories rounded down to the nearest integer.**
 Thus a total of 18 points and mean score of 1.8 is a bronze tier overall if and only if all ratings are at least 1.
 **A high score is possible that does not 'medal'** because of important deficiencies in some of the key characteristics of the research software.
 
