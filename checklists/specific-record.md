@@ -182,19 +182,16 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 *How can you test your project so you can be confident it does what you think it does?*
 
-- [ ] Includes a minimal test data set necessary to demonstrate the basic functionality of the tool.
-- [ ] Includes test datasets which cover a range of outcomes
-
-- [ ] Project has undergone suitable testing, and provides the reader with test data with which to re-run any automated tests.
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+- [ ] Project has undergone suitable testing
+	- [ ]  	🥉Bronze (easy): Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
+	- [ ]  	🥈Silver (easy): Includes test datasets which cover a range of outcomes of the analysis
+	- [ ]  	🥇Gold (intermediate): You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
+	- [ ]  	🏆Platinum (intermediate): ...
 
 <details>
 <ul>
 	<li>
-	Whilst you can make use of unit tests / automated testing frameworks in this context it is not always the best fit.
+	Whilst you can make use of unit tests / automated testing frameworks in this context (see the software packages checklist testing section for more) it is not always the best fit.
 	A very good thing to do is to have an example dataset that you can perform your analysis on that is different from your new data.
 	If you are testing a hypothesis it's nice to have test datasets which simulate rejecting and accepting your null hypothesis.
 	</li>

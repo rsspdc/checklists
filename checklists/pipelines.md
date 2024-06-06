@@ -181,21 +181,22 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 	- [ ]  	🥉Bronze (easy): The pipeline runs and produces the expected result on a minimal example dataset
 	- [ ]  	🥈Silver (easy): Bronze plus:
 		- [ ] A wide variety of possible input parameter combinations are tested
-		- [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another.
-		This provides a sense check that the pipeline is doing what you think its doing, an input perturbation produces predictable change in the output.
+		- [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another
+		This provides a sense check that the pipeline is doing what you think its doing, an input perturbation produces predictable change in the output
 	- [ ]  	🥇Gold (intermediate): Silver Plus:
-		- [ ] Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters.
-		- [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check.
-		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository.
-	- [ ]  	🏆Platinum (hard): automation?
+		- [ ] Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters
+		- [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check
+		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository
+	- [ ]  	🏆Platinum (hard): range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
 
 <details>
-The type of testing that is make most sense to emphasise in analysis pipelines is integration testing, do all the parts work together as expected.
+The type of testing that it makes most sense to emphasise in analysis pipelines is integration testing, do all the parts work together as expected.
 Some aspects might lend themselves to unit testing but much of this would reside in the individual tools that a pipeline wraps.
+See the software packages checklist for more details on general unit testing.
 
 The phrase 'expected result' is a bit nebulous, its robustness in testing hinges on how specific your expectations are.
 
-A area to focus on testing might be your quality control (QC) steps.
+An area to focus on testing might be your quality control (QC) steps.
 Checking using data that is an example of a common source data quality issues and verifying that this triggers the appropriate QC warnings, for example.
 Making sure that good quality data does not trigger quality warnings.
 In addition to poor quality data test: corrupt, truncated, or incorrectly formed data/configuration files.
