@@ -85,10 +85,10 @@ Most of the suggestions here would be the same as this section in the software p
 - [ ] Project has suitable documentation
 	- [ ] 	🥉Bronze (easy): Project has README file
 		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
-	- [ ]  	🥈Silver (intermediate): Your documentation includes instructions on deploying your service in a test/development environment is
-	- [ ]  	🥇Gold (time consuming): Your Documentation features examples; rich, varied and working ones.
+	- [ ]  	🥈Silver (intermediate): documentation includes instructions on deploying your service in a test/development environment.
+	- [ ]  	🥇Gold (time consuming): documentation features examples; rich, varied and working ones.
 			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]  	🏆Platinum (intermediate): All examples are executed upon a full build of the documentation so that you know that they at least run.
+	- [ ]  	🏆Platinum (intermediate): Documentation is included for users, administrators (if applicable), systems administrators deploying the project, and developers.
 
 <details>
 <ul>
@@ -101,7 +101,7 @@ Most of the suggestions here would be the same as this section in the software p
 	</ul>
 	<li>It is generally particularly useful to split documentation in a project such as this by target audiences: users, developers, sysadmins</li>
 	<ul>
-		<li>User: Using the website graphically - this might include admin options if you have administrative user of some kind</li>
+		<li>User: Using the website graphically - this might include admin options if you have administrative users of some kind, admin users may need their own section</li>
 		<li>Developers: API docs, how to contribute, and how to set up a development environment, tooling used</li>
 		<li>Sysadmins: how to deploy an instance of the service, how to configure it, what you might want to do differently from the development environment, for example to have a more secure config and considerations that might affect backups, and managing updates/grades.</li>
 	</ul>
