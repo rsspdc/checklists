@@ -128,19 +128,20 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 - [ ] Record is Citable
 	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
-	- [ ]  	🥈Silver (easy): bronze plus both of the following:
-		- [ ] A DOI, with which it can be referenced, has been minted for the project using a tool like [zenodo](https://zenodo.org/) to store a snapshot of the project.
+	- [ ]  	🥈Silver (easy): bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
+	- [ ]  	🥇Gold (intermediate): silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
-	- [ ]  	🥇Gold (intermediate): silver plus any two from:
-		- [ ] Versioned DOI with automation to update snapshots on zenodo or similar tool when a new version tag is created.
-		- [ ] All contributors are identified by their [ORCID](https://orcid.org/)
-	- [ ] All research institutions are identified by their [ROR](https://ror.org/) ID
-	- [ ]  	🏆Platinum (intermediate):
+		- [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
+	- [ ]  	🏆Platinum (mixed): gold plus any two or more from:
+		- [ ] (easy) All research institutions are identified by their [ROR](https://ror.org/) ID
+		- [ ] (intermediate) Versioned persistent identifier with automation to update snapshots on zenodo or similar tool when a new version is created.
+		- [ ] (intermediate) Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
+		- [ ] (hard) Your environment is defined with Nix or Guix - this might not seem like it contributes to making software more citable see details below for why this is the case.
 
 <details>
 <ul>
 	<li>
-	The code underpinning a publication is a part of your methods.
+	**The code underpinning a publication is a part of your methods.**
 	The legacy publishing system lacks a suitable and convenient way of including your analysis code as a part of your methods section so to work around this it is best to make your code a seperate citable object and just cite it in your methods section.
 	</li>
 	<li>
@@ -150,6 +151,29 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	<li>
 	[Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code and makes a snapshot of it, importing citational metadata from a [CITATION.cff](https://citation-file-format.github.io/) file or a .zenodo.json file.
 	This makes it persistently identifiable and easy to integrate with citation management tools which can import the citation metadata given a DOI.
+	</li>
+	<li>
+		Nix and GUIX
+		<ul>
+			<li>
+				General software repositories may not make specific provision for citation of software packages in the academic fashion.
+				However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'.
+				This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
+				For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive in its approach.
+				It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) software packages in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating somewhat trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
+				This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
+				It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
+				Packages or 'derivations' are 'pure functions' in the sense that only their inputs effect their outputs and they have no side-effects, package builds are sandboxed to prevent dependencies on any external source not explicitly provided as an input and inputs are hashed to ensure that they cannot differ for the value expected when they were packaged.
+				This gives these technologies an unrivaled ability to readily demonstrate the reproducibility and provenance of compute environments specified using them.
+			</li>
+			<li>
+				Whilst not yet full implemented and adopted these technologies also aford some fascinating opertunities for seemless access to archival versions of software in the future.
+				Due to the similarities in the content based addressing used by Git, Nix, Guix, IPFS (Interplanetary file System) and software heritage's IDs it may be possible to construct an approach to archiving, distributing and caching sources of packages in a way that would ensure that low demand archived software sources and high demand current packages can be distributed transparently through the same mechanism.
+				This would in theory permit the reconstruction of any historically specified compute environment that had been archived with no changes to normal workflow, other than perhaps a longer build time.
+				This approach also makes the creation of 'mirrors' of the archive relatively simple and requires no client side changes as an IPFS resource will be resolved irrespective of the node on which it is stored.
+				See: [NLnet Software heritage and IPFS](https://nlnet.nl/project/SoftwareHeritage-P2P/), [Tweag - software heritage and Nixpkgs](https://www.tweag.io/blog/2020-06-18-software-heritage/), [John Ericson - Nix x IPFS Gets a New Friend: SWH (SoN2022 - public lecture series)](https://www.youtube.com/watch?v=DjJyPzwEzmU)
+			</li>
+		</ul>
 	</li>
 </ul>
 </details>
@@ -179,10 +203,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 👥Peer review / Code Review
 
-- [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) for an independent check that it runs
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
+- [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) or [ReproHack](https://www.reprohack.org/) for an independent check that it runs
+	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
+	- [ ]  	🥈Silver (easy): Someone other than you has scessfully re-run your analysis using only your documentation, (perferably in a diferent compute environment, such as a different computer/compute cluster)
+	- [ ]  	🥇Gold (intermediate): You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
 	- [ ]  	🏆Platinum (intermediate):
 
 <details>
