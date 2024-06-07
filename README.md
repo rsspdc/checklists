@@ -31,11 +31,11 @@ In presenting practices suitable to a range of scales we hope to let growing pro
 
 ### Summary of Types
 
--   Record of a specific analysis
--   Web-based service
+-   [Record of a specific analysis](./checklist/pipelines.md)
+-   [Web-based service](./checklist/web-based-service.md)
 -   Generic Tools
-	-   Unitary tool / software package
-	-   Multi-part workflows / pipelines
+	-   [Unitary tool / software package](./checklist/software-packages.md)
+	-   [Multi-part workflows / pipelines](./checklist/piplines.md)
 
 ## Generic Parts of the Checklists
 
