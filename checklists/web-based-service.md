@@ -350,41 +350,43 @@ How can you be excellent to each other, make good decisions well, and continue t
 <ul>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
-	It is helpful to be clear about it if you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes.
+	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
+	Be waring of adopting policies that you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes, It is helpful to be clear about what you can and cannot commit to doing.
 	Only by communicating this might you be able to find community members to help you with setting and enforcing these norms, if or when your community attains a scale where this becomes relevant - community management is its own skill set.
 	If you can't moderate them avoid creating and/or continuing ungoverned community spaces that can become a liability for you and your project's reputation.
-	</li>
-	<li>
 	Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
 	Adopting such a CoC gives you some guidance to follow if there is bad behaviour in your project's community and communicates that you as the project leadership take the responsibility of creating a respectful environment for collaboration seriously.
+	It can also signal that your project is a place where everyone is wellcome but expected to treat one another with respect, and that failing to do so will result in penalties potentially including exclusion from the community.
 	[The Turing Way](https://doi.org/10.5281/zenodo.3233853) provides quite a nice example of a [CoC developed specifically for their project](https://web.archive.org/web/20240412122958/https://book.the-turing-way.org/)
 	You will need to provide contact information for the person(s) responsible for the enforcement of the CoC in the appropriate place and be able to follow up in the event it is used.
 	git forges often recognise files with the name `CODE_OF_CONDUCT.md` in the root of project and provide a link to them on project home pages, so this is a good place to document such policies.
 	If you are the BDFL of a small project then interpretation and enforcement of such a CoC tends to fall solely on you - game out some courses of action for what you'd do if faced with some common moderation challenges.
-	</li>
-	<ul>
-		<li>
-		Once a project attracts a larger community there is greater scope for disputes and therefore for the need for dispute resolution mechanisms.
-		Free/Libre and Open Source Software development and maintenance can be thought of as a commons so I would refer you to the [work of Elinor Ostrom](https://archive.org/details/ElinorOstromGoverningTheCommons) on how commons have been successfully (or unsuccessfully) governed when thinking about what processes to adopt for your project.
-		More recently [Nathan Schneider's Governable Spaces: Democratic Design for Online Life](https://doi.org/10.1525/luminos.181) tackles some of these issues as applied to online spaces.
-		</li>
-		<li>This is summarised in the [8 Principles for Managing a Commons](https://web.archive.org/web/20240411163813/https://onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons/index.html)</li>
-		<ol>
-			<li>Define clear group boundaries.</li>
-			<li>Match rules governing use of common goods to local needs and conditions.</li>
-			<li>Ensure that those affected by the rules can participate in modifying the rules.</li>
-			<li>Make sure the rule-making rights of community members are respected by outside authorities.</li>
-			<li>Develop a system, carried out by community members, for monitoring members’ behavior.</li>
-			<li>Use graduated sanctions for rule violators.</li>
-			<li>Provide accessible, low-cost means for dispute resolution.</li>
-			<li>Build responsibility for governing the common resource in nested tiers from the lowest level up to the entire interconnected system.</li>
-		</ol>
-	</ul>
-	<li>
-	An informal [do-ocracy](https://web.archive.org/web/20230201164442/https://communityrule.info/modules/do-ocracy/) in the fiefdom of BDFL is often the default state of projects that have not given much conscious thought to how they want to be governed and are thus often subject to many of the same common failure modes of this model.
-	How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
-	By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
-	How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+		<ul>
+			<li>
+				Once a project attracts a larger community there is greater scope for disputes and therefore for the need for dispute resolution mechanisms.
+				Free/Libre and Open Source Software development and maintenance can be thought of as a commons so I would refer you to the [work of Elinor Ostrom](https://archive.org/details/ElinorOstromGoverningTheCommons) on how commons have been successfully (or unsuccessfully) governed when thinking about what processes to adopt for your project.
+				More recently [Nathan Schneider's Governable Spaces: Democratic Design for Online Life](https://doi.org/10.1525/luminos.181) tackles some of these issues as applied to online spaces.
+			</li>
+			<li>
+				This is summarised in the [8 Principles for Managing a Commons](https://web.archive.org/web/20240411163813/https://onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons/index.html)
+				<ol>
+					<li>Define clear group boundaries.</li>
+					<li>Match rules governing use of common goods to local needs and conditions.</li>
+					<li>Ensure that those affected by the rules can participate in modifying the rules.</li>
+					<li>Make sure the rule-making rights of community members are respected by outside authorities.</li>
+					<li>Develop a system, carried out by community members, for monitoring members’ behavior.</li>
+					<li>Use graduated sanctions for rule violators.</li>
+					<li>Provide accessible, low-cost means for dispute resolution.</li>
+					<li>Build responsibility for governing the common resource in nested tiers from the lowest level up to the entire interconnected system.</li>
+				</ol>
+			</li>
+			<li>
+				An informal [do-ocracy](https://web.archive.org/web/20230201164442/https://communityrule.info/modules/do-ocracy/) in the fiefdom of BDFL is often the default state of projects that have not given much conscious thought to how they want to be governed and are thus often subject to many of the same common failure modes of this model.
+				How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
+				By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
+				How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+			</li>
+		</ul>
 	</li>
 	<li>
 	Continuity planning: What happens to your project if something happens to you?
