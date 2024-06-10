@@ -8,6 +8,8 @@ If you are publishing a research paper that has any analysis code associated wit
 **How do I use the checklists?**
 Copy the markdown file suitable to your output type (see below) to your repo and check the boxes that apply to your project, or even better have someone else use the checklist to score your project.
 
+For more see the [FAQ](FAQ.md)
+
 (opionally, *in the future not implemented yet* add a badge to your repo's readme with your medal and score)
 
 ## Research Software Output types
