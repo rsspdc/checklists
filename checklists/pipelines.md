@@ -190,11 +190,12 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 	- [ ]  	🏆Platinum (hard): range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
 
 <details>
-The type of testing that it makes most sense to emphasise in analysis pipelines is integration testing, do all the parts work together as expected.
-Some aspects might lend themselves to unit testing but much of this would reside in the individual tools that a pipeline wraps.
-See the software packages checklist for more details on general unit testing.
+The types of testing that it may make sense to emphasise in analysis pipelines are:
+Integration testing, do all the parts work together as expected? (The phrase 'expected result' is a bit nebulous, its robustness in testing hinges on how specific your expectations are.)
+Some aspects might lend themselves to unit testing, but much of this may reside in the individual tools that a pipeline wraps.
+Regression testing can be effective when refactoring a pipeline which is intended to produce identical results by different means.
 
-The phrase 'expected result' is a bit nebulous, its robustness in testing hinges on how specific your expectations are.
+See the software packages checklist for more details on general unit testing.
 
 An area to focus on testing might be your quality control (QC) steps.
 Checking using data that is an example of a common source data quality issues and verifying that this triggers the appropriate QC warnings, for example.
@@ -203,15 +204,19 @@ In addition to poor quality data test: corrupt, truncated, or incorrectly formed
 Edge cases like many extreme values.
 
 Test data should follow the general principle: **as small as possible as large as necessary**
-Real world data can potentially be down sampled, along with synthetic data generated to test edge cases.
+Real world data can potentially be down sampled, and synthetic data generated to test edge cases.
 
 Testing portability, does it run in different environments? nf-core nextflow pipelines for instance should be able to run with docker, apptainer (singularity), or conda based environments - do all of these work and produce the same output?
+
 [nf-test](https://www.nf-test.com/) provides an automated testing framework for Nextflow pipelines described in [Improving the Reliability and Quality of Nextflow Pipelines with nf-test](https://doi.org/10.1101/2024.05.25.595877).
 nf-test implements a number of optimisations including:
 Git integration and dependeny graph analysis of pipeline component inputs/outputs to select and prioritise tests to run based on what has changed.
 Convenient snapshot based regression testing.
 Parallel test execution.
 These features make the sometimes lengthy and laborious process of testing computationally intensive pipelines much more manageable.
+
+
+[This conference paper](https://doi.org/10.1145/3322790.3330595) introduces a name for a category of software test that they call 'scientific tests' which are black-box style tests agnositic to the implementation which test the broard behaviour of a system is as predicted.
 </details>
 
 ## 👥Peer review / Code Review
