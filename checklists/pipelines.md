@@ -206,6 +206,12 @@ Test data should follow the general principle: **as small as possible as large a
 Real world data can potentially be down sampled, along with synthetic data generated to test edge cases.
 
 Testing portability, does it run in different environments? nf-core nextflow pipelines for instance should be able to run with docker, apptainer (singularity), or conda based environments - do all of these work and produce the same output?
+[nf-test](https://www.nf-test.com/) provides an automated testing framework for Nextflow pipelines described in [Improving the Reliability and Quality of Nextflow Pipelines with nf-test](https://doi.org/10.1101/2024.05.25.595877).
+nf-test implements a number of optimisations including:
+Git integration and dependeny graph analysis of pipeline component inputs/outputs to select and prioritise tests to run based on what has changed.
+Convenient snapshot based regression testing.
+Parallel test execution.
+These features make the sometimes lengthy and laborious process of testing computationally intensive pipelines much more manageable.
 </details>
 
 ## 👥Peer review / Code Review
@@ -220,18 +226,18 @@ How can you get third party endorsement of and expert feedback on your project?
 
 <details>
 <ul>
-<li>
-The design of the analysis, any methodological choices made and any original steps added might warrant a conventional scientific publication if for example you are making a pipeline which automates a portion of the analysis of some new datatype
-	<ul>
-	<li>review the theory</li>
-	</ul>
-</li>
-<li>
-Technical
-	<ul>
-	<li>review the implementation</li>
-	</ul>
-</li>
+	<li>
+		The design of the analysis, any methodological choices made and any original steps added might warrant a conventional scientific publication if for example you are making a pipeline which automates a portion of the analysis of some new datatype
+		<ul>
+			<li>review the theory</li>
+		</ul>
+	</li>
+	<li>
+		Technical
+		<ul>
+			<li>review the implementation</li>
+		</ul>
+	</li>
 </ul>
 </details>
 
