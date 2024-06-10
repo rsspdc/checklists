@@ -1,6 +1,6 @@
 # Web-based service: Research Software Sharing, Publication, & Distribution Checklist
 
-A database, API, or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
+A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
 In many ways the key considerations here lean more lean more organisational than technical.
 Do you have the resources to operate the service on an ongoing basis?
 A record of a specific analysis is a snapshot in time that is only expected to run in it's specified environment and once done is done.
