@@ -93,6 +93,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		</ul>
 	</li>
 	<li>
+	CHANGELOG it can be a good idea to include a CHANGELOG file in your project documenting things which have changed since the previous release.
+	This manuscript on [The impact of package selection and versioning on single-cell RNA-seq analysis](https://doi.org/10.1101/2024.04.04.588111) provides a nice case study for why this can be useful in academic settings especially if decisions have been made to change defaults between versions.
+	</li>
+	<li>
 		'docstrings' and similar
 		<ul>
 			<li>

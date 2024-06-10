@@ -119,6 +119,9 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	You can avoid this by caching results and/or only triggering rebuilds when a commit is tagged a certain way, for example a new version number.
 	This way it may still be possible to run your more computationally intensive code on your build system, if your build system has adequate computational resources.
 	</li>
+	<li>
+	If you release multiple versions of a particular analysis it can be a good idea to include a CHANGELOG file in your project documenting things which have changed since the previous version.
+	</li>
 </ul>
 </details>
 

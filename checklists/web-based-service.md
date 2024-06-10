@@ -105,6 +105,7 @@ Most of the suggestions here would be the same as this section in the software p
 		<li>Developers: API docs, how to contribute, and how to set up a development environment, tooling used</li>
 		<li>Sysadmins: how to deploy an instance of the service, how to configure it, what you might want to do differently from the development environment, for example to have a more secure config and considerations that might affect backups, and managing updates/grades.</li>
 	</ul>
+	<li>Note that almost all of the recommendations for software package documentation also applies here</li>
 </ul>
 </details>
 
