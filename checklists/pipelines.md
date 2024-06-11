@@ -280,6 +280,40 @@ Good places to distribute workflows include:
 	</li>
 	</ul>
 </li>
+<li>
+In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
+Many pipeline managment tools support specifiying per-task compute environments using tools such as conda, and container technologies such as docker and singularity/apptainer.
+	<ul>
+		<li>
+			Container images are a convenient format in which to distribute software along with its dependencies and to isolate this environment from other software which can help avoid any conflicts in dependencies.
+			Container images like virtual machine images can be quite large and thus cumbersome to distribute, they are also something of a black box once built.
+			Containers provide many of the advantages of virtual machines (VM) but generally with less performance penalty.
+			However whilst they are narrowly reproducible they are not readily interogated and checked unless you provide the build instructions which generated the image, for example a Dockerfile.
+			Unfortunately the process of building container images is itself not necessarily reproducible.
+			Thus when specifying container builds it is best practice to specify exact package versions in your build so that the image builds are reproducible.
+			This can be challenging as many popular opertaing system package managers lack the tooling to do this easily.
+			Pinning your container build to a snapshot of package repositories taken at a given date that will be available archivally is one way to address this.
+			This paper provides some [Recommendations for the packaging and containerizing of bioinformatics software](https:/doi.org/10.12688/f1000research.15140.2)
+			In the case of bioinformatics pipelines it is often easiest to specify your environment with [conda](https://conda.org/) and then build containers and/or VMs which install that same conda environment on linux base image such as debian.
+			This has the advantage that the conda environment can be used independent of any images built with it reducing the maintenence burden for supporting multiple approaches to distributng the compute environment.
+			Which package/environment management tool has well packaged versions of all the relavent software may be specific to your dicipline.
+
+			If you do need to inspect the contents of a container images a number of tools developed by [Anchore](https://github.com/anchore) in particular [Syft](https://github.com/anchore/syft) can be helpful in producing an account of the software installed in the image.
+			It is a best practice to keep the software that you install in an image to the minimum necessary for the function that you need the image to perform, however, determining what this minimal set is can be non-trivial.
+		</li>
+		<li>
+			Functional package managers such as Nix and Guix have a 'best practices by design' approach to packaging software.
+			They do not suffer from the issue of it being difficult to determine what is and is not a required dependency as this work is done up-front when the software is packaged.
+			They usually require that dependencies be completely specified and packages be build in a sandboxed environnment which only has access to the explicitly specified dependencies.
+			This provides much stronger guarantees of the ability to specify and build reproducible environments.
+			It is also possible to build container and VM images specified with these tools, and a container specified with them could be a drop in replacement for one specified with conda for example.
+			Unfortuntately these tools have yet to see wide adoption in the scientific / research computing communities and thus many packages used by thess communities are not packaged for these tools, (despite nixpkgs being the largest extant software package respoitory with >80,000 packages), hindering their broarder adoption.
+			Nix is also cross platform working natively on MacOS, on windows via the windows subsystem for linux and even on android.
+
+			It is worth being aware of these tools and considering packaging any software that you produce for them as they are gaining popularity and address many of the shortcommings and limitations of current package and environment mangement solutions.
+		</li>
+	</ul>
+</li>
 </ul>
 </details>
 
