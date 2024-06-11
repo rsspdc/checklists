@@ -297,7 +297,7 @@ Many pipeline managment tools support specifiying per-task compute environments 
 			In the case of bioinformatics pipelines it is often easiest to specify your environment with [conda](https://conda.org/) and then build containers and/or VMs which install that same conda environment on linux base image such as debian.
 			This has the advantage that the conda environment can be used independent of any images built with it reducing the maintenence burden for supporting multiple approaches to distributng the compute environment.
 			Which package/environment management tool has well packaged versions of all the relavent software may be specific to your dicipline.
-
+			</br>
 			If you do need to inspect the contents of a container images a number of tools developed by [Anchore](https://github.com/anchore) in particular [Syft](https://github.com/anchore/syft) can be helpful in producing an account of the software installed in the image.
 			It is a best practice to keep the software that you install in an image to the minimum necessary for the function that you need the image to perform, however, determining what this minimal set is can be non-trivial.
 		</li>
@@ -309,7 +309,7 @@ Many pipeline managment tools support specifiying per-task compute environments 
 			It is also possible to build container and VM images specified with these tools, and a container specified with them could be a drop in replacement for one specified with conda for example.
 			Unfortuntately these tools have yet to see wide adoption in the scientific / research computing communities and thus many packages used by thess communities are not packaged for these tools, (despite nixpkgs being the largest extant software package respoitory with >80,000 packages), hindering their broarder adoption.
 			Nix is also cross platform working natively on MacOS, on windows via the windows subsystem for linux and even on android.
-
+			</br>
 			It is worth being aware of these tools and considering packaging any software that you produce for them as they are gaining popularity and address many of the shortcommings and limitations of current package and environment mangement solutions.
 		</li>
 	</ul>
