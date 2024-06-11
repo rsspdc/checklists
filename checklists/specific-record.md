@@ -429,6 +429,15 @@ How can you be excellent to each other, make good decisions well, and continue t
 	What systems do you have in place to disclose a vulnerability once it has been patched and ensure that users know that they need to update.
 	</li>
 	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control?</li>
+	<li>
+	User support
+		<ul>
+		<li>What support can users expect, or not expect?</li>
+		<li>Where can they ask for it?</li>
+		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
+		<li>Can they pay for more support?</li>
+		<ul>
+	</li>
 </ul>
 
 </details>
