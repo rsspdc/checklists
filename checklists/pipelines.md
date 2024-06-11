@@ -209,6 +209,7 @@ Edge cases like many extreme values.
 
 Test data should follow the general principle: **as small as possible as large as necessary**
 Real world data can potentially be down sampled, and synthetic data generated to test edge cases.
+You may be able to find a repository of pre-existing test dataset suitable for your domain nf-core provides a resource of [test datasets](https://github.com/nf-core/test-datasets), these are at least currently largely of biological data types reflecting the current composition of the Nextflow userbase.
 
 Testing portability, does it run in different environments? nf-core nextflow pipelines for instance should be able to run with docker, apptainer (singularity), or conda based environments - do all of these work and produce the same output?
 
