@@ -198,6 +198,16 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	A very good thing to do is to have an example dataset that you can perform your analysis on that is different from your new data.
 	If you are testing a hypothesis it's nice to have test datasets which simulate rejecting and accepting your null hypothesis.
 	</li>
+	<li>
+	If you write, test, have reviewed, and publically deposit, the code that you plan to run to test the primary/pre-planned outcomes in your study and are able to run this same code on your data unchanged this inspires confidence in your testing regimend.
+	Code associcated with incedental finding which may be suggestive for hypotheses to test in future work obviously cannot be subject to pre-registration but other best practices can be followed.
+	</li>
+	<li>
+	When using real data or downsampled real data be sure that your testing covers any edge cases that may not have arrising enyour example data.
+	</li>
+	<li>
+	When using simulated data be sure to include the method by which you simulated the data and any random seeds which may be needed to re-generate it.
+	</li>
 </ul>
 </details>
 
