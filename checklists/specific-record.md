@@ -189,7 +189,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ]  	🥉Bronze (easy): Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
 	- [ ]  	🥈Silver (easy): Includes test datasets which cover a range of outcomes of the analysis
 	- [ ]  	🥇Gold (intermediate): You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
-	- [ ]  	🏆Platinum (intermediate): ...
+	- [ ]  	🏆Platinum (hard): Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
 
 <details>
 <ul>
