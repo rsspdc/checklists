@@ -242,7 +242,7 @@ Further information:
 		 - ...
 	- [ ]  	🥈Silver (intermediate): You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
 	- [ ]  	🥇Gold (intermediate): You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
-	- [ ]  	🏆Platinum (intermediate): Silver, gold and some from
+	- [ ]  	🏆Platinum (hard): Silver, gold and some from:
 		- Published a peer reviewed afticle with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
 		- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
 		- Your project is a part of a bug bounty program.
