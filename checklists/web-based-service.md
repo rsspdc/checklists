@@ -190,7 +190,7 @@ Most of the suggestions here would be the same as this section in the software p
 	- [ ]  	🥉Bronze (easy): You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
 	- [ ]  	🥈Silver (easy): You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
 	- [ ]  	🥇Gold (intermediate): silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
-	- [ ]  	🏆Platinum (intermediate): You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
+	- [ ]  	🏆Platinum (hard): You follow the Test Driven Development (TDD) model, designing and writing tests first then writing code to make them pass
 
 <details>
 <ul>
