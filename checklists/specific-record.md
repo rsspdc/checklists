@@ -326,6 +326,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 🌱 Energy Efficiency
 
+*How can you and your users minimise wasted energy?*
+
 - [ ] Consideration has been given to the energy efficiency of the code
 	- [ ]  	🥉Bronze (easy): minimise unnecessary output files
 	- [ ]  	🥈Silver (easy): bronze plus: Profile your code and refactor inefficient parts
