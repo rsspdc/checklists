@@ -306,10 +306,14 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	The scope of the environment managed by these tools can vary, renv for example only manage R packages, conda manages essentially any software but not necessarily all system dependencies, nix and guix can, and do, specify entire operating systems.
 	</li>
 	<li>
-	It is common to use the more narrowly scoped package and environment management tools in conjunction with container or virtual machine images.
-	You start with an image of an operating system, add instructions to install any system dependencies and then use the environment manager to install only what is needed for the project.
-	This is incomplete as it leaves some things outside of the managed environment, but is likely the most familiar feeling experience, as it is essentially the same as what you'd do when setting up your working environment on a new computer.
-	Nix ([vm](https://nix.dev/tutorials/nixos/nixos-configuration-on-vm.html) [container](https://nix.dev/tutorials/nixos/building-and-running-docker-images.html)) and Guix ([vm](https://guix.gnu.org/manual/en/html_node/Running-Guix-in-a-VM.html) [container](https://guix.gnu.org/manual/en/html_node/Invoking-guix-pack.html)) can just generate such images directly with all system dependencies, but have a bit of a learning curve for their new, unfamiliar, way of working, and may not yet have all the specialist software that you need packaged.
+	It is common to use the more narrowly scoped package and environment management tools in conjunction with container or virtual machine build descriptions such as a Dockerfile.
+	You start with an image of an operating system, add instructions to install any system dependencies and then use the environment manager to install non-system depencencies for your project into the image.
+	This is incomplete as it leaves some things outside of the managed environment, it does not capture how to reconstruct the base image, and system dependencies will not necessarily be versioned.
+	This is however likely the most familiar feeling experience, as it is essentially the same as what you'd do when setting up your working environment on a new computer.
+	This approach covers the vast majority of cases and is a good practice to adopt now.
+	Nix flakes ([vm](https://nix.dev/tutorials/nixos/nixos-configuration-on-vm.html) [container](https://nix.dev/tutorials/nixos/building-and-running-docker-images.html)) and Guix manifests ([vm](https://guix.gnu.org/manual/en/html_node/Running-Guix-in-a-VM.html) [container](https://guix.gnu.org/manual/en/html_node/Invoking-guix-pack.html)) can just generate such images directly with all system and project dependencies explicitly specified in lock files, but have a steep learning curve for their new, unfamiliar, way of working.
+	They also may not yet have all the specialist software that you need packaged in their repositories.
+	They can be a lot of work if they don't already have everything that you need at present but are worth watching as, once refined, can solve many of the points of friction with current approaches.
 	</li>
 </ul>
 </details>
