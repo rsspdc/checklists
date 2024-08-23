@@ -376,7 +376,7 @@ Consider what can you do to make your code a little more efficient:
 
 ## ⚖ Governance, Conduct, & Continuity
 
-How can you be excellent to each other, make good decisions well, and continue to do so?
+*How can you be excellent to each other, make good decisions well, and continue to do so?*
 
 - [ ] The project has a suitable governance model
 	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated
