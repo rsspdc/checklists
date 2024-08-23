@@ -237,6 +237,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 📦Distribution
 
+*How can people install or access the software emerging from your project?*
+
 - [ ] Project is distributed in a suitable fashion
 	- [ ]  	🥉Bronze (Easy): Code in a public repository
 	- [ ]  	🥈Silver (Intermediate): Detailed instructions on how to re-run your analysis
