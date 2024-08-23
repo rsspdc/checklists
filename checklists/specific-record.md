@@ -296,7 +296,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	But for the record of a specific analysis it is ideal if we can re-run everything exactly with all the same versions if we are ever looking back to identify a potential source of error.
 	</li>
 	<li>
-	The most approachable tools to specify and reproducibly share an interactive compute environment in which an analysis was performed are probably [binder](https://binderhub.readthedocs.io/en/latest/index.html), [renku](https://renkulab.io/).
+	The most approachable tools to specify and reproducibly share an interactive compute environment in which an analysis was performed are probably [binder](https://binderhub.readthedocs.io/en/latest/index.html), and [renku](https://renkulab.io/).
 	</li>
 	<li>
 	Use of a 'lock file' (different tools may have different names for these) which specifies which software and in which versions to install in order to recreate your compute environment is ideal for this application.
