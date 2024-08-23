@@ -213,7 +213,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 👥Peer review / Code Review
 
-- [ ] Consider submitting your code to [CODECHECK](https://codecheck.org.uk/) or [ReproHack](https://www.reprohack.org/) for an independent check that it runs
+- [ ] Code has been subject to a review indicating that someone else could re-run the analysis
 	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
 	- [ ]  	🥈Silver (easy): Someone other than you has scessfully re-run your analysis using only your documentation, (perferably in a diferent compute environment, such as a different computer/compute cluster)
 	- [ ]  	🥇Gold (intermediate): You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
