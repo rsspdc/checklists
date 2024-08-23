@@ -217,7 +217,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
 	- [ ]  	🥈Silver (easy): Someone other than you has scessfully re-run your analysis using only your documentation, (perferably in a diferent compute environment, such as a different computer/compute cluster)
 	- [ ]  	🥇Gold (intermediate): You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
-	- [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🏆Platinum (intermediate): You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
 
 <details>
 <ul>
