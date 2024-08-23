@@ -8,7 +8,8 @@ Operating an online service requires continuous ongoing work to keep up with sec
 You can also expect to take on some degree of user support from people having trouble using your service.
 Depending on the nature of the project it may not make sense for others to be deploying instances of the server, but at minimum other developers will need a test deployment to work on if not now then in the future.
 
-Most of the suggestions here would be the same as this section in the software packages checklist, and indeed software of this type is generally one or more packages so that checklist also applies here, this focuses on the things that are in addition to the software package checklist.
+Most of the suggestions here would be the same as the section in the software packages checklist, and indeed software of this type is generally one or more packages so that checklist also applies here.
+This checklist focuses on the things that are in addition to general packages and more specific to web-based services.
 
 ## 📒Source control
 
