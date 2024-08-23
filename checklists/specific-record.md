@@ -282,6 +282,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 💽Environment Management / Portability
 
+*How can people get specific versions of your software running on their systems?*
+
 - [ ] Computational environment description provided
 	- [ ]  	🥉Bronze (Easy): List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
 	- [ ]  	🥈Silver (Intermediate): Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
