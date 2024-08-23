@@ -308,11 +308,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	<li>
 	It is common to use the more narrowly scoped package and environment management tools in conjunction with container or virtual machine images.
 	You start with an image of an operating system, add instructions to install any system dependencies and then use the environment manager to install only what is needed for the project.
-	This is incomplete as it leaves some things outside of the managed environment, but likely most familiar feeling as it is mostly the same as what you'd do when setting up your working environment on a new computer.
-	Nix ([vm](https://nix.dev/tutorials/nixos/nixos-configuration-on-vm.html) [container](https://nix.dev/tutorials/nixos/building-and-running-docker-images.html)) and Guix ([vm](https://guix.gnu.org/manual/en/html_node/Running-Guix-in-a-VM.html) [container](https://guix.gnu.org/manual/en/html_node/Invoking-guix-pack.html)) can just generate such images directly with all system dependencies, but have a bit of a learning curve for their new, unfamiliar, way of working.
-	</li>
-	<li>
-	[CODECHECK](https://codecheck.org.uk/)
+	This is incomplete as it leaves some things outside of the managed environment, but is likely the most familiar feeling experience, as it is essentially the same as what you'd do when setting up your working environment on a new computer.
+	Nix ([vm](https://nix.dev/tutorials/nixos/nixos-configuration-on-vm.html) [container](https://nix.dev/tutorials/nixos/building-and-running-docker-images.html)) and Guix ([vm](https://guix.gnu.org/manual/en/html_node/Running-Guix-in-a-VM.html) [container](https://guix.gnu.org/manual/en/html_node/Invoking-guix-pack.html)) can just generate such images directly with all system dependencies, but have a bit of a learning curve for their new, unfamiliar, way of working, and may not yet have all the specialist software that you need packaged.
 	</li>
 </ul>
 </details>
