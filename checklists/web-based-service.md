@@ -1,7 +1,7 @@
 # Web-based service: Research Software Sharing, Publication, & Distribution Checklist
 
 A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
-In many ways the key considerations here lean more lean more organisational than technical.
+In many ways the key considerations here lean more organisational than technical.
 Do you have the resources to operate the service on an ongoing basis?
 A record of a specific analysis is a snapshot in time that is only expected to run in it's specified environment and once done is done.
 Operating an online service requires continuous ongoing work to keep up with security updates and monitoring the status of your server(s) to ensure that your service is still up and working as intended.
