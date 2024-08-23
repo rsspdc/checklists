@@ -287,8 +287,9 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 <details>
 <ul>
 	<li>
-	This is the case where providing a complete specification of the computational environment in which code was run is perhaps the most important.
+	The record of a specific analysis is the case where providing a complete specification of the computational environment in which code was run is perhaps the most important.
 	Doing this and providing the information necessary to initiate a re-run of the analysis, in that environment, is the computational equivalent of providing protocol level methodological detail of how a bench experiment was performed.
+	In addition the provision of the source of the data on which the analysis was performed and a means of both retrieving a copy of it and demonstrating that it is the same as the original input, such as hashes of the data files, is analogous to being able to get access to the same reagents and types of biological samples in an experiment.
 	</li>
 	<li>
 	You might not need this level of detail to install a working version of a piece of software for general use.
