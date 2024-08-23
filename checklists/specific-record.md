@@ -259,7 +259,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	An excellent way to share the record of a specific analysis is to use all these tools in conjunction.
 		<ul>
 		<li>
-		Perform your analysis in reproducible compute environment specified using a tool like [renku](https://renkulab.io) or [binder](https://binderhub.readthedocs.io/en/latest/index.html) which will allow to easy share this environment with others.
+		Perform your analysis in reproducible compute environment specified using a tool like [renku](https://renkulab.io), [binder](https://binderhub.readthedocs.io/en/latest/index.html) or a [Nix flake](https://wiki.nixos.org/wiki/Flakes) which will this environment to readily be shared with others.
 	Write your manuscript using the literate programming tools and server this as static web page as a way of pre-printing your manuscript.
 	Revise it with your collaborators using the issues and pull/merge request features of a git forge.
 	If you make repo citable by adding the appropriate metadata and using [zenodo](https://zenodo.org/) to mint a DOI it is as citable as if it were deposited in a pre-print server, but probably looks a lot better.
