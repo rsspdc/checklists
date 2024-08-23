@@ -213,6 +213,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 ## 👥Peer review / Code Review
 
+*How can you get third party endorsement of and expert feedback on your project?*
+
 - [ ] Code has been subject to a review indicating that someone else could re-run the analysis
 	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
 	- [ ]  	🥈Silver (easy): Someone other than you has scessfully re-run your analysis using only your documentation, (perferably in a diferent compute environment, such as a different computer/compute cluster)
