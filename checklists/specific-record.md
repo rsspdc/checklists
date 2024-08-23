@@ -282,7 +282,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ]  	🥉Bronze (Easy): List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
 	- [ ]  	🥈Silver (Intermediate): Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
 	- [ ]  	🥇Gold (Hard): Structured full environment description, automated ability to recreate the complete environment including system dependencies
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Your description allows the automated bootstrap of the entire* depencency tree of your environment from source (currently very hard to achieve, basically only possible in Guix, likely to involve re-packaging software for Guix)
+	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
 
 <details>
 <ul>
