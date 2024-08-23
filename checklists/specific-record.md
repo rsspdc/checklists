@@ -240,8 +240,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How can people install or access the software emerging from your project?*
 
 - [ ] Project is distributed in a suitable fashion
-	- [ ]  	🥉Bronze (Easy): Code in a public repository
-	- [ ]  	🥈Silver (Intermediate): Detailed instructions on how to re-run your analysis
+	- [ ]  	🥉Bronze (Easy): Code and data (barring privacy related access restrictions) are in public repositories.
+	- [ ]  	🥈Silver (Intermediate): Detailed instructions on how to fetch, install and configure the tools and data needed re-run your analysis, and how to re-run the analysis in the described environment.
 	- [ ]  	🥇Gold (Intermediate): Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
 	- [ ]  	🏆Platinum (Hard): Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
 
@@ -384,19 +384,43 @@ Consider what can you do to make your code a little more efficient:
 		- [ ] Source archived and/or mirrored to other platforms
 		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]  	🥇Gold (intermediate): Project has a governance model appropriate to its scale
-		- [ ]
+	- [ ]  	🥇Gold (intermediate): Project has a governance model appropriate to its scale and goals
 		- [ ] Project has clear and transparent processes
-	- [ ]  	🏆Platinum (Hard): Project has a track record of good governance and policy
-		- [ ]
-		- [ ] Learned from any mistakes and implemented policy changes as a result
+	- [ ]  	🏆Platinum (Hard): Project has a track record of good governance and policy, any from:
+		- [ ] Decisions have involved the appropriate person(s) and been well documented
+		- [ ] Disputes are largely resolved in a respectful and amicable fashion
+		- [ ] The project leadership has learned from any mistakes and implemented policy changes as a result
 
 <details>
+In the case of a record of a specific analysis it is likely that following the conclusion of that project it will become largely dormant.
+You may however still encounter people refering to and making use of parts of the work and asking questions about it.
+Therefore basis policies for any community spaces and user spuuort may still be sensible to indicate.
+Continuity plannig is also still important as others may need to pick up where you left off at some point in the future.
 <ul>
+	<li>
+	**Continuity planning: What happens to your project if something happens to you?**
+	The code will likely live on due the distributed nature of git but what about the issue tracker, the website etc.
+	Who else has the highest level of privilege on your project or a mechanism to attain it?
+	The principle of least privilege dictates that you keep the number of people with this level of access to a minimum but you may then create a single point of failure.
+	Password managers like [bitwarden](https://bitwarden.com/) have a feature where designated people can be given access to your vault if they request it and you do not deny it within a certain time-frame.
+	This could provide a lower level admin with a mechanism to escalate their privileges if you are unable to do this for them.
+	However, this delay might be an issue for continuity of operations if administrator action is needed within the waiting period.
+	Game it out, have a plan, write it down, let people know you have a plan.
+	</li>
+	<li>
+	User support
+		<ul>
+		<li>What support can users expect, or not expect?</li>
+		<li>Where can they ask for it?</li>
+		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
+		<li>Can they pay for more support?</li>
+		<ul>
+	</li>
+	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker</li>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
 	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
-	Be waring of adopting policies that you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes, It is helpful to be clear about what you can and cannot commit to doing.
+	Be waring of adopting policies if you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes, It is helpful to be clear about what you can and cannot commit to doing.
 	Only by communicating this might you be able to find community members to help you with setting and enforcing these norms, if or when your community attains a scale where this becomes relevant - community management is its own skill set.
 	If you can't moderate them avoid creating and/or continuing ungoverned community spaces that can become a liability for you and your project's reputation.
 	Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
@@ -434,16 +458,6 @@ Consider what can you do to make your code a little more efficient:
 		</ul>
 	</li>
 	<li>
-	Continuity planning: What happens to your project if something happens to you?
-	The code will likely live on due the distributed nature of git but what about the issue tracker, the website etc.
-	Who else has the highest level of privilege on your project or a mechanism to attain it?
-	The principle of least privilege dictates that you keep the number of people with this level of access to a minimum but you may then create a single point of failure.
-	Password managers like [bitwarden](https://bitwarden.com/) have a feature where designated people can be given access to your vault if they request it and you do not deny it within a certain time-frame.
-	This could provide a lower level admin with a mechanism to escalate their privileges if you are unable to do this for them.
-	However, this delay might be an issue for continuity of operations if administrator action is needed within the waiting period.
-	Game it out, have a plan, write it down, let people know you have a plan.
-	</li>
-	<li>
 	Does your project take donations?
 	Does it have a trademark?
 	Does it need a legal entity to hold these?
@@ -454,16 +468,6 @@ Consider what can you do to make your code a little more efficient:
 	<li>
 	If your project has potential cybersecurity implications what procedures do you have in place for people to disclose vulnerabilities in the project so that they can be patched before they are made public.
 	What systems do you have in place to disclose a vulnerability once it has been patched and ensure that users know that they need to update.
-	</li>
-	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control?</li>
-	<li>
-	User support
-		<ul>
-		<li>What support can users expect, or not expect?</li>
-		<li>Where can they ask for it?</li>
-		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
-		<li>Can they pay for more support?</li>
-		<ul>
 	</li>
 </ul>
 
