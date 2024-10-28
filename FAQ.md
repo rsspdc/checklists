@@ -6,7 +6,7 @@ A: If you are publishing a research paper that has any analysis code associated 
 
 ## Q: How do I use the checklists?
 
-A: Copy the markdown file suitable to your output type (see below) to your repo and check the boxes that apply to your project, or even better have someone else use the checklist to score your project.
+A: Copy the markdown file suitable to your output type (see the [README](README.md)) to your repo and check the boxes that apply to your project, or even better have someone else use the checklist to score your project.
 
 ## Q: Why were these checklists created?
 
