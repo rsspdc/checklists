@@ -190,6 +190,10 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 			<li>
 				Example of the use of Guix in practice for bioinformatic pipelines: [PiGx](https://bioinformatics.mdc-berlin.de/pigx/) ([paper](https://doi.org/10.1093/gigascience/giy123))
 			</li>
+			<li>
+				The primary limitation of these tools at present is not all of the software commonly used in niche scientific domains is packaged in the upstream package repositories for Nix (~100,000 packages) & Guix (~20,000 packages) despite their considerable size.
+				In order to use these tools with software not yet packaged for them users must learn how to write package derivations for the tool in question and any of it's unpackaged dependencies.
+			</li>
 		</ul>
 	</li>
 </ul>
