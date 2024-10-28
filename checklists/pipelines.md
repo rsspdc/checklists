@@ -7,11 +7,11 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 *How can you keep track of the history of your project and collaborate on it?*
 
 - [ ] Uses git (or other source control tool)
-	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
-	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
+	- [ ]  	🥉Bronze *(Easy)*: Using version control but has a shallow project history, just placed in git for distribution
+	- [ ]  	🥈Silver *(Intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ]  	🥇Gold *(Hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
 			Tags, releases, or branches at major project milestones, maybe some contributions from other users
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from:
+	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from:
 			[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
@@ -29,11 +29,11 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 *On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
-	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided.
+	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided.
 			If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
-	- [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
-	- [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ]  	🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
+	- [ ]  	🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
 
 <details>
 <ul>
@@ -61,13 +61,13 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation
-	- [ ] 	🥉Bronze (easy): Project has README file
+	- [ ] 	🥉Bronze *(easy)*: Project has README file
 		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
-	- [ ]  	🥈Silver (intermediate):  If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
+	- [ ]  	🥈Silver *(intermediate)*:  If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
 			So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
-	- [ ]  	🥇 Gold (time consuming): Your Documentation features examples; rich, varied and working ones.
+	- [ ]  	🥇 Gold *(time consuming)*: Your Documentation features examples; rich, varied and working ones.
 			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]  	🏆 Platinum (intermediate): All examples are executed upon a full build of the documentation so that you know that they at least run.
+	- [ ]  	🏆 Platinum *(intermediate)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
 
 <details>
 <ul>
@@ -130,12 +130,12 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 *How should people make reference to your project and credit your work?*
 
 - [ ] Pipeline is Citable
-	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
-	- [ ]  	🥈Silver (easy): bronze plus the project has persistent resolvable identifier such as a DOI, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
-	- [ ]  	🥇Gold (intermediate): silver plus:
+	- [ ]  	🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+	- [ ]  	🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
+	- [ ]  	🥇Gold *(intermediate)*: silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
 		- [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
-	- [ ]  	🏆Platinum (mixed): gold plus any two or more from:
+	- [ ]  	🏆Platinum *(mixed)*: gold plus any two or more from:
 		- [ ] (easy) All research institutions are identified by their [ROR](https://ror.org/) ID
 		- [ ] (intermediate) Versioned persistent identifier with automation to update snapshots on zenodo or similar tool when a new version is created.
 		- [ ] (intermediate) Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
@@ -182,16 +182,16 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Pipeline has been tested
-	- [ ]  	🥉Bronze (easy): The pipeline runs and produces the expected result on a minimal example dataset
-	- [ ]  	🥈Silver (easy): Bronze plus:
+	- [ ]  	🥉Bronze *(easy)*: The pipeline runs and produces the expected result on a minimal example dataset
+	- [ ]  	🥈Silver *(easy)*: Bronze plus:
 		- [ ] A wide variety of possible input parameter combinations are tested
 		- [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another
 		This provides a sense check that the pipeline is doing what you think its doing, an input perturbation produces predictable change in the output
-	- [ ]  	🥇Gold (intermediate): Silver Plus:
+	- [ ]  	🥇Gold *(intermediate)*: Silver Plus:
 		- [ ] Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters
 		- [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check
 		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository
-	- [ ]  	🏆Platinum (hard): range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
+	- [ ]  	🏆Platinum *(hard)*: range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
 
 <details>
 The types of testing that it may make sense to emphasise in analysis pipelines are:
@@ -229,11 +229,11 @@ These features make the sometimes lengthy and laborious process of testing compu
 How can you get third party endorsement of and expert feedback on your project?
 
 - [ ] Pipeline has been appropriately reviewed
-	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your pipeline and given you feedback
-	- [ ]  	🥈Silver (intermediate): Someone other than you has sucessfully run your pipeline on different compute infrastructure and got the same results with test data
-	- [ ]  	🥇Gold(intermediate): You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
+	- [ ]  	🥉Bronze *(easy)*: Someone other than you has checked over your pipeline and given you feedback
+	- [ ]  	🥈Silver *(intermediate)*: Someone other than you has sucessfully run your pipeline on different compute infrastructure and got the same results with test data
+	- [ ]  	🥇Gold *(intermediate)*: You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
 	  (The snakmake workflow catalog's review practices would not be adequate for this purpose)
-	- [ ]  	🏆Platinum  (hard): Silver, gold and some from:
+	- [ ]  	🏆Platinum *(hard)*: Silver, gold and some from:
 		- Published a peer reviewed afticle with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality.
 		  (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise)
 		- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result
@@ -351,9 +351,9 @@ How can people get specific versions of your software running on their systems?
 How can you and your users minimise wasted energy?
 
 - [ ] Consideration has been given to the energy efficiency of the pipeline
-	- [ ]  	🥉Bronze (intermediate):
+	- [ ]  	🥉Bronze *(intermediate)*:
 		- [ ] Adopt a process to review outputs and keep only those necessary
-	- [ ]  	🥈Silver (intermediate): Bronze plus:
+	- [ ]  	🥈Silver *(intermediate)*: Bronze plus:
 		- [ ] Energy consumption and emissions Estimation/Measurement
 	- [ ]  	🥇Gold (hard) silver plus, some from:
 		- [ ] Appropriately balances the possible efficiency gains against the cost of testing, development, and benchmarking
@@ -420,15 +420,15 @@ Consider what can you do to make your code a little more efficient:
 How can you be excellent to each other, make good decisions well, and continue to do so?
 
 - [ ] The project has a suitable governance model
-	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated
-	- [ ]  	🥈Silver (easy): Bronze Plus - Project has continuity planning in place (2 or more from)
+	- [ ]  	🥉Bronze *(easy)*: The governance model is clearly communicated
+	- [ ]  	🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
 		- [ ] Source archived and/or mirrored to other platforms
 		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]  	🥇Gold (intermediate): Project has a governance model appropriate to its scale
+	- [ ]  	🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale
 		- [ ]
 		- [ ] Project has clear and transparent processes
-	- [ ]  	🏆Platinum (Hard): Project has a track record of good governance and policy
+	- [ ]  	🏆Platinum *(Hard)*: Project has a track record of good governance and policy
 		- [ ]
 		- [ ] Learned from any mistakes and implemented policy changes as a result
 

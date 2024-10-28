@@ -16,11 +16,12 @@ This checklist focuses on the things that are in addition to general packages an
 *How can you keep track of the history of your project and collaborate on it?*
 
 - [ ] Uses git (or other source control tool)
-	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
-	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
-			Tags, releases, or branches at major project milestones, maybe some contributions from other users
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from:
+	- [ ]  	🥉Bronze *(Easy)*: Using version control but has a shallow project history, just placed in git for distribution
+	- [ ]  	🥈Silver *(Intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ]  	🥇Gold *(Hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
+		- [ ] Also keep your description of your testing and development deployment using a too such as docker compose or ansible under source control
+		- [ ] Tags, releases, or branches at major project milestones, maybe some contributions from other users
+	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from:
 			[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
@@ -49,10 +50,10 @@ This checklist focuses on the things that are in addition to general packages an
 *On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
-	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
-	- [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
-	- [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
+	- [ ]  	🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
+	- [ ]  	🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
 
 <details>
 	<ul>
@@ -84,12 +85,12 @@ This checklist focuses on the things that are in addition to general packages an
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation
-	- [ ] 	🥉Bronze (easy): Project has README file
+	- [ ] 	🥉Bronze *(easy)*: Project has README file
 		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
-	- [ ]  	🥈Silver (intermediate): documentation includes instructions on deploying your service in a test/development environment.
-	- [ ]  	🥇Gold (time consuming): documentation features examples; rich, varied and working ones.
+	- [ ]  	🥈Silver *(intermediate)*: documentation includes instructions on deploying your service in a test/development environment.
+	- [ ]  	🥇Gold *(time consuming)*: documentation features examples; rich, varied and working ones.
 			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]  	🏆Platinum (intermediate): Documentation is included for users, administrators (if applicable), systems administrators deploying the project, and developers.
+	- [ ]  	🏆Platinum *(intermediate)*: Documentation is included for users, administrators (if applicable), systems administrators deploying the project, and developers.
 
 <details>
 <ul>
@@ -115,15 +116,15 @@ This checklist focuses on the things that are in addition to general packages an
 *How should people make reference to your project and credit your work?*
 
 - [ ] Service is Citable
-	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
-	- [ ]  	🥈Silver (easy): bronze plus two or more from:
+	- [ ]  	🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+	- [ ]  	🥈Silver *(easy)*: bronze plus two or more from:
 		- [ ] Adopt a url schema which makes dynamically generated pages easily citable
 		- [ ] Check that your web pages archive well with web snapshotting tools like the [internet archive's wayback machine](http://web.archive.org/) or [ArchiveBox](https://archivebox.io/)
 		- [ ] The project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
-	- [ ]  	🥇Gold (intermediate): silver plus:
+	- [ ]  	🥇Gold *(intermediate)*: silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
 		- [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
-	- [ ]  	🏆Platinum (mixed): gold plus any two or more from:
+	- [ ]  	🏆Platinum *(mixed)*: gold plus any two or more from:
 		- [ ] (easy) All research institutions are identified by their [ROR](https://ror.org/) ID
 		- [ ] (intermediate) Versioned persistent identifier with automation to update snapshots on zenodo or similar tool when a new version is created.
 		- [ ] (intermediate) Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
@@ -188,10 +189,10 @@ This checklist focuses on the things that are in addition to general packages an
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Service is appropriately tested
-	- [ ]  	🥉Bronze (easy): You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
-	- [ ]  	🥈Silver (easy): You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
-	- [ ]  	🥇Gold (intermediate): silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
-	- [ ]  	🏆Platinum (hard): You follow the Test Driven Development (TDD) model, designing and writing tests first then writing code to make them pass
+	- [ ]  	🥉Bronze *(easy)*: You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
+	- [ ]  	🥈Silver *(easy)*: You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
+	- [ ]  	🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
+	- [ ]  	🏆Platinum *(hard)*: You follow the Test Driven Development (TDD) model, designing and writing tests first then writing code to make them pass
 
 <details>
 <ul>
@@ -232,10 +233,10 @@ This checklist focuses on the things that are in addition to general packages an
 ## 👥Peer review / Code Review
 
 - [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze *(easy)*:
+	- [ ]  	🥈Silver *(easy)*:
+	- [ ]  	🥇Gold *(intermediate)*:
+	- [ ]  	🏆Platinum *(intermediate)*:
 
 <details>
 <ul>
@@ -276,10 +277,10 @@ This checklist focuses on the things that are in addition to general packages an
 ## 💽Environment Management / Portability
 
 - [ ] Simple to install development, testing, and/or demo environment
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze *(easy)*:
+	- [ ]  	🥈Silver *(easy)*:
+	- [ ]  	🥇Gold *(intermediate)*:
+	- [ ]  	🏆Platinum *(intermediate)*:
 
 <details>
 <ul>
@@ -320,15 +321,15 @@ It may be valuable to share application specific optimiation tips for deployment
 How can you be excellent to each other, make good decisions well, and continue to do so?
 
 - [ ] The project has a suitable governance model
-	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated
-	- [ ]  	🥈Silver (easy): Bronze Plus - Project has continuity planning in place (2 or more from)
+	- [ ]  	🥉Bronze *(easy)*: The governance model is clearly communicated
+	- [ ]  	🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
 		- [ ] Source archived and/or mirrored to other platforms
 		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]  	🥇Gold (intermediate): Project has a governance model appropriate to its scale
+	- [ ]  	🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale
 		- [ ]
 		- [ ] Project has clear and transparent processes
-	- [ ]  	🏆Platinum (Hard): Project has a track record of good governance and policy
+	- [ ]  	🏆Platinum *(Hard)*: Project has a track record of good governance and policy
 		- [ ]
 		- [ ] Learned from any mistakes and implemented policy changes as a result
 

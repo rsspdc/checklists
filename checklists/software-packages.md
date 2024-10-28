@@ -7,10 +7,10 @@ Considerations for publishing a software package which may be used in research o
 *How can you keep track of the history of your project and collaborate on it?*
 
 - [ ] Uses git (or other source control tool)
-	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
-	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+	- [ ]  	🥉Bronze *(Easy)*: Using version control but has a shallow project history, just placed in git for distribution
+	- [ ]  	🥈Silver *(Intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ]  	🥇Gold *(Hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
 <ul>
@@ -26,12 +26,12 @@ Considerations for publishing a software package which may be used in research o
 *On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
-	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
+	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
 			Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]  	🥈Silver (easy): If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided.
+	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided.
 			If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
-	- [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
-	- [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ]  	🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
+	- [ ]  	🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
 
 <details>
 <ul>
@@ -60,13 +60,13 @@ Considerations for publishing a software package which may be used in research o
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation 
-	- [ ] 	🥉Bronze (easy): Project has README file
+	- [ ] 	🥉Bronze *(easy)*: Project has README file
 		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
-	- [ ]  	🥈Silver (intermediate):  If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
+	- [ ]  	🥈Silver *(intermediate)*:  If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
 			So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
-	- [ ]  	🥇 Gold (time consuming): Your Documentation features examples; rich, varied and working ones.
+	- [ ]  	🥇 Gold *(time consuming)*: Your Documentation features examples; rich, varied and working ones.
 			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]  	🏆 Platinum (intermediate): All examples are executed upon a full build of the documentation so that you know that they at least run.
+	- [ ]  	🏆 Platinum *(intermediate)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
 
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
@@ -127,12 +127,12 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How should people make reference to your project and credit your work?*
 
 - [ ] Package is Citable
-	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
-	- [ ]  	🥈Silver (easy): bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
-	- [ ]  	🥇Gold (intermediate): silver plus:
+	- [ ]  	🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+	- [ ]  	🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
+	- [ ]  	🥇Gold *(intermediate)*: silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
 		- [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
-	- [ ]  	🏆Platinum (mixed): gold plus any two or more from:
+	- [ ]  	🏆Platinum *(mixed)*: gold plus any two or more from:
 		- [ ] (easy) All research institutions are identified by their [ROR](https://ror.org/) ID
 		- [ ] (intermediate) Versioned persistent identifier with automation to update snapshots on zenodo or similar tool when a new version is created.
 		- [ ] (intermediate) Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
@@ -202,10 +202,10 @@ Further information:
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Package is appropriately tested
-	- [ ]  	🥉Bronze (easy): You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
-	- [ ]  	🥈Silver (easy): You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
-	- [ ]  	🥇Gold (intermediate): silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
-	- [ ]  	🏆Platinum (intermediate): You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
+	- [ ]  	🥉Bronze *(easy)*: You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
+	- [ ]  	🥈Silver *(easy)*: You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
+	- [ ]  	🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
+	- [ ]  	🏆Platinum *(intermediate)*: You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
 
 <details>
 <ul>
@@ -238,11 +238,11 @@ Further information:
 ## 👥Peer review
 
 - [ ] Package has been appropriately reviewed
-	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your package and given you feedback
+	- [ ]  	🥉Bronze *(easy)*: Someone other than you has checked over your package and given you feedback
 		 - ...
-	- [ ]  	🥈Silver (intermediate): You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
-	- [ ]  	🥇Gold (intermediate): You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
-	- [ ]  	🏆Platinum (hard): Silver, gold and some from:
+	- [ ]  	🥈Silver *(intermediate)*: You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
+	- [ ]  	🥇Gold *(intermediate)*: You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
+	- [ ]  	🏆Platinum *(hard)*: Silver, gold and some from:
 		- Published a peer reviewed afticle with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
 		- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
 		- Your project is a part of a bug bounty program.
@@ -328,6 +328,10 @@ Further information:
 	- [ ]  	🥈Silver (easy):
 	- [ ]  	🥇Gold (intermediate):
 	- [ ]  	🏆Platinum (intermediate):
+	- [ ]  	🥉Bronze *(easy)*:
+	- [ ]  	🥈Silver *(easy)*:
+	- [ ]  	🥇Gold *(intermediate)*:
+	- [ ]  	🏆Platinum *(intermediate)*:
 
 <details>
 
@@ -366,15 +370,15 @@ Good documentation and good error handing can reduce the number of times people 
 How can you be excellent to each other, make good decisions well, and continue to do so?
 
 - [ ] The project has a suitable governance model
-	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated
-	- [ ]  	🥈Silver (easy): Bronze Plus - Project has continuity planning in place (2 or more from)
+	- [ ]  	🥉Bronze *(easy)*: The governance model is clearly communicated
+	- [ ]  	🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
 		- [ ] Source archived and/or mirrored to other platforms
 		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]  	🥇Gold (intermediate): Project has a governance model appropriate to its scale
+	- [ ]  	🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale
 		- [ ]
 		- [ ] Project has clear and transparent processes
-	- [ ]  	🏆Platinum (Hard): Project has a track record of good governance and policy
+	- [ ]  	🏆Platinum *(Hard)*: Project has a track record of good governance and policy
 		- [ ]
 		- [ ] Learned from any mistakes and implemented policy changes as a result
 

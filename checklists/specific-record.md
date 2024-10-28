@@ -10,10 +10,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How can you keep track of the history of your project and collaborate on it?*
 
 - [ ] Uses git (or other source control tool)
-	- [ ]  	🥉Bronze (Easy): Using version control but has a shallow project history, just placed in git for distribution
-	- [ ]  	🥈Silver (Intermediate): Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ]  	🥇Gold (Hard): Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+	- [ ]  	🥉Bronze *(Easy)*: Using version control but has a shallow project history, just placed in git for distribution
+	- [ ]  	🥈Silver *(Intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ]  	🥇Gold *(Hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
 <ul>
@@ -55,10 +55,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
-	- [ ]  	🥉Bronze (easy): There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]  	🥈Silver (easy): If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
-	- [ ]  	🥇Gold (intermediate): Uses [REUSE.software](https://reuse.software/) to provide license information for every file
-	- [ ]  	🏆Platinum (intermediate): all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
+	- [ ]  	🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file
+	- [ ]  	🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
 
 <details>
 <ul>
@@ -91,12 +91,12 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation 
-	- [ ] 	🥉Bronze (easy): Project has README file and:
+	- [ ] 	🥉Bronze *(easy)*: Project has README file and:
 		- [ ] README provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure.
 		- [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
-	- [ ]  	🥈Silver (intermediate): Documentation / comments explain WHY things are done in the code.
-	- [ ]  	🥇Gold (intermediate): You have a simple worked example of your analysis methods with example data to demonstrate its correctness in a simple case
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): The authors manuscript of you paper is a literate programming artefact with numbers, tables and figures programaticaly generated and built in a reproducible computational environment.
+	- [ ]  	🥈Silver *(intermediate)*: Documentation / comments explain WHY things are done in the code.
+	- [ ]  	🥇Gold *(intermediate)*: You have a simple worked example of your analysis methods with example data to demonstrate its correctness in a simple case
+	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: The authors manuscript of you paper is a literate programming artefact with numbers, tables and figures programaticaly generated and built in a reproducible computational environment.
 			Additional documentation of details not suitable for the main manuscript are in the supplementary material also as literate programming artefacts, more lengthy and complex elements of the analysis might be run as a pipeline or scripts then read from for inclusion in the manuscript.
 			Building the manuscript (without caching) reruns the complete analysis and produces the same output (you may need to set random seeds for any analysis that makes use of pseudorandom number generation).
 
@@ -134,12 +134,12 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How should people make reference to your project and credit your work?*
 
 - [ ] Record is Citable
-	- [ ]  	🥉Bronze (easy): A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
-	- [ ]  	🥈Silver (easy): bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival copy of the project.
-	- [ ]  	🥇Gold (intermediate): silver plus:
+	- [ ]  	🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+	- [ ]  	🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival copy of the project.
+	- [ ]  	🥇Gold *(intermediate)*: silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/), [ScoRo](http://www.sparontologies.net/ontologies/scoro), [CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
 		- [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
-	- [ ]  	🏆Platinum (mixed): gold plus any two or more from:
+	- [ ]  	🏆Platinum *(mixed)*: gold plus any two or more from:
 		- [ ] (easy) All research institutions are identified by their [ROR](https://ror.org/) ID
 		- [ ] (intermediate) Versioned persistent identifier with automation to update snapshots on zenodo or similar tool when a new version is created.
 		- [ ] (intermediate) Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
@@ -190,10 +190,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Project has undergone suitable testing
-	- [ ]  	🥉Bronze (easy): Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
-	- [ ]  	🥈Silver (easy): Includes test datasets which cover a range of outcomes of the analysis
-	- [ ]  	🥇Gold (intermediate): You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
-	- [ ]  	🏆Platinum (hard): Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
+	- [ ]  	🥉Bronze *(easy)*: Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
+	- [ ]  	🥈Silver *(easy)*: Includes test datasets which cover a range of outcomes of the analysis
+	- [ ]  	🥇Gold *(intermediate)*: You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
+	- [ ]  	🏆Platinum *(hard)*: Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
 
 <details>
 <ul>
@@ -220,10 +220,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How can you get third party endorsement of and expert feedback on your project?*
 
 - [ ] Code has been subject to a review indicating that someone else could re-run the analysis
-	- [ ]  	🥉Bronze (easy): Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
-	- [ ]  	🥈Silver (easy): Someone other than you has scessfully re-run your analysis using only your documentation, (preferably in a different compute environment, such as a different computer/compute cluster)
-	- [ ]  	🥇Gold (intermediate): You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
-	- [ ]  	🏆Platinum (intermediate): You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
+	- [ ]  	🥉Bronze *(easy)*: Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
+	- [ ]  	🥈Silver *(easy)*: Someone other than you has scessfully re-run your analysis using only your documentation, (preferably in a different compute environment, such as a different computer/compute cluster)
+	- [ ]  	🥇Gold *(intermediate)*: You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
+	- [ ]  	🏆Platinum *(intermediate)*: You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
 
 <details>
 <ul>
@@ -244,10 +244,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How can people install or access the software emerging from your project?*
 
 - [ ] Project is distributed in a suitable fashion
-	- [ ]  	🥉Bronze (Easy): Code and data (barring privacy related access restrictions) are in public repositories.
-	- [ ]  	🥈Silver (Intermediate): Detailed instructions on how to fetch, install and configure the tools and data needed re-run your analysis, and how to re-run the analysis in the described environment.
-	- [ ]  	🥇Gold (Intermediate): Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
-	- [ ]  	🏆Platinum (Hard): Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
+	- [ ]  	🥉Bronze *(Easy)*: Code and data (barring privacy related access restrictions) are in public repositories.
+	- [ ]  	🥈Silver *(Intermediate)*: Detailed instructions on how to fetch, install and configure the tools and data needed re-run your analysis, and how to re-run the analysis in the described environment.
+	- [ ]  	🥇Gold *(Intermediate)*: Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
+	- [ ]  	🏆Platinum *(Hard)*: Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
 
 <details>
 <ul>
@@ -289,10 +289,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How can people get specific versions of your software running on their systems?*
 
 - [ ] Computational environment description provided
-	- [ ]  	🥉Bronze (Easy): List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
-	- [ ]  	🥈Silver (Intermediate): Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
-	- [ ]  	🥇Gold (Hard): Structured full environment description, automated ability to recreate the complete environment including system dependencies
-	- [ ]  	🏆Platinum (MAXIMUM OVERKILL): Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
+	- [ ]  	🥉Bronze *(Easy)*: List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
+	- [ ]  	🥈Silver *(Intermediate)*: Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
+	- [ ]  	🥇Gold *(Hard)*: Structured full environment description, automated ability to recreate the complete environment including system dependencies
+	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
 
 <details>
 <ul>
@@ -333,10 +333,10 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How can you and your users minimise wasted energy?*
 
 - [ ] Consideration has been given to the energy efficiency of the code
-	- [ ]  	🥉Bronze (easy): minimise unnecessary output files
-	- [ ]  	🥈Silver (easy): bronze plus: Profile your code and refactor inefficient parts
-	- [ ]  	🥇Gold (intermediate): silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
-	- [ ]  	🏆Platinum (intermediate): gold plus: Offload suitable computations to hardware accelerators where possible
+	- [ ]  	🥉Bronze *(easy)*: minimise unnecessary output files
+	- [ ]  	🥈Silver *(easy)*: bronze plus: Profile your code and refactor inefficient parts
+	- [ ]  	🥇Gold *(intermediate)*: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
+	- [ ]  	🏆Platinum *(intermediate)*: gold plus: Offload suitable computations to hardware accelerators where possible
 
 <details>
 
@@ -383,14 +383,14 @@ Consider what can you do to make your code a little more efficient:
 *How can you be excellent to each other, make good decisions well, and continue to do so?*
 
 - [ ] The project has a suitable governance model
-	- [ ]  	🥉Bronze (easy): The governance model is clearly communicated
-	- [ ]  	🥈Silver (easy): Bronze Plus - Project has continuity planning in place (2 or more from)
+	- [ ]  	🥉Bronze *(easy)*: The governance model is clearly communicated
+	- [ ]  	🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
 		- [ ] Source archived and/or mirrored to other platforms
 		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]  	🥇Gold (intermediate): Project has a governance model appropriate to its scale and goals
+	- [ ]  	🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale and goals
 		- [ ] Project has clear and transparent processes
-	- [ ]  	🏆Platinum (Hard): Project has a track record of good governance and policy, any from:
+	- [ ]  	🏆Platinum *(Hard)*: Project has a track record of good governance and policy, any from:
 		- [ ] Decisions have involved the appropriate person(s) and been well documented
 		- [ ] Disputes are largely resolved in a respectful and amicable fashion
 		- [ ] The project leadership has learned from any mistakes and implemented policy changes as a result
