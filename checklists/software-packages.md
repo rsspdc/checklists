@@ -277,11 +277,7 @@ Further information:
 	Using standard packing format and build tools also often makes it easier to automate testing and documentation building from your source code as well as building binary packages for different, versions, operating systems and architectures.
 	</li>
 	<li>Package repositories and other packaging formats, conda, spack, Nix.</li>
-	<li>
-	If you do not have the resources to maintain your package it may be preferable to leave it out of the main package repos, some may not allow your code to be included there without and active maintainer.
-	It can be useful to indicate the status of the project in it's README.
-	Let people know that it's not receiving active maintenance and might not be updated to new language and package versions if you are not doing this.
-	<li>
+	<li>If you do not have the resources to maintain your package it may be preferable to leave it out of the main package repos, many may not allow your code to be included there without an active maintainer.</li>
 </ul>
 </details>
 
@@ -436,6 +432,26 @@ How can you be excellent to each other, make good decisions well, and continue t
 	However, this delay might be an issue for continuity of operations if administrator action is needed within the waiting period.
 	Game it out, have a plan, write it down, let people know you have a plan.
 	</li>
+	<li>
+	Planning how to 'sunset' your project:
+	<ul>
+	<li>Let people know that it's not receiving active maintenance and might not be updated to new language and package versions if you are not doing this.</li>
+	<li>
+	It can be useful to indicate the status of the project in it's README, see: [repostatus.org](https://www.repostatus.org/), where they define eight different project statuses.
+	<ul>
+		<li>*Concept* – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.</li>
+		<li>*WIP* – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.</li>
+		<li>*Suspended* – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.</li>
+		<li>*Abandoned* – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.</li>
+		<li>*Active* – The project has reached a stable, usable state and is being actively developed.</li>
+		<li>*Inactive* – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.</li>
+		<li>*Unsupported* – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.</li>
+		<li>*Moved* - The project has been moved to a new location, and the version at that location should be considered authoritative. This status should be accompanied by a new URL.</li>
+	</ul>
+	</li>
+	<li>You can also convert repositories to an archival mode on common software forges like GitHub to indicate that they are no longer being worked on.</li>
+	</ul>
+	<li>
 	<li>
 	Does your project take donations?
 	Does it have a trademark?
