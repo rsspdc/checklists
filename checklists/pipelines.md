@@ -172,19 +172,23 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 				General software repositories may not make specific provision for citation of software packages in the academic fashion.
 				However some provide, what is for some use cases, a superior form of 'citation' of their own sources i.e. a complete 'software bill of materials (SBOM)'.
 				This is a list of all the code used in another piece of code, its dependencies, and their dependencies recursively, along with all of their versions.
-				For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive in its approach.
-				It not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) software packages in its repository from source with an extremely minimal fixed set of binaries, an important capability for [creating somewhat trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
-				This creates a compute environment which is not only reproducible but verifiable, meaning the source of all of an environments dependencies can in theory be scrutinised.
+				For example [Nix](https://nixos.org/) can do this but [Guix](https://guix.gnu.org/) is perhaps the most comprehensive in its approach, though for a smaller catalog of software.
+				Whilst language specific automated environment managment tools such as {[renv](https://rstudio.github.io/renv/index.html)} & [poetry](https://python-poetry.org/) provide a version of this,
+				their scope does not extend to system dependencies, so whilst helpful they are incomplete.
+				Guix not only provides all information necessary for a complete 'SBOM' but, it can [bootstrap](https://guix.gnu.org/en/manual/en/html_node/Bootstrapping.html) software packages in its repository from source with an extremely minimal fixed set of binaries,
+				with [bitwise binary reproducibility](https://reproducible-builds.org/) for vast majority of packages, an important capability for [creating somewhat trustworthy builds](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf).
+				This creates a compute environment which is not only reproducible but 'verifiable', meaning the source of all of an environment's dependencies can in theory be scrutinised.
 				It also adopts an approach to commit signing and authorisation of signers that gives it a [currently uniquely complete supply chain security architecture](https://doi.org/10.22152/programming-journal.org/2023/7/1).
-				Packages or 'derivations' are 'pure functions' in the sense that only their inputs effect their outputs and they have no side-effects, package builds are sandboxed to prevent dependencies on any external source not explicitly provided as an input and inputs are hashed to ensure that they cannot differ for the value expected when they were packaged.
+				Packages or 'derivations' are 'pure functions' in the sense that only their inputs effect their outputs and they have no side-effects,
+				package builds are sandboxed to prevent dependencies on any external source not explicitly provided as an input,
+				and inputs are hashed to ensure that they cannot differ for the value expected when they were packaged.
 				This gives these technologies an unrivaled ability to readily demonstrate the reproducibility and provenance of compute environments specified using them.
 			</li>
 			<li>
-				Whilst not yet full implemented and adopted these technologies also aford some fascinating opertunities for seemless access to archival versions of software in the future.
-				Due to the similarities in the content based addressing used by Git, Nix, Guix, IPFS (Interplanetary file System) and software heritage's IDs it may be possible to construct an approach to archiving, distributing and caching sources of packages in a way that would ensure that low demand archived software sources and high demand current packages can be distributed transparently through the same mechanism.
-				This would in theory permit the reconstruction of any historically specified compute environment that had been archived with no changes to normal workflow, other than perhaps a longer build time.
-				This approach also makes the creation of 'mirrors' of the archive relatively simple and requires no client side changes as an IPFS resource will be resolved irrespective of the node on which it is stored.
-				See: [NLnet Software heritage and IPFS](https://nlnet.nl/project/SoftwareHeritage-P2P/), [Tweag - software heritage and Nixpkgs](https://www.tweag.io/blog/2020-06-18-software-heritage/), [John Ericson - Nix x IPFS Gets a New Friend: SWH (SoN2022 - public lecture series)](https://www.youtube.com/watch?v=DjJyPzwEzmU)
+				In addition Guix can automatically fall back on sources archived by [software heritage](https://www.softwareheritage.org/) if the original source repository is unavailable.
+			</li>
+			<li>
+				Example of the use of Guix in practice for bioinformatic pipelines: [PiGx](https://bioinformatics.mdc-berlin.de/pigx/) ([paper](https://doi.org/10.1093/gigascience/giy123))
 			</li>
 		</ul>
 	</li>
