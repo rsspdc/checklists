@@ -291,6 +291,9 @@ How can people install or access the software emerging from your project?
 <details>
 <ul>
 <li>
+	Including your pipeline in a collection of pipelines increases it's visibility, can help to attract contributors, and in the case of a curated collection with good standards for how they package their pipelines provide users with confidence to they will be able to use your pipline on their compute infrastructure.
+</li>
+<li>
 Good places to distribute workflows include:
 	<ul>
 	<li>
