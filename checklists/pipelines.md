@@ -152,7 +152,21 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 	Further reading on the [ethics of CROTs](https://doi.org/10.1080/08989621.2022.2161049), as well as their [evolution and adoption](https://doi.org/10.1002/leap.1496).
 	</li>
 	<li>
-		Nix and GUIX
+		When choosing to where to archive your code to [Zenodo](https://zenodo.org/) and/or [Software Herttage](https://www.softwareheritage.org/), they are not mutually exclusive, here is what you should know about how they differ.
+		<ul>
+			<li>Zenodo only stores a snapshot of your project at the time you take one and uses DOIs as persistent identifiers. </li>
+			<li>Software Heritage archives your entire git history and has git commit level granularity in it's persistent identifiers [SWHIDs](https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html) as they are partly content based i.e. derived from a hash of the contents of your repository.</li>
+		</ul>
+		Acording to [DataCite](https://support.datacite.org/docs/versioning) recomendations, ideally you should only take new snapshots and mint a new DOI when you create a new major version of your code, using the [semantic versioning](https://semver.org/) concepts for incrementing verions.
+		They advise to only update only to update the metadata with minor and patch releases and not to mint a new DOI.
+		Unfortunately the default behaviour when using the github/Zenodo integration is to mint a new DOI every time you create a new release which is typically more frequently than when you increment you major version.
+		A way around this it to use a CI/CD (continious integration and deployment) job which only triggers when the major version is incremented in a release and sends a snapshot to Zenodo via their API.
+		If using [gitlab2zenodo](https://gitlab.com/sbeniamine/gitlab2zenodo) achieving this would be a relatively minor modification to their suggested gitlab CI/CD workflow, one way to do this would be to store the previous version in a variable you can update update with the gitlab API and check against that.
+		Snapshotting on every release could add a lot unecessarily identifiers to the DOI namespace if the project it very active and should be avoided in this case, if your project will only needs infrequent updates this option is fine.
+		To maximise reproducibility it is desireable to cite software used in a given analysis with commit level version granularity, and that only versions of software that are archived be used in published research.
+	</li>
+	<li>
+		Nix and Guix
 		<ul>
 			<li>
 				General software repositories may not make specific provision for citation of software packages in the academic fashion.
