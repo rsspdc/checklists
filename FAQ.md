@@ -18,7 +18,7 @@ In my experience the 'record of a specific analysis' was among the most common f
 Most of the previous work in this space has implicitly leant towards conventional software packages as the primary output with some consideration for web based services/APIs, whilst much of the advice is similar the types are research software output  identified here are sufficiently different to warrant dedicated checklists.
 These checklists aim to provide as concrete and actionable a set of recommendations as possible, along with aspirational suggestions for those wishing to push the envelope on computational reproducibility and FAIRness in research software.
 
-Whilst ELIXIR are working on machine readable software management plans using [Data Stewardship Wizard](https://ds-wizard.org/) these checklists are in a loosely defined markdown format which makes no strong guarantees that it will be parsable so their approach may be perferable for more formal exercises.
+Whilst ELIXIR are working on machine readable software management plans using [Data Stewardship Wizard](https://ds-wizard.org/) the checklists here are in a loosely defined markdown format which makes no strong guarantees that it will be parsable so their approach may be perferable for more formal exercises.
 These lists have the ease of being a simple to copy and edit text file.
 
 ## Q: Am I trying to manipulate you into following best practices by gamifying it?
