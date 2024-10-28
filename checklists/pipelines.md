@@ -310,6 +310,22 @@ Good places to distribute workflows include:
 	</li>
 	</ul>
 </li>
+</ul>
+</details>
+
+## 💽Environment Management / Portability
+
+How can people get specific versions of your software running on their systems?
+
+- [ ] It is possible to run your pipeline on other systems with some degree of reproducibility
+	- [ ]  	🥉Bronze *(easy)*: The pipeline may require some manual changes, and/or manual steps to install the requisite software environments or retrieve data, and perform some standard pre-processing of inputs like building genome references etc.
+	- [ ]  	🥈Silver *(intermediate)*: External inputs can be automatically retrieved using their identifiers and pre-processing steps for these inputs are performed as apart of the pipeline.
+		At least one method for describing the required compute environment(s) is supplied e.g. conda environments, or container build files so that others can be speficied if a user has compute infrastructure which does not support the method(s) supplied.
+	- [ ]  	🥇Gold *(hard)*: Complete pipline can be executed with single command with all data and dependencies fetched automatically, barring the need for any system specific resource constraint configuration.
+	- [ ]  	🏆Platinum *(practically impossible in practice)*: The entire dependency tree of your pipeline including the pipeline manager itself, the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
+
+<details>
+<ul>
 <li>
 In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
 Many pipeline managment tools support specifiying per-task compute environments using tools such as conda, and container technologies such as docker and singularity/apptainer.
@@ -350,21 +366,6 @@ Many pipeline managment tools support specifiying per-task compute environments 
 		</li>
 	</ul>
 </li>
-</ul>
-</details>
-
-## 💽Environment Management / Portability
-
-How can people get specific versions of your software running on their systems?
-
-- [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
-
-<details>
-<ul>
 	<li>
 	containers, conda, singularity/apptainer
 	</li>
