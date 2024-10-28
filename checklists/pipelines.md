@@ -282,11 +282,11 @@ How can you get third party endorsement of and expert feedback on your project?
 
 How can people install or access the software emerging from your project?
 
-- [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+- [ ] Pipeline is distributed in appropriate format(s)
+	- [ ]  	🥉Bronze *(easy)*: Pipeline is in a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be run with the pipeline manager's standard tooling.
+	- [ ]  	🥈Silver *(easy)*: The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment mangement tool.
+	- [ ]  	🥇Gold *(intermediate)*: Pipeline is in a reposity of workflows and piplines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
+	- [ ]  	🏆Platinum *(intermediate)*: Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
 
 <details>
 <ul>
