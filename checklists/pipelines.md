@@ -352,12 +352,13 @@ Many pipeline managment tools support specifiying per-task compute environments 
 		</li>
 		<li>
 			<p>
-			Functional package managers such as Nix and Guix have a 'best practices by design' approach to packaging software.
+			Functional package managers such as [Nix](https://nixos.org/) and [Guix](https://guix.gnu.org/) have a 'best practices by design' approach to packaging software.
 			They do not suffer from the issue of it being difficult to determine what is and is not a required dependency as this work is done up-front when the software is packaged.
 			They usually require that dependencies be completely specified and packages be build in a sandboxed environnment which only has access to the explicitly specified dependencies.
 			This provides much stronger guarantees of the ability to specify and build reproducible environments.
-			It is also possible to build container and VM images specified with these tools, and a container specified with them could be a drop in replacement for one specified with conda for example.
-			Unfortuntately these tools have yet to see wide adoption in the scientific / research computing communities and thus many packages used by thess communities are not packaged for these tools, (despite nixpkgs being the largest extant software package respoitory with >80,000 packages), hindering their broarder adoption.
+			It is also possible to build container and VM images specified with these tools, and a container specified with them could be a drop in replacement for one specified with conda and Docker for example.
+			Unfortuntately these tools have yet to see wide adoption in the scientific / research computing communities and thus many packages used by thess communities are not packaged for these tools, (despite nixpkgs being the largest extant software package respoitory with >100,000 packages), hindering their broarder adoption.
+			Use and awareness is growing and there are some excellent [case studies](https://bioinformatics.mdc-berlin.de/pigx/).
 			Nix is also cross platform working natively on MacOS, on windows via the windows subsystem for linux and even on android.
 			</p>
 			<p>
@@ -367,7 +368,23 @@ Many pipeline managment tools support specifiying per-task compute environments 
 	</ul>
 </li>
 	<li>
-	containers, conda, singularity/apptainer
+	Are the environments for each step of your pipeline well described using an environment management tool such as [Conda](https://conda.org/), or [Spack](https://spack.readthedocs.io/en/latest/) and/or supplied as [OCI](https://opencontainers.org/) containers, runnable with tools such [Docker](https://www.docker.com/), [podman](https://podman.io/), [lxc](https://linuxcontainers.org/lxc/introduction/), [Singularity/Apptainer](https://apptainer.org/), or others?
+	</li>
+	<li>
+	Many popular pipeline management tools integrate with environment management and container runtimes to facilitate portability of reproducible compute environments. see:
+	</li>
+	<ul>
+		<li>
+		[Snakemake - integrated Package management](https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html#integrated-package-management)
+		</li>
+		<li>
+		[Nextflow - containers](https://www.nextflow.io/docs/latest/container.html)
+		</li>
+	</ul>
+	<li>
+	The Pipelines in Genomics [PiGx](http://bioinformatics.mdc-berlin.de/pigx/) ([paper](https://doi.org/10.1093/gigascience/giy123)) collection represents a gold standard in reproducible computational environments for genomics pipelines.
+	It used the [Guix](https://guix.gnu.org/) functional package manager to attain >97% bitwise reproducibility for dependencies across the pipelines in their collection.
+	Containers built with Nix or Guix can be used in pipeline managers, as PiGx does with snakemake.
 	</li>
 </ul>
 </details>
