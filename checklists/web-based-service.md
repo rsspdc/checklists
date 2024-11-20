@@ -260,17 +260,38 @@ This checklist focuses on the things that are in addition to general packages an
 
 <details>
 <ul>
-	<li> Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.</li>
+	<li>
+	Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.
+	</li>
 	<ul>
 		<li>
-		Operating your website, things like making sure that your SSL certificates stay up to date and you have enough comput resources for the service to run well for users.
-		All the usual work of hosting a webservice.
+		Operating your website, things like:
 		</li>
+		<ul>
+			<li>
+			making sure that your TLS certificates stay up to date and you have enough compute resources for the service to run well for users.
+			</li>
+			<li>
+			Having a sensible URL, potentially including any look-alike urls that malicious actors might try to [typosquat](https://en.wikipedia.org/wiki/Typosquatting)
+			</li>
+			<li>
+			Distributing your service to developers who may want to build tools on top of it or query it in an automated fashion via an API.
+			The API should be well documented and conform to open standards.
+			</li>
+			<li>
+			Take some simple measures to ensure the reliability of your site under elevated load. Such as using a reverse proxy, enabling content caching so that your proxy can serve requests for the same content without hitting your application server(s) again, limit concurrent connections to the max number of sessions your server can handle at once so if traffic spikes it gets slower but dosen't completely fall over, load balancing across multiple application servers.
+			</li>
+			<li>
+			Consider DDoS protection for your site if your traffic grows over a certain threshold.
+			</li>
+			<li>
+			Be wary of 'denial of wallet' attacks when hosting on automatically horizontally scaling platform by setting limits to prevent malicious parties from spamming your site in such a fashion as to cause you to incur massive hosting bills.
+			</li>
+		</ul>
 		<li>
 		Distributing your server software to sysadmins, devops people, and potentially general IT staff, developers, and amateur self-hosters.
 		</li>
 	</ul>
-	<li>APIs?</li>
 </ul>
 </details>
 
