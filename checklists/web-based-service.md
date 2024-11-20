@@ -252,11 +252,17 @@ This checklist focuses on the things that are in addition to general packages an
 
 ## 📦Distribution
 
-- [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+Distribution for a web based service covers both hosting the service and distributing the software to sysadmins who may want to run their own instance of the service.
+
+- [ ] Service is distributed in suitable fashion
+	- [ ]  	🥉Bronze *(easy)*: Code is in a public repository or repositories
+	- [ ]  	🥈Silver *(easy)*:
+		- [ ] Detailed instructions are available on how to set up, at minimum, a development environment in which the service can run.
+		- [ ] All constituent components of the service are appropriately packaged
+		- [ ] Lock file(s) with
+	- [ ]  	🥇Gold *(intermediate)*: A simple deployment of the service is available in declarative form using a tool such as [docker compose](https://docs.docker.com/compose/) or [ansible](https://www.ansible.com/) which automates a simple deployment.
+	- [ ]  	🏆Platinum *(intermediate)*:
+		- [ ] Reproducibly deployable as a Nix module
 
 <details>
 <ul>
