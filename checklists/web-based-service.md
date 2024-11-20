@@ -315,11 +315,11 @@ This checklist focuses on the things that are in addition to general packages an
 
 ## 🌱 Energy Efficiency
 
-- [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+- [ ] Consideration has been given to the energy efficiency of the service
+	- [ ]  	🥉Bronze *(easy)*:
+	- [ ]  	🥈Silver *(easy)*: Estimate and share the carbon footprint of your service using system logs with a tool such as [green algorithms calculator](http://calculator.green-algorithms.org/)
+	- [ ]  	🥇Gold *(intermediate)*:
+	- [ ]  	🏆Platinum *(intermediate)*:
 
 <details>
 
