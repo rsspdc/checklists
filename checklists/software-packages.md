@@ -283,7 +283,7 @@ Further information:
 		<ul>
 			<li>
 			Many modern software forges combine hosting of source control with CI/CD tools.
-			Github has 'github actions' and GitLab has 'glilab CI/CD', these tools are tide to those specific git hosting services meaning that adopting them can generate significant lock-in to that specific git hosting tool/platform.
+			[Github](https://github.com/) has '[github actions](https://docs.github.com/en/actions)' and [GitLab](https://about.gitlab.com/) has '[gitlab CI/CD](https://docs.gitlab.com/ee/ci/)', these tools are tide to those specific git hosting services meaning that adopting them can generate significant lock-in to that specific git hosting tool/platform.
 			[Codeberg](https://codeberg.org/) provides an instance of [Woodpecker CI](https://woodpecker-ci.org/) and there are other git host-agnostic CI/CD tools such as [Jenkins](https://www.jenkins.io/) available.
 			</li>
 			<li>
