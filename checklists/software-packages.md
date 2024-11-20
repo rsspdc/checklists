@@ -330,10 +330,6 @@ Further information:
 ## 🌱 Energy Efficiency
 
 - [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
 	- [ ]  	🥉Bronze *(easy)*:
 	- [ ]  	🥈Silver *(easy)*:
 	- [ ]  	🥇Gold *(intermediate)*:
