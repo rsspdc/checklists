@@ -33,7 +33,7 @@ In presenting practices suitable to a range of scales we hope to let growing pro
 
 ### Summary of Types
 
--   [Record of a specific analysis](./checklists/pipelines.md)
+-   [Record of a specific analysis](./checklists/specific-record.md)
 -   [Web-based service](./checklists/web-based-service.md)
 -   Generic Tools
 	-   [Unitary tool / software package](./checklists/software-packages.md)
