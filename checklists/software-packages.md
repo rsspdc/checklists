@@ -288,11 +288,14 @@ Further information:
 
 ## 💽Environment Management / Portability
 
-- [ ]
-	- [ ]  	🥉Bronze (easy):
-	- [ ]  	🥈Silver (easy):
-	- [ ]  	🥇Gold (intermediate):
-	- [ ]  	🏆Platinum (intermediate):
+- [ ] The compute environment needed to build and install the package is well defined
+	- [ ]  	🥉Bronze *(easy)*: Makes use of a packaging format that defines dependencies in the package's own languge, but not neceasrily system dependencies
+	- [ ]  	🥈Silver *(easy)*: Packaging information captures all dependencies both build and runtime, either manually or in an automated fashion
+	- [ ]  	🥇Gold *(intermediate)*: Detailed version information of all dependencies is also captured, this might also include details of compatible version ranges, to facilitate dependency graph resolution in pacakage managers where only one version of a package can be installed in an environment at the same time.
+		- conda / environment.yml
+	- [ ]  	🏆Platinum *(intermediate)*:
+		- Make use of functional package managers like Nix/Guix whose package derivations make the strongest guarantees about the ability to re-build a package as they describe a pure function called in a sandboxed environment.
+		- Cross operating system / architecture builds - does your package build on different operating systems and instruction set architectures (arm, x86, RISC-V etc.)
 
 <details>
 <ul>
