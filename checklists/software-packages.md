@@ -1,4 +1,6 @@
-# Software Packages: Research Software Sharing, Publication, & Distribution Checklist
+# Software Packages
+
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 
 Considerations for publishing a software package which may be used in research or as a researcher
 

@@ -1,4 +1,6 @@
-# Record of a specific analysis: Research Software Sharing, Publication, & Distribution Checklist
+# Record of a specific analysis
+
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 
 Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
 The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.

@@ -1,4 +1,6 @@
-# Pipelines & Workflows: Research Software Sharing, Publication, & Distribution Checklist
+# Pipelines & Workflows
+
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 
 Considerations for publishing a data analysis pipeline which may be used in research or as a researcher
 
