@@ -2,7 +2,7 @@
 
 ## Q: Who is this for?
 
-A: If you are publishing a research paper that has any analysis code associated with it, are developing a software tool which will be used by resarchers, or deploying a web service which will be used by researchers.
+A: If you are publishing a research paper that has any analysis code associated with it, are developing a software tool which will be used by researchers, or deploying a web service which will be used by researchers.
 
 ## Q: How do I use the checklists?
 
@@ -20,7 +20,7 @@ Whilst much of the advice is similar, the types of research software output iden
 These checklists aim to provide as concrete and actionable a set of recommendations as possible.
 In addition they provide aspirational suggestions and resources for those wishing to push the envelope on computational reproducibility and FAIRness in research software beyond the minimum requirements.
 
-Whilst ELIXIR are working on machine readable software management plans using [Data Stewardship Wizard](https://ds-wizard.org/) the checklists here are in a loosely defined markdown format which makes no strong guarantees that it will be parsable so their approach may be perferable for more formal exercises.
+Whilst ELIXIR are working on machine readable software management plans using [Data Stewardship Wizard](https://ds-wizard.org/) the checklists here are in a loosely defined markdown format which makes no strong guarantees that it will be parsable so their approach may be preferable for more formal exercises.
 These lists have the ease of being a simple to copy and edit text file.
 
 ## Q: Am I trying to manipulate you into following best practices by gamifying it?
