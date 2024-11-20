@@ -224,6 +224,13 @@ This checklist focuses on the things that are in addition to general packages an
 	</li>
 </ul>
 </details>
+
+
+## 🤖 **Automation**
+
+*What tasks can you automate to increase consistency and reduce manual work?*
+
+
 <details>
 <ul>
 

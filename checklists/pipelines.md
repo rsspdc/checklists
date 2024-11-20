@@ -246,6 +246,10 @@ These features make the sometimes lengthy and laborious process of testing compu
 [This conference paper](https://doi.org/10.1145/3322790.3330595) introduces a name for a category of software test that they call 'scientific tests' which are black-box style tests agnositic to the implementation which test the broard behaviour of a system is as predicted.
 </details>
 
+## 🤖 **Automation**
+
+*What tasks can you automate to increase consistency and reduce manual work?*
+
 ## 👥Peer review / Code Review
 
 How can you get third party endorsement of and expert feedback on your project?

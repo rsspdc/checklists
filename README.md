@@ -53,6 +53,8 @@ There are differences in how some of these are executed depending on the type of
 	- *How should people make reference to your project and credit your work?*
 - ✅ **Testing**
 	- *How can you test your project so you can be confident it does what you think it does?*
+- 🤖 **Automation**
+	- *What tasks can you automate to increase consistency and reduce manual work?*
 - 👥 **Peer review / Code Review**
 	- *How can you get third party endorsement of and expert feedback on your project?*
 - 📦 **Distribution**

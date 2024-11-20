@@ -215,6 +215,26 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 </ul>
 </details>
 
+## 🤖 **Automation**
+
+*What tasks can you automate to increase consistency and reduce manual work?*
+
+- [ ] Suitable automations are in place
+	- [ ]  	🥉Bronze *(easy)*:
+	- [ ]  	🥈Silver *(easy)*:
+	- [ ]  	🥇Gold *(intermediate)*:
+
+	- [ ]  	🏆Platinum *(hard)*: note that difficuly is somewhat project dependent
+	       Your manuscript and its supplements are generated and served on a website after being built from your CI/CD pipeline.
+	       All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
+	       Results are cached such that if you, for example, change the formatting of a graph only the plotting and rendering code needs to be re-run, but if you change the data the entire pipeline is re-rerun.
+
+<details>
+	<ul>
+
+	</ul>
+</details>
+
 ## 👥Peer review / Code Review
 
 *How can you get third party endorsement of and expert feedback on your project?*
