@@ -32,7 +32,7 @@ Considerations for publishing a data analysis pipeline which may be used in rese
 
 - [ ] Project is suitably licensed
 	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images is licenced differently from the code in the project this is indicated and those licences provided.
+	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images is licensed differently from the code in the project this is indicated and those licences provided.
 			If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
 	- [ ]  	🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
 	- [ ]  	🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
@@ -258,19 +258,19 @@ How can you get third party endorsement of and expert feedback on your project?
 
 - [ ] Pipeline has been appropriately reviewed
 	- [ ]  	🥉Bronze *(easy)*: Someone other than you has checked over your pipeline and given you feedback
-	- [ ]  	🥈Silver *(intermediate)*: Someone other than you has sucessfully run your pipeline on different compute infrastructure and got the same results with test data
+	- [ ]  	🥈Silver *(intermediate)*: Someone other than you has successfully run your pipeline on different compute infrastructure and got the same results with test data
 	- [ ]  	🥇Gold *(intermediate)*: You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
 	  (The snakmake workflow catalog's review practices would not be adequate for this purpose)
 	- [ ]  	🏆Platinum *(hard)*: Silver, gold and some from:
-		- Published a peer reviewed afticle with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality.
-		  (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise)
-		- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result
+		- Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality.
+		  (These may well be separate reviews for example by a methods journal and a software repository reflecting their different expertise)
+		- You have had and independent 'red team' attempt to find errors in your project and incorporated any relevant changes as a result
 		- Your project is a part of a bug bounty program
 
 <details>
 <ul>
 	<li>
-		The design of the analysis, any methodological choices made and any original steps added might warrant a conventional scientific publication if for example you are making a pipeline which automates a portion of the analysis of some new datatype
+		The design of the analysis, any methodological choices made and any original steps added might warrant a conventional scientific publication if for example you are making a pipeline which automates a portion of the analysis of some new datatypee
 		<ul>
 			<li>review the theory</li>
 		</ul>
@@ -290,8 +290,8 @@ How can people install or access the software emerging from your project?
 
 - [ ] Pipeline is distributed in appropriate format(s)
 	- [ ]  	🥉Bronze *(easy)*: Pipeline is in a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be run with the pipeline manager's standard tooling.
-	- [ ]  	🥈Silver *(easy)*: The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment mangement tool.
-	- [ ]  	🥇Gold *(intermediate)*: Pipeline is in a reposity of workflows and piplines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
+	- [ ]  	🥈Silver *(easy)*: The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment management tool.
+	- [ ]  	🥇Gold *(intermediate)*: Pipeline is in a repository of workflows and pipelines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
 	- [ ]  	🏆Platinum *(intermediate)*: Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
 
 <details>
@@ -326,30 +326,30 @@ How can people get specific versions of your software running on their systems?
 - [ ] It is possible to run your pipeline on other systems with some degree of reproducibility
 	- [ ]  	🥉Bronze *(easy)*: The pipeline may require some manual changes, and/or manual steps to install the requisite software environments or retrieve data, and perform some standard pre-processing of inputs like building genome references etc.
 	- [ ]  	🥈Silver *(intermediate)*: External inputs can be automatically retrieved using their identifiers and pre-processing steps for these inputs are performed as apart of the pipeline.
-		At least one method for describing the required compute environment(s) is supplied e.g. conda environments, or container build files so that others can be speficied if a user has compute infrastructure which does not support the method(s) supplied.
-	- [ ]  	🥇Gold *(hard)*: Complete pipline can be executed with single command with all data and dependencies fetched automatically, barring the need for any system specific resource constraint configuration.
+		At least one method for describing the required compute environment(s) is supplied e.g. conda environments, or container build files so that others can be specified if a user has compute infrastructure which does not support the method(s) supplied.
+	- [ ]  	🥇Gold *(hard)*: Complete pipeline can be executed with single command with all data and dependencies fetched automatically, barring the need for any system specific resource constraint configuration.
 	- [ ]  	🏆Platinum *(practically impossible in practice)*: The entire dependency tree of your pipeline including the pipeline manager itself, the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
 
 <details>
 <ul>
 <li>
 In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
-Many pipeline managment tools support specifiying per-task compute environments using tools such as conda, and container technologies such as docker and singularity/apptainer.
+Many pipeline management tools support specifying per-task compute environments using tools such as conda, and container technologies such as docker and singularity/apptainer.
 	<ul>
 		<li>
 			<p>
 			Container images are a convenient format in which to distribute software along with its dependencies and to isolate this environment from other software which can help avoid any conflicts in dependencies.
 			Container images like virtual machine images can be quite large and thus cumbersome to distribute, they are also something of a black box once built.
 			Containers provide many of the advantages of virtual machines (VM) but generally with less performance penalty.
-			However whilst they are narrowly reproducible they are not readily interogated and checked unless you provide the build instructions which generated the image, for example a Dockerfile.
+			However whilst they are narrowly reproducible they are not readily interrogated and checked unless you provide the build instructions which generated the image, for example a Dockerfile.
 			Unfortunately the process of building container images is itself not necessarily reproducible.
 			Thus when specifying container builds it is best practice to specify exact package versions in your build so that the image builds are reproducible.
-			This can be challenging as many popular opertaing system package managers lack the tooling to do this easily.
+			This can be challenging as many popular operating system package managers lack the tooling to do this easily.
 			Pinning your container build to a snapshot of package repositories taken at a given date that will be available archivally is one way to address this.
 			This paper provides some [Recommendations for the packaging and containerizing of bioinformatics software](https:/doi.org/10.12688/f1000research.15140.2)
 			In the case of bioinformatics pipelines it is often easiest to specify your environment with [conda](https://conda.org/) and then build containers and/or VMs which install that same conda environment on linux base image such as debian.
-			This has the advantage that the conda environment can be used independent of any images built with it reducing the maintenence burden for supporting multiple approaches to distributng the compute environment.
-			Which package/environment management tool has well packaged versions of all the relavent software may be specific to your dicipline.
+			This has the advantage that the conda environment can be used independent of any images built with it reducing the maintenance burden for supporting multiple approaches to distributing the compute environment.
+			Which package/environment management tool has well packaged versions of all the relevant software may be specific to your discipline.
 			</p>
 			<p>
 			If you do need to inspect the contents of a container images a number of tools developed by [Anchore](https://github.com/anchore) in particular [Syft](https://github.com/anchore/syft) can be helpful in producing an account of the software installed in the image.
@@ -360,10 +360,10 @@ Many pipeline managment tools support specifiying per-task compute environments 
 			<p>
 			Functional package managers such as [Nix](https://nixos.org/) and [Guix](https://guix.gnu.org/) have a 'best practices by design' approach to packaging software.
 			They do not suffer from the issue of it being difficult to determine what is and is not a required dependency as this work is done up-front when the software is packaged.
-			They usually require that dependencies be completely specified and packages be build in a sandboxed environnment which only has access to the explicitly specified dependencies.
+			They usually require that dependencies be completely specified and packages be build in a sandboxed environment which only has access to the explicitly specified dependencies.
 			This provides much stronger guarantees of the ability to specify and build reproducible environments.
 			It is also possible to build container and VM images specified with these tools, and a container specified with them could be a drop in replacement for one specified with conda and Docker for example.
-			Unfortuntately these tools have yet to see wide adoption in the scientific / research computing communities and thus many packages used by thess communities are not packaged for these tools, (despite nixpkgs being the largest extant software package respoitory with >100,000 packages), hindering their broarder adoption.
+			Unfortunately these tools have yet to see wide adoption in the scientific / research computing communities and thus many packages used by these communities are not packaged for these tools, (despite nixpkgs being the largest extant software package respoitory with >100,000 packages), hindering their broarder adoption.
 			Use and awareness is growing and there are some excellent [case studies](https://bioinformatics.mdc-berlin.de/pigx/).
 			Nix is also cross platform working natively on MacOS, on windows via the windows subsystem for linux and even on android.
 			</p>
@@ -425,7 +425,7 @@ Consider what can you do to make your code a little more efficient:
 	Measurement - make use of tools to estimate the energy &/or carbon costs of your analyses and report them to the end user.
 	If you are using a [Nextflow](https://www.nextflow.io/) pipeline then there is a very easy way to estimate the energy utilisation and carbon footprint of your pipelines with [`nf-co2footprint`](https://nextflow-io.github.io/nf-co2footprint/).
 	This is a generalisation of a tool originally developed to estimate emissions for jobs submitted to HPC clusters running the [SLURM](https://slurm.schedmd.com/overview.html) scheduler: [GA4HPC](https://www.green-algorithms.org/GA4HPC/), see: [Green Algorithms: Quantifying the Carbon Footprint of Computation](https://doi.org/10.1002/advs.202100707).
-	The people in the [Green Algorithms](https://www.green-algorithms.org/) community of practice have some useful advice and resources for anyone interersted in this subject.
+	The people in the [Green Algorithms](https://www.green-algorithms.org/) community of practice have some useful advice and resources for anyone interested in this subject.
 	</li>
 	<li>
 	Good documentation and good error handing/messages can reduce the number of times people make mistakes using your code that means they re-run or partially re-run it fewer times before they figure out how to use it correctly.
@@ -443,11 +443,12 @@ Consider what can you do to make your code a little more efficient:
 	Choice of libraries and frameworks - some libraries may be more efficient that others or be a wrapper around an efficient implementation in another language, or be able to make use of offload to hardware accelerators.
 	</li>
 	<li>
-	Offload to harware accelerators where available, vector matrix and array arithmathic can often benefit from very substancial speed-ups on hardware specialised for these types of calculations, or even binaries compiled with the right instruction set extensions enabled to take full advantage of hardware acceleration features on many CPUs. Doing this directly can be quite challenging but using libraries cabable of managing this offload for you can make it more approachable. (This can potentially introduce interesting reproducible computation challenges due to things like differences in handling of floating point arithmathic between hardware/firmware implementations.)
+	Offload to hardware accelerators where available, vector matrix and array arithmetic can often benefit from very substantial speed-ups on hardware specialised for these types of calculations, or even binaries compiled with the right instruction set extensions enabled to take full advantage of hardware acceleration features on many CPUs.
+	Doing this directly can be quite challenging but using libraries capable of managing this offload for you can make it more approachable. (This can potentially introduce interesting reproducible computation challenges due to things like differences in handling of floating point arithmetic between hardware/firmware implementations.)
 	</li>
 	<li>
 	Benchmarking & Profiling to locate and improve inefficient code.
-	Don't optimise prematurely - it is often surpising which pieces of your code turnout to be slow, measure it first and check where to focus your attention.
+	Don't optimise prematurely - it is often surprising which pieces of your code turnout to be slow, measure it first and check where to focus your attention.
 	This can go hand in hand with having done robust testing as a good test suite means that you can confidently re-factor an inefficient piece of code without fear of introducing errors.
 	Robust testing, especially of large computationally intensive pipelines can be energy intensive so it is important to make efficient test suites which still provide robust coverage.
 	See the testing section for more information on optimisations in the [nf-test](https://www.nf-test.com/) framework which help to make testing Nextflow pipelines more efficient.
@@ -486,12 +487,12 @@ How can you be excellent to each other, make good decisions well, and continue t
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
 	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
-	Be waring of adopting policies that you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes, It is helpful to be clear about what you can and cannot commit to doing.
+	Be warning of adopting policies that you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes, It is helpful to be clear about what you can and cannot commit to doing.
 	Only by communicating this might you be able to find community members to help you with setting and enforcing these norms, if or when your community attains a scale where this becomes relevant - community management is its own skill set.
 	If you can't moderate them avoid creating and/or continuing ungoverned community spaces that can become a liability for you and your project's reputation.
 	Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
 	Adopting such a CoC gives you some guidance to follow if there is bad behaviour in your project's community and communicates that you as the project leadership take the responsibility of creating a respectful environment for collaboration seriously.
-	It can also signal that your project is a place where everyone is wellcome but expected to treat one another with respect, and that failing to do so will result in penalties potentially including exclusion from the community.
+	It can also signal that your project is a place where everyone is welcome but expected to treat one another with respect, and that failing to do so will result in penalties potentially including exclusion from the community.
 	[The Turing Way](https://doi.org/10.5281/zenodo.3233853) provides quite a nice example of a [CoC developed specifically for their project](https://web.archive.org/web/20240412122958/https://book.the-turing-way.org/)
 	You will need to provide contact information for the person(s) responsible for the enforcement of the CoC in the appropriate place and be able to follow up in the event it is used.
 	git forges often recognise files with the name `CODE_OF_CONDUCT.md` in the root of project and provide a link to them on project home pages, so this is a good place to document such policies.
@@ -509,7 +510,7 @@ How can you be excellent to each other, make good decisions well, and continue t
 					<li>Match rules governing use of common goods to local needs and conditions.</li>
 					<li>Ensure that those affected by the rules can participate in modifying the rules.</li>
 					<li>Make sure the rule-making rights of community members are respected by outside authorities.</li>
-					<li>Develop a system, carried out by community members, for monitoring members’ behavior.</li>
+					<li>Develop a system, carried out by community members, for monitoring members’ behaviour.</li>
 					<li>Use graduated sanctions for rule violators.</li>
 					<li>Provide accessible, low-cost means for dispute resolution.</li>
 					<li>Build responsibility for governing the common resource in nested tiers from the lowest level up to the entire interconnected system.</li>
