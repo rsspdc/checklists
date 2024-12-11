@@ -14,10 +14,10 @@ Considerations for publishing a software package which may be used in research o
 	- [ ]  	🥇Gold *(Hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
 		   Tags, releases, or branches at major project milestones, maybe some contributions from other users
 	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from:
-	       [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/);
-	       Clean history with a consistent rebasing/merging strategy;
-	       Signed commits from all contributors;
-	       Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+		[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/);
+		Clean history with a consistent rebasing/merging strategy;
+		Signed commits from all contributors;
+		Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
 <details>
 <ul>
@@ -43,7 +43,7 @@ Considerations for publishing a software package which may be used in research o
 <details>
 <ul>
 	<li>
-	**All software needs a license if you want to permit others to reuse it.
+	**All software needs a license if you want to permit others to reuse it.**
 	It is important to give some thought to the type of license which best suits your project, it is a choice which can have significant long term implications.
 	Checkout [the turing way chapter on licensing for an introduction to the subject](https://the-turing-way.netlify.app/reproducible-research/licensing.html).
 	If you have no time some pretty safe choices are: For a permissive license, the Apache 2.0.
@@ -147,13 +147,13 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 <details>
 It is important that code used in research can be properly cited by researchers so that they can communicate which version they used, where to find the code, and give appropriate credit to it's authors.
- Even if you are not an academic it is important that academics be able to credit your work so that it can be appropriately valued in the scientific funding ecosystem.
- If it is not framed as contributing to a research output it is harder to justify funding it and paying developer salaries - even if indirectly.
- 
- Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
- This extends from the practical, making it easy import into reference mangers like [zotero](https://www.zotero.org/);
- To protecting against link-rot through the use of persistent digital object identifiers;
- To the use of linked / semantic data practices identify and connect contributors, the nature of their contributions, their institutional assoications and thing to which they contributed.
+Even if you are not an academic it is important that academics be able to credit your work so that it can be appropriately valued in the scientific funding ecosystem.
+If it is not framed as contributing to a research output it is harder to justify funding it and paying developer salaries - even if indirectly.
+
+Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
+This extends from the practical, making it easy import into reference mangers like [zotero](https://www.zotero.org/);
+To protecting against link-rot through the use of persistent digital object identifiers;
+To the use of linked / semantic data practices identify and connect contributors, the nature of their contributions, their institutional assoications and thing to which they contributed.
 
 Further information:   
 <ul>
