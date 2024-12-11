@@ -227,9 +227,9 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ]  	🥇Gold *(intermediate)*:
 
 	- [ ]  	🏆Platinum *(hard)*: note that difficuly is somewhat project dependent
-	       Your manuscript and its supplements are generated and served on a website after being built from your CI/CD pipeline.
-	       All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
-	       Results are cached such that if you, for example, change the formatting of a graph only the plotting and rendering code needs to be re-run, but if you change the data the entire pipeline is re-rerun.
+		Your manuscript and its supplements are generated and served on a website after being built from your CI/CD pipeline.
+		All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
+		Results are cached such that if you, for example, change the formatting of a graph only the plotting and rendering code needs to be re-run, but if you change the data the entire pipeline is re-rerun.
 
 <details>
 	<ul>
