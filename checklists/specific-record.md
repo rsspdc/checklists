@@ -96,10 +96,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 
 - [ ] Project has suitable documentation 
 	- [ ] 	🥉Bronze *(easy)*: Project has README file and:
-		- [ ] README provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure.
+		- [ ] README provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure
 		- [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
-	- [ ]  	🥈Silver *(intermediate)*: Documentation / comments explain WHY things are done in the code.
-	- [ ]  	🥇Gold *(intermediate)*: You have a simple worked example of your analysis methods with example data to demonstrate its correctness in a simple case
+	- [ ]  	🥈Silver *(intermediate)*: Documentation / comments explain WHY things are done in the code
+	- [ ]  	🥇Gold *(intermediate)*: You have a simple worked example of your analysis methods with example data to illustrate its soundness in a simple case
 	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: The authors manuscript of you paper is a literate programming artefact with numbers, tables and figures programaticaly generated and built in a reproducible computational environment.
 			Additional documentation of details not suitable for the main manuscript are in the supplementary material also as literate programming artefacts, more lengthy and complex elements of the analysis might be run as a pipeline or scripts then read from for inclusion in the manuscript.
 			Building the manuscript (without caching) reruns the complete analysis and produces the same output (you may need to set random seeds for any analysis that makes use of pseudorandom number generation).
