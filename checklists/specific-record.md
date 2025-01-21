@@ -309,7 +309,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	<li>
 	Where you have very large and computationally intensive upstream analyses, as is common for example in biological projects involving sequencing or image data, it can be easiest to take the outputs from this pipeline as the inputs for your downstream and less computationally intensive analysis.
 	Document how to run the upstream reproducible pipeline in your down steam analysis.
-	This way anyone could download your data and run the same upstream analysis to get to the same staring point for the lighter downstream analysis and all the information needed to do this is documented in the downstream analysis.
+	This way anyone, with access to appropriate compute resources, could download your data and run the same upstream analysis to get to the same staring point for the lighter downstream analysis and all the information needed to do this is documented in the downstream analysis.
 	</li>
 </ul>
 </details>
