@@ -48,7 +48,22 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 		If possible start by importing the data & metadata into your own project from it's public repository as a test of FAIRness of the data.
 		This also means that anyone using your dataset has a clear example of how to import it into a working environment.
 		</li>
+	<li>
+	Signed and Timestamped git commits
+	</li>
 	</ul>
+		<li> 
+		It is possible to cryptographically sign your git commits, this can be used to increase confidence that you are the author of a signed commit as someone would have to compromise your private key in order to impersonate you.
+		If your key is part of a [web of trust](https://en.wikipedia.org/wiki/Web_of_trust) or other (public key infrastructure (PKI)](https://en.wikipedia.org/wiki/Public_key_infrastructure) people can see that other people / institutions attest that person with this key is who they say they are.
+		Whilst typically used for things like helping to protect critical open source infrastructure from supply chain attacks signed commits on academic code bases could be used to provide additional provenance information.
+		</li>
+		<li> 
+		It is sometimes desirable for git commits to demonstrably have been signed at a given time, your system time is recorded by default but this can be trivially spoofed.
+		The [opentimestamps](https://opentimestamps.org/) protocol which can be used to generate cryptographic attestations to the time at which a commit was made.
+		This aims to establish a lower bound on how long ago the committed code was authored.
+		The [opentimestamps-client](https://github.com/opentimestamps/opentimestamps-client) [integrates with git](https://github.com/opentimestamps/opentimestamps-client/blob/master/doc/git-integration.md) to provide timestamps for individual [GPG](https://gnupg.org/) signed commits
+		</li>
+	<ul>
 </ul>
 </details>
 
