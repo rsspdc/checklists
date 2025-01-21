@@ -224,10 +224,16 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *What tasks can you automate to increase consistency and reduce manual work?*
 
 - [ ] Suitable automations are in place
-	- [ ]  	🥉Bronze *(easy)*:
-	- [ ]  	🥈Silver *(easy)*:
-	- [ ]  	🥇Gold *(intermediate)*:
-
+	- [ ]  	🥉Bronze *(easy)*: 1 from this list of processes are automated
+		- use of an environment management tool
+		- use of a literate programming / computational notebook
+		- use of a pipeline manger or make-like tool
+		- use of a linter / formatter
+		- use of continious integration / continious deployment
+		- use of git hooks
+		- automated minting of new persistent identifiers on release tagging
+	- [ ]  	🥈Silver *(easy)*: 2-3 from the above list of processes are automated
+	- [ ]  	🥇Gold *(intermediate)*: 4+ from the above list of processes are automated
 	- [ ]  	🏆Platinum *(hard)*: note that difficuly is somewhat project dependent
 		Your manuscript and its supplements are generated and served on a website after being built from your CI/CD pipeline.
 		All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
