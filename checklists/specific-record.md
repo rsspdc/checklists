@@ -92,7 +92,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 	If you have no time some pretty safe choices are: For a permissive license, the Apache 2.0.
 	This would allow the re-use of your work in closed commercial code.
 	For a 'copyleft' license, the GPLv3 (AGPL for server-side apps).
-	This requires that anyone distributing software containing your code or derivatives of it share the source code with the people they distributed it too.
+	This requires that anyone distributing software containing your code or derivatives of it share the source code with the people they distributed it to.
 	</li>
 	<li>
 	If you are including external code in your package then you should check that their licenses are compatible and you are legally allowed to distribute your code together in this way.
