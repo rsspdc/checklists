@@ -72,7 +72,8 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
-	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+	- [ ]  	🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
+	Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) or similar license which meets the [free cultural works](https://freedomdefined.org/Licenses) definition.
 	- [ ]  	🥈Silver *(easy)*: If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided.
 	If licences have an attribution requirement there is easy to copy text/links for appropriate attribution.
 	- [ ]  	🥇Gold *(intermediate)*: Uses [Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) license identifiers for every file/suitable unit of code.
@@ -81,6 +82,12 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 
 <details>
 <ul>
+	<li>
+	Once you have selected you license include a plain text copy of it in the root of your repository in a file named LICENSE.
+	Plain text versions of popular open license are widely available.
+	Files with this name are often identified by software forges and a link to them created on the repository home page when they are present.
+	You may need to include your name and the date in your copy of the license file if indicated.
+	</li>
 	<li>
 	The content of a repo of this form is generally a mixture of code, images (often graphs), data, and prose.
 	In this context it may be preferable to have licenses for code, prose, and other assets such as graphs. e.g. all code under a GPLv3 license, and all images, prose and datasets, under a CC BY-SA license.
