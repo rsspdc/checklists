@@ -63,7 +63,7 @@ This checklist focuses on the things that are in addition to general packages an
 		If you want to apply a copyleft license to a piece of software that is to be accessed over a network and not necessarily run on end-users own computers then you would want to adopt a license such as the AGPL to ensure that your end users still have the right to run, study, modify and redistribute the code of the server-side part of the tool.
 		</li>
 		<li>
-		**All software needs a license if you want to permit others to reuse it.
+		**All software needs a license if you want to permit others to reuse it.**
 		It is important to give some thought to the type of license which best suits your project, it is a choice which can have significant long term implications.
 		Checkout [the turing way chapter on licensing for an introduction to the subject](https://the-turing-way.netlify.app/reproducible-research/licensing.html).
 		If you have no time some pretty safe choices are: For a permissive license, the Apache 2.0.
