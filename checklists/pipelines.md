@@ -48,7 +48,7 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 	Pipelines are sometimes run as part of the backends of web-based services so the use of an AGPL license over a GPL license may be advisable if your intent is to maximise the applicability of copy-left terms across possible use cases for your pipeline.
 	</li>
 	<li>
-	**All software needs a license if you want to permit others to reuse it.
+	**All software needs a license if you want to permit others to reuse it.**
 	It is important to give some thought to the type of license which best suits your project, it is a choice which can have significant long term implications.
 	Checkout [the turing way chapter on licensing for an introduction to the subject](https://the-turing-way.netlify.app/reproducible-research/licensing.html).
 	If you have no time some pretty safe choices are: For a permissive license, the Apache 2.0.
