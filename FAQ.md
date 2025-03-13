@@ -15,10 +15,13 @@ A:
 I (Richard) was inspired by the [Community-developed checklists for publishing images and image analyses](https://doi.org/10.1038/s41592-023-01987-9) that I discovered whilst writing a resource on research data sharing for the research consortium for which I work and wanted to provide something similar for research software outputs.
 In my experience the '[record of a specific analysis](checklists/specific-record.md)' was among the most common forms of research software output but recommendations for research software publication focused primarily on conventional [software packages](checklists/software-packages.md).
 [The FAIR Principles for research software](https://doi.org/10.1038/s41597-022-01710-x), [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb), and [Software Sustainability Institute Checklist for a Software Management Plan](https://doi.org/10.5281/ZENODO.2159713) are all excellent resources to refer to and I recommend reading them, but a component that these checklists add in addition to these resources is recommendations specific to different types of research software output.
-Most of the previous work in this space has implicitly leant towards conventional software packages as the primary output with some consideration for [web based services/APIs](checklists/web-based-service.md).
+Most of the previous work in this space has implicitly leant towards conventional software packages as the primary output with some consideration for [web based services/APIs](checklists/web-based-service.md),
+though there are a number of previous works tackling this issue often within specific disciplines, or addressing specific aspects of best practice such as version control.
+For example: [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510), [Packaging Data Analytical Work Reproducibly Using R (and Friends)](https://doi.org/10.1080/00031305.2017.1375986), [British Ecological Society Better Science Guide for Reproducible Code](https://www.britishecologicalsociety.org//wp-content/uploads/2024/12/BES-Reproducible-code-guide.pdf), & [Excuse Me, Do You Have a Moment to Talk About Version Control?](https://doi.org/10.1080/00031305.2017.1399928)
 Whilst much of the advice is similar, the types of research software output identified here and, importantly, the audiences generating them, are sufficiently different to warrant dedicated checklists.
 These checklists aim to provide as concrete and actionable a set of recommendations as possible.
-In addition they provide aspirational suggestions and resources for those wishing to push the envelope on computational reproducibility and FAIRness in research software beyond the minimum requirements.
+In addition they provide aspirational suggestions and resources for those wishing to push the envelope on computational reproducibility and FAIRness in research software beyond the minimum requirements, they do so in one place for all research software output types and in a format which makes them easy to include and apply to your code repository.
+Another goal of this project is to provide a place where these checklists can be living documents and receive continuous updates as best practices evolve.
 
 Whilst ELIXIR are working on machine readable software management plans using [Data Stewardship Wizard](https://ds-wizard.org/) the checklists here are in a loosely defined markdown format which makes no strong guarantees that it will be parsable so their approach may be preferable for more formal exercises.
 These lists have the ease of being a simple to copy and edit text file.
@@ -62,3 +65,4 @@ and that publishers move to a policy of not publishing research outputs generate
 
 Unfortunately transitioning to a better model here is difficult due to the entrenched use of many closed tools,
 so a phased long term roll out of these policy changes would likely be necessary to avoid excessive disruption.
+
