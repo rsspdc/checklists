@@ -41,6 +41,7 @@ In my experience the '[record of a specific analysis](checklists/specific-record
 - [The FAIR Principles for research software](https://doi.org/10.1038/s41597-022-01710-x)
 - [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb)
 - [Software Sustainability Institute Checklist for a Software Management Plan](https://doi.org/10.5281/ZENODO.2159713) 
+- [Digital Research Alliance of Canada Software Management Plan (SMP) Template](https://doi.org/10.5281/zenodo.13242503)
 
 These are all excellent resources to refer to and I recommend reading them, but a component that these checklists add in addition to these resources is recommendations specific to different types of research software output.
 Most of the previous work in this space has implicitly leant towards conventional software packages as the primary output with some consideration for [web based services/APIs](checklists/web-based-service.md),
