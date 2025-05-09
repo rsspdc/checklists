@@ -77,10 +77,25 @@ Check out the expandable details sections for some resources on steps you can ta
 
 Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum** in each category.
 **Overall project tier is determined by the mean of the score across all categories rounded down to the nearest integer.**
-Thus a total of 18 points and mean score of 1.8 is a bronze tier overall if and only if all ratings are at least 1.
 **A high score is possible that does not 'medal'** because of important deficiencies in some of the key characteristics of the research software.
 
-(there are plans for repo badges with scores and medals)
+|                                         | | | | | | | | | |
+|----------------------|-|-|-|-|-|-|-|-|
+| 📒 **Source control**                       | 1                | 1                | 4                | 1                | 2                | 3                | 3                | 4                |
+| © **Licencing**                             | 1                | 1                | 1                | 1                | 2                | 4                | 3                | 4                |
+| 📖 **Documentation**                        | 1                | 1                | 1                | 1                | 2                | 3                | 3                | 4                |
+| 🔗 **Making Citable**                       | 1                | 1                | 4                | 1                | 2                | 4                | 3                | 4                |
+| ✅ **Testing**                              | 1                | 2                | 1                | 1                | 2                | 2                | 3                | 4                |
+| 🤖 **Automation**                           | 1                | 1                | 1                | 1                | 2                | 1                | 3                | 4                |
+| 👥 **Peer review / Code Review**            | 1                | 1                | 4                | 1                | 2                | 3                | 3                | 4                |
+| 📦 **Distribution**                         | 1                | 1                | 1                | 1                | 2                | 3                | 3                | 4                |
+| 💽 **Environment Management / Portability** | 1                | 1                | 1                | 1                | 2                | 2                | 3                | 4                |
+| 🌱 **Energy Efficiency**                    | 1                | 1                | 4                | 1                | 2                | 3                | 3                | 4                |
+| ⚖ **Governance, Conduct, & Continuity**     | **0**            | **0**            | **0**            | 1                | 2                | 4                | 3                | 4                |
+| Total Score                                 | 10               | 11               | 22               | 11               | 22               | 32               | 33               | 44               |
+| Scaled Score (`floor(total score / 11)`)    | 0                | 1                | 2                | 1                | 2                | 2                | 3                | 4                |
+| Overall Medal                               | NA               | NA               | NA               | 🥉               | 🥈               | 🥈               | 🥇               | 🏆               |
+
 
 ## Contributing to this project
 
