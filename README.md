@@ -79,7 +79,7 @@ Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum
 **Overall project tier is determined by the mean of the score across all categories rounded down to the nearest integer.**
 **A high score is possible that does not 'medal'** because of important deficiencies in some of the key characteristics of the research software.
 
-|                                         | | | | | | | | | |
+|                                         | | | | | | | | |
 |----------------------|-|-|-|-|-|-|-|-|
 | 📒 **Source control**                       | 1                | 1                | 4                | 1                | 2                | 3                | 3                | 4                |
 | © **Licencing**                             | 1                | 1                | 1                | 1                | 2                | 4                | 3                | 4                |
