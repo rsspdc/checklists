@@ -37,7 +37,7 @@ In presenting practices suitable to a range of scales we hope to let growing pro
 -   [Web-based service](./checklists/web-based-service.md)
 -   Generic Tools
 	-   [Unitary tool / software package](./checklists/software-packages.md)
-	-   [Multi-part workflows / pipelines](./checklists/piplines.md)
+	-   [Multi-part workflows / pipelines](./checklists/pipelines.md)
 
 ## Generic Parts of the Checklists
 
