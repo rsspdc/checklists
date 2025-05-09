@@ -84,9 +84,13 @@ Thus a total of 18 points and mean score of 1.8 is a bronze tier overall if and 
 
 ## Contributing to this project
 
-Comments, critiques, and edits are welcome at any time, feel free to open an issue.
 **These lists are still in an early phase of development (pre-alpha)** I'll be soliciting input from select individuals and groups once they are in a good enough state to benefit the most from feedback.
 
+Comments, critiques, and edits are welcome at any time, feel free to open an [issue](https://gitlab.com/HDBI/data-management/checklists/-/issues).
+Please start by opening an issue instead of jumping directly to a merge/pull request unless your PR is of a very small scope e.g. fixing a typo or broken link.
+
 I, Richard, am a bioinformatician by background not a research software engineer so some of this is outside my lane and needs input from working professionals to refine its applicability to relevant domains of work.
+
+Please abide by the [code of conduct](CODE_OF_CONDUCT.md), I am the benevolent dictator until such time as I can arrange to have myself replaced by suitable person(s) or organsisation(s).
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/HDBI/data-management/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
