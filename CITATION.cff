@@ -1,0 +1,30 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Research Software Sharing, Publication, & Distribution
+  Checklists
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Richard James
+    family-names: Acton
+    affiliation: Babraham Institute
+    orcid: 'https://orcid.org/0000-0002-2574-9611'
+    email: richardjacton@richardjacton.net
+identifiers:
+  - type: url
+    value: 'https://gitlab.com/HDBI/data-management/checklists'
+    description: Repository
+repository-code: 'https://gitlab.com/HDBI/data-management/checklists'
+url: 'https://rsspdc.org'
+abstract: "These research software sharing, publication, and distribution checklists were inspired by similar checklists produced by the imaging community and are intended to address a niche not addressed by existing similar resources such as guidance for creating research software management plans. They provide a tiered approach to completing the checklists with each item able to be completed at a different level:\U0001F949Bronze,\U0001F948Silver,\U0001F947Gold, and \U0001F3C6 Platinum where bronze is highly attainable and platinum is going well above and beyond. With this approach I'm aiming to somewhat gamify the process as well as to provide aspiration goals and not just to set a minimum floor for compliance. The checklists are tailored based on a simple taxonomy of research software output types: 'records of specific analyses', 'web based services', 'software packages', and 'pipelines or workflows'. Each of these types of software output have overlapping but slightly different considerations for how best they can be shared, published, and distributed so each has its own checklist. Each checklist is comprised of items which address these 11 common themes: \U0001F4D2 Source control, © Licencing, \U0001F4D6 Documentation, \U0001F517 Making Citable, ✅ Testing, \U0001F916 Automation, \U0001F465 Peer review / Code Review, \U0001F4E6 Distribution, \U0001F4BD Environment Management / Portability, \U0001F331 Energy Efficiency, and ⚖ Governance, Conduct, and Continuity. The checklists are provided as simple markdown files making the checklists easy to include in a project repository like standard licenses and codes of conduct. Each theme includes its four tiered checkbox items and an expandable section which expands on how to complete these checkboxes with advice and links to additional resources. This keeps the checklists appearing succinct and approachable to prospective users whilst still providing depth. To extend the gamification there are repo badges to display the type of checklist, an overall score, and the medal for the project based on a points system."
+keywords:
+  - checklist
+  - software
+  - research
+license: CC-BY-4.0
+
