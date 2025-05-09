@@ -96,6 +96,7 @@ Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum
 | Scaled Score (`floor(total score / 11)`)    | 0                | 1                | 2                | 1                | 2                | 2                | 3                | 4                |
 | Overall Medal                               | NA               | NA               | NA               | 🥉               | 🥈               | 🥈               | 🥇               | 🏆               |
 
+[Repo badge Generator](https://rsspdc.org/badge-generator.html)
 
 ## Contributing to this project
 
