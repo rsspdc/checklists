@@ -1,4 +1,4 @@
-# Record of a specific analysis
+# Record of a specific analysis [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/specific-record.md)]
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 

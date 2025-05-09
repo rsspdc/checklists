@@ -1,4 +1,4 @@
-# Pipelines & Workflows
+# Pipelines & Workflows [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/pipelines.md)]
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 

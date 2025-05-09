@@ -1,4 +1,4 @@
-# Software Packages
+# Software Packages [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/software-packages.md)]
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 
