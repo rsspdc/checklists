@@ -381,25 +381,29 @@ Further information:
 	</li>
 	<li>
 	For a software package that people may want to run in many different environments and which may be run with different versions of the language and other packages it is important to check a broad combination of factors which might crop up in environment that people are likely to be using such as:
+		<ul>
+			<li>
+				Different operating systems and versions of these operating systems
+				<ul>
+				<li>e.g. Linux vs Windows vs MacOS, and Win10 vs Win11</li>
+				</ul>
+			</li>
+			<li>
+				Different language versions
+				<ul>
+				<li>e.g. R 3.6.3 and R 4.3.2</li>
+				</ul>
+			</li>
+			<li>
+				Different computational architectures
+				<ul>
+				<li>x86_64, arm64, RISCV</li>
+				<li>There are practically analogous issues with code to run on AMD vs Intel vs Nvidia accelerators</li>
+				</ul>
+			</li>
+			</ul>
 	</li>
-	<li>
-	<ul>
-	<li>Different operating systems and versions of these operating systems</li>
-		<ul>
-		<li>e.g. Linux vs Windows vs MacOS, and Win10 vs Win11</li>
-		</ul>
-	<li>Different language versions</li>
-		<ul>
-		<li>e.g. R 3.6.3 and R 4.3.2</li>
-		</ul>
-	<li>Different computational architectures</li>
-		<ul>
-		<li>x86_64, arm64, RISCV</li>
-		<li>There are practically analogous issues with code to run on AMD vs Intel vs Nvidia accelerators</li>
-		</ul>
 	<li>Combinations of all of the above</li>
-	</ul>
-	</li>
 	<li>You can cover all of these is all combinations, nor do you need to, just cover the ones most relevant to your software and it's users.</li>
 </ul>
 </details>
