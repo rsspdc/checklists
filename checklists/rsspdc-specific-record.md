@@ -118,8 +118,21 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 
 - [ ] Project has suitable documentation 
 	- [ ] 	🥉Bronze *(easy)*: Project has README file and:
-		- [ ] README provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure
-		- [ ] README contains instructions with sufficient detail for someone else to re-run the analysis
+		- [ ] Provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure
+		- [ ] Contains instructions with sufficient detail for someone else to re-run the analysis
+		- [ ] What is the name or title of the project for which this code is record?
+		- [ ] Why did you peform this analysis?
+		- [ ] What problem does it address and how?
+		- [ ] How do I set up an environment to re-run it? (with example)
+		- [ ] What inputs do I need?
+		- [ ] What outputs should I expect?
+		- [ ] How do I cite the project?
+		- [ ] Who contributed to the project and what did they contribute?
+		- [ ] Who should I contact, about what, and how?
+		- [ ] What should I expect / Not expect if I contact you?
+		- [ ] How is the project Licensed?
+		- [ ] Table of Contents (if long enough to benefit from one)
+		- [ ] Bibliography (if reference is made to external resources)
 	- [ ]  	🥈Silver *(intermediate)*: Documentation / comments explain WHY things are done in the code
 	- [ ]  	🥇Gold *(intermediate)*: You have a simple worked example of your analysis methods with example data to illustrate its soundness in a simple case
 	- [ ]  	🏆Platinum *(MAXIMUM OVERKILL)*: The authors manuscript of you paper is a literate programming artefact with numbers, tables and figures programaticaly generated and built in a reproducible computational environment.
@@ -254,6 +267,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- use of continious integration / continious deployment
 		- use of git hooks
 		- automated minting of new persistent identifiers on release tagging
+		- ...
 	- [ ]  	🥈Silver *(easy)*: 2-3 from the above list of processes are automated
 	- [ ]  	🥇Gold *(intermediate)*: 4+ from the above list of processes are automated
 	- [ ]  	🏆Platinum *(hard)*: note that difficuly is somewhat project dependent
