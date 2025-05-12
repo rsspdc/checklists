@@ -87,8 +87,25 @@ This checklist focuses on the things that are in addition to general packages an
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation
-	- [ ] 	🥉Bronze *(easy)*: Project has README file
-		- [ ] README provides a description of the project structure so that the user knows which directories to find things in
+	- [ ] 	🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
+		- [ ] What is the name or title of the project?
+		- [ ] Why did you make this service?
+		- [ ] What problem does it address and how?
+		- [ ] Why would I want to use it, what differentiates it from its alternatives?
+		- [ ] How do I access / use it? (with example)
+		- [ ] How do I install a development / testing environment? (with example)
+		- [ ] Where should I go in the project to find what I'm looking for?
+		- [ ] Are you looking for contributions and if so how to contribute?
+		- [ ] What data does the service use, how was it sourced, processed, and made available for use in the application?
+		- [ ] What are the components of the service (e.g. databse, webserver)?
+		- [ ] How do I cite the service, including version information?
+		- [ ] How do I reproduce an output from the service for a given input?
+		- [ ] Who contributed to the project and what did they contribute?
+		- [ ] Who should I contact, about what, and how?
+		- [ ] What should I expect / Not expect if I contact you?
+		- [ ] How is the project Licensed?
+		- [ ] Table of Contents (if long enough to benefit from one)
+		- [ ] Bibliography (if reference is made to external resources)
 	- [ ]  	🥈Silver *(intermediate)*: documentation includes instructions on deploying your service in a test/development environment.
 	- [ ]  	🥇Gold *(time consuming)*: documentation features examples; rich, varied and working ones.
 			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
