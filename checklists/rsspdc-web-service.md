@@ -415,8 +415,11 @@ How can you be excellent to each other, make good decisions well, and continue t
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
 	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
-	Be waring of adopting policies that you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of community norms and disputes, It is helpful to be clear about what you can and cannot commit to doing.
-	Only by communicating this might you be able to find community members to help you with setting and enforcing these norms, if or when your community attains a scale where this becomes relevant - community management is its own skill set.
+	It is also easy for a power vacuum to form at the top of sucessfully projects if they lack either community governance or a singular motivated leader.
+	Be waring of adopting policies that you lack resources, time, interest, skill, or inclination to be an active enforcer, mediator and moderator of disputes concerning.
+	It is helpful to be clear about what you can and cannot commit to doing in community mangement.
+	Only by communicating this might you be able to find community members to help you with setting and enforcing community norms, if or when your community attains a scale where this becomes relevant
+	Community management is its own skill set.
 	If you can't moderate them avoid creating and/or continuing ungoverned community spaces that can become a liability for you and your project's reputation.
 	Just as there are off-the-shelf licenses there are off-the-shelf codes of conduct, the [Contributor Covenant](https://www.contributor-covenant.org/) is perhaps the best known and most widely used, though may need some customisation to your needs.
 	Adopting such a CoC gives you some guidance to follow if there is bad behaviour in your project's community and communicates that you as the project leadership take the responsibility of creating a respectful environment for collaboration seriously.
@@ -445,7 +448,7 @@ How can you be excellent to each other, make good decisions well, and continue t
 				</ol>
 			</li>
 			<li>
-				An informal [do-ocracy](https://web.archive.org/web/20230201164442/https://communityrule.info/modules/do-ocracy/) in the fiefdom of BDFL is often the default state of projects that have not given much conscious thought to how they want to be governed and are thus often subject to many of the same common failure modes of this model.
+				An informal [do-ocracy](https://web.archive.org/web/20230201164442/https://communityrule.info/modules/do-ocracy/) in the fiefdom of a BDFL is often the default state of projects that have not given much deliberate thought to how they want to be governed, whilst this model is not without its strengths, because it is common many projects are subjects to some of its failure modes.
 				How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
 				By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
 				How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
@@ -461,6 +464,13 @@ How can you be excellent to each other, make good decisions well, and continue t
 	This could provide a lower level admin with a mechanism to escalate their privileges if you are unable to do this for them.
 	However, this delay might be an issue for continuity of operations if administrator action is needed within the waiting period.
 	Game it out, have a plan, write it down, let people know you have a plan.
+	</li>
+	<li>
+	Software Management Plans
+		<ul>
+			<li>
+			</li>
+		</ul>
 	</li>
 	<li>
 	Does your project take donations?
