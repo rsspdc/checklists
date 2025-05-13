@@ -117,7 +117,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation 
-	- [ ] 	🥉Bronze *(easy)*: Project has README file and:
+	- [ ] 	🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
 		- [ ] Provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure
 		- [ ] Contains instructions with sufficient detail for someone else to re-run the analysis
 		- [ ] What is the name or title of the project for which this code is record?
