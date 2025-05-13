@@ -330,10 +330,12 @@ Distribution for a web based service covers both hosting the service and distrib
 ## 💽Environment Management / Portability
 
 - [ ] Simple to install development, testing, and/or demo environment
-	- [ ]  	🥉Bronze *(easy)*:
-	- [ ]  	🥈Silver *(easy)*:
+	- [ ]  	🥉Bronze *(easy)*: A developer / sysadmin other than yourself can deploy a simple testing instance of your software using only your documentation.
+	- [ ]  	🥈Silver *(easy)*: 
+		- [ ] Sensible security defaults. Such as not having default passwords, for databases or admin consoles and requiring the person deploying your service to configure them, hopefully with appropriate secrets management approaches.
 	- [ ]  	🥇Gold *(intermediate)*:
 	- [ ]  	🏆Platinum *(intermediate)*:
+		- [ ] Deployment is possible on multiple architectures (such as x86_64 & ARM64)
 
 <details>
 <ul>
