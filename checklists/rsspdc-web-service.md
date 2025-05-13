@@ -391,18 +391,24 @@ However, if you have a global user-base anyway you might consider server infrast
 
 How can you be excellent to each other, make good decisions well, and continue to do so?
 
-- [ ] The project has a suitable governance model
-	- [ ]  	🥉Bronze *(easy)*: The governance model is clearly communicated
-	- [ ]  	🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
-		- [ ] Source archived and/or mirrored to other platforms
-		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
-		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]  	🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale
-		- [ ]
+- [ ] Project has a governance model and continuity planning appropriate to its scale
+	- [ ]  	🥉Bronze *(easy)*: Basic governance and continuity planning measures have been taken by project lead(s)
+		- [ ] A trusted person other than the project lead has access, or the ability to securely acquire access, to core project assets such as the code repo(s), servers, and secrets
+		- [ ] How the project is governed and how people are expected to engage with it is communicated.
+		This might just be in the README, be a dedicated governance document or include other documents, such as a code of conduct
+		- [ ] A preferred method of private contact for project leadership is provided
+	- [ ]  	🥈Silver *(easy)*: Bronze Plus, plans for continuity of operations in case of an event such as the loss of key project infrastructure
+		- [ ] Project has research software management plan
+		- [ ] Source repo is automatically archived and/or mirrored to other hosting providers
+		- [ ] Public archives on non-project infrastructure of any key project governance documentation that is not in the source repo
+	- [ ]  	🥇Gold *(intermediate)*: 
+		- [ ] Project decision making processes are documented
 		- [ ] Project has clear and transparent processes
+		- [ ] Plans for continuity of operations in case of an event such as the loss of key project infrastructure
+		- [ ] Plans of action in the event project admin(s) are no longer available
+		- [ ] Project has a machine readable research software management plan
 	- [ ]  	🏆Platinum *(Hard)*: Project has a track record of good governance and policy
-		- [ ]
-		- [ ] Learned from any mistakes and implemented policy changes as a result
+		- [ ] Project leadership has learned from any mistakes and implemented policy changes as a result
 
 <details>
 <ul>
