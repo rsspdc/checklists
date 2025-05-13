@@ -51,7 +51,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 	<li>
 	Signed and Timestamped git commits
 	</li>
-	<ul>
+	</ul>
 		<li> 
 		It is possible to cryptographically sign your git commits, this can be used to increase confidence that you are the author of a signed commit as someone would have to compromise your private key in order to impersonate you.
 		If your key is part of a [web of trust](https://en.wikipedia.org/wiki/Web_of_trust) or other (public key infrastructure (PKI)](https://en.wikipedia.org/wiki/Public_key_infrastructure) people can see that other people / institutions attest that person with this key is who they say they are.
@@ -63,7 +63,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 		This aims to establish a lower bound on how long ago the committed code was authored.
 		The [opentimestamps-client](https://github.com/opentimestamps/opentimestamps-client) [integrates with git](https://github.com/opentimestamps/opentimestamps-client/blob/master/doc/git-integration.md) to provide timestamps for individual [GPG](https://gnupg.org/) signed commits
 		</li>
-	</ul>
+	<ul>
 </ul>
 </details>
 
@@ -277,7 +277,9 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 <details>
 	<ul>
+		<li>
 
+		</li>
 	</ul>
 </details>
 
