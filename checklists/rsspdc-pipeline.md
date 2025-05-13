@@ -267,6 +267,19 @@ These features make the sometimes lengthy and laborious process of testing compu
 
 *What tasks can you automate to increase consistency and reduce manual work?*
 
+- [ ] 
+	- [ ]  	🥉Bronze *(easy)*: 
+	- [ ]  	🥈Silver *(easy)*: 
+	- [ ]  	🥇Gold *(intermediate)*: 
+	- [ ]  	🏆Platinum *(intermediate)*: 
+
+<details>
+<ul>
+	<li>
+	</li>
+<ul>
+</details>
+
 ## 👥Peer review / Code Review
 
 How can you get third party endorsement of and expert feedback on your project?
@@ -347,9 +360,9 @@ How can people get specific versions of your software running on their systems?
 
 <details>
 <ul>
-<li>
-In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
-Many pipeline management tools support specifying per-task compute environments using tools such as conda, and container technologies such as docker and singularity/apptainer.
+	<li>
+	In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
+	Many pipeline management tools support specifying per-task compute environments using tools such as conda, and container technologies such as docker and singularity/apptainer.
 	<ul>
 		<li>
 			<p>
@@ -387,13 +400,11 @@ Many pipeline management tools support specifying per-task compute environments 
 			</p>
 		</li>
 	</ul>
-</li>
 	<li>
 	Are the environments for each step of your pipeline well described using an environment management tool such as [Conda](https://conda.org/), or [Spack](https://spack.readthedocs.io/en/latest/) and/or supplied as [OCI](https://opencontainers.org/) containers, runnable with tools such [Docker](https://www.docker.com/), [podman](https://podman.io/), [lxc](https://linuxcontainers.org/lxc/introduction/), [Singularity/Apptainer](https://apptainer.org/), or others?
 	</li>
 	<li>
 	Many popular pipeline management tools integrate with environment management and container runtimes to facilitate portability of reproducible compute environments. see:
-	</li>
 	<ul>
 		<li>
 		[Snakemake - integrated Package management](https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html#integrated-package-management)
@@ -402,6 +413,7 @@ Many pipeline management tools support specifying per-task compute environments 
 		[Nextflow - containers](https://www.nextflow.io/docs/latest/container.html)
 		</li>
 	</ul>
+	</li>
 	<li>
 	The Pipelines in Genomics [PiGx](http://bioinformatics.mdc-berlin.de/pigx/) ([paper](https://doi.org/10.1093/gigascience/giy123)) collection represents a gold standard in reproducible computational environments for genomics pipelines.
 	It used the [Guix](https://guix.gnu.org/) functional package manager to attain >97% bitwise reproducibility for dependencies across the pipelines in their collection.
