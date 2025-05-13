@@ -364,17 +364,24 @@ Distribution for a web based service covers both hosting the service and distrib
 
 <details>
 
-Efficiency in a program deployed as a web service is often more about how it is configured than the efficiency of the underlying code, perhaps especially for services with large numbers of users.
-Appropriate caching, managment of sessions on your web server(s), load balancing between multiple nodes (when you have them) and so on can have huge performance and efficiency impact.
+Efficiency in a program deployed as a web service can be as much or more about how it is configured than the efficiency of the underlying code, the larger the number of users a service has the larger the overall impact of small efficiency gains.
+In many research contexts the number of users is small, though in some cases their computational demands may be high.
+It may be uneconomical to spend the time to optimise as heavily as one might in applications with larger scale.
+If possible profile the resource usage of your service in use and optimise the low hanging fruit.
+
+Appropriate caching, management of sessions on your web server(s), load balancing between multiple nodes (when you have them) and so on can have huge performance and efficiency impact.
 An underpowered web server can for example often serve many more people if the number of concurrent session is limited the number that can comfortably be handled with that box's resources and it is allowed to handle many requests in rapid sequence rather than becoming overwhelmed by an excessive number of concurrent sessions.
 Consulting with a professional systems administrator and/or devops professional (for larger deployments on modern cloud stacks) about how to optimise your service's deployment is likely a good idea if you are inexperienced in this domain.
 
-With that said the same considerations that apply to other softwarepackages also apply to web services to refer to that section also for additional suggestions.
+The same considerations that apply to other software packages also apply to web services to refer to [that section](../software-packages.md) also for additional suggestions.
 
 Get the most out of the resources that you have provisioned for your service, over or under provisioning can lead to inefficiencies to aim to match demand.
-Automatically scalling services out can still carry considerable technical overhead and is unlikely to be worth the trouble in small deployments.
+Automatically scaling services out can still carry considerable technical overhead and computational overhead in monitoring and responding to load and is unlikely to be worth the trouble in small deployments.
 
-It may be valuable to share application specific optimiation tips for deployments of your service on community fora and/or as case studies in your documentation.
+It may be valuable to share application specific optimisation tips for deployments of your service on community fora and/or as case studies in your documentation.
+
+Academic user-bases are often scattered around the world, if you have a particular concentration of users in one location it may make sense to locate your physical infrastructure near to them to minimise latency.
+However, if you have a global user-base anyway you might consider server infrastructure in a location with the least carbon intensity.
 
 </details>
 
