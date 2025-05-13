@@ -348,10 +348,19 @@ Distribution for a web based service covers both hosting the service and distrib
 ## 🌱 Energy Efficiency
 
 - [ ] Consideration has been given to the energy efficiency of the service
-	- [ ]  	🥉Bronze *(easy)*:
-	- [ ]  	🥈Silver *(easy)*: Estimate and share the carbon footprint of your service using system logs with a tool such as [green algorithms calculator](http://calculator.green-algorithms.org/)
-	- [ ]  	🥇Gold *(intermediate)*:
-	- [ ]  	🏆Platinum *(intermediate)*:
+	- [ ]  	🥉Bronze *(easy)*: 2+ from:
+		- [ ] Your web servers are configured appropriately to make best use of their available resources
+		- [ ] You have provisioned appropriately specified hardware for your service and size of user-base
+		- [ ] You have profiled your software and optimised any readily addressed bottlenecks
+	- [ ]  	🥈Silver *(intermediate)*:
+		- [ ] 
+		- [ ] Estimate and share the carbon footprint of your service using system logs with a tool such as [green algorithms calculator](http://calculator.green-algorithms.org/)
+	- [ ]  	🥇Gold *(intermediate)*: 2+ from:
+		- [ ] You have detailed profiling of the usage of your service and have optimised your configuration accordingly
+		- [ ] You have detailed profiling of the resource usage of your service and have optimised your hardware provisioning accordingly
+		- [ ] You have profiled your software and optimised bottlenecks, and are making use of parallelism and/or hardware acceleration is possible / beneficial to efficiency.
+	- [ ]  	🏆Platinum *(hard)*:
+		- [ ] Carbon intensity is considered in deployment location, potentially in real-time if dynamically scaling deployments that span multiple geographic regions
 
 <details>
 
