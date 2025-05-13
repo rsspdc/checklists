@@ -82,9 +82,12 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 		- [ ] How is the project Licensed?
 		- [ ] Table of Contents (if long enough to benefit from one)
 		- [ ] Bibliography (if reference is made to external resources)
+	- [ ]  	🥈Silver *(intermediate)*: Bronze plus the pipeline has a reference manual detailing how to use all it's key functions.
+		- [ ] How do I set up a development environment?
+		- [ ] What are your future development plans (if any)
 	- [ ]  	🥇 Gold *(time consuming)*: Your Documentation features examples; rich, varied and working ones.
 			Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]  	🏆 Platinum *(intermediate)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
+	- [ ]  	🏆 Platinum *(intermediate)*: All examples are executed upon a full build of the documentation so that you know that they at least run (exempting suitable caching). 
 
 <details>
 <ul>
