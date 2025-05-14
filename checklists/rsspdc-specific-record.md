@@ -442,6 +442,9 @@ Consider what can you do to make your code a little more efficient:
 	<li>
 	The people in the [Green Algorithms](https://www.green-algorithms.org/) community of practice have some useful advice and resources for anyone interersted in this subject.
 	</li>
+	<li>
+	[The Environmentally Sustainable Computational Science forum](https://forum.escs-community.org) is a great place to find people to talk about these issues.
+	</li>
 </ul>
 </details>
 

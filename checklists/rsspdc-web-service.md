@@ -385,6 +385,7 @@ It may be valuable to share application specific optimisation tips for deploymen
 Academic user-bases are often scattered around the world, if you have a particular concentration of users in one location it may make sense to locate your physical infrastructure near to them to minimise latency.
 However, if you have a global user-base anyway you might consider server infrastructure in a location with the least carbon intensity.
 
+[The Environmentally Sustainable Computational Science forum](https://forum.escs-community.org) is a great place to find people to talk about these issues.
 </details>
 
 ## ⚖ Governance, Conduct, & Continuity

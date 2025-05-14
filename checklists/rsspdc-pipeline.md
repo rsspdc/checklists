@@ -458,6 +458,9 @@ Consider what can you do to make your code a little more efficient:
 	The people in the [Green Algorithms](https://www.green-algorithms.org/) community of practice have some useful advice and resources for anyone interested in this subject.
 	</li>
 	<li>
+	[The Environmentally Sustainable Computational Science forum](https://forum.escs-community.org) is a great place to find people to talk about these issues.
+	</li>
+	<li>
 	Good documentation and good error handing/messages can reduce the number of times people make mistakes using your code that means they re-run or partially re-run it fewer times before they figure out how to use it correctly.
 	</li>
 	<li>
