@@ -1,5 +1,7 @@
 # Pipelines & Workflows [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/pipelines.md)]
 
+version: alpha
+
 *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 
 Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.

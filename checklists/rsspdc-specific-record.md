@@ -1,5 +1,7 @@
 # Record of a specific analysis [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/specific-record.md)]
 
+version: alpha
+
 *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
 
 Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
