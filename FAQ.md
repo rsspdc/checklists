@@ -58,6 +58,7 @@ For example:
 - [Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://doi.org/10.1111/2041-210X.14108) 
 - [Excuse Me, Do You Have a Moment to Talk About Version Control?](https://doi.org/10.1080/00031305.2017.1399928)
 - [Software testing in microbial bioinformatics: a call to action](https://doi.org/10.1099/mgen.0.000790)
+- [10 quick tips for making your software outlive your job](https://doi.org/10.48550/arXiv.2505.06484)
 
 Whilst much of the advice is similar across the types of research software output identified here there are a number of important differences and, the audiences generating these outputs are sufficiently different to warrant dedicated checklists.
 
