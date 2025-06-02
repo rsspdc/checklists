@@ -72,6 +72,16 @@ These lists have the ease of being a simple to copy and edit text file.
 
 A: Yes.
 
+## Q: What is Research Software?
+
+A: Precisely what constitutes research software as distinct from all other software is a challenging question to answer definitively in all cases.
+There are more and less expansive definitions that are suitable to different contexts.
+
+One might argue that most if not all software in research even underlying infrastructural components like operating systems are important for the ability to reproduce and verify certain results.
+Thus this software might need preserving for purposes of scientific information provenance but is general purpose and may be funded by corporate, government or civil society organisations so not in need of scientific funding for their ongoing maintenance and development.
+
+A good resource for thinking about this question is: [Defining Research Software: a controversial discussion](https://doi.org/10.5281/zenodo.5504015)
+
 ## Q: In the licensing sections you only mention free/libre/open source software - What about proprietary software?
 
 A:
