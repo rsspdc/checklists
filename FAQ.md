@@ -8,6 +8,10 @@ A: If you are publishing a research paper that has any analysis code associated 
 
 A: Copy the markdown file suitable to your output type to your repo and check the boxes that apply to your project, or even better have someone else use the checklist to score your project.
 
+A suggested workflow is to check a box off on the list in a commit which is associated with its implementation.
+For example you might tick a box in 'Making Citable' in the commit which adds a CITATION.cff file to your repository.
+This way the git history of the checklist file is tied to the changes to the project which implement the items on the list.
+
 ## Q: Why were these checklists created?
 
 A:
