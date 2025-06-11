@@ -66,7 +66,7 @@ There are differences in how some of these are executed depending on the type of
 - ⚖ **Governance, Conduct, & Continuity**
 	- *How can you be excellent to each other, make good decisions well, and continue to do so?*
 
-## Project Scoreing & Medal System 
+## Project Scoring & Medal System 
 
 **To check the box for each of these items should be attainable for any project.**
 To facilitate this you can **check the box at different tiers, Bronze, Silver, Gold and Platinum.**
