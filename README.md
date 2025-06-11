@@ -104,6 +104,24 @@ Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum
 
 [Repo badge Generator](https://rsspdc.org/badge-generator.html)
 
+## Suggested Workflow(s)
+
+If you are doing a self-assessment:
+
+- Pick the checklist appropriate to the type of software of your project
+- Download the checklist file and commit it to your repo
+- As you make changes to your project that allow you to check off boxes in the list commit the changes along with the corresponding checked box
+  This way the box checking change is in the same commit as the change that implements it
+- When you've got yourself an initial score generate a repo badge and add it to the README of your project, update it along with subsequent changes to the checklist ([badge generator](https://rsspdc.org/badge-generator.html))
+
+Not all changes to the checklist will be accompanied changes to the code, that's fine.
+However, if you have something like a changelog, release notes, or other documentation which might be a suitable place to document changes that allow you to check off a box you might want to included these in the commit.
+
+Ideally you would want to get an independent 3rd party to assess your project using the checklist.
+
+If you are collaborating on project you will probably be following their usual contribution model and doing something like opening a merge/pull request with the proposed changes and the corresponding checked box(es) for each change..
+This may also allow you to have a record of your checklist related changes in the issue tracker on your code forge.
+
 ## Contributing to this project
 
 **These lists are still in an early phase of development (pre-alpha)** I'll be soliciting input from select individuals and groups once they are in a good enough state to benefit the most from feedback.
