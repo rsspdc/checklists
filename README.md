@@ -70,6 +70,12 @@ There are differences in how some of these are executed depending on the type of
 
 **To check the box for each of these items should be attainable for any project.**
 To facilitate this you can **check the box at different tiers, Bronze, Silver, Gold and Platinum.**
+
+-   [ ] 🥉 Bronze (easy)
+-   [ ] 🥈 Silver
+-   [ ] 🥇 Gold
+-   [ ] 🏆 Platinum (very hard)
+
 Whilst **Bronze aims to be highly attainable Platinum is highly aspirational** and **essentially no project should expect to have Platinum across the board**, indeed if you do your probably overdoing it.
 Do not be scared if you do not even understand what the silver and above items mean, the difficulty curve is quite steep!
 Check out the expandable details sections for some resources on steps you can take to start ticking boxes.
