@@ -10,7 +10,7 @@ Copy the markdown file suitable to your output type (see below) to your repo and
 
 For more see the [FAQ](FAQ.md)
 
-(opionally, *in the future not implemented yet* add a badge to your repo's readme with your medal and score)
+(optionally add a badge to your repo's readme with your medal and score)
 
 ## Research Software Output types
 
