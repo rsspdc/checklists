@@ -106,7 +106,7 @@ Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum
 
 ## Suggested Workflow(s)
 
-If you are doing a self-assessment:
+### Self-assessment
 
 - Pick the checklist appropriate to the type of software of your project
 - Download the checklist file and commit it to your repo
@@ -121,6 +121,22 @@ Ideally you would want to get an independent 3rd party to assess your project us
 
 If you are collaborating on project you will probably be following their usual contribution model and doing something like opening a merge/pull request with the proposed changes and the corresponding checked box(es) for each change..
 This may also allow you to have a record of your checklist related changes in the issue tracker on your code forge.
+
+### Third Party Attestation (proposed approach)
+
+If a third party provides an assessment of your project using an RSSPDC this should be demonstrated by having a commit from them merged into your repo indicating this.
+
+Third party assessment should be carried out by someone who does not have any conflicts of interest and can provide an impartial assessment of the project.
+A third party assessor can assess a project with an existing self-assessment and can follow largely the same workflow as suggested for self-assessment.
+Depending on how much time they have to perform the assessment they may score the project 'as is' or provide suggestions for improvements as merge/pull requests and provide a score once authors have responded to feedback.
+
+This person should commit to the repository adding the 3rd party attestation version of the badge to the repository's README, this commit should ideally be [GPG signed](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) and [timestamped](https://github.com/opentimestamps/opentimestamps-client/blob/master/doc/git-integration.md).
+They would also likely commit to the checklist file but might not in the event that they concur completely with an existing self-assessment.
+
+Their commit message adding the badge should take the form: `rsspdc: attest <medal> <points> <type>`, for example: `rsspdc: attest bronze 11 specific record`.
+Afterwards you may wish to provide a link to this commit next too the badge to make this easy for visitors to verify.
+
+If you have made self-assessed improvements after a third party assessment you may wish to use two badges one to denote your current self-assessed state and the third party assessed badge until you can get another assessment.
 
 ## Contributing to this project
 
