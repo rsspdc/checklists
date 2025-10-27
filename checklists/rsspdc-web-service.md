@@ -1,8 +1,8 @@
-# Web-based service [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/web-based-service.md)]
+# Web-based service [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/web-based-service.md)]
 
 version: alpha
 
-*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
 
 A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
 In many ways the key considerations here lean more organisational than technical.

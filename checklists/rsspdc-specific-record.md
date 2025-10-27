@@ -1,8 +1,8 @@
-# Record of a specific analysis [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/specific-record.md)]
+# Record of a specific analysis [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md)]
 
 version: alpha
 
-*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
 
 Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
 The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.

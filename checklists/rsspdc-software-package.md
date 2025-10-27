@@ -1,8 +1,8 @@
-# Software Packages [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/software-packages.md)]
+# Software Packages [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/software-packages.md)]
 
 version: alpha
 
-*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
 
 Considerations for publishing a software package which may be used in research or as a researcher
 

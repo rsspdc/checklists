@@ -1,8 +1,8 @@
-# Pipelines & Workflows [[raw](https://gitlab.com/HDBI/data-management/checklists/-/raw/master/checklists/pipelines.md)]
+# Pipelines & Workflows [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/pipelines.md)]
 
 version: alpha
 
-*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/HDBI/data-management/checklists)*
+*[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
 
 Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
 "Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
