@@ -169,7 +169,7 @@ If it is not framed as contributing to a research output it is harder to justify
 Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
 This extends from the practical, making it easy import into reference mangers like [zotero](https://www.zotero.org/);
 To protecting against link-rot through the use of persistent digital object identifiers;
-To the use of linked / semantic data practices identify and connect contributors, the nature of their contributions, their institutional assoications and thing to which they contributed.
+To the use of linked / semantic data practices identify and connect contributors, the nature of their contributions, their institutional associations and thing to which they contributed.
 
 Further information:   
 <ul>
