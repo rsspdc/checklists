@@ -150,7 +150,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How should people make reference to your project and credit your work?*
 
 - [ ] Package is Citable
-	- [ ]  	🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
+	- [ ]  	🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
 	- [ ]  	🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
 	- [ ]  	🥇Gold *(intermediate)*: silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/),[ScoRo](http://www.sparontologies.net/ontologies/scoro),[CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
@@ -165,6 +165,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 It is important that code used in research can be properly cited by researchers so that they can communicate which version they used, where to find the code, and give appropriate credit to it's authors.
 Even if you are not an academic it is important that academics be able to credit your work so that it can be appropriately valued in the scientific funding ecosystem.
 If it is not framed as contributing to a research output it is harder to justify funding it and paying developer salaries - even if indirectly.
+To this end your package should meet the [Research Software MetaData Guidelines](https://fair-impact.github.io/RSMD-guidelines/).
 
 Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
 This extends from the practical, making it easy import into reference mangers like [zotero](https://www.zotero.org/);
@@ -174,10 +175,18 @@ To the use of linked / semantic data practices identify and connect contributors
 Further information:   
 <ul>
 	<li>
-		Including a [CITATION.cff](https://citation-file-format.github.io/) (Citation File Format) file in your project repo is a simple way of making your code citable. The format is readable in YAML and permits the provision of the metadata needed for citation.
+		Including a [CITATION.cff](https://citation-file-format.github.io/) (Citation File Format) file in your project repo is a simple way of making your code citable.
+		The format is readable in YAML and permits the provision of the metadata needed for citation.
+		The [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/) tool is an easy way to create one
 	</li>
 	<li>
-		[Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code this is a persistent identifer which can be used to refer to it.
+		Another metadata file which can hold your project's citation information, along with other important project metadata is [CodeMeta](https://codemeta.github.io/)
+		This is a JSON-LD format so integrates with other linked data resources like those from schema.org, they have a variety of 'Crosswalks' for translating between different metadata representations.
+		The [CodeMeta Generator](https://codemeta.github.io/codemeta-generator/) tool provides and easy way to create this file.
+		There are also language specific tools like {[codemetar](https://docs.ropensci.org/codemetar/)} for R which can automate conversion of the existing package metadata information, in R's case in the DESCRIPTION file, into a codemeta.json
+	</li>
+	<li>
+		[Zenodo](https://zenodo.org/) permits you to mint a [digital object identifier (DOI)](https://www.doi.org/) for your code this is a persistent identifier which can be used to refer to it.
 		You can tie the minting versioned DOIs to your releases of your project.
 		Using a DOI permits the existing ecosystem of academic software, e.g.[zotero](https://www.zotero.org/), to use APIs to retrieve citational metadata about your project.
 		[Zenodo](https://zenodo.org/) also hosts a snapshort of your sourcecode so that if your main code repository ever went down it's still possible to retrieve it here.
