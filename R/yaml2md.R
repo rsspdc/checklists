@@ -5,7 +5,16 @@ suppressPackageStartupMessages({
 	library(optparse)
 })
 
-# # maybe move to optparse eventually?
+# TODO
+# - pre_notes
+# - repo link / site link
+# - extra quarto formatting for the website verions - e.g. use callout blocks for details?
+# - toggle difficuly indicators
+# - --serious-business mode with no emoji :(
+# - indicate mandatory subparts / handle any N from subparts
+# - automatic score calculation
+
+# # pre-optparse reading of CLI args
 # args <- commandArgs(trailingOnly = TRUE)
 # 
 # # If passed a file the does not exist as input complain.
