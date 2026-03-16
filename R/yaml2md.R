@@ -7,6 +7,7 @@ suppressPackageStartupMessages({
 
 # TODO
 # - [x] pre_notes
+# - [x] repo link / site link
 # - [ ] --serious-business mode with no emoji :(
 # - [ ] indicate mandatory subparts / handle any N from subparts
 # - [ ] automatic score calculation
