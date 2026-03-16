@@ -1,9 +1,9 @@
 title: Pipelines & Workflows
-full_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md
-lite_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md
+full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md
+lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md
 version: alpha
-checklists_site_link: >
-  *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
+checklists_site_url: https://rsspdc.org
+checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
   "Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
@@ -15,28 +15,26 @@ checklist_items:
       *How can you keep track of the history of your project and collaborate on it?*
     checklist_items:
       overall:
-        content: |
+        content: |-
           Uses [git](https://git-scm.com/) (or other source control tool such as [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki))
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: |
-            Using version control but has a shallow project history, just placed in git for distribution
+          content: Using version control but has a shallow project history, just placed in git for distribution
           checked: false
           difficulty: easy
         silver:
-          content: |
-            Longer project history, commit messages of mixed quality, some large messy changes
+          content: Longer project history, commit messages of mixed quality, some large messy changes
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: >-
             Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
             Tags, releases, or branches at major project milestones, maybe some contributions from other users
           checked: false
           difficulty: hard
         platinum:
-          content: |
+          content: >
             Gold plus - Some from:
             [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/);
             Clean history with a consistent rebasing/merging strategy;
@@ -60,30 +58,28 @@ checklist_items:
       *On what terms can others use your code, and how can you communicate this?*
     checklist_items:
       overall:
-        content: |
-          Project is suitably licensed
+        content: Project is suitably licensed
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: >
+          content: >-
             There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
             Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             If any prose/documentation or images is licensed differently from the code in the project this is indicated and those licences provided.
             If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
-            all previous tiers plus any images have licensing information embedded in their metadata.
+          content: all previous tiers plus any images have licensing information embedded in their metadata.
           checked: false
           difficulty: intermediate
     post_notes:
@@ -113,12 +109,11 @@ checklist_items:
       *How do people know what your project is, how to use it and how to contribute?*
     checklist_items:
       overall:
-        content: |
-          Project has suitable documentation 
+        content: Project has suitable documentation 
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: >
+          content: >-
             Project has README file that either contains directly or links to resources which answer these questions:
           checked: false
           difficulty: easy
@@ -158,7 +153,7 @@ checklist_items:
             - content: Bibliography (if reference is made to external resources)
               checked: false
         silver:
-          content: >
+          content: >-
             If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
             So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
           checked: false
@@ -169,13 +164,13 @@ checklist_items:
             - content: What are your future development plans (if any)
               checked: false
         gold:
-          content: |
+          content: |-
             Your Documentation features examples; rich, varied and working ones.
             Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             All examples are executed upon a full build of the documentation so that you know that they at least run.
           checked: false
           difficulty: MAXIMUM OVERKILL
@@ -243,22 +238,21 @@ checklist_items:
       *How should people make reference to your project and credit your work?*
     checklist_items:
       overall:
-        content: |
-          Package is Citable
+        content: Package is Citable
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: >
+          content: >-
             A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             silver plus:
           checked: false
           difficulty: intermediate
@@ -269,7 +263,7 @@ checklist_items:
             - content: All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
               checked: false
         platinum:
-          content: |
+          content: |-
             gold plus any two or more from:
           checked: false
           difficulty: mixed
@@ -352,29 +346,27 @@ checklist_items:
       *How can you test your project so you can be confident it does what you think it does?*
     checklist_items:
       overall:
-        content: |
-          Pipeline is appropriately tested
+        content: Pipeline is appropriately tested
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: >
-            The pipeline runs and produces the expected result on a minimal example dataset
+          content: The pipeline runs and produces the expected result on a minimal example dataset
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             both of the below:
           checked: false
           difficulty: easy
           subparts:
             - content: A wide variety of possible input parameter combinations are tested
               checked: false
-            - content: >
+            - content: >-
                 Datasets with different expected outcomes are tested,
                 for example an output value is expected to be low in one dataset and high in another
               checked: false
         gold:
-          content: >
+          content: >-
             All of the below:
           checked: false
           difficulty: intermediate
@@ -386,7 +378,7 @@ checklist_items:
             - content: Test are run automatically in continuous integration tools as changes are made to the code repository
               checked: false
         platinum:
-          content: |
+          content: |-
             Range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
           checked: false
           difficulty: hard
@@ -425,10 +417,9 @@ checklist_items:
       *What tasks can you automate to increase consistency and reduce manual work?*
     checklist_items:
       overall:
-        content: |
-          Suitable automations are in place
+        content: Suitable automations are in place
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
           checked: false
@@ -449,28 +440,26 @@ checklist_items:
       *How can you get third party endorsement of and expert feedback on your project?*
     checklist_items:
       overall:
-        content: |
-          Pipeline has been appropriately reviewed
+        content: Pipeline has been appropriately reviewed
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: |
-            Someone other than you has checked over your pipeline and given you feedback
+          content: Someone other than you has checked over your pipeline and given you feedback
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             Someone other than you has successfully run your pipeline on different compute infrastructure and got the same results with test data
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: |-
             You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
             (The snakmake workflow catalog's review practices would not be adequate for this purpose)
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             Some from:
                 - Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
                 - You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
@@ -499,27 +488,26 @@ checklist_items:
       *How can people install or access the software emerging from your project?*
     checklist_items:
       overall:
-        content: |
-          Pipeline is distributed in appropriate format(s)
+        content: Pipeline is distributed in appropriate format(s)
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: |
+          content: |-
             Pipeline is in a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be run with the pipeline manager's standard tooling.
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment management tool.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Pipeline is in a repository of workflows and pipelines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
           checked: false
           difficulty: intermediate
@@ -553,28 +541,26 @@ checklist_items:
       *How can people get specific versions of your software running on their systems?*
     checklist_items:
       overall:
-        content: |
-          It is possible to run your pipeline on other systems with some degree of reproducibility
+        content: It is possible to run your pipeline on other systems with some degree of reproducibility
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: |
-            The pipeline may require some manual changes, and/or manual steps to install the requisite software environments or retrieve data, and perform some standard pre-processing of inputs like building genome references etc.
+          content: The pipeline may require some manual changes, and/or manual steps to install the requisite software environments or retrieve data, and perform some standard pre-processing of inputs like building genome references etc.
           checked: false
           difficulty: easy
         silver:
-          content: |
+          content: |-
             External inputs can be automatically retrieved using their identifiers and pre-processing steps for these inputs are performed as apart of the pipeline.
             At least one method for describing the required compute environment(s) is supplied e.g. conda environments, or container build files so that others can be specified if a user has compute infrastructure which does not support the method(s) supplied.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Complete pipeline can be executed with single command with all data and dependencies fetched automatically, barring the need for any system specific resource constraint configuration.
           checked: false
           difficulty: hard
         platinum:
-          content: >
+          content: >-
             The entire dependency tree of your pipeline including the pipeline manager itself,
             the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
           checked: false
@@ -648,20 +634,18 @@ checklist_items:
       *How can you and your users minimise wasted energy?*
     checklist_items:
       overall:
-        content: |
-          Consideration has been given to the energy efficiency of the code
+        content: Consideration has been given to the energy efficiency of the code
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: |
-            minimise unnecessary output files
+          content: minimise unnecessary output files
           checked: false
           difficulty: intermediate
           subparts:
             - content: Adopt a process to review outputs and keep only those necessary
               checked: false
         silver:
-          content: >
+          content: >-
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
           difficulty: intermediate
@@ -669,7 +653,7 @@ checklist_items:
             - content: Energy consumption and emissions Estimation/Measurement
               checked: false
         gold:
-          content: |
+          content: |-
             Two or more from:
           checked: false
           subparts:
@@ -681,7 +665,7 @@ checklist_items:
               checked: false
           difficulty: hard
         platinum:
-          content: |
+          content: |-
             Two or more from:
           checked: false
           difficulty: hard
@@ -750,16 +734,14 @@ checklist_items:
       *How can you be excellent to each other, make good decisions well, and continue to do so?*
     checklist_items:
       overall:
-        content: |
-          The project has a suitable governance model
+        content: The project has a suitable governance model
         checked: false
-      teirs:
+      tiers:
         bronze:
-          content: |
-            The governance model is clearly communicated
+          content: The governance model is clearly communicated
           checked: false
         silver:
-          content: >
+          content: >-
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
           subparts:
@@ -770,14 +752,13 @@ checklist_items:
             - content: Plans of action in the event project admin(s) are no longer available
               checked: false
         gold:
-          content: |
-            Project has a governance model appropriate to its scale and goals
+          content: Project has a governance model appropriate to its scale and goals
           checked: false
           subparts:
             - content: Project has clear and transparent processes
               checked: false
         platinum:
-          content: |
+          content: |-
             Project has a track record of good governance and policy, any from:
           checked: false
           subparts:

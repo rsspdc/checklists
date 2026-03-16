@@ -1,9 +1,9 @@
 title: Software Packages
-full_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md
-lite_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md
+full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md
+lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md
 version: alpha
-checklists_site_link: >
-  *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
+checklists_site_url: https://rsspdc.org
+checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing a software package which may be used in research or as a researcher
 checklist_items:
@@ -17,7 +17,7 @@ checklist_items:
         content: |
           Uses [git](https://git-scm.com/) (or other source control tool such as [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki))
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             Using version control but has a shallow project history, just placed in git for distribution
@@ -61,7 +61,7 @@ checklist_items:
         content: |
           Project is suitably licensed
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
@@ -115,7 +115,7 @@ checklist_items:
         content: |
           Project has suitable documentation 
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             Project has README file that either contains directly or links to resources which answer these questions:
@@ -231,7 +231,7 @@ checklist_items:
         content: |
           Package is Citable
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
@@ -351,7 +351,7 @@ checklist_items:
         content: |
           Package is appropriately tested
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
@@ -404,7 +404,7 @@ checklist_items:
         content: |
           Suitable automations are in place
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
           checked: false
@@ -477,7 +477,7 @@ checklist_items:
         content: |
           Package has been appropriately reviewed
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             Someone other than you has checked over your package and given you feedback
@@ -522,7 +522,7 @@ checklist_items:
         content: |
           Package is distributed in appropriate format(s)
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             On a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be installed as a development package with the language's standard tooling.
@@ -564,7 +564,7 @@ checklist_items:
         content: |
           The compute environment needed to build and install the package is well defined
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             Makes use of a packaging format that defines dependencies in the package's own languge, but not neceasrily system dependencies
@@ -629,7 +629,7 @@ checklist_items:
         content: |
           Consideration has been given to the energy efficiency of the code
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             minimise unnecessary output files
@@ -685,7 +685,7 @@ checklist_items:
         content: |
           The project has a suitable governance model
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             The governance model is clearly communicated

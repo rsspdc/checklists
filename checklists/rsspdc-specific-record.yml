@@ -1,9 +1,9 @@
 title: Record of a specific analysis
-full_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md
-lite_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md
+full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md
+lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md
 version: alpha
-checklists_site_link: >
-  *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
+checklists_site_url: https://rsspdc.org
+checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
   The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
@@ -20,7 +20,7 @@ checklist_items:
         content: |
           Uses git (or other source control tool)
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             Using version control but has a shallow project history, just placed in git for distribution
@@ -114,7 +114,7 @@ checklist_items:
         content: |
           Project is suitably licensed
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
@@ -179,7 +179,7 @@ checklist_items:
         content: |
           Project has suitable documentation 
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             Project has README file that either contains directly or links to resources which answer these questions:
@@ -270,7 +270,7 @@ checklist_items:
         content: |
           Record is Citable
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
@@ -365,7 +365,7 @@ checklist_items:
         content: |
           Project has undergone suitable testing
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >
             Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
@@ -410,7 +410,7 @@ checklist_items:
         content: |
           Suitable automations are in place
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             1 from this list of processes are automated
@@ -449,7 +449,7 @@ checklist_items:
         content: |
           Code has been subject to a review indicating that someone else could re-run the analysis
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
@@ -488,7 +488,7 @@ checklist_items:
         content: |
           Project is distributed in a suitable fashion
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             Code and data (barring privacy related access restrictions) are in public repositories.
@@ -548,7 +548,7 @@ checklist_items:
         content: |
           Computational environment description provided
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
@@ -607,7 +607,7 @@ checklist_items:
         content: |
           Consideration has been given to the energy efficiency of the code
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             minimise unnecessary output files
@@ -672,7 +672,7 @@ checklist_items:
         content: |
           The project has a suitable governance model
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |
             The governance model is clearly communicated

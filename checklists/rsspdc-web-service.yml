@@ -2,8 +2,8 @@ title: Web-based service
 full_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service.md
 lite_markdown_link: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md
 version: alpha
-checklists_site_link: >
-  *[Research Software Sharing, Publication, & Distribution Checklist](https://gitlab.com/rsspdc/checklists)*
+checklists_site_url: https://rsspdc.org
+checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
   In many ways the key considerations here lean more organisational than technical.
@@ -25,7 +25,7 @@ checklist_items:
       overall:
         content: Uses git (or other source control tool)
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: Using version control but has a shallow project history, just placed in git for distribution
           checked: false
@@ -82,7 +82,7 @@ checklist_items:
       overall:
         content: Project is suitably licensed
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >-
             There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
@@ -137,7 +137,7 @@ checklist_items:
       overall:
         content: Project has suitable documentation 
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >-
             Project has README file that either contains directly or links to resources which answer these questions:
@@ -225,7 +225,7 @@ checklist_items:
       overall:
         content: Package is Citable
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >-
             A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
@@ -337,7 +337,7 @@ checklist_items:
       overall:
         content: Service is appropriately tested
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: >-
             You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
@@ -397,7 +397,7 @@ checklist_items:
         content: |-
           Suitable automations are in place
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: 
           checked: false
@@ -420,7 +420,7 @@ checklist_items:
       overall:
         content: 
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: 
           checked: false
@@ -453,7 +453,7 @@ checklist_items:
         content: |-
           Service is distributed in suitable fashion
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: Code is in a public repository or repositories
           checked: false
@@ -527,7 +527,7 @@ checklist_items:
       overall:
         content: Simple to install development, testing, and/or demo environment
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: |-
             A developer / sysadmin other than yourself can deploy a simple testing instance of your software using only your documentation.
@@ -575,7 +575,7 @@ checklist_items:
       overall:
         content: Consideration has been given to the energy efficiency of the service
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: Two or more from
           checked: false
@@ -647,7 +647,7 @@ checklist_items:
       overall:
         content: Project has a governance model and continuity planning appropriate to its scale
         checked: false
-      teirs:
+      tiers:
         bronze:
           content: Basic governance and continuity planning measures have been taken by project lead(s)
           checked: false
