@@ -17,27 +17,26 @@ checklist_items:
       *How can you keep track of the history of your project and collaborate on it?*
     checklist_items:
       overall:
-        content: |
-          Uses git (or other source control tool)
+        content: Uses git (or other source control tool)
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             Using version control but has a shallow project history, just placed in git for distribution
           checked: false
           difficulty: easy
         silver:
-          content: |
+          content: |-
             Longer project history, commit messages of mixed quality, some large messy changes
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: |-
             Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
           checked: false
           difficulty: hard
         platinum:
-          content: |
+          content: |-
             Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
           checked: false
           difficulty: MAXIMUM OVERKILL
@@ -111,30 +110,29 @@ checklist_items:
       *On what terms can others use your code, and how can you communicate this?*
     checklist_items:
       overall:
-        content: |
-          Project is suitably licensed
+        content: Project is suitably licensed
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
             Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) or similar license which meets the [free cultural works](https://freedomdefined.org/Licenses) definition.
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided.
             If licences have an attribution requirement there is easy to copy text/links for appropriate attribution.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Uses [Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) license identifiers for every file/suitable unit of code.
             With a tool such as [REUSE.software](https://reuse.software/) to automate and standardise the process.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             all previous tiers plus any images have licensing information embedded in their metadata.
           checked: false
           difficulty: intermediate
@@ -176,12 +174,11 @@ checklist_items:
       *How do people know what your project is, how to use it and how to contribute?*
     checklist_items:
       overall:
-        content: |
-          Project has suitable documentation 
+        content: Project has suitable documentation 
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             Project has README file that either contains directly or links to resources which answer these questions:
           checked: false
           difficulty: easy
@@ -217,19 +214,19 @@ checklist_items:
             - content: Bibliography (if reference is made to external resources)
               checked: false
         silver:
-          content: >
+          content: >-
             If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided.
             If licences have an attribution requirement there is easy to copy text/links for appropriate attribution.
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: |-
             Uses [Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) license identifiers for every file/suitable unit of code.
             With a tool such as [REUSE.software](https://reuse.software/) to automate and standardise the process.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             all previous tiers plus any images have licensing information embedded in their metadata.
           checked: false
           difficulty: MAXIMUM OVERKILL
@@ -267,22 +264,21 @@ checklist_items:
       *How should people make reference to your project and credit your work?*
     checklist_items:
       overall:
-        content: |
-          Record is Citable
+        content: Record is Citable
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             A [CITATION.cff](https://citation-file-format.github.io/) file exists in the code repository to provide citational metadata about your project
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival copy of the project.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             silver plus:
           checked: false
           difficulty: intermediate
@@ -293,7 +289,7 @@ checklist_items:
             - content: All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
               checked: false
         platinum:
-          content: |
+          content: |-
             gold plus any two or more from:
           checked: false
           difficulty: mixed
@@ -362,24 +358,23 @@ checklist_items:
       *How can you test your project so you can be confident it does what you think it does?*
     checklist_items:
       overall:
-        content: |
-          Project has undergone suitable testing
+        content: Project has undergone suitable testing
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
           checked: false
         silver:
-          content: >
+          content: >-
             Includes test datasets which cover a range of outcomes of the analysis
           checked: false
         gold:
-          content: |
+          content: |-
             You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
           checked: false
         platinum:
-          content: |
+          content: |-
             Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
           checked: false
     details: |
@@ -407,12 +402,11 @@ checklist_items:
       *What tasks can you automate to increase consistency and reduce manual work?*
     checklist_items:
       overall:
-        content: |
-          Suitable automations are in place
+        content: Suitable automations are in place
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             1 from this list of processes are automated
               - use of an environment management tool
               - use of a literate programming / computational notebook
@@ -424,15 +418,15 @@ checklist_items:
               - ...
           checked: false
         silver:
-          content: >
+          content: >-
             2-3 from the above list of processes are automated
           checked: false
         gold:
-          content: |
+          content: |-
             4+ from the above list of processes are automated
           checked: false
         platinum:
-          content: |
+          content: |-
             note that difficuly is somewhat project dependent
             Your manuscript and its supplements are generated and served on a website after being built from your CI/CD pipeline.
             All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
@@ -446,24 +440,24 @@ checklist_items:
       *How can you get third party endorsement of and expert feedback on your project?*
     checklist_items:
       overall:
-        content: |
+        content: |-
           Code has been subject to a review indicating that someone else could re-run the analysis
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
           checked: false
         silver:
-          content: >
+          content: >-
             Someone other than you has scessfully re-run your analysis using only your documentation, (preferably in a different compute environment, such as a different computer/compute cluster)
           checked: false
         gold:
-          content: |
+          content: |-
             You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
           checked: false
         platinum:
-          content: |
+          content: |-
             You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
           checked: false
     details: |
@@ -485,24 +479,23 @@ checklist_items:
       *How can people install or access the software emerging from your project?*
     checklist_items:
       overall:
-        content: |
-          Project is distributed in a suitable fashion
+        content: Project is distributed in a suitable fashion
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             Code and data (barring privacy related access restrictions) are in public repositories.
           checked: false
         silver:
-          content: >
+          content: >-
             Detailed instructions on how to fetch, install and configure the tools and data needed re-run your analysis, and how to re-run the analysis in the described environment.
           checked: false
         gold:
-          content: |
+          content: |-
             Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
           checked: false
         platinum:
-          content: |
+          content: |-
             Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
           checked: false
     details: |
@@ -545,24 +538,23 @@ checklist_items:
       *How can people get specific versions of your software running on their systems?*
     checklist_items:
       overall:
-        content: |
-          Computational environment description provided
+        content: Computational environment description provided
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
           checked: false
         silver:
-          content: >
+          content: >-
             Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
           checked: false
         gold:
-          content: |
+          content: |-
             Structured full environment description, automated ability to recreate the complete environment including system dependencies
           checked: false
         platinum:
-          content: |
+          content: |-
             Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
           checked: false
     details: |
@@ -604,24 +596,23 @@ checklist_items:
       *How can you and your users minimise wasted energy?*
     checklist_items:
       overall:
-        content: |
+        content: |-
           Consideration has been given to the energy efficiency of the code
         checked: false
       tiers:
         bronze:
-          content: |
-            minimise unnecessary output files
+          content: minimise unnecessary output files
           checked: false
         silver:
-          content: >
+          content: >-
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
         gold:
-          content: |
+          content: |-
             silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
           checked: false
         platinum:
-          content: |
+          content: |-
             gold plus: Offload suitable computations to hardware accelerators where possible
           checked: false
     details: |
@@ -669,16 +660,14 @@ checklist_items:
       *How can you be excellent to each other, make good decisions well, and continue to do so?*
     checklist_items:
       overall:
-        content: |
-          The project has a suitable governance model
+        content: The project has a suitable governance model
         checked: false
       tiers:
         bronze:
-          content: |
-            The governance model is clearly communicated
+          content: The governance model is clearly communicated
           checked: false
         silver:
-          content: >
+          content: >-
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
           subparts:
@@ -689,14 +678,14 @@ checklist_items:
             - content: Plans of action in the event project admin(s) are no longer available
               checked: false
         gold:
-          content: |
+          content: |-
             Project has a governance model appropriate to its scale and goals
           checked: false
           subparts:
             - content: Project has clear and transparent processes
               checked: false
         platinum:
-          content: |
+          content: |-
             Project has a track record of good governance and policy, any from:
           checked: false
           subparts:

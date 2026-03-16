@@ -14,28 +14,26 @@ checklist_items:
       *How can you keep track of the history of your project and collaborate on it?*
     checklist_items:
       overall:
-        content: |
+        content: |-
           Uses [git](https://git-scm.com/) (or other source control tool such as [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki))
         checked: false
       tiers:
         bronze:
-          content: |
-            Using version control but has a shallow project history, just placed in git for distribution
+          content: Using version control but has a shallow project history, just placed in git for distribution
           checked: false
           difficulty: easy
         silver:
-          content: |
-            Longer project history, commit messages of mixed quality, some large messy changes
+          content: Longer project history, commit messages of mixed quality, some large messy changes
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: |-
             Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
             Tags, releases, or branches at major project milestones, maybe some contributions from other users
           checked: false
           difficulty: hard
         platinum:
-          content: |
+          content: >-
             Gold plus - Some from:
             [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/);
             Clean history with a consistent rebasing/merging strategy;
@@ -58,30 +56,28 @@ checklist_items:
       *On what terms can others use your code, and how can you communicate this?*
     checklist_items:
       overall:
-        content: |
-          Project is suitably licensed
+        content: Project is suitably licensed
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software.
             Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             If any prose/documentation or images is licensed differently from the code in the project this is indicated and those licences provided.
             If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
-            all previous tiers plus any images have licensing information embedded in their metadata.
+          content: all previous tiers plus any images have licensing information embedded in their metadata.
           checked: false
           difficulty: intermediate
     post_notes:
@@ -112,12 +108,11 @@ checklist_items:
       *How do people know what your project is, how to use it and how to contribute?*
     checklist_items:
       overall:
-        content: |
-          Project has suitable documentation 
+        content: Project has suitable documentation 
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             Project has README file that either contains directly or links to resources which answer these questions:
           checked: false
           difficulty: easy
@@ -153,19 +148,19 @@ checklist_items:
             - content: Bibliography (if reference is made to external resources)
               checked: false
         silver:
-          content: >
+          content: >-
             If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it.
             So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: |-
             Your Documentation features examples; rich, varied and working ones.
             Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             All examples are executed upon a full build of the documentation so that you know that they at least run.
           checked: false
           difficulty: MAXIMUM OVERKILL
@@ -233,17 +228,17 @@ checklist_items:
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             silver plus:
           checked: false
           difficulty: intermediate
@@ -254,7 +249,7 @@ checklist_items:
             - content: All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
               checked: false
         platinum:
-          content: |
+          content: |-
             gold plus any two or more from:
           checked: false
           difficulty: mixed
@@ -348,24 +343,23 @@ checklist_items:
       *How can you test your project so you can be confident it does what you think it does?*
     checklist_items:
       overall:
-        content: |
-          Package is appropriately tested
+        content: Package is appropriately tested
         checked: false
       tiers:
         bronze:
-          content: >
+          content: >-
             You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
           checked: false
         silver:
-          content: >
+          content: >-
             You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
           checked: false
         gold:
-          content: |
+          content: |-
             silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
           checked: false
         platinum:
-          content: |
+          content: |-
             You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
           checked: false
     details: |
@@ -401,8 +395,7 @@ checklist_items:
       *What tasks can you automate to increase consistency and reduce manual work?*
     checklist_items:
       overall:
-        content: |
-          Suitable automations are in place
+        content: Suitable automations are in place
         checked: false
       tiers:
         bronze:
@@ -474,31 +467,29 @@ checklist_items:
       *How can you get third party endorsement of and expert feedback on your project?*
     checklist_items:
       overall:
-        content: |
-          Package has been appropriately reviewed
+        content: Package has been appropriately reviewed
         checked: false
       tiers:
         bronze:
-          content: |
-            Someone other than you has checked over your package and given you feedback
+          content: Someone other than you has checked over your package and given you feedback
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
           checked: false
           difficulty: intermediate
         gold:
-          content: |
+          content: |-
             You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             Silver, gold and some from:
-                - Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
-                - You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
-                - Your project is a part of a bug bounty program.
+            	- Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
+            	- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
+            	- Your project is a part of a bug bounty program.
           checked: false
           difficulty: hard
     details: |
@@ -519,27 +510,26 @@ checklist_items:
       *How can people install or access the software emerging from your project?*
     checklist_items:
       overall:
-        content: |
-          Package is distributed in appropriate format(s)
+        content: Package is distributed in appropriate format(s)
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             On a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be installed as a development package with the language's standard tooling.
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             Packaged in a language specific package respository such as [CRAN](https://cran.r-project.org/), [PyPI](https://pypi.org/), [crates.io](https://crates.io/), [CPAN](https://www.cpan.org/) etc.
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Packaged for additional general package mangement tools with better systems dependency management than language specificic package mangers such as [conda](https://conda.org/), better still functional packaging format such as [Nix](https://nixos.org/) or [Guix](https://guix.gnu.org/)
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             Available in with additional packagement tools, and from additional repositories
             - Not just available in the package format of but present in the package repositories of: [conda forge](https://conda-forge.org/docs/user/introduction/) or better still [NixPkgs](https://github.com/NixOS/nixpkgs/) or [Guix](https://packages.guix.gnu.org/).
             - If applicable it has a [reproducible binary build](https://reproducible-builds.org/) (ideally for all common architechtures)
@@ -561,28 +551,28 @@ checklist_items:
       *How can people get specific versions of your software running on their systems?*
     checklist_items:
       overall:
-        content: |
+        content: |-
           The compute environment needed to build and install the package is well defined
         checked: false
       tiers:
         bronze:
-          content: |
+          content: |-
             Makes use of a packaging format that defines dependencies in the package's own languge, but not neceasrily system dependencies
           checked: false
           difficulty: easy
         silver:
-          content: >
+          content: >-
             Packaging information captures all dependencies both build and runtime, either manually or in an automated fashion
           checked: false
           difficulty: easy
         gold:
-          content: |
+          content: |-
             Detailed version information of all dependencies is also captured, this might also include details of compatible version ranges, to facilitate dependency graph resolution in pacakage managers where only one version of a package can be installed in an environment at the same time.
             - conda / environment.yml
           checked: false
           difficulty: intermediate
         platinum:
-          content: |
+          content: |-
             - Make use of functional package managers like Nix/Guix whose package derivations make the strongest guarantees about the ability to re-build a package as they describe a pure function called in a sandboxed environment.
             - Cross operating system / architecture builds - does your package build on different operating systems and instruction set architectures (arm, x86, RISC-V etc.)
           checked: false
@@ -626,24 +616,23 @@ checklist_items:
       *How can you and your users minimise wasted energy?*
     checklist_items:
       overall:
-        content: |
+        content: |-
           Consideration has been given to the energy efficiency of the code
         checked: false
       tiers:
         bronze:
-          content: |
-            minimise unnecessary output files
+          content: minimise unnecessary output files
           checked: false
         silver:
-          content: >
+          content: >-
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
         gold:
-          content: |
+          content: |-
             silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
           checked: false
         platinum:
-          content: |
+          content: |-
             gold plus: Offload suitable computations to hardware accelerators where possible
           checked: false
     details: |
@@ -682,16 +671,14 @@ checklist_items:
       *How can you be excellent to each other, make good decisions well, and continue to do so?*
     checklist_items:
       overall:
-        content: |
-          The project has a suitable governance model
+        content: The project has a suitable governance model
         checked: false
       tiers:
         bronze:
-          content: |
-            The governance model is clearly communicated
+          content: The governance model is clearly communicated
           checked: false
         silver:
-          content: >
+          content: >-
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
           subparts:
@@ -702,14 +689,14 @@ checklist_items:
             - content: Plans of action in the event project admin(s) are no longer available
               checked: false
         gold:
-          content: |
+          content: |-
             Project has a governance model appropriate to its scale and goals
           checked: false
           subparts:
             - content: Project has clear and transparent processes
               checked: false
         platinum:
-          content: |
+          content: |-
             Project has a track record of good governance and policy, any from:
           checked: false
           subparts:
