@@ -34,7 +34,7 @@ opts <- list(
 	),
 	make_option(
 		c("-o", "--output"), action = "store",
-		default = stdout(),
+		# default = stdout(),
 		help = "Path to the output file, defaults to standard out"
 	),
 	make_option(
@@ -62,10 +62,16 @@ if(!file.exists(parsed_opts$input)) {
 
 checklist_yaml <- yaml::read_yaml(parsed_opts$input)
 
+# print(parsed_opts$output)
 output_file <- stdout()
-if(!is.na(parsed_opts$output)) {
+if(!is.null(parsed_opts$output)) {
 	output_file <- parsed_opts$output
-}
+	if(file.exists(output_file)) {
+		file.remove(output_file)
+	}
+} # else {print(output_file)}
+# print(output_file)
+
 
 #' yaml2md 
 #'
@@ -92,7 +98,7 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 		"\n\nversion: ", checklist_yaml$version, "\n\n",
 		checklist_yaml$checklists_site_link, "\n",
 		checklist_yaml$intro, "\n",
-		sep = "", file = output_file
+		sep = "", file = output_file, append = TRUE
 	)
 	purrr::walk(checklist_yaml$checklist_items, ~{
 		cat(
@@ -103,9 +109,9 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 			ifelse(.x$checklist_items$overall$checked, "x", " "),
 			"] ",
 			.x$checklist_items$overall$content, "\n",
-			sep = "", file = output_file
+			sep = "", file = output_file, append = TRUE
 		)
-		purrr::iwalk(.x$checklist_items$teirs, ~{
+		purrr::iwalk(.x$checklist_items$tiers, ~{
 			checked <- ifelse(.x$checked, "x", " ")
 			cat(
 				"\t- [", checked, "] ", medals[.y], ": ",
@@ -114,7 +120,7 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 					paste0("*(", .x$difficulty, ")* ")
 				),
 				.x$content, "\n",
-				sep = "", file = output_file
+				sep = "", file = output_file, append = TRUE
 			)
 			purrr::walk(.x$subparts, ~{
 				checked <- ifelse(.x$checked, "x", " ")
@@ -128,7 +134,7 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 						)
 					),
 					"\n",
-					sep = "", file = output_file
+					sep = "", file = output_file, append = TRUE
 				)
 			})
 		})
@@ -141,7 +147,7 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 				"\n", "<details>\n", .x$details,
 				"\n", "</details>\n"
 			), ""),
-			file = output_file
+			file = output_file, append = TRUE
 		)
 	})
 
@@ -162,16 +168,16 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 		'<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">',
 		'</a>',
 		'</p>',
-		sep = "", file = output_file
+		sep = "", file = output_file, append = TRUE
 	)
  	
-	cat("\n", sep = "", file = output_file)
+	cat("\n", sep = "", file = output_file, append = TRUE)
 }
 
 # yaml2md(checklist_yaml, output_file, details = TRUE)
 
 yaml2md(
-	checklist_yaml, parsed_opts$output,
+	checklist_yaml, output_file, # parsed_opts$output,
 	details = parsed_opts$lite
 )
 
