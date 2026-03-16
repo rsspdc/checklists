@@ -6,13 +6,10 @@ suppressPackageStartupMessages({
 })
 
 # TODO
-# - pre_notes
-# - repo link / site link
-# - extra quarto formatting for the website verions - e.g. use callout blocks for details?
-# - toggle difficuly indicators
-# - --serious-business mode with no emoji :(
-# - indicate mandatory subparts / handle any N from subparts
-# - automatic score calculation
+# - [x] pre_notes
+# - [ ] --serious-business mode with no emoji :(
+# - [ ] indicate mandatory subparts / handle any N from subparts
+# - [ ] automatic score calculation
 
 # # pre-optparse reading of CLI args
 # args <- commandArgs(trailingOnly = TRUE)
@@ -119,6 +116,10 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 		cat(
 			"\n## ", .x$emoji, " ", .x$title, "\n\n",
 			.x$tagline,
+			ifelse(
+				is.null(.x$pre_notes),
+				"", paste0("\n", .x$pre_notes, "\n")
+			),
 			.x$overall, "\n",
 			"- [" ,
 			ifelse(.x$checklist_items$overall$checked, "x", " "),
