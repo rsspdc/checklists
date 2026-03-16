@@ -145,8 +145,42 @@ If you have made self-assessed improvements after a third party assessment you m
 Comments, critiques, and edits are welcome at any time, feel free to open an [issue](https://gitlab.com/HDBI/data-management/checklists/-/issues).
 Please start by opening an issue instead of jumping directly to a merge/pull request unless your PR is of a very small scope e.g. fixing a typo or broken link.
 
+### Building the Checklists
+
+The markdown files for the checklists are now generated from a yaml file which defines their contents.
+There a a few reason for this change.
+I used to have a duplicate version of the checklist files in the website repository with this approach I can instead automate generating the pages on the website from the yaml version and potententially make some formatting customisations to the version rendered on the site.
+I have recieved requests for a lighter version of the checklists which exclude the expandable details sections with the advice and resources for completeling the checklist from the version that people include in their repos to track their projects status.
+It is now possible to generate this light version of the checklist by simply supplying the yaml to markdown conversion script with a flag: `-l/--lite`.
+
+See the checklist yaml formate README file in the R folder for details of the expected yaml document format.
+
+The script `yaml2md.R` in the `R` folder can be used perform this task.
+For example, the command below run from the root directory of the repository will generate the workflows & pipelines checkists markdown file from the yaml file:
+
+```
+./R/yaml2md.R -i checklists/rsspdc-pipeline.yml -o checklists/rsspdc-pipeline.md
+```
+
+yaml2md requires the R language and the yaml, purrr, & optparse R packages.
+`default.nix` defines a nix environment with everything needed to run this script.
+If you have nix available you can simply enter a shell with these tools available by running `nix-shell` in your clone of this repository.
+
+For example to generate checklists without the details section run:
+
+```
+yaml2md.R -i example.yml -o example.md -l
+```
+
+Use the `-h/--help` flag for additional details.
+
+**Please do not make changes to the markdown files manually any more and instead edit the yaml files then re-generate the markdown files using yaml2md.R**
+
+### Project Governance
+
 I, Richard, am a bioinformatician by background not a research software engineer so some of this is outside my lane and needs input from working professionals to refine its applicability to relevant domains of work.
 
 Please abide by the [code of conduct](CODE_OF_CONDUCT.md), I am the benevolent dictator until such time as I can arrange to have myself replaced by suitable person(s) or organsisation(s).
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/HDBI/data-management/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
