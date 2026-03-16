@@ -8,6 +8,7 @@ suppressPackageStartupMessages({
 # TODO
 # - [x] pre_notes
 # - [x] repo link / site link
+# - [x] toggle difficuly indicators
 # - [ ] --serious-business mode with no emoji :(
 # - [ ] indicate mandatory subparts / handle any N from subparts
 # - [ ] automatic score calculation
@@ -50,6 +51,13 @@ opts <- list(
 			"Output a version of the checklists without the",
 			"details section"
 		)
+	),
+	make_option(
+		c("-d", "--hide-difficulty"), action = "store_false",
+		dest = "difficulty",
+		default = TRUE, help = paste0(
+			"Include the subjective difficulty assessment indicator"
+		)
 	)
 )
 
@@ -91,7 +99,10 @@ if(!is.null(parsed_opts$output)) {
 #' the output
 #'
 #' @return nothing - prints to a file
-yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
+yaml2md <- function(
+	checklist_yaml, output_file, details = TRUE, quarto = FALSE,
+	difficulty = TRUE
+) {
 	# 
 	medals <- c(
 		bronze =   "🥉**Bronze**",
@@ -133,8 +144,12 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 			cat(
 				"\t- [", checked, "] ", medals[.y], ": ",
 				ifelse(
-					is.null(.x$difficulty), "",
-					paste0("*(", .x$difficulty, ")* ")
+					difficulty,
+					ifelse(
+						is.null(.x$difficulty), "",
+						paste0("*(", .x$difficulty, ")* ")
+					),
+					""
 				),
 				.x$content, "\n",
 				sep = "", file = output_file, append = TRUE
@@ -195,7 +210,8 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 
 yaml2md(
 	checklist_yaml, output_file, # parsed_opts$output,
-	details = parsed_opts$lite
+	details = parsed_opts$lite,
+	difficulty = parsed_opts$difficulty
 )
 
 
