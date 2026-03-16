@@ -104,8 +104,14 @@ yaml2md <- function(checklist_yaml, output_file, details = TRUE) {
 
 	cat(
 		"# ", checklist_yaml$title,
+		" [raw markdown](", checklist_yaml$full_markdown_url, ")",
+		" [lite markdown](", checklist_yaml$lite_markdown_url, ")",
 		"\n\nversion: ", checklist_yaml$version, "\n\n",
-		checklist_yaml$checklists_site_link, "\n",
+		"*[Research Software Sharing, Publication, & Distribution Checklist](",
+		checklist_yaml$checklists_site_url, ")* [[repo](",
+		checklist_yaml$checklists_repo_url,
+		")]", "\n\n",
+  
 		checklist_yaml$intro, "\n",
 		sep = "", file = output_file, append = TRUE
 	)
