@@ -8,6 +8,7 @@ suppressPackageStartupMessages({
 # TODO
 # - [x] pre_notes
 # - [x] repo link / site link
+# - [x] extra quarto formatting for the website verions - e.g. use callout blocks for details?
 # - [x] toggle difficuly indicators
 # - [ ] --serious-business mode with no emoji :(
 # - [ ] indicate mandatory subparts / handle any N from subparts
@@ -50,6 +51,14 @@ opts <- list(
 		default = TRUE, help = paste0(
 			"Output a version of the checklists without the",
 			"details section"
+		)
+	),
+	make_option(
+		c("-q", "--quarto"), action = "store_true",
+		default = FALSE, help = paste0(
+			"Use quarto markdown syntax when generating the output",
+			"e.g. Uses as callout block instead of a details tag",
+			"for the additional details section"
 		)
 	),
 	make_option(
@@ -175,10 +184,23 @@ yaml2md <- function(
 				is.null(.x$post_notes),
 				"", paste0("\n", .x$post_notes)
 			),
-			ifelse(details, paste0(
-				"\n", "<details>\n", .x$details,
-				"\n", "</details>\n"
-			), ""),
+			ifelse(
+				details,
+				ifelse(
+					quarto,
+					paste0(
+						"\n",
+						'::: {.callout-caution collapse="true"}\n',
+						.x$details,
+						":::\n"
+					),
+					paste0(
+						"\n", "<details>\n",
+						.x$details,
+						"\n", "</details>\n"
+					)
+				), ""
+			),
 			file = output_file, append = TRUE
 		)
 	})
@@ -211,6 +233,7 @@ yaml2md <- function(
 yaml2md(
 	checklist_yaml, output_file, # parsed_opts$output,
 	details = parsed_opts$lite,
+	quarto = parsed_opts$quarto,
 	difficulty = parsed_opts$difficulty
 )
 
