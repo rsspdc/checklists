@@ -2,3 +2,5 @@
 *.kate-swp
 .envrc
 .direnv
+.RData
+.Rhistory
