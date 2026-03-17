@@ -151,15 +151,15 @@ yaml2md <- function(
 		purrr::iwalk(.x$checklist_items$tiers, ~{
 			checked <- ifelse(.x$checked, "x", " ")
 			cat(
-				"\t- [", checked, "] ", medals[.y], ": ",
+				"\t- [", checked, "]   ", medals[.y],
 				ifelse(
 					difficulty,
 					ifelse(
 						is.null(.x$difficulty), "",
-						paste0("*(", .x$difficulty, ")* ")
+						paste0(" *(", .x$difficulty, ")*")
 					),
 					""
-				),
+				), ": ",
 				.x$content, "\n",
 				sep = "", file = output_file, append = TRUE
 			)
