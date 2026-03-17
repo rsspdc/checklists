@@ -158,12 +158,12 @@ checklist_items:
             Your Documentation features examples; rich, varied and working ones.
             Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
           checked: false
-          difficulty: intermediate
+          difficulty: time consuming
         platinum:
           content: |-
             All examples are executed upon a full build of the documentation so that you know that they at least run.
           checked: false
-          difficulty: MAXIMUM OVERKILL
+          difficulty: intermediate
     post_notes: |
       In some cases for small and simple projects a README file is sufficient documentation.
       This may genuinely be all that you need, or inadequate to the task depending on the project.
@@ -350,18 +350,22 @@ checklist_items:
           content: >-
             You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
           checked: false
+          difficulty: easy
         silver:
           content: >-
             You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
           checked: false
+          difficulty: easy
         gold:
           content: |-
             silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
           checked: false
+          difficulty: intermediate
         platinum:
           content: |-
             You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
           checked: false
+          difficulty: intermediate
     details: |
       <ul>
       	<li>
@@ -399,17 +403,21 @@ checklist_items:
         checked: false
       tiers:
         bronze:
-          content: |
+          content: 
           checked: false
+          difficulty:
         silver:
-          content: >
+          content: 
           checked: false
+          difficulty:
         gold:
-          content: |
+          content: 
           checked: false
+          difficulty:
         platinum:
-          content: |
+          content: 
           checked: false
+          difficulty:
     details: |
       <ul>
       	<li>
@@ -623,18 +631,22 @@ checklist_items:
         bronze:
           content: minimise unnecessary output files
           checked: false
+          difficulty:
         silver:
           content: >-
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
+          difficulty:
         gold:
           content: |-
             silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
           checked: false
+          difficulty:
         platinum:
           content: |-
             gold plus: Offload suitable computations to hardware accelerators where possible
           checked: false
+          difficulty:
     details: |
       Everyone likes fast and efficient code, but especially if your code is going to be re-used by a lots of people in a computationally demanding application it can burn a lot of energy.
       This translates to carbon emissions, water use and opportunity costs for whatever else could have been done with that energy and compute time.
@@ -677,10 +689,12 @@ checklist_items:
         bronze:
           content: The governance model is clearly communicated
           checked: false
+          difficulty: easy
         silver:
           content: >-
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
+          difficulty: easy
           subparts:
             - content: Source archived and/or mirrored to other platforms
               checked: false
@@ -692,6 +706,7 @@ checklist_items:
           content: |-
             Project has a governance model appropriate to its scale and goals
           checked: false
+          difficulty: intermediate
           subparts:
             - content: Project has clear and transparent processes
               checked: false
@@ -699,6 +714,7 @@ checklist_items:
           content: |-
             Project has a track record of good governance and policy, any from:
           checked: false
+          difficulty: hard
           subparts:
             - content: Decisions have involved the appropriate person(s) and been well documented
               checked: false
