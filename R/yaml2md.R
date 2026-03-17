@@ -91,7 +91,7 @@ output_file <- stdout()
 if(!is.null(parsed_opts$output)) {
 	output_file <- parsed_opts$output
 	if(file.exists(output_file)) {
-		file.remove(output_file)
+		x <- file.remove(output_file)
 	}
 } # else {print(output_file)}
 # print(output_file)
