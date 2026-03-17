@@ -114,10 +114,10 @@ yaml2md <- function(
 ) {
 	# 
 	medals <- c(
-		bronze =   "🥉**Bronze**",
-		silver =   "🥈**Silver**",
-		gold =     "🥇**Gold**",
-		platinum = "🏆**Platinum**"
+		bronze =   "🥉Bronze",
+		silver =   "🥈Silver",
+		gold =     "🥇Gold",
+		platinum = "🏆Platinum"
 	)
 
 	cat(
