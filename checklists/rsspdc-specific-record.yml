@@ -365,18 +365,22 @@ checklist_items:
           content: >-
             Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
           checked: false
+          difficulty: easy
         silver:
           content: >-
             Includes test datasets which cover a range of outcomes of the analysis
           checked: false
+          difficulty: easy
         gold:
           content: |-
             You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
           checked: false
+          difficulty: intermediate
         platinum:
           content: |-
             Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
           checked: false
+          difficulty: hard
     details: |
       <ul>
       	<li>
@@ -406,25 +410,28 @@ checklist_items:
         checked: false
       tiers:
         bronze:
-          content: |-
-            1 from this list of processes are automated
-              - use of an environment management tool
-              - use of a literate programming / computational notebook
-              - use of a pipeline manger or make-like tool
-              - use of a linter / formatter
-              - use of continious integration / continious deployment
-              - use of git hooks
-              - automated minting of new persistent identifiers on release tagging
-              - ...
+          content: "
+            1 from this list of processes are automated\n
+             \t\t - use of an environment management tool\n
+             \t\t - use of a literate programming / computational notebook\n
+             \t\t - use of a pipeline manger or make-like tool\n
+             \t\t - use of a linter / formatter\n
+             \t\t - use of continious integration / continious deployment\n
+             \t\t - use of git hooks\n
+             \t\t - automated minting of new persistent identifiers on release tagging\n
+             \t\t - ..."
           checked: false
+          difficulty: easy
         silver:
           content: >-
             2-3 from the above list of processes are automated
           checked: false
+          difficulty: easy
         gold:
           content: |-
             4+ from the above list of processes are automated
           checked: false
+          difficulty: intermediate
         platinum:
           content: |-
             note that difficuly is somewhat project dependent
@@ -432,6 +439,7 @@ checklist_items:
             All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
             Results are cached such that if you, for example, change the formatting of a graph only the plotting and rendering code needs to be re-run, but if you change the data the entire pipeline is re-rerun.
           checked: false
+          difficulty: hard
     details:  
   review:
     title: "Peer review / Code Review"
@@ -448,18 +456,22 @@ checklist_items:
           content: |-
             Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
           checked: false
+          difficulty: easy
         silver:
           content: >-
             Someone other than you has scessfully re-run your analysis using only your documentation, (preferably in a different compute environment, such as a different computer/compute cluster)
           checked: false
+          difficulty: easy
         gold:
           content: |-
             You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
           checked: false
+          difficulty: intermediate
         platinum:
           content: |-
             You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
           checked: false
+          difficulty: intermediate
     details: |
       <ul>
       	<li>
@@ -486,18 +498,22 @@ checklist_items:
           content: |-
             Code and data (barring privacy related access restrictions) are in public repositories.
           checked: false
+          difficulty: easy
         silver:
           content: >-
             Detailed instructions on how to fetch, install and configure the tools and data needed re-run your analysis, and how to re-run the analysis in the described environment.
           checked: false
+          difficulty: intermediate
         gold:
           content: |-
             Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
           checked: false
+          difficulty: intermediate
         platinum:
           content: |-
             Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
           checked: false
+          difficulty: hard
     details: |
       <ul>
       	<li>
@@ -545,18 +561,22 @@ checklist_items:
           content: |-
             List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
           checked: false
+          difficulty: easy
         silver:
           content: >-
             Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
           checked: false
+          difficulty: intermediate
         gold:
           content: |-
             Structured full environment description, automated ability to recreate the complete environment including system dependencies
           checked: false
+          difficulty: hard
         platinum:
           content: |-
             Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
           checked: false
+          difficulty: MAXIMUM OVERKILL
     details: |
       <ul>
       	<li>
@@ -603,18 +623,22 @@ checklist_items:
         bronze:
           content: minimise unnecessary output files
           checked: false
+          difficulty: easy
         silver:
           content: >-
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
+          difficulty: easy
         gold:
           content: |-
             silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
           checked: false
+          difficulty: intermediate
         platinum:
           content: |-
             gold plus: Offload suitable computations to hardware accelerators where possible
           checked: false
+          difficulty: intermediate
     details: |
       One off analysis code is not particularly high impact to make more efficient as it is only run a small number of times.
       However, it is worth giving some consideration to the efficiency of the tools that your one off analysis might make use of or depend on.
@@ -666,10 +690,12 @@ checklist_items:
         bronze:
           content: The governance model is clearly communicated
           checked: false
+          difficulty: easy
         silver:
           content: >-
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
+          difficulty: easy
           subparts:
             - content: Source archived and/or mirrored to other platforms
               checked: false
@@ -681,6 +707,7 @@ checklist_items:
           content: |-
             Project has a governance model appropriate to its scale and goals
           checked: false
+          difficulty: intermediate
           subparts:
             - content: Project has clear and transparent processes
               checked: false
@@ -688,6 +715,7 @@ checklist_items:
           content: |-
             Project has a track record of good governance and policy, any from:
           checked: false
+          difficulty: hard
           subparts:
             - content: Decisions have involved the appropriate person(s) and been well documented
               checked: false
