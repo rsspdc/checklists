@@ -190,7 +190,7 @@ checklist_items:
             Documentation features examples; rich, varied and working ones.
             Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
           checked: false
-          difficulty: intermediate
+          difficulty: time consuming
         platinum:
           content: |-
             Documentation is included for users, administrators (if applicable), systems administrators deploying the project, and developers.
@@ -401,15 +401,19 @@ checklist_items:
         bronze:
           content: 
           checked: false
+          difficulty:
         silver:
           content: 
           checked: false
+          difficulty:
         gold:
           content: 
           checked: false
+          difficulty:
         platinum:
           content: 
           checked: false
+          difficulty:
     details: 
   review:
     title: "Peer review / Code Review"
@@ -424,15 +428,19 @@ checklist_items:
         bronze:
           content: 
           checked: false
+          difficulty:
         silver:
           content: 
           checked: false
+          difficulty:
         gold:
           content: 
           checked: false
+          difficulty:
         platinum:
           content: 
           checked: false
+          difficulty:
     details: |
       <ul>
       	<li>
@@ -552,7 +560,7 @@ checklist_items:
             The entire dependency tree of your pipeline including the pipeline manager itself,
             the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
           checked: false
-          difficulty: practically impossible in practice
+          difficulty: hard
           subparts:
             - content: 
               checked: false
@@ -607,7 +615,7 @@ checklist_items:
               checked: false
             - content: You have profiled your software and optimised bottlenecks, and are making use of parallelism and/or hardware acceleration is possible / beneficial to efficiency.
               checked: false
-          difficulty: hard
+          difficulty: intermediate
         platinum:
           content: 
           checked: false
@@ -690,6 +698,7 @@ checklist_items:
         platinum:
           content: Project has a track record of good governance and policy
           checked: false
+          difficulty: hard
           subparts:
             - content: 
               checked: false
