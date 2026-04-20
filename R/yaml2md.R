@@ -237,6 +237,76 @@ yaml2md(
 	difficulty = parsed_opts$difficulty
 )
 
+calc_score <- function(checklist_yaml) {
+
+	themes_checked <- checklist_yaml$checklist_items |> 
+		purrr::map_lgl(~.x$checklist_items$overall$checked)
+
+	tiers_checked <- checklist_yaml$checklist_items |> 
+		purrr::map(~{
+			.x$checklist_items$tiers |> 
+				purrr::map_lgl(~.x$checked)
+	})
+
+	theme_checked_infered <- tiers_checked |> purrr::map_lgl(any)
+	
+	if(!identical(themes_checked, theme_checked_infered)) {
+		 # make more specific - where are the inconsistencies?
+		warning("overall checked status inconsistent with tiers checked!")
+	}
+	
+	subparts_checked <- checklist_yaml$checklist_items |> 
+		purrr::map(~{
+			.x$checklist_items$tiers |> purrr::map(~{
+				.x$subparts |> purrr::map_lgl(~.x$checked)
+			})
+		})
+
+	n_subparts_required <- checklist_yaml$checklist_items |> 
+		purrr::map(~{
+			.x$checklist_items$tiers |> 
+				purrr::map(~ifelse(
+					# return 0 if the number of subparts
+					# required is unset
+					is.null(.x$nsubpartsreq),
+					0, .x$nsubpartsreq
+				)) 
+		})
+	
+	# n_subparts_required <- checklist_yaml$checklist_items |> 
+	# 	purrr::map(~{
+	# 		.x$checklist_items$tiers |> 
+	# 			purrr::map(~.x$nsubpartsreq)
+	# 	})
+
+	# n_subparts_checked <- subparts_checked |> 
+	# 	purrr::map(~{.x |> purrr::map(sum)})
+
+	n_subparts_checked <- subparts_checked |> 
+		purrr::map(~purrr::map(.x, ~{
+			# return NA when there are no subparts
+			if(length(.x) == 0) { NA } else { sum(.x) }
+		}))
+
+	subparts_checked_meet_requirements <- purrr::map2(
+		n_subparts_checked, n_subparts_required,
+		# number of subparts checked equals or exceeds the number required
+		~{ unlist(.x) >= unlist(.y) }
+	)
+
+	tiers_with_subparts_have_enough_checked <- purrr::map2(
+		tiers_checked, subparts_checked_meet_requirements,
+		~map2(.x, .y, ~{
+			if(isTRUE(.x)) { # if tier is checked
+				# check if subparts meet requirements
+				# if requirements are NA or met return true
+				if(is.na(.y) || isTRUE(.y)) { TRUE } else
+				{ FALSE }
+			} else { FALSE } # if tier is unchecked return false
+		})
+	)
+
+}
 
 # Notes
 

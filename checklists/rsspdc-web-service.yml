@@ -39,6 +39,7 @@ checklist_items:
             Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
           checked: false
           difficulty: hard
+          nsubpartsreq: 1
           subparts:
             - content: Also keep your description of your testing and development deployment using a tool such as docker compose or ansible under source control
               checked: false
@@ -143,6 +144,7 @@ checklist_items:
             Project has README file that either contains directly or links to resources which answer these questions:
           checked: false
           difficulty: easy
+          nsubpartsreq: 16 # imperfect as some have conditionals
           subparts:
             - content: What is the name or title of the project?
               checked: false
@@ -236,6 +238,7 @@ checklist_items:
             Two or more from:
           checked: false
           difficulty: easy
+          nsubpartsreq: 2
           subparts:
             - content: Adopt a url schema which makes dynamically generated pages easily citable
               checked: false
@@ -248,6 +251,7 @@ checklist_items:
             All of the below:
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 2
           subparts:
             - content: |-
                 Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/), [ScoRo](http://www.sparontologies.net/ontologies/scoro), [CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
@@ -259,6 +263,7 @@ checklist_items:
             gold plus any two or more from:
           checked: false
           difficulty: mixed
+          nsubpartsreq: 2
           subparts:
             - content: |-
                 All research institutions are identified by their [ROR](https://ror.org/) ID
@@ -471,6 +476,7 @@ checklist_items:
             All of the below:
           checked: false
           difficulty: easy
+          nsubpartsreq: 3
           subparts:
             - content: Detailed instructions are available on how to set up, at minimum, a development environment in which the service can run.
               checked: false
@@ -487,6 +493,7 @@ checklist_items:
           content: 
           checked: false
           difficulty: very hard
+          nsubpartsreq: 0
           subparts:
             - content: Reproducibly deployable as a Nix module
               checked: false
@@ -545,6 +552,7 @@ checklist_items:
           content: 
           checked: false
           difficulty: easy
+          nsubpartsreq: 1
           subparts:
             - content: Sensible security defaults. Such as not having default passwords, for databases or admin consoles and requiring the person deploying your service to configure them, hopefully with appropriate secrets management approaches.
               checked: false
@@ -552,6 +560,7 @@ checklist_items:
           content: 
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 1
           subparts:
             - content: Sensible security defaults. Such as not having default passwords, for databases or admin consoles and requiring the person deploying your service to configure them, hopefully with appropriate secrets management approaches.
               checked: false
@@ -561,6 +570,7 @@ checklist_items:
             the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
           checked: false
           difficulty: hard
+          nsubpartsreq: 1
           subparts:
             - content: 
               checked: false
@@ -588,6 +598,7 @@ checklist_items:
           content: Two or more from
           checked: false
           difficulty: easy
+          nsubpartsreq: 2
           subparts:
             - content: Your web servers are configured appropriately to make best use of their available resources
               checked: false
@@ -599,6 +610,7 @@ checklist_items:
           content: 
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 0
           subparts:
             - content: 
               checked: false
@@ -608,6 +620,7 @@ checklist_items:
           content: |-
             Two or more from:
           checked: false
+          nsubpartsreq: 2
           subparts:
             - content: You have detailed profiling of the usage of your service and have optimised your configuration accordingly
               checked: false
@@ -620,6 +633,7 @@ checklist_items:
           content: 
           checked: false
           difficulty: hard
+          nsubpartsreq: 0
           subparts:
             - content: 
               checked: false
@@ -660,6 +674,7 @@ checklist_items:
           content: Basic governance and continuity planning measures have been taken by project lead(s)
           checked: false
           difficulty: easy
+          nsubpartsreq: 1
           subparts:
             - content: A trusted person other than the project lead has access, or the ability to securely acquire access, to core project assets such as the code repo(s), servers, and secrets
               checked: false
@@ -673,6 +688,7 @@ checklist_items:
           content: Plans for continuity of operations in case of an event such as the loss of key project infrastructure
           checked: false
           difficulty: easy
+          nsubpartsreq: 1
           subparts:
             - content: Project has research software management plan
               checked: false
@@ -684,6 +700,7 @@ checklist_items:
           content: 
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 1
           subparts:
             - content: Project decision making processes are documented
               checked: false
@@ -699,6 +716,7 @@ checklist_items:
           content: Project has a track record of good governance and policy
           checked: false
           difficulty: hard
+          nsubpartsreq: 0
           subparts:
             - content: 
               checked: false

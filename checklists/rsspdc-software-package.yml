@@ -116,6 +116,7 @@ checklist_items:
             Project has README file that either contains directly or links to resources which answer these questions:
           checked: false
           difficulty: easy
+          nsubpartsreq: 13
           subparts:
             - content: What is the name or title of the project?
               checked: false
@@ -242,6 +243,7 @@ checklist_items:
             silver plus:
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 1
           subparts:
             - content: |-
                 Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/), [ScoRo](http://www.sparontologies.net/ontologies/scoro), [CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
@@ -253,6 +255,7 @@ checklist_items:
             gold plus any two or more from:
           checked: false
           difficulty: mixed
+          nsubpartsreq: 2
           subparts:
             - content: |-
                 All research institutions are identified by their [ROR](https://ror.org/) ID
@@ -695,6 +698,7 @@ checklist_items:
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
           difficulty: easy
+          nsubpartsreq: 2
           subparts:
             - content: Source archived and/or mirrored to other platforms
               checked: false
@@ -707,6 +711,7 @@ checklist_items:
             Project has a governance model appropriate to its scale and goals
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 0
           subparts:
             - content: Project has clear and transparent processes
               checked: false
@@ -715,6 +720,7 @@ checklist_items:
             Project has a track record of good governance and policy, any from:
           checked: false
           difficulty: hard
+          nsubpartsreq: 1
           subparts:
             - content: Decisions have involved the appropriate person(s) and been well documented
               checked: false

@@ -117,6 +117,7 @@ checklist_items:
             Project has README file that either contains directly or links to resources which answer these questions:
           checked: false
           difficulty: easy
+          nsubpartsreq: 15
           subparts:
             - content: What is the name or title of the project?
               checked: false
@@ -158,6 +159,7 @@ checklist_items:
             So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 0
           subparts:
             - content: How do I set up a development environment?
               checked: false
@@ -256,6 +258,7 @@ checklist_items:
             silver plus:
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 2
           subparts:
             - content: |-
                 Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/), [ScoRo](http://www.sparontologies.net/ontologies/scoro), [CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
@@ -267,6 +270,7 @@ checklist_items:
             gold plus any two or more from:
           checked: false
           difficulty: mixed
+          nsubpartsreq: 2
           subparts:
             - content: |-
                 All research institutions are identified by their [ROR](https://ror.org/) ID
@@ -358,6 +362,7 @@ checklist_items:
             both of the below:
           checked: false
           difficulty: easy
+          nsubpartsreq: 2
           subparts:
             - content: A wide variety of possible input parameter combinations are tested
               checked: false
@@ -370,6 +375,7 @@ checklist_items:
             All of the below:
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 3
           subparts:
             - content: Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters
               checked: false
@@ -641,6 +647,7 @@ checklist_items:
           content: minimise unnecessary output files
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 0
           subparts:
             - content: Adopt a process to review outputs and keep only those necessary
               checked: false
@@ -649,6 +656,7 @@ checklist_items:
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
           difficulty: intermediate
+          nsubpartsreq: 0
           subparts:
             - content: Energy consumption and emissions Estimation/Measurement
               checked: false
@@ -656,6 +664,7 @@ checklist_items:
           content: |-
             Two or more from:
           checked: false
+          nsubpartsreq: 2
           subparts:
             - content: Appropriately balances the possible efficiency gains against the cost of testing, development, and benchmarking
               checked: false
@@ -669,6 +678,7 @@ checklist_items:
             Two or more from:
           checked: false
           difficulty: hard
+          nsubpartsreq: 2
           subparts:
             - content: Makes use of hardware acceleration if appropriate
               checked: false
@@ -744,6 +754,7 @@ checklist_items:
           content: >-
             Bronze Plus - Project has continuity planning in place (2 or more from)
           checked: false
+          nsubpartsreq: 2
           subparts:
             - content: Source archived and/or mirrored to other platforms
               checked: false
@@ -754,6 +765,7 @@ checklist_items:
         gold:
           content: Project has a governance model appropriate to its scale and goals
           checked: false
+          nsubpartsreq: 0
           subparts:
             - content: Project has clear and transparent processes
               checked: false
@@ -761,6 +773,7 @@ checklist_items:
           content: |-
             Project has a track record of good governance and policy, any from:
           checked: false
+          nsubpartsreq: 1
           subparts:
             - content: Decisions have involved the appropriate person(s) and been well documented
               checked: false
