@@ -40,7 +40,7 @@ checklist_items:
           checked: false
           difficulty: hard
           subparts:
-            - content: Also keep your description of your testing and development deployment using a too such as docker compose or ansible under source control
+            - content: Also keep your description of your testing and development deployment using a tool such as docker compose or ansible under source control
               checked: false
             - content: Tags, releases, or branches at major project milestones, maybe some contributions from other users
               checked: false
@@ -486,7 +486,7 @@ checklist_items:
         platinum:
           content: 
           checked: false
-          difficulty: intermediate
+          difficulty: very hard
           subparts:
             - content: Reproducibly deployable as a Nix module
               checked: false
