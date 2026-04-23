@@ -259,7 +259,7 @@ yaml2md <- function(
 	cat(
 		'\n',
 		'<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">',
-		'<a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/HDBI/data-management/checklists">',
+		'<a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/rsspdc/checklists">',
 		'Research Software Sharing, Publication, & Distribution Checklists',
 		'</a>',
 		' by ',
