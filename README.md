@@ -104,7 +104,35 @@ Points are assigned to the rankings, **1 point for a Bronze and 4 for a Platinum
 
 [Repo badge Generator](https://rsspdc.org/badge-generator.html)
 
+## Workflows
+
+There are a different ways that you can make use of the checklists to fit with your current workflows.
+
+Lite and heavy versions of the checklists are also available.
+For minimalists who want a the leanest version of the checklists in their project repo,
+the lite version drops the expandable details sections with tips & resources.
+You can always look these up on the website.
+
+For those who want the details sections right there in the markdown there is the heavy (default) version.
+
+### Simple copy
+
+Grab a copy of the markdown version of the checklist copy it into your repo.
+
+### Issue template based workflows
+
+If don't want a checklist file in your repo directly and would rather just keep track of your progress in your issue tracker this option is for you.
+
+There are pre-generated issue templates for github & gitlab in two forms:
+
+- Single tracking issue
+  This just places the whole checklist in an issue 
+- Per theme issues
+  This makes a seperate issue tempate for each of the generic parts in each checklist
+
 ## Suggested Workflow(s)
+
+## Assessment
 
 ### Self-assessment
 
