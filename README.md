@@ -181,28 +181,7 @@ I used to have a duplicate version of the checklist files in the website reposit
 I have recieved requests for a lighter version of the checklists which exclude the expandable details sections with the advice and resources for completeling the checklist from the version that people include in their repos to track their projects status.
 It is now possible to generate this light version of the checklist by simply supplying the yaml to markdown conversion script with a flag: `-l/--lite`.
 
-See the checklist yaml formate README file in the R folder for details of the expected yaml document format.
-
-The script `yaml2md.R` in the `R` folder can be used perform this task.
-For example, the command below run from the root directory of the repository will generate the workflows & pipelines checkists markdown file from the yaml file:
-
-```
-./R/yaml2md.R -i checklists/rsspdc-pipeline.yml -o checklists/rsspdc-pipeline.md
-```
-
-yaml2md requires the R language and the yaml, purrr, & optparse R packages.
-`default.nix` defines a nix environment with everything needed to run this script.
-If you have nix available you can simply enter a shell with these tools available by running `nix-shell` in your clone of this repository.
-
-For example to generate checklists without the details section run:
-
-```
-yaml2md.R -i example.yml -o example.md -l
-```
-
-Use the `-h/--help` flag for additional details.
-
-**Please do not make changes to the markdown files manually any more and instead edit the yaml files then re-generate the markdown files using yaml2md.R**
+See the checklist yaml format information [README](R/README.md) file in the `R` folder for details of the expected yaml document format, and details of how to run this script.
 
 ### Project Governance
 
