@@ -1,0 +1,49 @@
+---
+name: Pipelines & Workflows
+about:
+title:[RSSPDC] <issue>
+---
+
+# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+
+version: alpha
+
+*[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
+
+Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
+"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
+
+
+## 👥 Peer review / Code Review
+
+*How can you get third party endorsement of and expert feedback on your project?*
+
+- [ ] Pipeline has been appropriately reviewed
+	- [ ]   🥉Bronze *(easy)*: Someone other than you has checked over your pipeline and given you feedback
+	- [ ]   🥈Silver *(intermediate)*: Someone other than you has successfully run your pipeline on different compute infrastructure and got the same results with test data
+	- [ ]   🥇Gold *(intermediate)*: You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
+(The snakmake workflow catalog's review practices would not be adequate for this purpose)
+	- [ ]   🏆Platinum *(hard)*: Some from:
+    - Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
+    - You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
+    - Your project is a part of a bug bounty program.
+ 
+<details>
+<ul>
+	<li>
+		The design of the analysis, any methodological choices made and any original steps added might warrant a conventional scientific publication if for example you are making a pipeline which automates a portion of the analysis of some new datatypee
+		<ul>
+			<li>review the theory</li>
+		</ul>
+	</li>
+	<li>
+		Technical
+		<ul>
+			<li>review the implementation</li>
+		</ul>
+	</li>
+</ul>
+
+</details>
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/HDBI/data-management/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
