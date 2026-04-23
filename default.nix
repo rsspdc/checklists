@@ -9,6 +9,7 @@ let
       magrittr
       yaml
       optparse
+      fs
       # renv
       # rix
       ;

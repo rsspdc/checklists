@@ -1,8 +1,11 @@
 #!/usr/bin/env Rscript
+
+# packages ----
 suppressPackageStartupMessages({
 	library(yaml)
 	library(purrr)
 	library(optparse)
+	library(fs)
 })
 
 # TODO
@@ -13,29 +16,11 @@ suppressPackageStartupMessages({
 # - [ ] --serious-business mode with no emoji :(
 # - [ ] indicate mandatory subparts / handle any N from subparts
 # - [ ] automatic score calculation
+# - [x] issue templates
 
-# # pre-optparse reading of CLI args
-# args <- commandArgs(trailingOnly = TRUE)
-# 
-# # If passed a file the does not exist as input complain.
-# if(!file.exists(args[1])) {
-# 	stop("The file: '", args[1], "' does not exist")
-# }
-# 
-# checklist_yaml <- yaml::read_yaml(args[1])
-# 
-# # Output to standard out unless an output file is supplied
-# output_file <- stdout()
-# if(!is.na(args[2])) {
-# 	# if(file.exists(args[2])) {}
-# 	output_file <- args[2]
-# }
- 
-# lite <- FALSE
-# if(!is.null(args[3])) {
-# 	if(args[3] == "-l") { lite <- TRUE }
-# }
+# set output path for git forges?
 
+# Define command line options ----
 opts <- list(
 	make_option(
 		c("-i", "--input"), action = "store",
@@ -44,7 +29,12 @@ opts <- list(
 	make_option(
 		c("-o", "--output"), action = "store",
 		# default = stdout(),
-		help = "Path to the output file, defaults to standard out"
+		help = paste0(
+			"Path to the output file, defaults to standard out.\n\n",
+			"\t\tSets the output directory when used in conjunction ",
+			"--git-forge=<gitlab/github> --issue-style=split ",
+			"as this generates multiple output files"
+		)
 	),
 	make_option(
 		c("-l", "--lite"), action = "store_false",
@@ -57,9 +47,42 @@ opts <- list(
 		c("-q", "--quarto"), action = "store_true",
 		default = FALSE, help = paste0(
 			"Use quarto markdown syntax when generating the output",
-			"e.g. Uses as callout block instead of a details tag",
+			"\n\t\te.g. Uses as callout block instead of a details tag",
 			"for the additional details section"
 		)
+	),
+	make_option(
+		c("-f","--git-forge"),
+		dest = "git_forge",
+		#default = FALSE,
+		metavar = "gitlab",
+		help = paste0(
+			"Generate github or gitlab issue templates.\n\n\t\t",
+			"Issue template file(s) will be created in the ",
+			".github/ISSUE_TEMPLATE directory, or ",
+			".gitlab/issue_templates directory,\n\t\t",
+			"relative to where this script is run, by default.\n\t\t",
+			"The directory will be created if it does not already exist.\n\t\t",
+			"If an output location is specified the template(s)" ,
+			"will be generated there instead."
+		)
+	),
+	make_option(
+		c("-s", "--issue-style"),
+		dest = "issue_style",
+		metavar = "split",
+		default = "split",
+		help = paste0(
+			"Issue templates are available in two styles:\n\n",
+			"\t\t- 'split One issue per theme\n",
+			"\t\t- 'tracking' Single large issue in which to track changes\n"
+		)
+	),
+	make_option(
+		c("-e", "--emoji"), action = "store_false",
+		dest = "emoji",
+		default = TRUE,
+		help = "Serious Business mode - No Emoji :("
 	),
 	make_option(
 		c("-d", "--hide-difficulty"), action = "store_false",
@@ -72,30 +95,24 @@ opts <- list(
 
 parsed_opts <- parse_args(
 	OptionParser(
-		usage = "Converts yaml representation of the checklist to markdown",
+		usage = paste0(
+			"Converts yaml representation of the checklist to ",
+			"a number of markdown variants."# \n",
+		),
 		option_list = opts
-	), # args = c("--help"),
-	# positional_arguments = TRUE
+	)
 )
 
-# print(parsed_opts)
+# Read the checklist data ----
 
-if(!file.exists(parsed_opts$input)) {
+# check input file exists
+if(!fs::file_exists(parsed_opts$input)) {
 	stop("The file: '", parsed_opts$input, "' does not exist")
 }
-
+# Read the yaml file containing the checklist data
 checklist_yaml <- yaml::read_yaml(parsed_opts$input)
 
-# print(parsed_opts$output)
-output_file <- stdout()
-if(!is.null(parsed_opts$output)) {
-	output_file <- parsed_opts$output
-	if(file.exists(output_file)) {
-		x <- file.remove(output_file)
-	}
-} # else {print(output_file)}
-# print(output_file)
-
+# Functions ----
 
 #' yaml2md 
 #'
@@ -109,17 +126,40 @@ if(!is.null(parsed_opts$output)) {
 #'
 #' @return nothing - prints to a file
 yaml2md <- function(
-	checklist_yaml, output_file, details = TRUE, quarto = FALSE,
-	difficulty = TRUE
+	checklist_yaml, output_file, git_forge,
+	details = TRUE, quarto = FALSE, difficulty = TRUE, emoji = TRUE
 ) {
-	# 
+	if(!identical(class(output_file), c("terminal", "connection"))) {
+		if(fs::file_exists(output_file)) {
+			fs::file_delete(output_file)
+		}
+	}
+	
 	medals <- c(
-		bronze =   "🥉Bronze",
-		silver =   "🥈Silver",
-		gold =     "🥇Gold",
-		platinum = "🏆Platinum"
+		bronze =   "Bronze",
+		silver =   "Silver",
+		gold =     "Gold",
+		platinum = "Platinum"
 	)
 
+	if(emoji) {
+		nms <- names(medals)
+		medals <- paste0(c("🥉", "🥈", "🥇", "🏆"), medals)
+		names(medals) <- nms
+	}
+
+	if(!is.null(git_forge)) {
+		if(git_forge == "github") {
+			cat(
+				"---\n",
+				"name: ", checklist_yaml$title, "\n",
+				"about:","\n",
+				"title:", "[RSSPDC] <issue>",
+				"\n---\n\n",
+				sep = "", file = output_file, append = TRUE
+			)
+		}
+	}
 	cat(
 		"# ", checklist_yaml$title,
 		" [raw markdown](", checklist_yaml$full_markdown_url, ")",
@@ -135,7 +175,8 @@ yaml2md <- function(
 	)
 	purrr::walk(checklist_yaml$checklist_items, ~{
 		cat(
-			"\n## ", .x$emoji, " ", .x$title, "\n\n",
+			"\n## ", ifelse(emoji, paste0(.x$emoji, " "), ""),
+			.x$title, "\n\n",
 			.x$tagline,
 			ifelse(
 				is.null(.x$pre_notes),
@@ -151,7 +192,7 @@ yaml2md <- function(
 		purrr::iwalk(.x$checklist_items$tiers, ~{
 			checked <- ifelse(.x$checked, "x", " ")
 			cat(
-				"\t- [", checked, "]   ", medals[.y],
+				"\t- [", checked, "] ", medals[.y],
 				ifelse(
 					difficulty,
 					ifelse(
@@ -228,15 +269,111 @@ yaml2md <- function(
 	cat("\n", sep = "", file = output_file, append = TRUE)
 }
 
-# yaml2md(checklist_yaml, output_file, details = TRUE)
+# Output mode ----
 
-yaml2md(
-	checklist_yaml, output_file, # parsed_opts$output,
-	details = parsed_opts$lite,
-	quarto = parsed_opts$quarto,
-	difficulty = parsed_opts$difficulty
-)
+gen_split_issues_file_paths <- function(in_file, out_path, suffixes) {
+	in_file %>%
+		fs::path_file() %>% 
+		fs::path_ext_remove() %>% 
+		paste0(out_path, "/", ., "-", suffixes) %>% 
+		# fs::path_join(gh_templates_dir, .) %>%
+		fs::path_ext_set("md") %>%
+		purrr::set_names(suffixes)
+}
 
+gen_tracking_issues_file_path <- function(in_file, out_path) {
+	in_file %>%
+		fs::path_file() %>% 
+		fs::path_ext_set("md") %>% 
+		c(out_path, .) %>% 
+		fs::path_join()
+}
+
+# git host issue templates
+
+# if((!is.null(parsed_opts$issue_style)) && is.null(parsed_opts$git_forge)) {
+# 	stop("--issue-style can only be specified when --git-forge is set!")
+# }
+
+issue_template_formats <- c("tracking", "split")
+supported_git_forges <- c("github", "gitlab")
+
+if(!is.null(parsed_opts$git_forge)) {
+	if (!parsed_opts$issue_style %in% issue_template_formats) {
+		stop(
+			"--issue_style must be one of: ",
+			paste(issue_template_formats, collapse = ", ")
+		)
+	}
+	if (!parsed_opts$git_forge %in% supported_git_forges) {
+		stop(
+			"--git_forge must be one of: ",
+			paste(supported_git_forges, collapse = ", ")
+		)
+	}
+	if(is.null(parsed_opts$output)) {
+		templates_dir <- switch(
+			parsed_opts$git_forge,
+			github = ".github/ISSUE_TEMPLATE",
+			gitlab = ".gitlab/issue_templates"
+		)
+	} else {
+		templates_dir <- parsed_opts$output
+	}
+	if(!fs::dir_exists(templates_dir)) {
+		message("Creating: ", templates_dir)
+		fs::dir_create(templates_dir, recurse = TRUE)
+	}
+	if(parsed_opts$issue_style == "tracking") {
+		default_tracking_issue_filepath <- 
+		gen_tracking_issues_file_path(
+			parsed_opts$input, templates_dir
+		)
+
+		yaml2md(
+			checklist_yaml, default_tracking_issue_filepath, # parsed_opts$output,
+			git_forge = parsed_opts$git_forge,
+			details = parsed_opts$lite,
+			difficulty = parsed_opts$difficulty,
+			emoji = parsed_opts$emoji 
+		)
+	} else { # if (parsed_opts$issue_style == "split") {
+		default_split_issues_filepaths <- gen_split_issues_file_paths(
+			parsed_opts$input, templates_dir, 
+			names(checklist_yaml$checklist_items)
+		)
+
+		# print(default_split_issues_filepaths)
+		purrr::iwalk(default_split_issues_filepaths, ~{
+			theme <- checklist_yaml
+			theme$checklist_items <- checklist_yaml$checklist_items[.y]
+			yaml2md(
+				theme, .x, # parsed_opts$output,
+				git_forge = parsed_opts$git_forge,
+				details = parsed_opts$lite,
+				difficulty = parsed_opts$difficulty,
+				emoji = parsed_opts$emoji 
+			)
+		})
+	}
+}
+
+
+if (is.null(parsed_opts$git_forge)) {
+	output_file <- stdout()
+	if(!is.null(parsed_opts$output)) {
+		output_file <- parsed_opts$output
+	}
+	
+	yaml2md(
+		checklist_yaml, output_file,
+		git_forge = parsed_opts$git_forge,
+		details = parsed_opts$lite,
+		quarto = parsed_opts$quarto,
+		difficulty = parsed_opts$difficulty,
+		emoji = parsed_opts$emoji 
+	)
+}
 
 # Notes
 

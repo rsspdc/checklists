@@ -49,6 +49,78 @@ checklist_items: # a 'mapping' / 'dictionary' named for each theme / area in the
   governance:
 ```
 
+# Building the checklists
+
+The script `yaml2md.R` in this the `R` folder can be used perform this task.
+For example, the command below run from the root directory of the repository will generate the workflows & pipelines checkists markdown file from the yaml file:
+
+```
+./R/yaml2md.R -i yaml/rsspdc-pipeline.yml -o checklists/rsspdc-pipeline.md
+```
+
+yaml2md requires the R language and a small number of R packages.
+`default.nix` defines a nix environment with everything needed to run this script.
+If you have nix available you can simply enter a shell with these tools available by running `nix-shell` in your clone of this repository.
+
+For example to generate checklists without the details sections run:
+
+```
+yaml2md.R -i example.yml -o example.md -l
+```
+
+Use the `-h/--help` flag for additional details.
+
+**Please do not make changes to the markdown files manually any more and instead edit the yaml files then re-generate the markdown files using yaml2md.R**
+
+
+## Help
+
+```
+Usage: Converts yaml representation of the checklist to a number of markdown variants.
+
+
+Options:
+	-i INPUT, --input=INPUT
+		Path to the input file
+
+	-o OUTPUT, --output=OUTPUT
+		Path to the output file, defaults to standard out.
+
+		Sets the output directory when used in conjunction --git-forge=<gitlab/github> --issue-style=split as this generates multiple output files
+
+	-l, --lite
+		Output a version of the checklists without thedetails section
+
+	-q, --quarto
+		Use quarto markdown syntax when generating the output
+		e.g. Uses as callout block instead of a details tagfor the additional details section
+
+	-f GITLAB, --git-forge=GITLAB
+		Generate github or gitlab issue templates.
+
+		Issue template file(s) will be created in the .github/ISSUE_TEMPLATE directory, or .gitlab/issue_templates directory,
+		relative to where this script is run, by default.
+		The directory will be created if it does not already exist.
+		If an output location is specified the template(s)will be generated there instead.
+
+	-s SPLIT, --issue-style=SPLIT
+		Issue templates are available in two styles:
+
+		- 'split One issue per theme
+		- 'tracking' Single large issue in which to track changes
+
+
+	-e, --emoji
+		Serious Business mode - No Emoji :(
+
+	-d, --hide-difficulty
+		Include the subjective difficulty assessment indicator
+
+	-h, --help
+		Show this help message and exit
+
+
+```
 
 ## Reminder of yaml multiline string syntax
 
