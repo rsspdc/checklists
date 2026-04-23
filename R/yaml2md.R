@@ -161,7 +161,7 @@ yaml2md <- function(
 		}
 		cat(
 			"From the ", checklist_yaml$title,
-			"*[Research Software Sharing, Publication, & Distribution Checklist](",
+			" *[Research Software Sharing, Publication, & Distribution Checklist](",
 			checklist_yaml$checklists_site_url, ")* [[repo](",
 			checklist_yaml$checklists_repo_url,
 			")]", "\n\n",
