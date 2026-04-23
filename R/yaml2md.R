@@ -28,7 +28,6 @@ opts <- list(
 	),
 	make_option(
 		c("-o", "--output"), action = "store",
-		# default = stdout(),
 		help = paste0(
 			"Path to the output file, defaults to standard out.\n\n",
 			"\t\tSets the output directory when used in conjunction ",
@@ -54,7 +53,6 @@ opts <- list(
 	make_option(
 		c("-f","--git-forge"),
 		dest = "git_forge",
-		#default = FALSE,
 		metavar = "gitlab",
 		help = paste0(
 			"Generate github or gitlab issue templates.\n\n\t\t",
@@ -283,21 +281,27 @@ yaml2md <- function(
 
 # Output mode ----
 
-gen_split_issues_file_paths <- function(in_file, out_path, suffixes) {
+gen_split_issues_file_paths <- function(in_file, out_path, suffixes, lite) {
 	in_file %>%
 		fs::path_file() %>% 
 		fs::path_ext_remove() %>% 
-		paste0(out_path, "/", ., "-", suffixes) %>% 
+		paste0(
+			out_path, "/", ., "-", suffixes,
+			ifelse(lite, "", "-lite")
+		) %>% 
 		# fs::path_join(gh_templates_dir, .) %>%
 		fs::path_ext_set("md") %>%
 		purrr::set_names(suffixes)
 }
 
-gen_tracking_issues_file_path <- function(in_file, out_path) {
+gen_tracking_issues_file_path <- function(in_file, out_path, lite) {
 	in_file %>%
 		fs::path_file() %>% 
+		c(
+			out_path, ., 
+			ifelse(lite, "", "-lite")
+		) %>%
 		fs::path_ext_set("md") %>% 
-		c(out_path, .) %>% 
 		fs::path_join()
 }
 
@@ -339,11 +343,13 @@ if(!is.null(parsed_opts$git_forge)) {
 	if(parsed_opts$issue_style == "tracking") {
 		default_tracking_issue_filepath <- 
 		gen_tracking_issues_file_path(
-			parsed_opts$input, templates_dir
+			parsed_opts$input, templates_dir,
+			lite = parsed_opts$lite
 		)
 
 		yaml2md(
-			checklist_yaml, default_tracking_issue_filepath, # parsed_opts$output,
+			checklist_yaml,
+			default_tracking_issue_filepath,
 			git_forge = parsed_opts$git_forge,
 			details = parsed_opts$lite,
 			difficulty = parsed_opts$difficulty,
@@ -352,15 +358,15 @@ if(!is.null(parsed_opts$git_forge)) {
 	} else { # if (parsed_opts$issue_style == "split") {
 		default_split_issues_filepaths <- gen_split_issues_file_paths(
 			parsed_opts$input, templates_dir, 
-			names(checklist_yaml$checklist_items)
+			names(checklist_yaml$checklist_items),
+			lite = parsed_opts$lite
 		)
 
-		# print(default_split_issues_filepaths)
 		purrr::iwalk(default_split_issues_filepaths, ~{
 			theme <- checklist_yaml
 			theme$checklist_items <- checklist_yaml$checklist_items[.y]
 			yaml2md(
-				theme, .x, # parsed_opts$output,
+				theme, .x,
 				git_forge = parsed_opts$git_forge,
 				details = parsed_opts$lite,
 				difficulty = parsed_opts$difficulty,
