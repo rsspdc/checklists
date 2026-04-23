@@ -159,20 +159,30 @@ yaml2md <- function(
 				sep = "", file = output_file, append = TRUE
 			)
 		}
-	}
-	cat(
-		"# ", checklist_yaml$title,
-		" [raw markdown](", checklist_yaml$full_markdown_url, ")",
-		" [lite markdown](", checklist_yaml$lite_markdown_url, ")",
-		"\n\nversion: ", checklist_yaml$version, "\n\n",
-		"*[Research Software Sharing, Publication, & Distribution Checklist](",
-		checklist_yaml$checklists_site_url, ")* [[repo](",
-		checklist_yaml$checklists_repo_url,
-		")]", "\n\n",
+		cat(
+			"From the ", checklist_yaml$title, "checklist",
+			"\n\nversion: ", checklist_yaml$version, "\n\n",
+			"*[Research Software Sharing, Publication, & Distribution Checklist](",
+			checklist_yaml$checklists_site_url, ")* [[repo](",
+			checklist_yaml$checklists_repo_url,
+			")]", "\n\n",
+			sep = "", file = output_file, append = TRUE
+		)
+	} else {
+		cat(
+			"# ", checklist_yaml$title,
+			" [raw markdown](", checklist_yaml$full_markdown_url, ")",
+			" [lite markdown](", checklist_yaml$lite_markdown_url, ")",
+			"\n\nversion: ", checklist_yaml$version, "\n\n",
+			"*[Research Software Sharing, Publication, & Distribution Checklist](",
+			checklist_yaml$checklists_site_url, ")* [[repo](",
+			checklist_yaml$checklists_repo_url,
+			")]", "\n\n",
   
-		checklist_yaml$intro, "\n",
-		sep = "", file = output_file, append = TRUE
-	)
+			checklist_yaml$intro, "\n",
+			sep = "", file = output_file, append = TRUE
+		)
+	}
 	purrr::walk(checklist_yaml$checklist_items, ~{
 		cat(
 			"\n## ", ifelse(emoji, paste0(.x$emoji, " "), ""),
