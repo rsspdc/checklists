@@ -1,11 +1,8 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 📖 Documentation
@@ -13,7 +10,7 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation
-	- [ ]   🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
+	- [ ] 🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
 		- [ ] What is the name or title of the project?
 		- [ ] Why did you make this pipeline?
 		- [ ] What problem does it address and how?
@@ -31,12 +28,12 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 		- [ ] How is the project Licensed?
 		- [ ] Table of Contents (if long enough to benefit from one)
 		- [ ] Bibliography (if reference is made to external resources)
-	- [ ]   🥈Silver *(intermediate)*: If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it. So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
+	- [ ] 🥈Silver *(intermediate)*: If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it. So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
 		- [ ] How do I set up a development environment?
 		- [ ] What are your future development plans (if any)
-	- [ ]   🥇Gold *(intermediate)*: Your Documentation features examples; rich, varied and working ones.
+	- [ ] 🥇Gold *(intermediate)*: Your Documentation features examples; rich, varied and working ones.
 Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]   🏆Platinum *(MAXIMUM OVERKILL)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
 
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.

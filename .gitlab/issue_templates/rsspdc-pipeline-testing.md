@@ -1,11 +1,8 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## ✅ Testing
@@ -13,15 +10,15 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Pipeline is appropriately tested
-	- [ ]   🥉Bronze *(easy)*: The pipeline runs and produces the expected result on a minimal example dataset
-	- [ ]   🥈Silver *(easy)*: both of the below:
+	- [ ] 🥉Bronze *(easy)*: The pipeline runs and produces the expected result on a minimal example dataset
+	- [ ] 🥈Silver *(easy)*: both of the below:
 		- [ ] A wide variety of possible input parameter combinations are tested
 		- [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another
-	- [ ]   🥇Gold *(intermediate)*: All of the below:
+	- [ ] 🥇Gold *(intermediate)*: All of the below:
 		- [ ] Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters
 		- [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check
 		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository
-	- [ ]   🏆Platinum *(hard)*: Range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
+	- [ ] 🏆Platinum *(hard)*: Range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
  
 <details>
 The types of testing that it may make sense to emphasise in analysis pipelines are:

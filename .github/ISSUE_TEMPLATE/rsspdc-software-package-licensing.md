@@ -4,13 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## © Licensing
@@ -18,10 +16,10 @@ Considerations for publishing a software package which may be used in research o
 *On what terms can others use your code, and how can you communicate this?*
 
 - [ ] Project is suitably licensed
-	- [ ]   🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
-	- [ ]   🥈Silver *(easy)*: If any prose/documentation or images is licensed differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
-	- [ ]   🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
-	- [ ]   🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ] 🥉Bronze *(easy)*: There is a LICENSE file in the repository for a license which meets one of the [OSI](https://opensource.org/osd), [Debian](https://www.debian.org/intro/free), or [FSF/GNU](https://www.gnu.org/philosophy/free-sw.en.html) definitions of free/libre or open source software. Or for any contents that are not software a [Creative Commons](https://creativecommons.org/) license.
+	- [ ] 🥈Silver *(easy)*: If any prose/documentation or images is licensed differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is are easy to copy text/links for appropriate attribution.
+	- [ ] 🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
+	- [ ] 🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
  
 <details>
 <ul>

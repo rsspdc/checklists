@@ -4,13 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## 📒 Source control
@@ -18,11 +16,11 @@ Considerations for publishing a software package which may be used in research o
 *How can you keep track of the history of your project and collaborate on it?*
 
 - [ ] Uses [git](https://git-scm.com/) (or other source control tool such as [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki))
-	- [ ]   🥉Bronze *(easy)*: Using version control but has a shallow project history, just placed in git for distribution
-	- [ ]   🥈Silver *(intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ]   🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
+	- [ ] 🥉Bronze *(easy)*: Using version control but has a shallow project history, just placed in git for distribution
+	- [ ] 🥈Silver *(intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ] 🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
 Tags, releases, or branches at major project milestones, maybe some contributions from other users
-	- [ ]   🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
  
 <details>
 <ul>

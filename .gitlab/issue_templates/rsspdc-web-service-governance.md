@@ -1,19 +1,8 @@
-# Web-based service [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md)
+From the Web-based servicechecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
-In many ways the key considerations here lean more organisational than technical.
-Do you have the resources to operate the service on an ongoing basis?
-A record of a specific analysis is a snapshot in time that is only expected to run in it's specified environment and once done is done.
-Operating an online service requires continuous ongoing work to keep up with security updates and monitoring the status of your server(s) to ensure that your service is still up and working as intended.
-You can also expect to take on some degree of user support from people having trouble using your service.
-Depending on the nature of the project it may not make sense for others to be deploying instances of the server, but at minimum other developers will need a test deployment to work on if not now then in the future.
-
-Most of the suggestions here would be the same as the section in the software packages checklist, and indeed software of this type is generally one or more packages so that checklist also applies here.
-This checklist focuses on the things that are in addition to general packages and more specific to web-based services.
 
 
 ## ⚖ Governance, Conduct, & Continuity
@@ -21,22 +10,22 @@ This checklist focuses on the things that are in addition to general packages an
 *How can you be excellent to each other, make good decisions well, and continue to do so?*
 
 - [ ] Project has a governance model and continuity planning appropriate to its scale
-	- [ ]   🥉Bronze *(easy)*: Basic governance and continuity planning measures have been taken by project lead(s)
+	- [ ] 🥉Bronze *(easy)*: Basic governance and continuity planning measures have been taken by project lead(s)
 		- [ ] A trusted person other than the project lead has access, or the ability to securely acquire access, to core project assets such as the code repo(s), servers, and secrets
 		- [ ] How the project is governed and how people are expected to engage with it is communicated.
 This might just be in the README, be a dedicated governance document or include other documents, such as a code of conduct
 		- [ ] A preferred method of private contact for project leadership is provided
-	- [ ]   🥈Silver *(easy)*: Plans for continuity of operations in case of an event such as the loss of key project infrastructure
+	- [ ] 🥈Silver *(easy)*: Plans for continuity of operations in case of an event such as the loss of key project infrastructure
 		- [ ] Project has research software management plan
 		- [ ] Source repo is automatically archived and/or mirrored to other hosting providers
 		- [ ] Public archives on non-project infrastructure of any key project governance documentation that is not in the source repo
-	- [ ]   🥇Gold *(intermediate)*: 
+	- [ ] 🥇Gold *(intermediate)*: 
 		- [ ] Project decision making processes are documented
 		- [ ] Project has clear and transparent processes
 		- [ ] Plans for continuity of operations in case of an event such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
 		- [ ] Project has a machine readable research software management plan
-	- [ ]   🏆Platinum *(hard)*: Project has a track record of good governance and policy
+	- [ ] 🏆Platinum *(hard)*: Project has a track record of good governance and policy
 		- [ ] 
 		- [ ] Project leadership has learned from any mistakes and implemented policy changes as a result
  

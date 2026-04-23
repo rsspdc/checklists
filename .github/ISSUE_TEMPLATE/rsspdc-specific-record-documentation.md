@@ -4,16 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+From the Record of a specific analysischecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
-This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
-The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 
 ## 📖 Documentation
@@ -21,7 +16,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation
-	- [ ]   🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
+	- [ ] 🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
 		- [ ] Provides a description of the project structure so that the user knows which directories to find things in, possibly including a visual representation of the structure
 		- [ ] Contains instructions with sufficient detail for someone else to re-run the analysis
 		- [ ] What is the name or title of the project for which this code is record?
@@ -37,10 +32,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 		- [ ] How is the project Licensed?
 		- [ ] Table of Contents (if long enough to benefit from one)
 		- [ ] Bibliography (if reference is made to external resources)
-	- [ ]   🥈Silver *(intermediate)*: If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is easy to copy text/links for appropriate attribution.
-	- [ ]   🥇Gold *(intermediate)*: Uses [Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) license identifiers for every file/suitable unit of code.
+	- [ ] 🥈Silver *(intermediate)*: If any prose/documentation or images are licenced differently from the code in the project this is indicated and those licences provided. If licences have an attribution requirement there is easy to copy text/links for appropriate attribution.
+	- [ ] 🥇Gold *(intermediate)*: Uses [Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) license identifiers for every file/suitable unit of code.
 With a tool such as [REUSE.software](https://reuse.software/) to automate and standardise the process.
-	- [ ]   🏆Platinum *(MAXIMUM OVERKILL)*: all previous tiers plus any images have licensing information embedded in their metadata.
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: all previous tiers plus any images have licensing information embedded in their metadata.
 
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.

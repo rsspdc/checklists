@@ -4,13 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## 🌱 Energy Efficiency
@@ -18,10 +16,10 @@ Considerations for publishing a software package which may be used in research o
 *How can you and your users minimise wasted energy?*
 
 - [ ] Consideration has been given to the energy efficiency of the code
-	- [ ]   🥉Bronze: minimise unnecessary output files
-	- [ ]   🥈Silver: bronze plus: Profile your code and refactor inefficient parts
-	- [ ]   🥇Gold: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
-	- [ ]   🏆Platinum: gold plus: Offload suitable computations to hardware accelerators where possible
+	- [ ] 🥉Bronze: minimise unnecessary output files
+	- [ ] 🥈Silver: bronze plus: Profile your code and refactor inefficient parts
+	- [ ] 🥇Gold: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
+	- [ ] 🏆Platinum: gold plus: Offload suitable computations to hardware accelerators where possible
  
 <details>
 Everyone likes fast and efficient code, but especially if your code is going to be re-used by a lots of people in a computationally demanding application it can burn a lot of energy.

@@ -1,11 +1,8 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 📦 Distribution
@@ -13,10 +10,10 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *How can people install or access the software emerging from your project?*
 
 - [ ] Pipeline is distributed in appropriate format(s)
-	- [ ]   🥉Bronze *(easy)*: Pipeline is in a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be run with the pipeline manager's standard tooling.
-	- [ ]   🥈Silver *(easy)*: The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment management tool.
-	- [ ]   🥇Gold *(intermediate)*: Pipeline is in a repository of workflows and pipelines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
-	- [ ]   🏆Platinum *(intermediate)*: Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
+	- [ ] 🥉Bronze *(easy)*: Pipeline is in a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be run with the pipeline manager's standard tooling.
+	- [ ] 🥈Silver *(easy)*: The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment management tool.
+	- [ ] 🥇Gold *(intermediate)*: Pipeline is in a repository of workflows and pipelines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
+	- [ ] 🏆Platinum *(intermediate)*: Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
  
 <details>
 <ul>

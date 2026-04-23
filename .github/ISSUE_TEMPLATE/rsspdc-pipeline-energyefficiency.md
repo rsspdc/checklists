@@ -4,14 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 🌱 Energy Efficiency
@@ -19,15 +16,15 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *How can you and your users minimise wasted energy?*
 
 - [ ] Consideration has been given to the energy efficiency of the code
-	- [ ]   🥉Bronze *(intermediate)*: minimise unnecessary output files
+	- [ ] 🥉Bronze *(intermediate)*: minimise unnecessary output files
 		- [ ] Adopt a process to review outputs and keep only those necessary
-	- [ ]   🥈Silver *(intermediate)*: bronze plus: Profile your code and refactor inefficient parts
+	- [ ] 🥈Silver *(intermediate)*: bronze plus: Profile your code and refactor inefficient parts
 		- [ ] Energy consumption and emissions Estimation/Measurement
-	- [ ]   🥇Gold *(hard)*: Two or more from:
+	- [ ] 🥇Gold *(hard)*: Two or more from:
 		- [ ] Appropriately balances the possible efficiency gains against the cost of testing, development, and benchmarking
 		- [ ] Makes use of efficient algorithms for its task
 		- [ ] Makes use of tools implemented in an efficient language for the task
-	- [ ]   🏆Platinum *(hard)*: Two or more from:
+	- [ ] 🏆Platinum *(hard)*: Two or more from:
 		- [ ] Makes use of hardware acceleration if appropriate
 		- [ ] Can make use of carbon intensity aware run scheduling
 		- [ ] Binaries are compiled with flags optimal for performance on the architecture/hardware on which the computation is performed if a job is to be repeated enough times to make sense given the energy expended on compilation.

@@ -1,13 +1,8 @@
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+From the Record of a specific analysischecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
-This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
-The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 
 ## ✅ Testing
@@ -15,10 +10,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Project has undergone suitable testing
-	- [ ]   🥉Bronze *(easy)*: Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
-	- [ ]   🥈Silver *(easy)*: Includes test datasets which cover a range of outcomes of the analysis
-	- [ ]   🥇Gold *(intermediate)*: You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
-	- [ ]   🏆Platinum *(hard)*: Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
+	- [ ] 🥉Bronze *(easy)*: Includes a minimal test data set necessary to demonstrate the basic functionality of the analysis
+	- [ ] 🥈Silver *(easy)*: Includes test datasets which cover a range of outcomes of the analysis
+	- [ ] 🥇Gold *(intermediate)*: You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
+	- [ ] 🏆Platinum *(hard)*: Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
  
 <details>
 <ul>

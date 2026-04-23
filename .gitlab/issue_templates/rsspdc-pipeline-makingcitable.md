@@ -1,11 +1,8 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 🔗 Making Citable
@@ -13,12 +10,12 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *How should people make reference to your project and credit your work?*
 
 - [ ] Package is Citable
-	- [ ]   🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
-	- [ ]   🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
-	- [ ]   🥇Gold *(intermediate)*: silver plus:
+	- [ ] 🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
+	- [ ] 🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
+	- [ ] 🥇Gold *(intermediate)*: silver plus:
 		- [ ] Contributions are credited using a suitable contributor roles ontology or taxonomy (CROT) such as [CrediT](https://credit.niso.org/), [ScoRo](http://www.sparontologies.net/ontologies/scoro), [CRO](https://github.com/data2health/contributor-role-ontology), or [TaDiRAH](https://tadirah.info/).
 		- [ ] All contributors are identified by their [ORCID](https://orcid.org/) or other suitable persistent identifier
-	- [ ]   🏆Platinum *(mixed)*: gold plus any two or more from:
+	- [ ] 🏆Platinum *(mixed)*: gold plus any two or more from:
 		- [ ] All research institutions are identified by their [ROR](https://ror.org/) ID *(easy)* 
 		- [ ] Versioned persistent identifier with automation to update snapshots on zenodo or similar tool when a new version is created. *(intermediate)* 
 		- [ ] Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito) *(intermediate)* 

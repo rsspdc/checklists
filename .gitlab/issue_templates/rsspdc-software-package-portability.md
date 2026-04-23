@@ -1,10 +1,8 @@
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## 💽 Environment Management / Portability
@@ -12,11 +10,11 @@ Considerations for publishing a software package which may be used in research o
 *How can people get specific versions of your software running on their systems?*
 
 - [ ] The compute environment needed to build and install the package is well defined
-	- [ ]   🥉Bronze *(easy)*: Makes use of a packaging format that defines dependencies in the package's own languge, but not neceasrily system dependencies
-	- [ ]   🥈Silver *(easy)*: Packaging information captures all dependencies both build and runtime, either manually or in an automated fashion
-	- [ ]   🥇Gold *(intermediate)*: Detailed version information of all dependencies is also captured, this might also include details of compatible version ranges, to facilitate dependency graph resolution in pacakage managers where only one version of a package can be installed in an environment at the same time.
+	- [ ] 🥉Bronze *(easy)*: Makes use of a packaging format that defines dependencies in the package's own languge, but not neceasrily system dependencies
+	- [ ] 🥈Silver *(easy)*: Packaging information captures all dependencies both build and runtime, either manually or in an automated fashion
+	- [ ] 🥇Gold *(intermediate)*: Detailed version information of all dependencies is also captured, this might also include details of compatible version ranges, to facilitate dependency graph resolution in pacakage managers where only one version of a package can be installed in an environment at the same time.
 - conda / environment.yml
-	- [ ]   🏆Platinum *(intermediate)*: - Make use of functional package managers like Nix/Guix whose package derivations make the strongest guarantees about the ability to re-build a package as they describe a pure function called in a sandboxed environment.
+	- [ ] 🏆Platinum *(intermediate)*: - Make use of functional package managers like Nix/Guix whose package derivations make the strongest guarantees about the ability to re-build a package as they describe a pure function called in a sandboxed environment.
 - Cross operating system / architecture builds - does your package build on different operating systems and instruction set architectures (arm, x86, RISC-V etc.)
  
 <details>

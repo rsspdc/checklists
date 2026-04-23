@@ -4,16 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+From the Record of a specific analysischecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
-This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
-The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 
 ## 📒 Source control
@@ -21,10 +16,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How can you keep track of the history of your project and collaborate on it?*
 
 - [ ] Uses git (or other source control tool)
-	- [ ]   🥉Bronze *(easy)*: Using version control but has a shallow project history, just placed in git for distribution
-	- [ ]   🥈Silver *(intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ]   🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
-	- [ ]   🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+	- [ ] 🥉Bronze *(easy)*: Using version control but has a shallow project history, just placed in git for distribution
+	- [ ] 🥈Silver *(intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
+	- [ ] 🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
  
 <details>
 <ul>

@@ -1,13 +1,8 @@
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+From the Record of a specific analysischecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
-This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
-The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 
 ## 💽 Environment Management / Portability
@@ -15,10 +10,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How can people get specific versions of your software running on their systems?*
 
 - [ ] Computational environment description provided
-	- [ ]   🥉Bronze *(easy)*: List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
-	- [ ]   🥈Silver *(intermediate)*: Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
-	- [ ]   🥇Gold *(hard)*: Structured full environment description, automated ability to recreate the complete environment including system dependencies
-	- [ ]   🏆Platinum *(MAXIMUM OVERKILL)*: Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
+	- [ ] 🥉Bronze *(easy)*: List of package versions, e.g. output of `sessionInfo()` in R, not in a machine readable format
+	- [ ] 🥈Silver *(intermediate)*: Structured language specific environment decription, language environment can be re-created e.g. `renv.lock` in a mostly automated fashion
+	- [ ] 🥇Gold *(hard)*: Structured full environment description, automated ability to recreate the complete environment including system dependencies
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
  
 <details>
 <ul>

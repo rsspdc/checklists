@@ -4,13 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## 📦 Distribution
@@ -18,10 +16,10 @@ Considerations for publishing a software package which may be used in research o
 *How can people install or access the software emerging from your project?*
 
 - [ ] Package is distributed in appropriate format(s)
-	- [ ]   🥉Bronze *(easy)*: On a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be installed as a development package with the language's standard tooling.
-	- [ ]   🥈Silver *(easy)*: Packaged in a language specific package respository such as [CRAN](https://cran.r-project.org/), [PyPI](https://pypi.org/), [crates.io](https://crates.io/), [CPAN](https://www.cpan.org/) etc.
-	- [ ]   🥇Gold *(intermediate)*: Packaged for additional general package mangement tools with better systems dependency management than language specificic package mangers such as [conda](https://conda.org/), better still functional packaging format such as [Nix](https://nixos.org/) or [Guix](https://guix.gnu.org/)
-	- [ ]   🏆Platinum *(intermediate)*: Available in with additional packagement tools, and from additional repositories
+	- [ ] 🥉Bronze *(easy)*: On a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be installed as a development package with the language's standard tooling.
+	- [ ] 🥈Silver *(easy)*: Packaged in a language specific package respository such as [CRAN](https://cran.r-project.org/), [PyPI](https://pypi.org/), [crates.io](https://crates.io/), [CPAN](https://www.cpan.org/) etc.
+	- [ ] 🥇Gold *(intermediate)*: Packaged for additional general package mangement tools with better systems dependency management than language specificic package mangers such as [conda](https://conda.org/), better still functional packaging format such as [Nix](https://nixos.org/) or [Guix](https://guix.gnu.org/)
+	- [ ] 🏆Platinum *(intermediate)*: Available in with additional packagement tools, and from additional repositories
 - Not just available in the package format of but present in the package repositories of: [conda forge](https://conda-forge.org/docs/user/introduction/) or better still [NixPkgs](https://github.com/NixOS/nixpkgs/) or [Guix](https://packages.guix.gnu.org/).
 - If applicable it has a [reproducible binary build](https://reproducible-builds.org/) (ideally for all common architechtures)
  

@@ -1,10 +1,8 @@
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## 👥 Peer review / Code Review
@@ -12,10 +10,10 @@ Considerations for publishing a software package which may be used in research o
 *How can you get third party endorsement of and expert feedback on your project?*
 
 - [ ] Package has been appropriately reviewed
-	- [ ]   🥉Bronze *(easy)*: Someone other than you has checked over your package and given you feedback
-	- [ ]   🥈Silver *(intermediate)*: You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
-	- [ ]   🥇Gold *(intermediate)*: You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
-	- [ ]   🏆Platinum *(hard)*: Silver, gold and some from:
+	- [ ] 🥉Bronze *(easy)*: Someone other than you has checked over your package and given you feedback
+	- [ ] 🥈Silver *(intermediate)*: You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
+	- [ ] 🥇Gold *(intermediate)*: You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
+	- [ ] 🏆Platinum *(hard)*: Silver, gold and some from:
 	- Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
 	- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
 	- Your project is a part of a bug bounty program.

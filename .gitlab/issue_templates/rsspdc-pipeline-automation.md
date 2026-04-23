@@ -1,11 +1,8 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 🤖 Automation
@@ -13,10 +10,10 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *What tasks can you automate to increase consistency and reduce manual work?*
 
 - [ ] Suitable automations are in place
-	- [ ]   🥉Bronze: 
-	- [ ]   🥈Silver: 
-	- [ ]   🥇Gold: 
-	- [ ]   🏆Platinum: 
+	- [ ] 🥉Bronze: 
+	- [ ] 🥈Silver: 
+	- [ ] 🥇Gold: 
+	- [ ] 🏆Platinum: 
  
 <details>
 

@@ -1,19 +1,8 @@
-# Web-based service [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md)
+From the Web-based servicechecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
-In many ways the key considerations here lean more organisational than technical.
-Do you have the resources to operate the service on an ongoing basis?
-A record of a specific analysis is a snapshot in time that is only expected to run in it's specified environment and once done is done.
-Operating an online service requires continuous ongoing work to keep up with security updates and monitoring the status of your server(s) to ensure that your service is still up and working as intended.
-You can also expect to take on some degree of user support from people having trouble using your service.
-Depending on the nature of the project it may not make sense for others to be deploying instances of the server, but at minimum other developers will need a test deployment to work on if not now then in the future.
-
-Most of the suggestions here would be the same as the section in the software packages checklist, and indeed software of this type is generally one or more packages so that checklist also applies here.
-This checklist focuses on the things that are in addition to general packages and more specific to web-based services.
 
 
 ## 🌱 Energy Efficiency
@@ -21,18 +10,18 @@ This checklist focuses on the things that are in addition to general packages an
 *How can you and your users minimise wasted energy?*
 
 - [ ] Consideration has been given to the energy efficiency of the service
-	- [ ]   🥉Bronze *(easy)*: Two or more from
+	- [ ] 🥉Bronze *(easy)*: Two or more from
 		- [ ] Your web servers are configured appropriately to make best use of their available resources
 		- [ ] You have provisioned appropriately specified hardware for your service and size of user-base
 		- [ ] You have profiled your software and optimised any readily addressed bottlenecks
-	- [ ]   🥈Silver *(intermediate)*: 
+	- [ ] 🥈Silver *(intermediate)*: 
 		- [ ] 
 		- [ ] Estimate and share the carbon footprint of your service using system logs with a tool such as [green algorithms calculator](http://calculator.green-algorithms.org/)
-	- [ ]   🥇Gold *(intermediate)*: Two or more from:
+	- [ ] 🥇Gold *(intermediate)*: Two or more from:
 		- [ ] You have detailed profiling of the usage of your service and have optimised your configuration accordingly
 		- [ ] You have detailed profiling of the resource usage of your service and have optimised your hardware provisioning accordingly
 		- [ ] You have profiled your software and optimised bottlenecks, and are making use of parallelism and/or hardware acceleration is possible / beneficial to efficiency.
-	- [ ]   🏆Platinum *(hard)*: 
+	- [ ] 🏆Platinum *(hard)*: 
 		- [ ] 
 		- [ ] Carbon intensity is considered in deployment location, potentially in real-time if dynamically scaling deployments that span multiple geographic regions
  

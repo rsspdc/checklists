@@ -4,13 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## ✅ Testing
@@ -18,10 +16,10 @@ Considerations for publishing a software package which may be used in research o
 *How can you test your project so you can be confident it does what you think it does?*
 
 - [ ] Package is appropriately tested
-	- [ ]   🥉Bronze *(easy)*: You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
-	- [ ]   🥈Silver *(easy)*: You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
-	- [ ]   🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
-	- [ ]   🏆Platinum *(intermediate)*: You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
+	- [ ] 🥉Bronze *(easy)*: You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
+	- [ ] 🥈Silver *(easy)*: You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
+	- [ ] 🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
+	- [ ] 🏆Platinum *(intermediate)*: You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
  
 <details>
 <ul>

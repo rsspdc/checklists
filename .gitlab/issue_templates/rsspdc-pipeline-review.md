@@ -1,11 +1,8 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+From the Pipelines & Workflowschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
-"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 👥 Peer review / Code Review
@@ -13,11 +10,11 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 *How can you get third party endorsement of and expert feedback on your project?*
 
 - [ ] Pipeline has been appropriately reviewed
-	- [ ]   🥉Bronze *(easy)*: Someone other than you has checked over your pipeline and given you feedback
-	- [ ]   🥈Silver *(intermediate)*: Someone other than you has successfully run your pipeline on different compute infrastructure and got the same results with test data
-	- [ ]   🥇Gold *(intermediate)*: You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
+	- [ ] 🥉Bronze *(easy)*: Someone other than you has checked over your pipeline and given you feedback
+	- [ ] 🥈Silver *(intermediate)*: Someone other than you has successfully run your pipeline on different compute infrastructure and got the same results with test data
+	- [ ] 🥇Gold *(intermediate)*: You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
 (The snakmake workflow catalog's review practices would not be adequate for this purpose)
-	- [ ]   🏆Platinum *(hard)*: Some from:
+	- [ ] 🏆Platinum *(hard)*: Some from:
     - Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
     - You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
     - Your project is a part of a bug bounty program.

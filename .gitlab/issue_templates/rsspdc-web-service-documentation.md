@@ -1,19 +1,8 @@
-# Web-based service [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md)
+From the Web-based servicechecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.
-In many ways the key considerations here lean more organisational than technical.
-Do you have the resources to operate the service on an ongoing basis?
-A record of a specific analysis is a snapshot in time that is only expected to run in it's specified environment and once done is done.
-Operating an online service requires continuous ongoing work to keep up with security updates and monitoring the status of your server(s) to ensure that your service is still up and working as intended.
-You can also expect to take on some degree of user support from people having trouble using your service.
-Depending on the nature of the project it may not make sense for others to be deploying instances of the server, but at minimum other developers will need a test deployment to work on if not now then in the future.
-
-Most of the suggestions here would be the same as the section in the software packages checklist, and indeed software of this type is generally one or more packages so that checklist also applies here.
-This checklist focuses on the things that are in addition to general packages and more specific to web-based services.
 
 
 ## 📖 Documentation
@@ -21,7 +10,7 @@ This checklist focuses on the things that are in addition to general packages an
 *How do people know what your project is, how to use it and how to contribute?*
 
 - [ ] Project has suitable documentation
-	- [ ]   🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
+	- [ ] 🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
 		- [ ] What is the name or title of the project?
 		- [ ] Why did you make this service?
 		- [ ] What problem does it address and how?
@@ -40,9 +29,9 @@ This checklist focuses on the things that are in addition to general packages an
 		- [ ] How is the project Licensed?
 		- [ ] Table of Contents (if long enough to benefit from one)
 		- [ ] Bibliography (if reference is made to external resources)
-	- [ ]   🥈Silver *(intermediate)*: Documentation includes instructions on deploying your service in a test/development environment.
-	- [ ]   🥇Gold *(time consuming)*: Documentation features examples; rich, varied and working ones. Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ]   🏆Platinum *(MAXIMUM OVERKILL)*: Documentation is included for users, administrators (if applicable), systems administrators deploying the project, and developers.
+	- [ ] 🥈Silver *(intermediate)*: Documentation includes instructions on deploying your service in a test/development environment.
+	- [ ] 🥇Gold *(time consuming)*: Documentation features examples; rich, varied and working ones. Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Documentation is included for users, administrators (if applicable), systems administrators deploying the project, and developers.
 
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.

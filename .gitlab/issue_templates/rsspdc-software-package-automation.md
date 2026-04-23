@@ -1,10 +1,8 @@
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## 🤖 Automation
@@ -12,10 +10,10 @@ Considerations for publishing a software package which may be used in research o
 *What tasks can you automate to increase consistency and reduce manual work?*
 
 - [ ] Suitable automations are in place
-	- [ ]   🥉Bronze: 
-	- [ ]   🥈Silver: 
-	- [ ]   🥇Gold: 
-	- [ ]   🏆Platinum: 
+	- [ ] 🥉Bronze: 
+	- [ ] 🥈Silver: 
+	- [ ] 🥇Gold: 
+	- [ ] 🏆Platinum: 
  
 <details>
 <ul>

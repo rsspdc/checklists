@@ -4,13 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+From the Software Packageschecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing a software package which may be used in research or as a researcher
 
 
 ## ⚖ Governance, Conduct, & Continuity
@@ -18,14 +16,14 @@ Considerations for publishing a software package which may be used in research o
 *How can you be excellent to each other, make good decisions well, and continue to do so?*
 
 - [ ] The project has a suitable governance model
-	- [ ]   🥉Bronze *(easy)*: The governance model is clearly communicated
-	- [ ]   🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
+	- [ ] 🥉Bronze *(easy)*: The governance model is clearly communicated
+	- [ ] 🥈Silver *(easy)*: Bronze Plus - Project has continuity planning in place (2 or more from)
 		- [ ] Source archived and/or mirrored to other platforms
 		- [ ] Public archives of key project governance documentation and plans for continuity of operations in the events such as the loss of key project infrastructure
 		- [ ] Plans of action in the event project admin(s) are no longer available
-	- [ ]   🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale and goals
+	- [ ] 🥇Gold *(intermediate)*: Project has a governance model appropriate to its scale and goals
 		- [ ] Project has clear and transparent processes
-	- [ ]   🏆Platinum *(hard)*: Project has a track record of good governance and policy, any from:
+	- [ ] 🏆Platinum *(hard)*: Project has a track record of good governance and policy, any from:
 		- [ ] Decisions have involved the appropriate person(s) and been well documented
 		- [ ] Disputes are largely resolved in a respectful and amicable fashion
 		- [ ] The project leadership has learned from any mistakes and implemented policy changes as a result

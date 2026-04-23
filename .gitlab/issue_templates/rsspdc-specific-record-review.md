@@ -1,13 +1,8 @@
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+From the Record of a specific analysischecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
-This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
-The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 
 ## 👥 Peer review / Code Review
@@ -15,10 +10,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How can you get third party endorsement of and expert feedback on your project?*
 
 - [ ] Code has been subject to a review indicating that someone else could re-run the analysis
-	- [ ]   🥉Bronze *(easy)*: Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
-	- [ ]   🥈Silver *(easy)*: Someone other than you has scessfully re-run your analysis using only your documentation, (preferably in a different compute environment, such as a different computer/compute cluster)
-	- [ ]   🥇Gold *(intermediate)*: You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
-	- [ ]   🏆Platinum *(intermediate)*: You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
+	- [ ] 🥉Bronze *(easy)*: Someone other than you has checked over your project, given you feedback and told you they are reasonably confident they could re-run your analysis without your help.
+	- [ ] 🥈Silver *(easy)*: Someone other than you has scessfully re-run your analysis using only your documentation, (preferably in a different compute environment, such as a different computer/compute cluster)
+	- [ ] 🥇Gold *(intermediate)*: You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
+	- [ ] 🏆Platinum *(intermediate)*: You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
  
 <details>
 <ul>

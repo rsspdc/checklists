@@ -4,16 +4,11 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+From the Record of a specific analysischecklist
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
-
-Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
-The emphasis here is on making the work narrowly reproducible i.e. the analysis of the same data can produce the same result when it is re-run.
-This is a starting point for making results robust (different analysis, same data) and replicable (same analysis, different data), and ultimately generalisable (different analysis, different data).
-The other emphasis is on making the work 'verifiable', exposing the complete step-wise detail of the reasoning underpinning the analysis so that it can be scrutinised and understood.
 
 
 ## 🌱 Energy Efficiency
@@ -21,10 +16,10 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 *How can you and your users minimise wasted energy?*
 
 - [ ] Consideration has been given to the energy efficiency of the code
-	- [ ]   🥉Bronze *(easy)*: minimise unnecessary output files
-	- [ ]   🥈Silver *(easy)*: bronze plus: Profile your code and refactor inefficient parts
-	- [ ]   🥇Gold *(intermediate)*: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
-	- [ ]   🏆Platinum *(intermediate)*: gold plus: Offload suitable computations to hardware accelerators where possible
+	- [ ] 🥉Bronze *(easy)*: minimise unnecessary output files
+	- [ ] 🥈Silver *(easy)*: bronze plus: Profile your code and refactor inefficient parts
+	- [ ] 🥇Gold *(intermediate)*: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
+	- [ ] 🏆Platinum *(intermediate)*: gold plus: Offload suitable computations to hardware accelerators where possible
  
 <details>
 One off analysis code is not particularly high impact to make more efficient as it is only run a small number of times.
