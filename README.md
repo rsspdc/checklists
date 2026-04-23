@@ -168,7 +168,7 @@ If you have made self-assessed improvements after a third party assessment you m
 
 ## Contributing to this project
 
-**These lists are still in an early phase of development (pre-alpha)** I'll be soliciting input from select individuals and groups once they are in a good enough state to benefit the most from feedback.
+**These lists are still in an early phase of development (alpha)** I'll be soliciting input from select individuals and groups once they are in a good enough state to benefit the most from feedback.
 
 Comments, critiques, and edits are welcome at any time, feel free to open an [issue](https://gitlab.com/HDBI/data-management/checklists/-/issues).
 Please start by opening an issue instead of jumping directly to a merge/pull request unless your PR is of a very small scope e.g. fixing a typo or broken link.
