@@ -4,7 +4,7 @@ about:
 title:[RSSPDC] <issue>
 ---
 
-From the Pipelines & Workflows*[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
+From the Pipelines & Workflows *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
 
 version: alpha
 
