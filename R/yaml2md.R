@@ -160,12 +160,12 @@ yaml2md <- function(
 			)
 		}
 		cat(
-			"From the ", checklist_yaml$title, "checklist",
-			"\n\nversion: ", checklist_yaml$version, "\n\n",
+			"From the ", checklist_yaml$title,
 			"*[Research Software Sharing, Publication, & Distribution Checklist](",
 			checklist_yaml$checklists_site_url, ")* [[repo](",
 			checklist_yaml$checklists_repo_url,
 			")]", "\n\n",
+			"version: ", checklist_yaml$version, "\n\n",
 			sep = "", file = output_file, append = TRUE
 		)
 	} else {
