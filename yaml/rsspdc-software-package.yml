@@ -631,22 +631,22 @@ checklist_items:
         bronze:
           content: minimise unnecessary output files
           checked: false
-          difficulty:
+          difficulty: easy
         silver:
           content: >-
             bronze plus: Profile your code and refactor inefficient parts
           checked: false
-          difficulty:
+          difficulty: intermediate
         gold:
           content: |-
             silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
           checked: false
-          difficulty:
+          difficulty: intermediate
         platinum:
           content: |-
             gold plus: Offload suitable computations to hardware accelerators where possible
           checked: false
-          difficulty:
+          difficulty: hard
     details: |
       Everyone likes fast and efficient code, but especially if your code is going to be re-used by a lots of people in a computationally demanding application it can burn a lot of energy.
       This translates to carbon emissions, water use and opportunity costs for whatever else could have been done with that energy and compute time.
