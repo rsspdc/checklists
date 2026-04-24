@@ -269,7 +269,7 @@ yaml2md <- function(
 		'CC BY 4.0',
 		ifelse(is.null(git_forge), paste0(
 			'<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">\n',
-			'<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">',
+			'<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">'
 		),""),
 		'</a>',
 		'</p>',
