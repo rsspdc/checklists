@@ -169,9 +169,9 @@ yaml2md <- function(
 		)
 	} else {
 		cat(
-			"# ", checklist_yaml$title,
-			" [raw markdown](", checklist_yaml$full_markdown_url, ")",
-			" [lite markdown](", checklist_yaml$lite_markdown_url, ")",
+			"# ", checklist_yaml$title, "\n\n",
+			"Download raw markdown versions here: [[raw](", checklist_yaml$full_markdown_url, ")]",
+			" [[lite](", checklist_yaml$lite_markdown_url, ")]",
 			"\n\nversion: ", checklist_yaml$version, "\n\n",
 			"*[Research Software Sharing, Publication, & Distribution Checklist](",
 			checklist_yaml$checklists_site_url, ")* [[repo](",
