@@ -130,6 +130,11 @@ There are pre-generated issue templates for github & gitlab in two forms:
 - Per theme issues
   This makes a seperate issue tempate for each of the generic parts in each checklist
 
+The `git_forge_issue_templates` directory contains files to copy to your 
+`.github/ISSUE_TEMPLATE` or `.gitlab/issue_templates` directories in your repos.
+Navigate to the sub-directory containing the relevant templates for your git host,
+prefered verbosity, issue style, and project type to locate the files to copy.
+
 ## Assessment
 
 ### Self-assessment
