@@ -1,8 +1,9 @@
 title: Software Packages
-full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md
-lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md
+full_markdown_url: "https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-package.md?ref_type=heads&inline=false"
+lite_markdown_url: "https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-package-lite.md?ref_type=heads&inline=false"
 version: alpha
 checklists_site_url: https://rsspdc.org
+checklist_site_url: https://rsspdc.org/checklists/rsspdc-software-package-lite.html
 checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing a software package which may be used in research or as a researcher

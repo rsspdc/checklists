@@ -1,8 +1,9 @@
 title: Record of a specific analysis
-full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md
-lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md
+full_markdown_url: "https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md?ref_type=heads&inline=false"
+lite_markdown_url: "https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md?ref_type=heads&inline=false"
 version: alpha
 checklists_site_url: https://rsspdc.org
+checklist_site_url: https://rsspdc.org/checklists/rsspdc-specific-record.html
 checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.
