@@ -3,6 +3,7 @@ full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/
 lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md
 version: alpha
 checklists_site_url: https://rsspdc.org
+checklist_site_url: https://rsspdc.org/rsspdc-specific-record.html
 checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing code which runs a specific analysis that underpins some result to be published in the academic literature.

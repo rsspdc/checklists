@@ -3,6 +3,7 @@ full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/
 lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md
 version: alpha
 checklists_site_url: https://rsspdc.org
+checklist_site_url: https://rsspdc.org/rsspdc-web-service.html
 checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   A database, API (application programming interface), or other web-based tool which is, generally, to be hosted on an ongoing basis and offer some service or access to some resource to researchers.

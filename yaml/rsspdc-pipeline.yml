@@ -3,6 +3,7 @@ full_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/
 lite_markdown_url: https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md
 version: alpha
 checklists_site_url: https://rsspdc.org
+checklist_site_url: https://rsspdc.org/checklists/rsspdc-pipeline.html
 checklists_repo_url: https://gitlab.com/rsspdc/checklists
 intro: |
   Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
