@@ -8,7 +8,7 @@ If you are publishing a research paper that has any analysis code associated wit
 **How do I use the checklists?**
 Copy the markdown file suitable to your output type (see below) to your repo and check the boxes that apply to your project, or even better have someone else use the checklist to score your project.
 
-For more see the [FAQ](FAQ.md)
+For more see the [FAQs on the website](https://rsspdc.org/FAQ.html)
 
 (optionally add a badge to your repo's readme with your medal and score)
 
@@ -115,11 +115,11 @@ You can always look these up on the website.
 
 For those who want the details sections right there in the markdown there is the heavy (default) version.
 
-### Simple copy
+### Simple Copy
 
-Grab a copy of the markdown version of the checklist copy it into your repo.
+Grab a copy of the markdown version of the right checklist for your project and copy it into your repo.
 
-### Issue template based workflows
+### Issue Template Based Workflows
 
 If don't want a checklist file in your repo directly and would rather just keep track of your progress in your issue tracker this option is for you.
 
@@ -129,8 +129,6 @@ There are pre-generated issue templates for github & gitlab in two forms:
   This just places the whole checklist in an issue 
 - Per theme issues
   This makes a seperate issue tempate for each of the generic parts in each checklist
-
-## Suggested Workflow(s)
 
 ## Assessment
 
