@@ -51,11 +51,20 @@ checklist_items: # a 'mapping' / 'dictionary' named for each theme / area in the
 
 # Building the checklists
 
-The script `yaml2md.R` in this the `R` folder can be used perform this task.
+The `build.R` script in this directory builds all the different variations of the checklists that are made available from this repo.
+Just run:
+
+```
+Rscript build.R
+```
+
+From this repo and all the default variants will be generated.
+
+The script `yaml2md.R` in this the `R` folder can be used build specific outputs.
 For example, the command below run from the root directory of the repository will generate the workflows & pipelines checkists markdown file from the yaml file:
 
 ```
-./R/yaml2md.R -i yaml/rsspdc-pipeline.yml -o checklists/rsspdc-pipeline.md
+Rscript yaml2md.R -i yaml/rsspdc-pipeline.yml -o checklists/rsspdc-pipeline.md
 ```
 
 yaml2md requires the R language and a small number of R packages.
@@ -65,15 +74,17 @@ If you have nix available you can simply enter a shell with these tools availabl
 For example to generate checklists without the details sections run:
 
 ```
-yaml2md.R -i example.yml -o example.md -l
+Rscript yaml2md.R -i example.yml -o example.md -l
 ```
+
+There are variants that are not made available by default that you can generate with `yaml2md.R`.
+Such as the no emoji variant, and the variant without difficulty indicators.
 
 Use the `-h/--help` flag for additional details.
 
-**Please do not make changes to the markdown files manually any more and instead edit the yaml files then re-generate the markdown files using yaml2md.R**
+**Please do not make changes to the markdown files manually any more and instead edit the yaml files then re-generate the markdown files using build.R**
 
-
-## Help
+## yaml2md.R Help
 
 ```
 Usage: Converts yaml representation of the checklist to a number of markdown variants.
