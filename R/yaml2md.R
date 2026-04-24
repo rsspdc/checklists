@@ -242,7 +242,7 @@ yaml2md <- function(
 						"\n",
 						'::: {.callout-tip collapse="true"}\n\n',
 						.x$details,
-						":::\n"
+						"\n:::\n"
 					),
 					paste0(
 						"\n", "<details>\n",
