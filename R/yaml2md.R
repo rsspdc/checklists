@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
 # - [x] repo link / site link
 # - [x] extra quarto formatting for the website verions - e.g. use callout blocks for details?
 # - [x] toggle difficuly indicators
-# - [ ] --serious-business mode with no emoji :(
+# - [x] --serious-business mode with no emoji :(
 # - [ ] indicate mandatory subparts / handle any N from subparts
 # - [ ] automatic score calculation
 # - [x] issue templates
@@ -124,7 +124,7 @@ checklist_yaml <- yaml::read_yaml(parsed_opts$input)
 #'
 #' @return nothing - prints to a file
 yaml2md <- function(
-	checklist_yaml, output_file, git_forge,
+	checklist_yaml, output_file, git_forge, issue_style = "split",
 	details = TRUE, quarto = FALSE, difficulty = TRUE, emoji = TRUE
 ) {
 	if(!identical(class(output_file), c("terminal", "connection"))) {
@@ -150,9 +150,18 @@ yaml2md <- function(
 		if(git_forge == "github") {
 			cat(
 				"---\n",
-				"name: ", checklist_yaml$title, "\n",
-				"about: ","\n",
-				"title: ", "[RSSPDC] <issue>",
+				"name: ", checklist_yaml$title,
+				ifelse(
+					issue_style == "split",
+					paste0(" (", checklist_yaml$checklist_items[[1]]$title, ")"),
+					""
+				), "\n", # able to assume that there is only one item in this case due to the way this is called
+				"about: Research software sharing, publiation, & distribution checklist","\n",
+				ifelse(
+					issue_style == "split",
+					paste0("title: '[RSSPDC] ", checklist_yaml$checklist_items[[1]]$title, "'"),
+					paste0("title: '[RSSPDC] tracking issue'")
+				), "\n", # able to assume that there is only one item in this case due to the way this is called
 				"\n---\n\n",
 				sep = "", file = output_file, append = TRUE
 			)
@@ -160,8 +169,14 @@ yaml2md <- function(
 		cat(
 			"From the ", checklist_yaml$title,
 			" *[Research Software Sharing, Publication, & Distribution Checklist](",
-			checklist_yaml$checklists_site_url, ")* [[repo](",
-			checklist_yaml$checklists_repo_url,
+			# checklist_yaml$checklists_site_url,
+			checklist_yaml$checklist_site_url,
+			")* [[repo](",
+			#checklist_yaml$checklists_repo_url,
+			ifelse(
+				details, checklist_yaml$full_markdown_url,
+				checklist_yaml$lite_markdown_url
+			),
 			")]", "\n\n",
 			"version: ", checklist_yaml$version, "\n\n",
 			sep = "", file = output_file, append = TRUE
@@ -353,7 +368,8 @@ if(!is.null(parsed_opts$git_forge)) {
 			git_forge = parsed_opts$git_forge,
 			details = parsed_opts$lite,
 			difficulty = parsed_opts$difficulty,
-			emoji = parsed_opts$emoji 
+			emoji = parsed_opts$emoji,
+			issue_style = parsed_opts$issue_style
 		)
 	} else { # if (parsed_opts$issue_style == "split") {
 		default_split_issues_filepaths <- gen_split_issues_file_paths(
@@ -370,7 +386,8 @@ if(!is.null(parsed_opts$git_forge)) {
 				git_forge = parsed_opts$git_forge,
 				details = parsed_opts$lite,
 				difficulty = parsed_opts$difficulty,
-				emoji = parsed_opts$emoji 
+				emoji = parsed_opts$emoji, 
+				issue_style = parsed_opts$issue_style
 			)
 		})
 	}
@@ -389,7 +406,8 @@ if (is.null(parsed_opts$git_forge)) {
 		details = parsed_opts$lite,
 		quarto = parsed_opts$quarto,
 		difficulty = parsed_opts$difficulty,
-		emoji = parsed_opts$emoji 
+		emoji = parsed_opts$emoji, 
+		issue_style = parsed_opts$issue_style 
 	)
 }
 
