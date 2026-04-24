@@ -1,4 +1,6 @@
-# Web-based service [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md)
+# Web-based service
+
+Download raw markdown versions here: [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service.md?ref_type=heads&inline=false)] [[lite](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-web-based-service-lite.md?ref_type=heads&inline=false)]
 
 version: alpha
 
@@ -28,7 +30,8 @@ This checklist focuses on the things that are in addition to general packages an
 		- [ ] Tags, releases, or branches at major project milestones, maybe some contributions from other users
 	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Unline many of the other research software output types this sort of output tends to consist of multiple seperate components which may have their sources managed seperately.
@@ -46,7 +49,8 @@ This checklist focuses on the things that are in addition to general packages an
 	If you are taking new additions to that database such tools are very valuable resources for any collaborators wanting to add data.
 	Even if you are not adding new data these tools can also be very useful to researcher wanting to use data from your database with data they have themselves generated or curated, so the ability to process it in the same way as your data may be essential for valid comparisons.
 	</li>
-</ul>:::
+</ul>
+:::
 
 ## © Licensing
 
@@ -58,7 +62,8 @@ This checklist focuses on the things that are in addition to general packages an
 	- [ ] 🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
 	- [ ] 🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If you want to apply a copyleft license to a piece of software that is to be accessed over a network and not necessarily run on end-users own computers then you would want to adopt a license such as the AGPL to ensure that your end users still have the right to run, study, modify and redistribute the code of the server-side part of the tool.
@@ -80,7 +85,8 @@ This checklist focuses on the things that are in addition to general packages an
 	[REUSE.software](https://reuse.software/) is a tool that can help you keep track licenses in complex multi-license projects.
 	It identifies licences for code in individual files with [SPDX](https://spdx.dev/) licence codes and has an approach to doing so for binary assets.
 	</li>
-</ul>:::
+</ul>
+:::
 
 ## 📖 Documentation
 
@@ -113,7 +119,8 @@ This checklist focuses on the things that are in addition to general packages an
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>README / Manual</li>
 	<ul>
@@ -130,6 +137,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	</ul>
 	<li>Note that almost all of the recommendations for software package documentation also applies here</li>
 </ul>
+
 :::
 
 ## 🔗 Making Citable
@@ -151,7 +159,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- [ ] *(intermediate)*: Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
 		- [ ] *(hard)*: Package your software for Nix or Guix - this might not seem like it contributes to making software more citable see details below for why this is the case.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Adopting a stable, consistent and human readable naming schema for the URLs on your web service, including the ability to reproduce state of dynamically generated pages with parameters in the URL, makes referring to specific items much easier for users citing the website according to the conventions for citing websites.
@@ -202,7 +211,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 			</li>
 		</ul>
 	</li>
-</ul>:::
+</ul>
+:::
 
 ## ✅ Testing
 
@@ -214,7 +224,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ] 🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
 	- [ ] 🏆Platinum *(hard)*: You follow the Test Driven Development (TDD) model, designing and writing tests first then writing code to make them pass
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Services and graphical interfaces many require integration tests which check that the different components of your system work together as expected and UI based testing frameworks which simulate user interaction in a web browser might be things that you would consider adding to the sorts of test you might do for a simpler library.
@@ -242,7 +253,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	Test Driven Development (TDD) is the practice of writing your tests first and then developing the code which conforms to these tests.
 	It works well if you have an extremenly well defined idea of what exactly you want your code to do and not do.
 	</li>
-</ul>:::
+</ul>
+:::
 
 ## 🤖 Automation
 
@@ -254,7 +266,9 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ] 🥇Gold: 
 	- [ ] 🏆Platinum: 
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
+
 :::
 
 ## 👥 Peer review / Code Review
@@ -267,7 +281,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ] 🥇Gold: 
 	- [ ] 🏆Platinum: 
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If you are building a database of some kind then you might want the processes by which you process, collect or curate the data which go into this database to be subject to an academic style review, and papers about the creation of such resources are not uncommon.
@@ -277,6 +292,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	Who may be quite willing to try deploying your tool in many and varied homelabs if it offers them something and/or you ask nicely and in the right places.
 	</li>
 </ul>
+
 :::
 
 ## 📦 Distribution
@@ -293,7 +309,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ] 🏆Platinum *(very hard)*: 
 		- [ ] Reproducibly deployable as a Nix module
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Your general audience is users of your web service, and there's a smaller but imporant audience of sysadmins and developers who may need to run your server software on their own systems not just use it. So 'distribution' splits in to two slightly different problems.
@@ -328,6 +345,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		</li>
 	</ul>
 </ul>
+
 :::
 
 ## 💽 Environment Management / Portability
@@ -344,14 +362,16 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- [ ] 
 		- [ ] Deployment is possible on multiple architectures (such as x86_64 & ARM64)
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Depending on the infrastructure that you chose to deploy on you might use a different management tool, but it is best if you do use such a tool as a part of your development and deployment as, if done right, this provides an easy 'run a couple of commands' development environment setup for anyone picking up the project.
 	Be that a future maintainer, someone wanting to play with a local test deployment, or someone wanting to contribute to the project.
 	Examples of such tools include: [ansible](https://www.ansible.com/), [terraform](https://www.terraform.io/), [docker](https://www.docker.com/)/[docker compose](https://docs.docker.com/compose/), [nix](https://nixos.org/), [helm charts](https://helm.sh/) or a combination of some of these that fits your needs and experience.
 	</li>
-</ul>:::
+</ul>
+:::
 
 ## 🌱 Energy Efficiency
 
@@ -373,7 +393,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- [ ] 
 		- [ ] Carbon intensity is considered in deployment location, potentially in real-time if dynamically scaling deployments that span multiple geographic regions
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 Efficiency in a program deployed as a web service can be as much or more about how it is configured than the efficiency of the underlying code, the larger the number of users a service has the larger the overall impact of small efficiency gains.
 In many research contexts the number of users is small, though in some cases their computational demands may be high.
 It may be uneconomical to spend the time to optimise as heavily as one might in applications with larger scale.
@@ -394,6 +415,7 @@ Academic user-bases are often scattered around the world, if you have a particul
 However, if you have a global user-base anyway you might consider server infrastructure in a location with the least carbon intensity.
 
 [The Environmentally Sustainable Computational Science forum](https://forum.escs-community.org) is a great place to find people to talk about these issues.
+
 :::
 
 ## ⚖ Governance, Conduct, & Continuity
@@ -420,7 +442,8 @@ This might just be in the README, be a dedicated governance document or include 
 		- [ ] 
 		- [ ] Project leadership has learned from any mistakes and implemented policy changes as a result
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
@@ -502,9 +525,11 @@ This might just be in the README, be a dedicated governance document or include 
 		<li>Where can they ask for it?</li>
 		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
 		<li>Can they pay for more support?</li>
-		<ul>
+		</ul>
 	</li>
-</ul>:::
+</ul>
+
+:::
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/rsspdc/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

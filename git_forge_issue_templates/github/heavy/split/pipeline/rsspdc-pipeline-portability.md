@@ -62,6 +62,7 @@ At least one method for describing the required compute environment(s) is suppli
 			</p>
 		</li>
 	</ul>
+	</li>
 	<li>
 	Are the environments for each step of your pipeline well described using an environment management tool such as [Conda](https://conda.org/), or [Spack](https://spack.readthedocs.io/en/latest/) and/or supplied as [OCI](https://opencontainers.org/) containers, runnable with tools such [Docker](https://www.docker.com/), [podman](https://podman.io/), [lxc](https://linuxcontainers.org/lxc/introduction/), [Singularity/Apptainer](https://apptainer.org/), or others?
 	</li>

@@ -1,4 +1,6 @@
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+# Record of a specific analysis
+
+Download raw markdown versions here: [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md?ref_type=heads&inline=false)] [[lite](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md?ref_type=heads&inline=false)]
 
 version: alpha
 
@@ -20,7 +22,8 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 	- [ ] 🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
 	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Whilst you can simply use git and a git forge / git hosting service as a way of distributing your project doing so misses out on a lot of benefits of using git as a part of your workflow from the beginning of your project.
@@ -51,6 +54,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 		If possible start by importing the data & metadata into your own project from it's public repository as a test of FAIRness of the data.
 		This also means that anyone using your dataset has a clear example of how to import it into a working environment.
 		</li>
+	</ul>
 	<li>
 	Signed and Timestamped git commits
 	</li>
@@ -68,6 +72,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 		</li>
 	</ul>
 </ul>
+
 :::
 
 ## © Licensing
@@ -81,7 +86,8 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 With a tool such as [REUSE.software](https://reuse.software/) to automate and standardise the process.
 	- [ ] 🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Once you have selected you license include a plain text copy of it in the root of your repository in a file named LICENSE.
@@ -111,6 +117,7 @@ With a tool such as [REUSE.software](https://reuse.software/) to automate and st
 	It also allow for the direct embedding of image alt text.
 	</li>
 </ul>
+
 :::
 
 ## 📖 Documentation
@@ -142,7 +149,8 @@ With a tool such as [REUSE.software](https://reuse.software/) to automate and st
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>The rationale is key for code pertaining to a specific analysis so that the intent and reasoning of the author is clear to the reader</li>
 	<li>
@@ -166,6 +174,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	If you release multiple versions of a particular analysis it can be a good idea to include a CHANGELOG file in your project documenting things which have changed since the previous version.
 	</li>
 </ul>
+
 :::
 
 ## 🔗 Making Citable
@@ -187,7 +196,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	**The code underpinning a publication is a part of your methods.**
@@ -225,6 +235,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		</ul>
 	</li>
 </ul>
+
 :::
 
 ## ✅ Testing
@@ -237,7 +248,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	- [ ] 🥇Gold *(intermediate)*: You are using unit tests and an automated testing framework to check the correctness of core steps of your analysis
 	- [ ] 🏆Platinum *(hard)*: Have your analysis code written and tested on preliminary or simulated data in advance of recieving your principle dataset with a copy of your code from this time archived and referenced in a pre-registration or registered report.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Whilst you can make use of unit tests / automated testing frameworks in this context (see the software packages checklist testing section for more) it is not always the best fit.
@@ -255,6 +267,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 	When using simulated data be sure to include the method by which you simulated the data and any random seeds which may be needed to re-generate it.
 	</li>
 </ul>
+
 :::
 
 ## 🤖 Automation
@@ -278,7 +291,9 @@ Your manuscript and its supplements are generated and served on a website after 
 All statistics and data visualisations in your manuscript are generated programatically by your analysis pipeline from your raw data in CI/CD.
 Results are cached such that if you, for example, change the formatting of a graph only the plotting and rendering code needs to be re-run, but if you change the data the entire pipeline is re-rerun.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
+
 :::
 
 ## 👥 Peer review / Code Review
@@ -291,7 +306,8 @@ Results are cached such that if you, for example, change the formatting of a gra
 	- [ ] 🥇Gold *(intermediate)*: You have a review from [CODECHECK](https://codecheck.org.uk/), [ReproHack](https://www.reprohack.org/) or equivalent and have incorporated suggestions for improving reproducibility from these reviews.
 	- [ ] 🏆Platinum *(intermediate)*: You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Most of the places that offer code peer review are focused on software packages not code that is specific to your analysis.
@@ -302,7 +318,8 @@ Results are cached such that if you, for example, change the formatting of a gra
 	If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then you may wish to take responibility for the review of this work into your own hands.
 	[CODECHECK](https://codecheck.org.uk/) will independently verify that they can run your code, but its correctness is not in their scope.
 	</li>
-<ul>
+</ul>
+
 :::
 
 ## 📦 Distribution
@@ -315,7 +332,8 @@ Results are cached such that if you, for example, change the formatting of a gra
 	- [ ] 🥇Gold *(intermediate)*: Project is in a reproducible interactive environment such as those offered by [binder](https://binderhub.readthedocs.io/en/latest/index.html) or [renku](https://renkulab.io/).
 	- [ ] 🏆Platinum *(hard)*: Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	What it means to distribute one off analysis code is somewhat different from distributing a package or pipeline as this goal is different.
@@ -360,7 +378,8 @@ Results are cached such that if you, for example, change the formatting of a gra
 	- [ ] 🥇Gold *(hard)*: Structured full environment description, automated ability to recreate the complete environment including system dependencies
 	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	The record of a specific analysis is the case where providing a complete specification of the computational environment in which code was run is perhaps the most important.
@@ -404,7 +423,8 @@ Results are cached such that if you, for example, change the formatting of a gra
 	- [ ] 🥇Gold *(intermediate)*: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
 	- [ ] 🏆Platinum *(intermediate)*: gold plus: Offload suitable computations to hardware accelerators where possible
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 One off analysis code is not particularly high impact to make more efficient as it is only run a small number of times.
 However, it is worth giving some consideration to the efficiency of the tools that your one off analysis might make use of or depend on.
 For the most part analysis might represent a first step implementing a new method for the first time where it's correctness and comprehensibility is more important than the efficiency with which it is implemented, optimisation comes later.
@@ -461,11 +481,13 @@ Consider what can you do to make your code a little more efficient:
 		- [ ] Disputes are largely resolved in a respectful and amicable fashion
 		- [ ] The project leadership has learned from any mistakes and implemented policy changes as a result
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 In the case of a record of a specific analysis it is likely that following the conclusion of that project it will become largely dormant.
 You may however still encounter people refering to and making use of parts of the work and asking questions about it.
 Therefore basis policies for any community spaces and user spuuort may still be sensible to indicate.
 Continuity plannig is also still important as others may need to pick up where you left off at some point in the future.
+
 <ul>
 	<li>
 	**Continuity planning: What happens to your project if something happens to you?**
@@ -484,9 +506,11 @@ Continuity plannig is also still important as others may need to pick up where y
 		<li>Where can they ask for it?</li>
 		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
 		<li>Can they pay for more support?</li>
-		<ul>
+		</ul>
 	</li>
-	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker</li>
+	<li>
+		Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker
+	</li>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
 	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
@@ -524,6 +548,8 @@ Continuity plannig is also still important as others may need to pick up where y
 				How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
 				By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
 				How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+				Most of the places that offer code peer review are focused on software packages not code that is specific to your analysis. This makes sense as reviewer time is fairly scarce so focusing it on code that others are more likely to reuse is reasonable.
+				If your code underpins a publication then in theory it may get reviewed as a part of the regular peer review process although in practice this does not appear to be all that common. If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then
 			</li>
 		</ul>
 	</li>
@@ -539,7 +565,10 @@ Continuity plannig is also still important as others may need to pick up where y
 	If your project has potential cybersecurity implications what procedures do you have in place for people to disclose vulnerabilities in the project so that they can be patched before they are made public.
 	What systems do you have in place to disclose a vulnerability once it has been patched and ensure that users know that they need to update.
 	</li>
-</ul>:::
+</ul>
+
+
+:::
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/rsspdc/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

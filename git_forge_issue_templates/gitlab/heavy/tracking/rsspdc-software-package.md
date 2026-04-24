@@ -536,25 +536,23 @@ Good documentation and good error handing can reduce the number of times people 
 	Game it out, have a plan, write it down, let people know you have a plan.
 	</li>
 	<li>
-	Planning how to 'sunset' your project:
-	<ul>
-	<li>Let people know that it's not receiving active maintenance and might not be updated to new language and package versions if you are not doing this.</li>
-	<li>
-	It can be useful to indicate the status of the project in it's README, see: [repostatus.org](https://www.repostatus.org/), where they define eight different project statuses.
-	<ul>
-		<li>*Concept* – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.</li>
-		<li>*WIP* – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.</li>
-		<li>*Suspended* – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.</li>
-		<li>*Abandoned* – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.</li>
-		<li>*Active* – The project has reached a stable, usable state and is being actively developed.</li>
-		<li>*Inactive* – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.</li>
-		<li>*Unsupported* – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.</li>
-		<li>*Moved* - The project has been moved to a new location, and the version at that location should be considered authoritative. This status should be accompanied by a new URL.</li>
-	</ul>
+		Planning how to 'sunset' your project:
+		<ul>
+			<li>Let people know that it's not receiving active maintenance and might not be updated to new language and package versions if you are not doing this.</li>
+		</ul>
+		It can be useful to indicate the status of the project in it's README, see: [repostatus.org](https://www.repostatus.org/), where they define eight different project statuses.
+		<ul>
+			<li>*Concept* – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.</li>
+			<li>*WIP* – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.</li>
+			<li>*Suspended* – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.</li>
+			<li>*Abandoned* – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.</li>
+			<li>*Active* – The project has reached a stable, usable state and is being actively developed.</li>
+			<li>*Inactive* – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.</li>
+			<li>*Unsupported* – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.</li>
+			<li>*Moved* - The project has been moved to a new location, and the version at that location should be considered authoritative. This status should be accompanied by a new URL.</li>
+		</ul>
 	</li>
 	<li>You can also convert repositories to an archival mode on common software forges like GitHub to indicate that they are no longer being worked on.</li>
-	</ul>
-	<li>
 	<li>
 	Does your project take donations?
 	Does it have a trademark?
@@ -575,7 +573,7 @@ Good documentation and good error handing can reduce the number of times people 
 		<li>Where can they ask for it?</li>
 		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
 		<li>Can they pay for more support?</li>
-		<ul>
+		</ul>
 	</li>
 </ul>
 </details>

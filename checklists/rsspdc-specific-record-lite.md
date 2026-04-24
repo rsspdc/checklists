@@ -1,4 +1,6 @@
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+# Record of a specific analysis
+
+Download raw markdown versions here: [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md?ref_type=heads&inline=false)] [[lite](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md?ref_type=heads&inline=false)]
 
 version: alpha
 

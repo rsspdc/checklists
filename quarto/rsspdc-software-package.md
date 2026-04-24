@@ -1,4 +1,6 @@
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+# Software Packages
+
+Download raw markdown versions here: [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-package.md?ref_type=heads&inline=false)] [[lite](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-package-lite.md?ref_type=heads&inline=false)]
 
 version: alpha
 
@@ -18,13 +20,15 @@ Considerations for publishing a software package which may be used in research o
 Tags, releases, or branches at major project milestones, maybe some contributions from other users
 	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If the language you are writing in has a convenient tool for initiating a template for a package then you may want to get your project's git repository started using that tool.
 	R for example has the {[usethis](https://usethis.r-lib.org/)} package which makes the creation of a minimal R package very easy, including adding automated building and testing with github actions.
 	</li>
 </ul>
+
 :::
 
 ## © Licensing
@@ -37,7 +41,8 @@ Tags, releases, or branches at major project milestones, maybe some contribution
 	- [ ] 🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
 	- [ ] 🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	**All software needs a license if you want to permit others to reuse it.**
@@ -57,6 +62,7 @@ Tags, releases, or branches at major project milestones, maybe some contribution
 	It identifies licences for code in individual files with [SPDX](https://spdx.dev/) licence codes and has an approach to doing so for binary assets.
 	</li>
 </ul>
+
 :::
 
 ## 📖 Documentation
@@ -88,7 +94,8 @@ Examples should cover both simple and more complex use cases, touching on as muc
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 		README / Manual
@@ -137,6 +144,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		Process Documentation: how to proceeded with various tasks related to the project this might include: submitting issues, submitting merge requests, reporting possible vulnerabilities, testing, documentation, release, code review review
 	</li>
 </ul>
+
 :::
 
 ## 🔗 Making Citable
@@ -156,7 +164,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- [ ] *(intermediate)*: Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
 		- [ ] *(hard)*: Package your software for Nix or Guix - this might not seem like it contributes to making software more citable see details below for why this is the case.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 It is important that code used in research can be properly cited by researchers so that they can communicate which version they used, where to find the code, and give appropriate credit to it's authors.
 Even if you are not an academic it is important that academics be able to credit your work so that it can be appropriately valued in the scientific funding ecosystem.
 If it is not framed as contributing to a research output it is harder to justify funding it and paying developer salaries - even if indirectly.
@@ -222,6 +231,7 @@ Further information:
 		</ul>
 	</li>
 </ul>
+
 :::
 
 ## ✅ Testing
@@ -234,7 +244,8 @@ Further information:
 	- [ ] 🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
 	- [ ] 🏆Platinum *(intermediate)*: You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	A good test suite allows you to refactor your code without fear of breaking its functionality.
@@ -260,6 +271,7 @@ Further information:
 	It works well if you have an extremenly well defined idea of what exactly you want your code to do and not do.
 	</li>
 </ul>
+
 :::
 
 ## 🤖 Automation
@@ -272,7 +284,8 @@ Further information:
 	- [ ] 🥇Gold: 
 	- [ ] 🏆Platinum: 
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 		**Linting** is a process of statically analysing the source code to catch errors which can be detected without compiling/running the code such as syntax errors.
@@ -322,6 +335,7 @@ Further information:
 		</ul>
 	</li>
 </ul>
+
 :::
 
 ## 👥 Peer review / Code Review
@@ -337,7 +351,8 @@ Further information:
 	- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
 	- Your project is a part of a bug bounty program.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Entities like The [Journal of Open Source Software (JOSS)](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), [pyOpenSci](https://www.pyopensci.org/) provide a more 'academic peer review flavoured' form of software review and make it easy to cite software in the academic style.
@@ -348,6 +363,7 @@ Further information:
 	Different language communities have different standards and practices around their major package repositories.
 	</li>
 </ul>
+
 :::
 
 ## 📦 Distribution
@@ -362,7 +378,8 @@ Further information:
 - Not just available in the package format of but present in the package repositories of: [conda forge](https://conda-forge.org/docs/user/introduction/) or better still [NixPkgs](https://github.com/NixOS/nixpkgs/) or [Guix](https://packages.guix.gnu.org/).
 - If applicable it has a [reproducible binary build](https://reproducible-builds.org/) (ideally for all common architechtures)
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Packaging your software so that it can easily be installed by package and environment management tools is important to allow people to use your software.
@@ -371,6 +388,7 @@ Further information:
 	<li>Package repositories and other packaging formats, conda, spack, Nix.</li>
 	<li>If you do not have the resources to maintain your package it may be preferable to leave it out of the main package repos, many may not allow your code to be included there without an active maintainer.</li>
 </ul>
+
 :::
 
 ## 💽 Environment Management / Portability
@@ -385,7 +403,8 @@ Further information:
 	- [ ] 🏆Platinum *(intermediate)*: - Make use of functional package managers like Nix/Guix whose package derivations make the strongest guarantees about the ability to re-build a package as they describe a pure function called in a sandboxed environment.
 - Cross operating system / architecture builds - does your package build on different operating systems and instruction set architectures (arm, x86, RISC-V etc.)
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Use of a robust environment management tool for you language which can exactly reproduce the environment in which any given build of your software was made. In particular any released version of your software would ideally be re-buildable from source in a bit for bit fashion.
@@ -417,6 +436,7 @@ Further information:
 	<li>Combinations of all of the above</li>
 	<li>You can cover all of these is all combinations, nor do you need to, just cover the ones most relevant to your software and it's users.</li>
 </ul>
+
 :::
 
 ## 🌱 Energy Efficiency
@@ -429,7 +449,8 @@ Further information:
 	- [ ] 🥇Gold *(intermediate)*: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
 	- [ ] 🏆Platinum *(hard)*: gold plus: Offload suitable computations to hardware accelerators where possible
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 Everyone likes fast and efficient code, but especially if your code is going to be re-used by a lots of people in a computationally demanding application it can burn a lot of energy.
 This translates to carbon emissions, water use and opportunity costs for whatever else could have been done with that energy and compute time.
 If you're making a pipeline produces a lot of intermediate files and outputs consider which of these are needed or good defaults, which could be optional and which could be discarded by default.
@@ -458,6 +479,7 @@ Good documentation and good error handing can reduce the number of times people 
 	Offload to harware accelerators
 	</li>
 </ul>
+
 :::
 
 ## ⚖ Governance, Conduct, & Continuity
@@ -477,7 +499,8 @@ Good documentation and good error handing can reduce the number of times people 
 		- [ ] Disputes are largely resolved in a respectful and amicable fashion
 		- [ ] The project leadership has learned from any mistakes and implemented policy changes as a result
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
@@ -530,25 +553,23 @@ Good documentation and good error handing can reduce the number of times people 
 	Game it out, have a plan, write it down, let people know you have a plan.
 	</li>
 	<li>
-	Planning how to 'sunset' your project:
-	<ul>
-	<li>Let people know that it's not receiving active maintenance and might not be updated to new language and package versions if you are not doing this.</li>
-	<li>
-	It can be useful to indicate the status of the project in it's README, see: [repostatus.org](https://www.repostatus.org/), where they define eight different project statuses.
-	<ul>
-		<li>*Concept* – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.</li>
-		<li>*WIP* – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.</li>
-		<li>*Suspended* – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.</li>
-		<li>*Abandoned* – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.</li>
-		<li>*Active* – The project has reached a stable, usable state and is being actively developed.</li>
-		<li>*Inactive* – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.</li>
-		<li>*Unsupported* – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.</li>
-		<li>*Moved* - The project has been moved to a new location, and the version at that location should be considered authoritative. This status should be accompanied by a new URL.</li>
-	</ul>
+		Planning how to 'sunset' your project:
+		<ul>
+			<li>Let people know that it's not receiving active maintenance and might not be updated to new language and package versions if you are not doing this.</li>
+		</ul>
+		It can be useful to indicate the status of the project in it's README, see: [repostatus.org](https://www.repostatus.org/), where they define eight different project statuses.
+		<ul>
+			<li>*Concept* – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.</li>
+			<li>*WIP* – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.</li>
+			<li>*Suspended* – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.</li>
+			<li>*Abandoned* – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.</li>
+			<li>*Active* – The project has reached a stable, usable state and is being actively developed.</li>
+			<li>*Inactive* – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.</li>
+			<li>*Unsupported* – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.</li>
+			<li>*Moved* - The project has been moved to a new location, and the version at that location should be considered authoritative. This status should be accompanied by a new URL.</li>
+		</ul>
 	</li>
 	<li>You can also convert repositories to an archival mode on common software forges like GitHub to indicate that they are no longer being worked on.</li>
-	</ul>
-	<li>
 	<li>
 	Does your project take donations?
 	Does it have a trademark?
@@ -569,9 +590,10 @@ Good documentation and good error handing can reduce the number of times people 
 		<li>Where can they ask for it?</li>
 		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
 		<li>Can they pay for more support?</li>
-		<ul>
+		</ul>
 	</li>
-</ul>:::
+</ul>
+:::
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/rsspdc/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

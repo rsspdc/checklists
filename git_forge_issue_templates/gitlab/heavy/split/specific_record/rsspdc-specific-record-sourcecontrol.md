@@ -44,6 +44,7 @@ version: alpha
 		If possible start by importing the data & metadata into your own project from it's public repository as a test of FAIRness of the data.
 		This also means that anyone using your dataset has a clear example of how to import it into a working environment.
 		</li>
+	</ul>
 	<li>
 	Signed and Timestamped git commits
 	</li>

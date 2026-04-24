@@ -1,4 +1,6 @@
-# Record of a specific analysis [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md)
+# Record of a specific analysis
+
+Download raw markdown versions here: [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record.md?ref_type=heads&inline=false)] [[lite](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-specific-record-lite.md?ref_type=heads&inline=false)]
 
 version: alpha
 
@@ -51,6 +53,7 @@ The other emphasis is on making the work 'verifiable', exposing the complete ste
 		If possible start by importing the data & metadata into your own project from it's public repository as a test of FAIRness of the data.
 		This also means that anyone using your dataset has a clear example of how to import it into a working environment.
 		</li>
+	</ul>
 	<li>
 	Signed and Timestamped git commits
 	</li>
@@ -308,7 +311,7 @@ Results are cached such that if you, for example, change the formatting of a gra
 	If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then you may wish to take responibility for the review of this work into your own hands.
 	[CODECHECK](https://codecheck.org.uk/) will independently verify that they can run your code, but its correctness is not in their scope.
 	</li>
-<ul>
+</ul>
 
 </details>
 
@@ -355,7 +358,6 @@ Results are cached such that if you, for example, change the formatting of a gra
 	This way anyone, with access to appropriate compute resources, could download your data and run the same upstream analysis to get to the same staring point for the lighter downstream analysis and all the information needed to do this is documented in the downstream analysis.
 	</li>
 </ul>
-
 </details>
 
 ## 💽 Environment Management / Portability
@@ -400,7 +402,6 @@ Results are cached such that if you, for example, change the formatting of a gra
 	They can be a lot of work if they don't already have everything that you need at present but are worth watching as, once refined, can solve many of the points of friction with current approaches.
 	</li>
 </ul>
-
 </details>
 
 ## 🌱 Energy Efficiency
@@ -451,7 +452,6 @@ Consider what can you do to make your code a little more efficient:
 	[The Environmentally Sustainable Computational Science forum](https://forum.escs-community.org) is a great place to find people to talk about these issues.
 	</li>
 </ul>
-
 </details>
 
 ## ⚖ Governance, Conduct, & Continuity
@@ -476,6 +476,7 @@ In the case of a record of a specific analysis it is likely that following the c
 You may however still encounter people refering to and making use of parts of the work and asking questions about it.
 Therefore basis policies for any community spaces and user spuuort may still be sensible to indicate.
 Continuity plannig is also still important as others may need to pick up where you left off at some point in the future.
+
 <ul>
 	<li>
 	**Continuity planning: What happens to your project if something happens to you?**
@@ -494,9 +495,11 @@ Continuity plannig is also still important as others may need to pick up where y
 		<li>Where can they ask for it?</li>
 		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
 		<li>Can they pay for more support?</li>
-		<ul>
+		</ul>
 	</li>
-	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker</li>
+	<li>
+		Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker
+	</li>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
 	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
@@ -534,6 +537,8 @@ Continuity plannig is also still important as others may need to pick up where y
 				How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
 				By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
 				How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+				Most of the places that offer code peer review are focused on software packages not code that is specific to your analysis. This makes sense as reviewer time is fairly scarce so focusing it on code that others are more likely to reuse is reasonable.
+				If your code underpins a publication then in theory it may get reviewed as a part of the regular peer review process although in practice this does not appear to be all that common. If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then
 			</li>
 		</ul>
 	</li>
@@ -550,6 +555,8 @@ Continuity plannig is also still important as others may need to pick up where y
 	What systems do you have in place to disclose a vulnerability once it has been patched and ensure that users know that they need to update.
 	</li>
 </ul>
+
+
 </details>
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/rsspdc/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">

@@ -1,4 +1,6 @@
-# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
+# Pipelines & Workflows
+
+Download raw markdown versions here: [[raw](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipeline.md?ref_type=heads&inline=false)] [[lite](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipeline-lite.md?ref_type=heads&inline=false)]
 
 version: alpha
 
@@ -19,7 +21,8 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
 
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If the workflow tool you are using has a convenient tool for initiating a template for a workflow then you may want to get your project's git repository started using that tool.
@@ -27,6 +30,7 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 	[Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) similarly has a [standard project structure](https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html) and [template](https://github.com/snakemake-workflows/snakemake-workflow-template).
 	</li>
 </ul>
+
 :::
 
 ## © Licensing
@@ -39,7 +43,8 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 	- [ ] 🥇Gold *(intermediate)*: Uses [REUSE.software](https://reuse.software/) to provide license information for every file.
 	- [ ] 🏆Platinum *(intermediate)*: all previous tiers plus any images have licensing information embedded in their metadata.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If you are including external code in your pipeline then you should check that their licenses are compatible and you are legally allowed to distribute your code together in this way.
@@ -58,6 +63,7 @@ Considerations for publishing a data analysis workflow or pipeline which may be 
 	This requires that anyone distributing software containing your code or derivatives of it share the source code with the people they distributed it too.
 	</li>
 </ul>
+
 :::
 
 ## 📖 Documentation
@@ -93,7 +99,8 @@ Examples should cover both simple and more complex use cases, touching on as muc
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 		README / Manual
@@ -147,6 +154,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		Process Documentation: how to proceeded with various tasks related to the project this might include: submitting issues, submitting merge requests, reporting possible vulnerabilities, testing, documentation, release, code review review
 	</li>
 </ul>
+
 :::
 
 ## 🔗 Making Citable
@@ -165,7 +173,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- [ ] *(intermediate)*: Annotating work cited in this work with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito)
 		- [ ] *(hard)*: Package your software for Nix or Guix - this might not seem like it contributes to making software more citable see details below for why this is the case.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	Beyond merely making it possible to consistently reference a research output the higher tiers on the checklist don't merely make the output citable but help to follow better citation and bibliographic practices.
@@ -220,6 +229,7 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		</ul>
 	</li>
 </ul>
+
 :::
 
 ## ✅ Testing
@@ -237,7 +247,8 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository
 	- [ ] 🏆Platinum *(hard)*: Range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 The types of testing that it may make sense to emphasise in analysis pipelines are:
 Integration testing, do all the parts work together as expected? (The phrase 'expected result' is a bit nebulous, its robustness in testing hinges on how specific your expectations are.)
 Some aspects might lend themselves to unit testing, but much of this may reside in the individual tools that a pipeline wraps.
@@ -265,6 +276,7 @@ Parallel test execution.
 These features make the sometimes lengthy and laborious process of testing computationally intensive pipelines much more manageable.
 
 [This conference paper](https://doi.org/10.1145/3322790.3330595) introduces a name for a category of software test that they call 'scientific tests' which are black-box style tests agnositic to the implementation which test the broard behaviour of a system is as predicted.
+
 :::
 
 ## 🤖 Automation
@@ -277,7 +289,9 @@ These features make the sometimes lengthy and laborious process of testing compu
 	- [ ] 🥇Gold: 
 	- [ ] 🏆Platinum: 
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
+
 :::
 
 ## 👥 Peer review / Code Review
@@ -294,7 +308,8 @@ These features make the sometimes lengthy and laborious process of testing compu
     - You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
     - Your project is a part of a bug bounty program.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 		The design of the analysis, any methodological choices made and any original steps added might warrant a conventional scientific publication if for example you are making a pipeline which automates a portion of the analysis of some new datatypee
@@ -309,6 +324,7 @@ These features make the sometimes lengthy and laborious process of testing compu
 		</ul>
 	</li>
 </ul>
+
 :::
 
 ## 📦 Distribution
@@ -321,7 +337,8 @@ These features make the sometimes lengthy and laborious process of testing compu
 	- [ ] 🥇Gold *(intermediate)*: Pipeline is in a repository of workflows and pipelines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
 	- [ ] 🏆Platinum *(intermediate)*: Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 <li>
 	Including your pipeline in a collection of pipelines increases it's visibility, can help to attract contributors, and in the case of a curated collection with good standards for how they package their pipelines provide users with confidence to they will be able to use your pipline on their compute infrastructure.
@@ -344,6 +361,7 @@ Good places to distribute workflows include:
 	</ul>
 </li>
 </ul>
+
 :::
 
 ## 💽 Environment Management / Portability
@@ -357,7 +375,8 @@ At least one method for describing the required compute environment(s) is suppli
 	- [ ] 🥇Gold *(hard)*: Complete pipeline can be executed with single command with all data and dependencies fetched automatically, barring the need for any system specific resource constraint configuration.
 	- [ ] 🏆Platinum *(practically impossible in practice)*: The entire dependency tree of your pipeline including the pipeline manager itself, the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
@@ -399,6 +418,7 @@ At least one method for describing the required compute environment(s) is suppli
 			</p>
 		</li>
 	</ul>
+	</li>
 	<li>
 	Are the environments for each step of your pipeline well described using an environment management tool such as [Conda](https://conda.org/), or [Spack](https://spack.readthedocs.io/en/latest/) and/or supplied as [OCI](https://opencontainers.org/) containers, runnable with tools such [Docker](https://www.docker.com/), [podman](https://podman.io/), [lxc](https://linuxcontainers.org/lxc/introduction/), [Singularity/Apptainer](https://apptainer.org/), or others?
 	</li>
@@ -419,6 +439,7 @@ At least one method for describing the required compute environment(s) is suppli
 	Containers built with Nix or Guix can be used in pipeline managers, as PiGx does with snakemake.
 	</li>
 </ul>
+
 :::
 
 ## 🌱 Energy Efficiency
@@ -439,7 +460,8 @@ At least one method for describing the required compute environment(s) is suppli
 		- [ ] Can make use of carbon intensity aware run scheduling
 		- [ ] Binaries are compiled with flags optimal for performance on the architecture/hardware on which the computation is performed if a job is to be repeated enough times to make sense given the energy expended on compilation.
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 Everyone likes fast and efficient code, but especially if your code is going to be re-used by a lots of people in a computationally demanding application it can consume a lot of energy.
 This translates to carbon emissions, water use and opportunity costs for whatever else could have been done with that energy and compute time.
 
@@ -490,6 +512,7 @@ Consider what can you do to make your code a little more efficient:
 	Consider timing and location of computationally intensive runs, you could automate running at optimal times and in optimal places to make use of surplus renewable energy. In the UK you could query the [national grid carbon intensity API](https://www.carbonintensity.org.uk/) to pick opportune times and/or places.
 	</li>
 </ul>
+
 :::
 
 ## ⚖ Governance, Conduct, & Continuity
@@ -509,7 +532,8 @@ Consider what can you do to make your code a little more efficient:
 		- [ ] Disputes are largely resolved in a respectful and amicable fashion
 		- [ ] The project leadership has learned from any mistakes and implemented policy changes as a result
  
-::: {.callout-caution collapse="true"}
+::: {.callout-tip collapse="true"}
+
 <ul>
 	<li>
 	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
@@ -581,9 +605,11 @@ Consider what can you do to make your code a little more efficient:
 		<li>Where can they ask for it?</li>
 		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
 		<li>Can they pay for more support?</li>
-		<ul>
+		</ul>
 	</li>
-</ul>:::
+</ul>
+
+:::
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.com/rsspdc/checklists">Research Software Sharing, Publication, & Distribution Checklists</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://orcid.org/0000-0002-2574-9611">Richard J. Acton</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
