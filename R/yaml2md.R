@@ -240,7 +240,7 @@ yaml2md <- function(
 					quarto,
 					paste0(
 						"\n",
-						'::: {.callout-caution collapse="true"}\n',
+						'::: {.callout-tip collapse="true"}\n\n',
 						.x$details,
 						":::\n"
 					),
