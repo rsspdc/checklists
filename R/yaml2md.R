@@ -151,8 +151,8 @@ yaml2md <- function(
 			cat(
 				"---\n",
 				"name: ", checklist_yaml$title, "\n",
-				"about:","\n",
-				"title:", "[RSSPDC] <issue>",
+				"about: ","\n",
+				"title: ", "[RSSPDC] <issue>",
 				"\n---\n\n",
 				sep = "", file = output_file, append = TRUE
 			)
