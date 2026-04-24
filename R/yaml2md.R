@@ -6,6 +6,7 @@ suppressPackageStartupMessages({
 	library(purrr)
 	library(optparse)
 	library(fs)
+	library(magrittr)
 })
 
 # TODO
@@ -297,12 +298,12 @@ gen_split_issues_file_paths <- function(in_file, out_path, suffixes, lite) {
 gen_tracking_issues_file_path <- function(in_file, out_path, lite) {
 	in_file %>%
 		fs::path_file() %>% 
-		c(
+		fs::path_ext_remove() %>% 
+		paste0(
 			out_path, ., 
 			ifelse(lite, "", "-lite")
 		) %>%
-		fs::path_ext_set("md") %>% 
-		fs::path_join()
+		fs::path_ext_set("md")
 }
 
 # git host issue templates
