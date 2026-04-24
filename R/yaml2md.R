@@ -215,14 +215,14 @@ yaml2md <- function(
 			purrr::walk(.x$subparts, ~{
 				checked <- ifelse(.x$checked, "x", " ")
 				cat(
-					"\t\t- [", checked, "] ", .x$content,
+					"\t\t- [", checked, "] ",
 					ifelse(
 						is.null(.x$difficulty), "",
 						paste0(
-							" *(", .x$difficulty,
-							")* "
+							"*(", .x$difficulty,
+							")*: " 
 						)
-					),
+					), .x$content,
 					"\n",
 					sep = "", file = output_file, append = TRUE
 				)
