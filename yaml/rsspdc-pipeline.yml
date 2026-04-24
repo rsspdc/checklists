@@ -512,7 +512,7 @@ checklist_items:
             Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
           checked: false
           difficulty: intermediate
-    details: |
+    details: |+
       <ul>
       <li>
       	Including your pipeline in a collection of pipelines increases it's visibility, can help to attract contributors, and in the case of a curated collection with good standards for how they package their pipelines provide users with confidence to they will be able to use your pipline on their compute infrastructure.
@@ -566,7 +566,7 @@ checklist_items:
             the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
           checked: false
           difficulty: practically impossible in practice
-    details: |
+    details: >+
       <ul>
       	<li>
       	In the context of a pipeline each independent step should ideally be performed in it's own environment , perhaps defined within a container, with only the tools necessary to perform that step of the analysis.
@@ -608,6 +608,7 @@ checklist_items:
       			</p>
       		</li>
       	</ul>
+      	</li>
       	<li>
       	Are the environments for each step of your pipeline well described using an environment management tool such as [Conda](https://conda.org/), or [Spack](https://spack.readthedocs.io/en/latest/) and/or supplied as [OCI](https://opencontainers.org/) containers, runnable with tools such [Docker](https://www.docker.com/), [podman](https://podman.io/), [lxc](https://linuxcontainers.org/lxc/introduction/), [Singularity/Apptainer](https://apptainer.org/), or others?
       	</li>
@@ -773,7 +774,7 @@ checklist_items:
               checked: false
             - content: The project leadership has learned from any mistakes and implemented policy changes as a result
               checked: false
-    details: |
+    details: |+
       <ul>
       	<li>
       	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
@@ -845,6 +846,7 @@ checklist_items:
       		<li>Where can they ask for it?</li>
       		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
       		<li>Can they pay for more support?</li>
-      		<ul>
+      		</ul>
       	</li>
       </ul>
+

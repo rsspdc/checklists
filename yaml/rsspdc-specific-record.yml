@@ -56,7 +56,7 @@ checklist_items:
       #     "test"
       #   ]
     post_notes:
-    details: >
+    details: |+
       <ul>
       	<li>
       	Whilst you can simply use git and a git forge / git hosting service as a way of distributing your project doing so misses out on a lot of benefits of using git as a part of your workflow from the beginning of your project.
@@ -87,6 +87,7 @@ checklist_items:
       		If possible start by importing the data & metadata into your own project from it's public repository as a test of FAIRness of the data.
       		This also means that anyone using your dataset has a clear example of how to import it into a working environment.
       		</li>
+      	</ul>
       	<li>
       	Signed and Timestamped git commits
       	</li>
@@ -473,7 +474,7 @@ checklist_items:
             You have reviews which go beyond checking the ability to re-run your code but which also review it's technical correctness
           checked: false
           difficulty: intermediate
-    details: |
+    details: |+
       <ul>
       	<li>
       	Most of the places that offer code peer review are focused on software packages not code that is specific to your analysis.
@@ -484,7 +485,7 @@ checklist_items:
       	If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then you may wish to take responibility for the review of this work into your own hands.
       	[CODECHECK](https://codecheck.org.uk/) will independently verify that they can run your code, but its correctness is not in their scope.
       	</li>
-      <ul>
+      </ul>
   distribution:
     title: "Distribution"
     emoji: 📦
@@ -515,7 +516,7 @@ checklist_items:
             Gold plus - Your project is built and served as a website using continuous integration and deployment tools such that your analysis is run on your data in a reproducible compute environment and computational results like graphs and statistics are programatically inserted into your output. (It is best to have some form of caching when doing this).
           checked: false
           difficulty: hard
-    details: |
+    details: |-
       <ul>
       	<li>
       	What it means to distribute one off analysis code is somewhat different from distributing a package or pipeline as this goal is different.
@@ -578,7 +579,7 @@ checklist_items:
             Your description allows the automated bootstrap of the entire* depencency tree of your environment from source with bitwise binary reproducibility (currently almost impossible to achieve, basically only approachable in Guix)
           checked: false
           difficulty: MAXIMUM OVERKILL
-    details: |
+    details: |-
       <ul>
       	<li>
       	The record of a specific analysis is the case where providing a complete specification of the computational environment in which code was run is perhaps the most important.
@@ -640,7 +641,7 @@ checklist_items:
             gold plus: Offload suitable computations to hardware accelerators where possible
           checked: false
           difficulty: intermediate
-    details: |
+    details: |-
       One off analysis code is not particularly high impact to make more efficient as it is only run a small number of times.
       However, it is worth giving some consideration to the efficiency of the tools that your one off analysis might make use of or depend on.
       For the most part analysis might represent a first step implementing a new method for the first time where it's correctness and comprehensibility is more important than the efficiency with which it is implemented, optimisation comes later.
@@ -724,11 +725,12 @@ checklist_items:
               checked: false
             - content: The project leadership has learned from any mistakes and implemented policy changes as a result
               checked: false
-    details: |
+    details: |+
       In the case of a record of a specific analysis it is likely that following the conclusion of that project it will become largely dormant.
       You may however still encounter people refering to and making use of parts of the work and asking questions about it.
       Therefore basis policies for any community spaces and user spuuort may still be sensible to indicate.
       Continuity plannig is also still important as others may need to pick up where you left off at some point in the future.
+      
       <ul>
       	<li>
       	**Continuity planning: What happens to your project if something happens to you?**
@@ -747,9 +749,11 @@ checklist_items:
       		<li>Where can they ask for it?</li>
       		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
       		<li>Can they pay for more support?</li>
-      		<ul>
+      		</ul>
       	</li>
-      	<li>Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker</li>
+      	<li>
+      		Whole project data longevity - what plans do you have in place to backup and archive materials pertaining to your project that are not under source control? e.g. issues in your bug tracker
+      	</li>
       	<li>
       	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
       	Becoming a BDFL tends to be the default unless you take steps to avoid it and cultivate community governance as your project begins to grow - failing to do this and being stuck in charge can become quite the burden in sucessful projects.
@@ -787,6 +791,8 @@ checklist_items:
       				How are decisions made in your project? Do you need the mechanisms of governance used by community and civil society organisations?
       				By-laws, a committee and/or working groups, general meetings, votes, minutes? A version of these may be necessary to avoid [The Tyranny of Structurelessness](https://web.archive.org/web/20240406094310/https://www.jofreeman.com/joreen/tyranny.htm)
       				How can you map these onto your development infrastructure and make the decisions of your governing bodies enactable and enforceable?
+      				Most of the places that offer code peer review are focused on software packages not code that is specific to your analysis. This makes sense as reviewer time is fairly scarce so focusing it on code that others are more likely to reuse is reasonable.
+      				If your code underpins a publication then in theory it may get reviewed as a part of the regular peer review process although in practice this does not appear to be all that common. If the journal to which you are submitting your work has no policy on the code review, and your reviewers do not take an interest in reviewing your code - even just the checking if it runs for them then
       			</li>
       		</ul>
       	</li>
@@ -803,3 +809,5 @@ checklist_items:
       	What systems do you have in place to disclose a vulnerability once it has been patched and ensure that users know that they need to update.
       	</li>
       </ul>
+
+

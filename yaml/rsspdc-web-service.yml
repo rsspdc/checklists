@@ -705,7 +705,7 @@ checklist_items:
               checked: false
             - content: Project leadership has learned from any mistakes and implemented policy changes as a result
               checked: false
-    details: |-
+    details: >+
       <ul>
       	<li>
       	If you are the Benevolent Dictator For Life (BDFL) of your project and the Code of Conduct (CoC) is "Don't be a Dick" that's fine, for many individual hobby projects this a functional reality.
@@ -787,6 +787,7 @@ checklist_items:
       		<li>Where can they ask for it?</li>
       		<li>Is there somewhere where users can provide support to other members of the user community, such as a forum?</li>
       		<li>Can they pay for more support?</li>
-      		<ul>
+      		</ul>
       	</li>
       </ul>
+
