@@ -1,10 +1,11 @@
-# Software Packages [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-software-packages-lite.md)
+# Pipelines & Workflows [raw markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines.md) [lite markdown](https://gitlab.com/rsspdc/checklists/-/raw/master/checklists/rsspdc-pipelines-lite.md)
 
 version: alpha
 
 *[Research Software Sharing, Publication, & Distribution Checklist](https://rsspdc.org)* [[repo](https://gitlab.com/rsspdc/checklists)]
 
-Considerations for publishing a software package which may be used in research or as a researcher
+Considerations for publishing a data analysis workflow or pipeline which may be used in research or as a researcher.
+"Applying the FAIR Principles to computational workflows" [10.1038/s41597-025-04451-9](https://doi.org/10.1038/s41597-025-04451-9) offers a good working definition of a workflow and the application of [FAIR](https://www.go-fair.org/) principles to computational workflows.
 
 
 ## 📒 Source control
@@ -14,9 +15,9 @@ Considerations for publishing a software package which may be used in research o
 - [ ] Uses [git](https://git-scm.com/) (or other source control tool such as [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki))
 	- [ ] 🥉Bronze *(easy)*: Using version control but has a shallow project history, just placed in git for distribution
 	- [ ] 🥈Silver *(intermediate)*: Longer project history, commit messages of mixed quality, some large messy changes
-	- [ ] 🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes.
-Tags, releases, or branches at major project milestones, maybe some contributions from other users
+	- [ ] 🥇Gold *(hard)*: Silver plus - Well written commit messages, nice granular commits making discrete self-contained changes. Tags, releases, or branches at major project milestones, maybe some contributions from other users
 	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: Gold plus - Some from: [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/); Clean history with a consistent rebasing/merging strategy; Signed commits from all contributors; Contributions go through a consistent workflow like, issues, then a pull request from a branch.
+
  
 ## © Licensing
 
@@ -35,13 +36,15 @@ Tags, releases, or branches at major project milestones, maybe some contribution
 - [ ] Project has suitable documentation
 	- [ ] 🥉Bronze *(easy)*: Project has README file that either contains directly or links to resources which answer these questions:
 		- [ ] What is the name or title of the project?
-		- [ ] Why did you make this package?
+		- [ ] Why did you make this pipeline?
 		- [ ] What problem does it address and how?
 		- [ ] Why would I want to use it, what differentiates it from its alternatives?
 		- [ ] How do I install it? (with example)
 		- [ ] How do I use it? (with example)
 		- [ ] Where should I go in the project to find what I'm looking for?
 		- [ ] Are you looking for contributions and if so how to contribute?
+		- [ ] What inputs do I need?
+		- [ ] What outputs should I expect?
 		- [ ] How do I cite the project?
 		- [ ] Who contributed to the project and what did they contribute?
 		- [ ] Who should I contact, about what, and how?
@@ -50,9 +53,11 @@ Tags, releases, or branches at major project milestones, maybe some contribution
 		- [ ] Table of Contents (if long enough to benefit from one)
 		- [ ] Bibliography (if reference is made to external resources)
 	- [ ] 🥈Silver *(intermediate)*: If your language has a in-line documentation with which you can build documentation for your functions/objects etc. you are making full use of it. So that features such as the ability to produced a reference manual for all the key functional units of your code, and integrations with IDE (integrated development environment) features such as search, templates, and autocomplete can be made the most of.
-	- [ ] 🥇Gold *(time consuming)*: Your Documentation features examples; rich, varied and working ones.
+		- [ ] How do I set up a development environment?
+		- [ ] What are your future development plans (if any)
+	- [ ] 🥇Gold *(intermediate)*: Your Documentation features examples; rich, varied and working ones.
 Examples should cover both simple and more complex use cases, touching on as much of the functionality as they can.
-	- [ ] 🏆Platinum *(intermediate)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
+	- [ ] 🏆Platinum *(MAXIMUM OVERKILL)*: All examples are executed upon a full build of the documentation so that you know that they at least run.
 
 In some cases for small and simple projects a README file is sufficient documentation.
 This may genuinely be all that you need, or inadequate to the task depending on the project.
@@ -62,7 +67,6 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 *How should people make reference to your project and credit your work?*
 
 - [ ] Package is Citable
-
 	- [ ] 🥉Bronze *(easy)*: A [CITATION.cff](https://citation-file-format.github.io/) &/or [CodeMeta](https://codemeta.github.io/) file exists in the code repository to provide citational metadata about your project
 	- [ ] 🥈Silver *(easy)*: bronze plus the project has persistent resolvable identifier such as a DOI or SWHID, with which it can be referenced, which has been minted for the project using a tool like [zenodo](https://zenodo.org/) or [Software Heritage's Archive](https://www.softwareheritage.org/) to store an archival the project.
 	- [ ] 🥇Gold *(intermediate)*: silver plus:
@@ -78,11 +82,16 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 *How can you test your project so you can be confident it does what you think it does?*
 
-- [ ] Package is appropriately tested
-	- [ ] 🥉Bronze *(easy)*: You have examples in documentation or vignettes which are run and allow you to see 'manually' if your code's output is correct for key functionality
-	- [ ] 🥈Silver *(easy)*: You are using unit tests and an automated testing framework with tests that cover at least your package's core functionality
-	- [ ] 🥇Gold *(intermediate)*: silver plus: You are monitoring your test coverage to get some insight into any important code paths you might be missing
-	- [ ] 🏆Platinum *(intermediate)*: You follow the Test Driven Development (TDD) model, designing and writing test first then writing code to make them pass
+- [ ] Pipeline is appropriately tested
+	- [ ] 🥉Bronze *(easy)*: The pipeline runs and produces the expected result on a minimal example dataset
+	- [ ] 🥈Silver *(easy)*: both of the below:
+		- [ ] A wide variety of possible input parameter combinations are tested
+		- [ ] Datasets with different expected outcomes are tested, for example an output value is expected to be low in one dataset and high in another
+	- [ ] 🥇Gold *(intermediate)*: All of the below:
+		- [ ] Tests of error handling, pipeline fails early and gracefully when given invalid inputs as parameters
+		- [ ] Any Quality Control steps that you use have datasets which elicit both a pass and fail of that check
+		- [ ] Test are run automatically in continuous integration tools as changes are made to the code repository
+	- [ ] 🏆Platinum *(hard)*: Range of supported environments tested on different base systems with different versions in CI pipeline(s) to catch platform specific bugs
  
 ## 🤖 Automation
 
@@ -98,48 +107,54 @@ This may genuinely be all that you need, or inadequate to the task depending on 
 
 *How can you get third party endorsement of and expert feedback on your project?*
 
-- [ ] Package has been appropriately reviewed
-	- [ ] 🥉Bronze *(easy)*: Someone other than you has checked over your package and given you feedback
-	- [ ] 🥈Silver *(intermediate)*: You have published your package in a package repository which performs reviews of submissions such as CRAN, (PyPI's review practices would not be adequate for this purpose).
-	- [ ] 🥇Gold *(intermediate)*: You have published your package via an organisation like [JOSS](https://joss.theoj.org/), [rOpenSci](https://ropensci.org/), or [pyOpenSci](https://www.pyopensci.org/) where the code itself is subject to review by other research software developers.
-	- [ ] 🏆Platinum *(hard)*: Silver, gold and some from:
-	- Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
-	- You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
-	- Your project is a part of a bug bounty program.
+- [ ] Pipeline has been appropriately reviewed
+	- [ ] 🥉Bronze *(easy)*: Someone other than you has checked over your pipeline and given you feedback
+	- [ ] 🥈Silver *(intermediate)*: Someone other than you has successfully run your pipeline on different compute infrastructure and got the same results with test data
+	- [ ] 🥇Gold *(intermediate)*: You have published your pipeline in a pipeline repository which performs reviews of submissions such as nf-core
+(The snakmake workflow catalog's review practices would not be adequate for this purpose)
+	- [ ] 🏆Platinum *(hard)*: Some from:
+    - Published a peer reviewed article with a scientific review of the theoretical / statistical / mathematical underpinnings of the tool that you implemented in addition to a technical peer review of the code quality. (These may well be seperate reviews for example by a methods journal and a software repository reflecting their different expertise.)
+    - You have had and independent 'red team' attempt to find errors in your project and incorporated any relavant changes as a result.
+    - Your project is a part of a bug bounty program.
  
 ## 📦 Distribution
 
 *How can people install or access the software emerging from your project?*
 
-- [ ] Package is distributed in appropriate format(s)
-	- [ ] 🥉Bronze *(easy)*: On a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be installed as a development package with the language's standard tooling.
-	- [ ] 🥈Silver *(easy)*: Packaged in a language specific package respository such as [CRAN](https://cran.r-project.org/), [PyPI](https://pypi.org/), [crates.io](https://crates.io/), [CPAN](https://www.cpan.org/) etc.
-	- [ ] 🥇Gold *(intermediate)*: Packaged for additional general package mangement tools with better systems dependency management than language specificic package mangers such as [conda](https://conda.org/), better still functional packaging format such as [Nix](https://nixos.org/) or [Guix](https://guix.gnu.org/)
-	- [ ] 🏆Platinum *(intermediate)*: Available in with additional packagement tools, and from additional repositories
-- Not just available in the package format of but present in the package repositories of: [conda forge](https://conda-forge.org/docs/user/introduction/) or better still [NixPkgs](https://github.com/NixOS/nixpkgs/) or [Guix](https://packages.guix.gnu.org/).
-- If applicable it has a [reproducible binary build](https://reproducible-builds.org/) (ideally for all common architechtures)
+- [ ] Pipeline is distributed in appropriate format(s)
+	- [ ] 🥉Bronze *(easy)*: Pipeline is in a software forge (such as [GitHub](https://github.com/) or [Codeberg](https://codeberg.org/)) in a standard package format so that it can be run with the pipeline manager's standard tooling.
+	- [ ] 🥈Silver *(easy)*: The software environment(s) needed by each step in your pipeline are defined so that they can be installed automatically using a suitable package / environment management tool.
+	- [ ] 🥇Gold *(intermediate)*: Pipeline is in a repository of workflows and pipelines such as [workflowhub](https://workflowhub.eu) (can be pre-release in nf-core).
+	- [ ] 🏆Platinum *(intermediate)*: Pipeline is in a curated package repository where it has undergone review and testing such as [nf-core](https://nf-co.re/).
  
 ## 💽 Environment Management / Portability
 
 *How can people get specific versions of your software running on their systems?*
 
-- [ ] The compute environment needed to build and install the package is well defined
-	- [ ] 🥉Bronze *(easy)*: Makes use of a packaging format that defines dependencies in the package's own languge, but not neceasrily system dependencies
-	- [ ] 🥈Silver *(easy)*: Packaging information captures all dependencies both build and runtime, either manually or in an automated fashion
-	- [ ] 🥇Gold *(intermediate)*: Detailed version information of all dependencies is also captured, this might also include details of compatible version ranges, to facilitate dependency graph resolution in pacakage managers where only one version of a package can be installed in an environment at the same time.
-- conda / environment.yml
-	- [ ] 🏆Platinum *(intermediate)*: - Make use of functional package managers like Nix/Guix whose package derivations make the strongest guarantees about the ability to re-build a package as they describe a pure function called in a sandboxed environment.
-- Cross operating system / architecture builds - does your package build on different operating systems and instruction set architectures (arm, x86, RISC-V etc.)
+- [ ] It is possible to run your pipeline on other systems with some degree of reproducibility
+	- [ ] 🥉Bronze *(easy)*: The pipeline may require some manual changes, and/or manual steps to install the requisite software environments or retrieve data, and perform some standard pre-processing of inputs like building genome references etc.
+	- [ ] 🥈Silver *(easy)*: External inputs can be automatically retrieved using their identifiers and pre-processing steps for these inputs are performed as apart of the pipeline.
+At least one method for describing the required compute environment(s) is supplied e.g. conda environments, or container build files so that others can be specified if a user has compute infrastructure which does not support the method(s) supplied.
+	- [ ] 🥇Gold *(hard)*: Complete pipeline can be executed with single command with all data and dependencies fetched automatically, barring the need for any system specific resource constraint configuration.
+	- [ ] 🏆Platinum *(practically impossible in practice)*: The entire dependency tree of your pipeline including the pipeline manager itself, the OS it's running on and the firmware of the hardware it's running on can be bootstraped from source and produce bitwise identical binaries, also including any pre-processing of data inputs to the pipeline such as base calling for sequencing data.
  
 ## 🌱 Energy Efficiency
 
 *How can you and your users minimise wasted energy?*
 
 - [ ] Consideration has been given to the energy efficiency of the code
-	- [ ] 🥉Bronze *(easy)*: minimise unnecessary output files
+	- [ ] 🥉Bronze *(intermediate)*: minimise unnecessary output files
+		- [ ] Adopt a process to review outputs and keep only those necessary
 	- [ ] 🥈Silver *(intermediate)*: bronze plus: Profile your code and refactor inefficient parts
-	- [ ] 🥇Gold *(intermediate)*: silver plus: Estimate and share the carbon footprint of your computations with a tools such as [green algorithms calculator](http://calculator.green-algorithms.org/)
-	- [ ] 🏆Platinum *(hard)*: gold plus: Offload suitable computations to hardware accelerators where possible
+		- [ ] Energy consumption and emissions Estimation/Measurement
+	- [ ] 🥇Gold *(hard)*: Two or more from:
+		- [ ] Appropriately balances the possible efficiency gains against the cost of testing, development, and benchmarking
+		- [ ] Makes use of efficient algorithms for its task
+		- [ ] Makes use of tools implemented in an efficient language for the task
+	- [ ] 🏆Platinum *(hard)*: Two or more from:
+		- [ ] Makes use of hardware acceleration if appropriate
+		- [ ] Can make use of carbon intensity aware run scheduling
+		- [ ] Binaries are compiled with flags optimal for performance on the architecture/hardware on which the computation is performed if a job is to be repeated enough times to make sense given the energy expended on compilation.
  
 ## ⚖ Governance, Conduct, & Continuity
 
